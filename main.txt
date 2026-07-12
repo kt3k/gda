@@ -1,0 +1,4670 @@
+
+GRUNDLAGEN DER ANALYSIS 
+(DAS RECHNEN MIT GANZEN, RATIONALEN, 
+IRRATIONALEN, KOMPLEXEN ZAHLEN) 
+ERGÄNZUNG ZU DEN LEHRBÜCHERN 
+DER DIFFERENTIAL- UND INTEGRALRECHNUNG 
+VON 
+EDMUND LANDAU 
+PROFESSOR 
+AN DER UNIVERSITÄT GÜTTINGEN 
+1930 
+AKADEMISCHE VERLAGSGESELLSCHAFT M.B.H. 
+LEIPZIG 
+
+PRINTED IN OERMANY 
+COPYRIGHT BY AKADEMISCHE VERLAOSOESELLSCHAFT M. B. H., LEIPZIG 1930 
+DRUCK: DIETERICHSCHE UNIVERSITÄTS-BUCHDRUCKEREI (W. FR. KAESTNER), 
+GÖTTINGEN 
+V 
+Vorwort für den Lernenden. 
+1. Bitte lies nicht das nachstehende Vorwort für den Kenner! 
+2. Ich setze nur logisches Denken und die deutsche Sprache 
+als bekannt voraus; nichts aus der Schulmathematik oder gar der 
+höheren Mathematik. 
+Um Einwänden vorzubeugen: Eine Zahl, keine Zahl, zwei 
+Fälle, alle Dinge aus einer gegebenen Gesamtheit u. a. m. sind 
+klare Wortgebilde der deutschen Sprache. Satz 1, Satz 2, . . ., 
+Satz 301 (desgleichen bei Axiomen, Definitionen, Kapiteln, Paragra­
+phen) oder 1), 2) u. dgl. bei Fallunterscheidungen sind Marken, die 
+die Sätze, Axiome, . .., Fälle unterscheiden und bei Nachschlagungen 
+bequemer sind, als wenn ich etwa von Satz Hellblau, Satz Dunkel­
+blau u. dgl. redete. Bis „301" würde überhaupt die Einführung 
+der sogenannten positiven ganzen Zahlen keine Schwierigkeit machen; 
+die erste — in Kap. 1 überwundene — Schwierigkeit liegt in der 
+Gesamtheit der positiven ganzen Zahlen 
+1, ... 
+mit der geheimnisvollen Punktreihe hinter dem Komma (in Kap. 1 
+natürliche Zahlen genannt), in der Definition der mit ihnen anzu­
+stellenden Rechenoperationen und den Beweisen der zugehörigen 
+Sätze. 
+Ich entwickle nacheinander alles Entsprechende in Kap. 1 für 
+die natürlichen Zahlen, in Kap. 2 für die positiven Brüche und 
+positiven rationalen Zahlen, in Kap. 3 für die positiven (rationalen 
+und irrationalen) Zahlen, in Kap. 4 für die reellen Zahlen (positive, 
+negative und Null), in Kap. 5 für die komplexen Zahlen; ich spreche 
+also nur von solchen Zahlen, mit denen Du Dich schon in der Schule 
+beschäftigt hast. 
+In diesem Sinne: 
+3. Bitte vergiß alles, was Du auf der Schule gelernt hast; 
+denn Du hast es nicht gelernt. 
+VI Vorwort für den Lernenden. 
+Bitte denke bei allem an die entsprechenden Stellen des Schul­
+pensums ; denn Du hast es doch nicht vergessen. 
+4. Das kleine Einmaleins, bereits der Satz 
+2-2 = 4, 
+kommt nicht vor; ich empfehle Dir aber als Übungsaufgabe zu 
+Kap. 1, § 4. 
+2 = 1 + 1, 
+4 = ((l + l) + l) + l 
+zu definieren und jenen Satz zu beweisen. 
+5. Entschuldige, daß ich Dich duze; dies geschieht nicht nur, 
+weil man den Leser mit „lies" und „siehe" anzureden pflegt, son­
+dern weil dies Buch zum Teil in usum delphinarum geschrieben 
+ist, indem meine Töchter bekanntlich (siehe E. Landau, Vor­
+lesungen über Zahlentheorie, Bd. 1, S. V) schon mehrere Semester 
+studieren (Chemie), schon auf der Schule Differential- und Integral­
+rechnung gelernt zu haben glauben und heute noch nicht wissen, 
+warum 
+x-y --- y-x 
+ist. 
+Berlin, den 28. Dezember 1929. 
+Edmund Landau. 
+VIII Vorwort für den Kenner. 
+widerlegen) läßt; und da man seit vielen Jahrzehnten die Beweis­
+barkeit aller dieser Dinge kennt, ist es dem Lernenden wirklich 
+zu gönnen, daß er die (durchweg ganz leichten) Beweise zu Beginn 
+seines Studiums lernt. 
+Ich will gar nicht erst ausführlich darüber reden, daß vielfach 
+nicht einmal der Dedekindsche Hauptsatz (oder sein gleich­
+wertiges Surrogat bei Begründung der reellen Zahlen durch Funda­
+mentalreihen) zugrunde gelegt wird; so daß dann Dinge wie der 
+Mittelwertsatz der Differentialrechnung, der hierauf fußende Satz, 
+daß eine Funktion mit in einem Intervall verschwindender Ab­
+leitung dort konstant ist, oder z. B. der Satz, daß eine beständig 
+fallende, beschränkte Folge von Zahlen gegen einen Grenzwert 
+strebt, ohne jeden Beweis erscheinen oder, was noch schlimmer ist, 
+mit einem vermeintlichen Beweis, der keiner ist. Die Anzahl der 
+Vertreter dieser extremen Spielart des anderen Standpunktes scheint 
+mir nicht nur monoton zu fallen; sondern der Grenzwert, dem diese 
+Anzahl nach dem oben genannten Satze zustrebt, ist vielleicht so­
+gar Null. 
+Aber mit einer Begründung der natürlichen Zahlen wird nur 
+selten angefangen. Auch ich gestehe, daß ich von jeher nicht 
+unterließ, nach Dedekind die Theorie der reellen Zahlen durch­
+zunehmen, früher aber die Eigenschaften der ganzen und der ratio­
+nalen Zahlen voraussetzte. Die drei letzten Male zog ich allerdings 
+vor, mit den ganzen Zahlen zu beginnen. Einmal und auch für 
+das kommende Sommersemester als Konzession gegen die Zuhörer, 
+die doch gleich differentiieren wollen oder gar die ganze Erläute­
+rung des Zahlbegriffs nicht im ersten Semester (oder womöglich 
+überhaupt nicht) lernen wollen, habe ich allerdings meine Vor­
+lesung in zwei gleichzeitige geteilt, deren eine „Grundlagen der 
+Analysis" hieß. In dieser gelange ich, von den P e ano sehen 
+Axiomen der natürlichen Zahlen ausgehend, bis zur Theorie der 
+reellen Zahlen und der komplexen Zahlen; übrigens braucht der 
+Hörer die komplexen Zahlen im ersten Semester noch nicht; aber 
+deren Einführung ist ja ganz einfach und läßt sich mühelos gleich 
+anbringen. 
+Nun gibt es in der ganzen Literatur kein Lehrbuch, das sich 
+das bescheidene Ziel setzt, nur das Rechnen mit Zahlen im obigen 
+Sinne zu begründen. Und auch die umfangreichen Werke, in denen 
+dies in den einleitenden Kapiteln unternommen wird, überlassen 
+dabei (bewußt oder unbewußt) so manches dem Leser. 
+Diese Schrift — wenn sie von ihm für passend befunden 
+wird — soll jedem Kollegen der anderen pädagogischen Richtung, 
+Vorwort für den Kenner. IX 
+der also die Grundlagen nicht durchnimmt, wenigstens die Mög­
+lichkeit geben, auf eine Quelle zu verweisen, wo das Fehlende und 
+nur das Fehlende in lückenlosem Zusammenhang dargestellt ist. 
+Die Lektüre ist ganz leicht, wenn man — was ja der Fall ist — 
+schon in der Schule die Ergebnisse erfahren hat und wenn man 
+über die abstrakten vier oder fünf ersten Seiten hinweggekommen ist. 
+Ich trete mit Zögern mit dieser Schrift an die Öffentlichkeit, 
+weil ich damit über ein Gebiet publiziere, in dem ich (außer einer 
+mündlichen Mitteilung von Herrn Kalmar) nichts Neues zu sagen 
+habe; aber ein anderer hat sich meine, zum Teil langweilige Mühe 
+nicht gemacht. 
+Den definitiven Anstoß zu dieser „Flucht in die Öffentlichkeit" 
+hat aber ein konkreter Vorfall gegeben. 
+Die andere Richtung meint immer, während des späteren Ver­
+laufes des Studiums würde der Schüler an Hand einer Vorlesung 
+oder der Literatur die Sache schon lernen. Und keiner jener 
+meiner verehrten Freunde und Feinde würde bezweifelt haben, daß 
+z. B. in meinen Vorlesungen sich alles Nötige findet. Auch ich 
+glaubte das. Und nun passierte mir folgendes schreckliche Aben­
+teuer. An Hand meines Kollegheftes las mein damaliger Assistent 
+und lieber Kollege Privatdozent Dr. Grandjot (jetzt Professor 
+an der Universität Santiago) über Grundlagen der Analysis und 
+gab mir mein Manuskript mit dem Bemerken zurück, er hätte es 
+für notwendig befunden, zu den P e an o sehen Axiomen im weiteren 
+Verlaufe andere hinzuzufügen, da der übliche Weg, den ich ge­
+gangen war, eine bestimmte Lücke aufweise. Ehe ich auf die 
+Einzelheiten eingehe, will ich gleich vorgreifend erwähnen: 
+1. Grandjots Einwand war berechtigt. 
+2. Axiome, die nicht zu Anfang des Ganzen aufgezählt werden 
+können (weil sie an spätere Begriffe anknüpfen), sind sehr be­
+dauerlich. 
+3. Grandjots Axiome sind (wie wir schon von Dedekind 
+hätten lernen können) alle beweisbar, und es bleibt (s. die ganze 
+folgende Schrift) bei den Peanosehen Axiomen. 
+Es sind drei Stellen, an denen der Einwand Platz greift: 
+I. Bei der Definition von x + y für natürliche Zahlen. 
+II. Bei der Definition von x • y für natürliche Zahlen. 
+TO m 
+III. Bei der Definition von 2 x,i UIM II xm nachdem man 
+n = 1 n= 1 
+für irgend ein Zahlgebiet x + y und x • y schon hat. 
+X Vorwort für den Kenner. 
+Da alle drei Male die Sache analog liegt, spx'eche ich hier 
+nur von x + y für natürliche Zahlen x, y. Wenn ich etwa in einer 
+Vorlesung über Zahlentheorie irgend einen Satz über natürliche 
+Zahlen so beweise, daß ich erst die Richtigkeit für 1 und dann 
+aus der Richtigkeit für x die für x +1 beweise, so pflegt gelegent­
+lich ein Zuhörer den Einwand zu erheben, ich hätte die Behaup­
+tung ja gar nicht vorher für x bewiesen. Der Einwand ist unbe­
+rechtigt, aber verzeihlich; der Student hatte eben nie vom Induk­
+tionsaxiom gehört. Grrandjots Einwand klingt ähnlich; mit dem 
+Unterschiede, daß er berechtigt war, so daß ich ihn auch verzeihen 
+mußte. Auf Grund seiner fünf Axiome definiert Peano x + y bei 
+festem x für alle y folgendermaßen: 
+x + 1 = x', 
+x + y' = (? + y)', 
+und er und Nachfolger meinen damit: x + y ist allgemein definiert; 
+denn die Menge der y, für die es definiert ist, enthält 1 und mit 
+y auch y'. 
+Aber man hat ja x + y gar nicht definiert. 
+Es wäre in Ordnung, wenn man (was beim Peano sehen Wege 
+nicht der Fall ist, da die Ordnung erst nach der Addition einge­
+führt wird) den Begriff „Zahlen < hätte und von der Menge 
+der y spräche, zu denen es ein für s<y definiertes f (s) mit den 
+Eigenschaften gibt: 
+f (1) - x', 
+f(/) = (/»)' für *<y. 
+So verläuft Dedckinds Begründung. Mit freundlicher Hilfe des 
+Kollegen von Neu mann in Princeton hatte ich nach vorheriger 
+Einführung der Ordnung (was dem Leser nicht bequem gewesen 
+wäre) einen derartigen Weg für dies Büchlein ausgearbeitet. 
+In letzter Stunde erfuhr ich aber einen sehr viel einfacheren Be­
+weis von Dr. Kalmar in Szeged; jetzt sieht die Sache so einfach 
+und der Beweis den übrigen Beweisen des ersten Kapitels so ähn­
+lich aus, daß auch der Kenner diese Pointe nicht gemerkt hätte, 
+wenn ich nicht mein obiges Geständnis von Schuld und Sühne so 
+ausführlich zu Protokoll gegeben hätte. Bei x-y geht es genau 
+m m 
+ebenso; 2 xn und fj xn ist allerdings nur auf dem Dedekind-
+n = 1 n = 1 
+sehen Wege möglich; aber von Kap. 1, § 3 an hat man ja die Menge 
+der z^y. 
+Vorwort für den Kenner. XI 
+Um es dem Leser möglichst leicht zu machen, habe ich manche 
+(nicht sehr umfangreiche) Wortmengen in mehreren oder allen Ka­
+piteln wiederholt. Für den Kenner wäre es natürlich ausreichend, 
+z. B. ein für allemal beim Beweise der Sätze 16 und 17 zu sagen: 
+Diese Begründung gilt für jede Klasse von Zahlen, bei denen die 
+Zeichen < und = definiert sind und bestimmte vorangegangene 
+Eigenschaften haben. Derartige wiederholte Schlußweisen betreffen 
+Sätze, die in allen betreffenden Kapiteln vorkommen mußten, weil 
+m 
+die Sätze im nachfolgenden angewendet wurden. Aber 2 an nn& 
+TO M = 1 
+Yl a„ braucht man nur im letzten Kapitel einzuführen, um es 
+n= 1 
+damit auch für die niederen Zahlarten zu haben. Daher warte ich 
+damit bis zu den komplexen Zahlen, desgl. mit den Sätzen über 
+Subtraktion und Division; erstere gelten selbstverständlich z. ß. 
+für natürliche Zahlen nur, wenn jeder Minuendus größer ist als 
+der Subtrahendus, letztere z. B. bei natürlichen Zahlen nur, wenn 
+alle Divisionen aufgehen. 
+Mein Buch ist unter Verzicht auf Nebenbemerkungen in dem 
+unbarmherzigen Telegrammstil („Axiom", „Definition", „Satz", 
+„Beweis", nur gelegentlich „Vorbemerkung"; selten Worte, die 
+zu keiner dieser fünf Rubriken gehören) geschrieben, der bei einer 
+so leichten Materie am Platz ist. 
+Ich hoffe, nach jahrzehntelanger Vorbereitung diese Schrift so 
+abgefaßt zu haben, daß ein normaler Student sie in zwei Tagen 
+lesen kann. Und dann darf er sogar (da er die formalen Regeln 
+ja schon von der Schule her kennt) den ganzen Inhalt bis auf das 
+Induktionsaxiom und den Dedekindschen Hauptsatz vergessen. 
+Wenn aber gar dem einen oder anderen Kollegen der anderen 
+Richtung die Sache so leicht erscheint, daß er sie in seinen An­
+fängervorlesungen (auf dem folgenden oder irgend einem anderen 
+Wege) bringt, würde ich ein Ziel erreicht haben, auf das ich in 
+größerem Umfange nicht zu hoffen wage. 
+Berlin, den 28. Dezember 1929. 
+Edmund Landau. 
+
+XIII 
+Inhaltsverzeichnis. 
+Seite 
+Vorwort für den Lernenden V 
+Vorwort für den Kenner VII 
+Kapitel 1. 
+Natürliche Zahlen. 
+§ 1. Axiome 1 
+§ 2. Addition 3 
+§ 3. Ordnung 9 
+§ 4. Multiplikation 14 
+Kapitel 2. 
+Brüche. 
+§ 1. Definition und Äquivalenz 19 
+§ 2. Ordnung 21 
+§ 3. Addition 26 
+§ 4. Multiplikation 31 
+§ 5. Rationale Zahlen und ganze Zahlen 35 
+Kapitel 3. 
+Schnitte. 
+§ 1. Definition 43 
+§ 2. Ordnung 45 
+§ 3. Addition 48 
+§ 4. Multiplikation 54 
+§ 5. Rationale Schnitte und ganze Schnitte 61 
+Kapitel 4. 
+Beeile Zahlen. 
+§ 1. Definition 69 
+§ 2. Ordnung 70 
+§ 3. Addition 75 
+§ 4. Multiplikation 84 
+§5. D e d e k i n d scher Hauptsatz 89 
+XIV Inhaltsverzeichnis. 
+Seite 
+Kapitel 5. 
+Komplexe Zahlen. 
+§ 1. Definition 92 
+§ 2. Addition 93 
+§ 3. Multiplikation 96 
+§ 4. Subtraktion 101 
+§ 5. Division 102 
+§ 6. Konjugierte Zahlen 106 
+§ 7. Absoluter Betrag 108 
+§ 8. Summen und Produkte 112 
+§ 9. Potenzen 126 
+§ 10. Einordnung der reellen Zahlen 131 
+1 
+Kapitel 1. 
+Natürliche Zahlen. 
+§ i. 
+Axiome. 
+Wir nehmen als gegeben an: 
+Eine Menge, d. h. Gesamtheit, von Dingen, natürliche Zahlen 
+genannt, mit den nachher aufzuzählenden Eigenschaften, Axiome 
+genannt. 
+Vor der Formulierung der Axiome sei einiges in bezug auf 
+die benutzten Zeichen = und =|= vorangeschickt. 
+Kleine lateinische Buchstaben bedeuten in diesem Buch, wenn 
+nichts anderes gesagt wird, durchweg natürliche Zahlen. 
+Ist x gegeben und y gegeben, so sind 
+entweder x und y dieselbe Zahl; das kann man auch 
+x = y 
+schreiben (= sprich: gleich); 
+oder x und y nicht dieselbe Zahl; das kann man auch 
+x =1= y 
+schreiben (=# sprich: ungleich). 
+Hiernach gilt aus rein logischen Gründen: 
+1) x = x 
+für jedes x. 
+2) Aus 
+x = y 
+folgt 
+y = x. 
+3) Aus 
+x = y, y = * 
+folgt 
+X = Z. 
+Landau, Grundlagen der Analysis. 1 
+2 Kap. 1: Natürliche Zahlen. § 1: Axiome. 
+Eine Schreibweise wie 
+a = b = c — d, 
+mit der zunächst nur 
+a = b, b = c, c = d 
+gemeint ist, enthält also überdies z. B. 
+a = c, a = d, b — d. 
+(Entsprechend in den späteren Kapiteln.) 
+Von der Menge der natürlichen Zahlen nehmen wir nun an, 
+daß sie die Eigenschaften hat: 
+Axiom 1: 1 ist eine natürliche Zahl. 
+D. h. unsere Menge ist nicht leer; sie enthält ein Ding, das 1 
+(sprich: Eins) heißt. 
+Axiom 2: Zu jedem x gibt es genau eine natürliche Zahl, die 
+der Nachfolger von x heißt und mit x' bezeichnet werden möge. 
+Bei komplizierten x wird die Zahl, um deren Nachfolger es 
+sich handelt, eingeklammert, wenn sonst ein Mißverständnis zu be­
+fürchten ist. Entsprechendes gilt im ganzen Buch bei x + y, xy, 
+x — y, — x, x'J u. dgl. 
+Aus 
+x = y 
+folgt also 
+x' = y'. 
+Axiom 3: Stets ist 
+x' += i. 
+D. h. es gibt keine Zahl mit dem Nachfolger 1. 
+Axiom 4: Aus 
+x' = y' 
+folgt 
+x = y. 
+D. h. zu jeder Zahl gibt es keine oder genau eine, deren Nach­
+folger jene Zahl ist. 
+Axiom 5 (Induktionsaxiom): Es sei S02 eine Menge natürlicher 
+Zahlen mit den Eigenschaften: 
+I) 1 gehört su 9JJ. 
+II) Wenn x eu Wt gehört, so gehört x' zu W-
+Dann umfaßt üJf alle natürlichen Zahlen. 
+Axiom 1—5, Satz 1—3. 3 
+§ 2. 
+Addition. 
+Satz 1: Aus 
+x 4= y 
+folgt 
+x' 4= y'. 
+Beweis: Sonst wäre 
+x' = y, 
+also nach Axiom 4 
+x = y. 
+Satz 2: x' ^= x. 
+Beweis: äft sei die Menge der x. für die dies gilt. 
+I) Nach Axiom 1 und Axiom 3 ist 
+1' 4= 1; 
+also gehört 1 zu 3)}. 
+II) Ist x zu gehörig, so ist 
+a;' =f= a\ 
+also nach Satz 1 
+(xj #= 
+also x' zu 9Jf gehörig. 
+Nach Axiom 5 umfaßt also 9Jt alle natürlichen Zahlen; d. h. 
+für jedes x ist 
+x' 4= x. 
+Satz 3: Ist 
+x 4= 1, 
+so es ein (also nach Axiom 4 genau ein) u mit 
+x = u'. 
+Beweis: ffll sei die Menge, die aus der Zahl 1 und denjenigen 
+x besteht, zu denen es ein solches u gibt. (Von selbst ist jedes 
+derartige 
+x 4= 1 
+nach Axiom 3.) 
+I) 1 gehört zu 9J{. 
+l* 
+4 Kap. 1: Natürliche Zahlen. § 2: Addition. 
+°» = V 
+II) Ist x zu ÜDi gehörig, so ist, wenn unter u die Zahl x ver­
+standen wird, 
+x' = u\ 
+also x' zu Wl gehörig. 
+Nach Axiom 5 umfaßt also ffi alle natürlichen Zahlen; zu 
+jedem 
+x =# 1 
+gibt es also ein u mit 
+x = u'. 
+Satz 4, zugleich Definition 1: Auf genau eine Art läßt sich 
+jedem Zahlenpaar x, y eine natürliche Zahl, x + y genannt (+ sprich: 
+plus), so zuordnen, daß 
+1) x + 1 — x' für jedes x, 
+2) x + y' — {x + y)' für jedes x und jedes y. 
+x + y heißt die Summe von x und y oder die durch Addition von 
+y zu x entstehende Zahl. 
+Beweis: A) Zunächst zeigen wir, daß es bei jedem festen x 
+höchstens eine Möglichkeit gibt, x + y für alle y so zu definieren, daß 
+x + 1 = x' 
+und 
+x + y' — (x + y)' für jedes y. 
+Es seien a und bv für alle y definiert und so beschaffen, daß 
+ay' = K)'> hV = (by)' für Jedes V-
+W sei die Menge der y mit 
+o» = V 
+I) a, = x' — &,; 
+1 gehört also zu 9JJ. 
+II) Ist zu äfö gehörig, so ist 
+ay = by, 
+also nach Axiom 2 
+also 
+«v = K)' = (*»)' = V» 
+also «/' zu W gehörig. 
+Daher ist 9J? die Menge aller natürlichen Zahlen; d. h. für 
+jedes y ist 
+Satz i—5, Definition 1. 5 
+B) Wir zeigen jetzt, daß es zu jedem x eine Möglichkeit gibt, 
+x + y für alle y so zu definieren, daß 
+x+1 == x' 
+und 
+x + y' = (x + y)' für jedes y. 
+dJl sei die Menge der x, zu denen es eine (also nach A) genau 
+eine) solche Möglichkeit gibt. 
+I) Für 
+x = 1 
+leistet 
+x + y — y' 
+das Gewünschte. Denn 
+x + 1 = V = x', 
+x + y' = (y1)' = (x + y)'. 
+Also gehört 1 zu SDf. 
+II) Es sei # zu 9)1 gehörig, also ein x + y für alle y vor­
+handen. Dann leistet 
+x' + y = (x + y)' 
+das Gewünschte bei x'. Denn 
+x' + l = (* + l)' = (x1)' 
+und 
++ = + = ((x + y)')' = (x' + y)'. 
+Also gehört x' zu ÜK. 
+Daher umfaßt 3Ä alle 
+Satz 5 (assoziatives Gesetz der Addition): 
+(x + y) + z = x + (y + g). 
+Beweis: x und y seien fest, SJi die Menge der z, für die die 
+Behauptung gilt. 
+I) (x + y) + l = (x + ij)' = x + y' = x + (y + l); 
+also gehört 1 zu W. 
+II) e gehöre zu äJi. Dann ist 
+(x + y) + z = x + (y + z), 
+also 
+(x+y)+z' = ((x+y) + z)' = (x+(y + z))' = x + (y+z)' = x+(y+z% 
+also ^' zu 9JJ gehörig. 
+Die Behauptung gilt also für alle z. 
+6 Kap. 1: Natürliche Zahlen. § 2: Addition. 
+x + y =lp x + z. 
+folgt 
+Satz 6 (kommutatives Gesetz der Addition): 
+x + y = y + 
+Beweis: y sei fest, 9ft die Menge der x, für die die Be­
+hauptung gilt. 
+I) Es ist 
+y +1 = y' 
+und nach der Konstruktion beim Beweise des Satzes 4 
+i + y = y\ 
+also 
+1 + 2/ = y + 
+1 zu SD? gehörig. 
+II) Ist x zu W gehörig, so ist 
+x + y — y + x, 
+also 
+(x + y)' = (y + x)' = y + x'. 
+Nach der Konstruktion beim Beweise des Satzes 4 ist 
+x' + y = (x + y)', 
+also 
+x' + y = y + x', 
+also x' zu 9ft gehörig. 
+Die Behauptung gilt also für alle x. 
+Satz 7: 2/ =1= a' + «/• 
+Beweis: x sei fest, 9K die Menge der y. für die die Be­
+hauptung gilt. 
+I) 1 =(= 
+1 gehört zu 
+II) Ist y zu 3Jt gehörig, so ist 
+y =1= a; + y, 
+also 
+»' =1= + 
+y' x + y', 
+y' zu äR gehörig. 
+Die Behauptung gilt also für alle y. 
+Satz 8: Aus 
+y =1= z 
+Satz 6—9. 7 
+Beweis: Bei festen y, z mit 
+y =!= z 
+sei WR die Menge der x mit 
+a; 4- ?/ =|= x + z. 
+I) 2/' =f= 
+1 +?/ =|= 1 +e; 
+1 gehört also zu 3Ji. 
+II) Ist # zu d)l gehörig, so ist 
+x + V =1= # + ss, 
+also 
+<# + #)' =1= + 
+x' + y =^ x' + z, 
+x' zu gehörig. 
+Also gilt die Behauptung stets. 
+Satz 9: Sind x und y gegeben, so liegt genau einer der Fälle vor: 
+1) x == y. 
+2) Es gibt ein (also nach Satz 8 genau ein) u mit 
+x — y + u. 
+3) Es gibt ein (also nach Satz 8 genau ein) v mit 
+y = x + v. 
+Beweis: A) Nach Satz 7 sind 1), 2) unverträglich und 1), 3) 
+unverträglich. Aus Satz 7 folgt auch die Unverträglichkeit von 
+2), 3); denn sonst wäre 
+x = y + u = (x + v) + u — x + (v + u) — (v + u) + x. 
+Also liegt höchstens einer der Fälle 1), 2), 3) vor. 
+B) x sei fest, ffll die Menge der y, für die einer (also nach A) 
+genau einer) der Fälle 1), 2), 3) vorliegt. 
+I) Für y = 1 ist nach Satz 3 entweder 
+x = 1 = y (Fall 1)) 
+oder 
+x = u' — 1 + u = y + u (Fall 2)). 
+Daher gehört 1 zu äft. 
+II) Es gehöre y zu 3JL Dann ist 
+entweder (Fall 1) bei y) 
+x = y, 
+also 
+y> = y + l = x + 1 (Fall 3) für y'); 
+8 Kap. 1: Natürliche Zahlen. § 2: Addition, 
+oder (Fall 2) bei y) 
+x = y + m, 
+also, wenn 
+M = 1, 
+x = y + 1 = y' (Fall 1) für y'): 
+wenn 
+» =f= 1, 
+nach Satz 3 
+M = W1 = 1 + M>, 
+a; = y + (1 + m>) - («/ +1) + w = y' + w (Fall 2) für y') 
+oder (Fall 3) bei y) 
+y = # + 
+also 
+= (« + «)' = « + «' (Fall 3) für y'). 
+Jedenfalls gehört also y' zu 3Ji. 
+Daher liegt stets einer der Fälle 1), 2), 3) vor. 
+Satz 10—12, Definition 2—5. 9 
+Definition 2: Ist 
+so ist 
+(> sprich: größer als.) 
+Definition 3: Ist 
+so ist 
+§ 3. 
+Ordnung. 
+x = y + u, 
+x > y. 
+y — x + v, 
+x<y. 
+(< sprich: kleiner als.) 
+Satz 10: Sind x, y beliebig, so liegt genau einer der Fälle 
+x = y, x>y, x<y 
+vor. 
+Beweis: Satz 9, Definition 2 und Definition 3. 
+Satz 11: Aus 
+x>y 
+folgt 
+y<x. 
+Beweis: Beides besagt 
+x - y + u 
+bei passendem u. 
+Satz 12: Aus 
+x < y 
+folgt 
+y>x. 
+Beweis: Beides besagt 
+y = x + V 
+bei passendem v. 
+Definition 4: # = </ 
+bedeutet 
+x > y oder x = y. 
+sprich: größer oder gleich.) 
+Definition 5: x 5= y 
+bedeutet 
+x<y oder x = y. 
+sprich: kleiner oder gleich.) 
+10 Kap. 1: Natürliche Zahlen. § 3 : Ordnung. 
+Satz 18: Aus 
+x~y 
+folgt 
+y = x-
+Beweis: Satz 11. 
+Satz 14: Aus 
+x~y 
+folgt 
+y>x. 
+Beweis: Satz 12. 
+Satz 15 (Transitivität der Ordnung): Aus 
+x < y, y <z z 
+folgt 
+x < z. 
+Vorbemerkung: Aus 
+x>y, y > z 
+folgt also (wegen 
+z<y, y<x, 
+z < a;) 
+x > e; 
+aber solche trivialerweise durch Rückwärtslesen entstehenden Wort­
+laute schreibe ich in der Folge nicht erst auf. 
+Beweis: Bei passenden v, w ist 
+y =z x + v, z == y + w, 
+also 
+z = [x + v) + w = x + (y + w), 
+X < s. 
+Satz 16: .4ms 
+x = y, y < z °der x < y> y — s 
+folgt 
+X < 3. 
+Beweis: Mit dem Grleichheitszeichen in der Voraussetzung klar; 
+sonst durch Satz 15 erledigt. 
+Satz 17: Aus 
+x^y, y~z 
+folgt ^ ^ 
+Beweis: Mit zwei Grleichheitszeichen in der Voraussetzung 
+klar; sonst durch Satz 16 erledigt. 
+Satz 13—21. 11 
+Nach den Sätzen 15 bis 17 ist eine Schreibweise wie 
+a < & c < d 
+gerechtfertigt; das heißt zunächst 
+a < b, b^£c, c < d, 
+enthält aber nach jenen Sätzen auch z. B. 
+a < c, a < d, b < d. 
+(Entsprechend in den späteren Kapiteln.) 
+Satz 18: x + y > x. 
+Beweis: x + y = x + y. 
+Satz 19: Aus 
+x > y bzw. x — y bzw. x < y 
+folgt 
+x + z > y + z bzw. x + z = y + z bzw. x + z < y + s. 
+Beweis: 1) Aus 
+x > y 
+folgt 
+x = y + u, 
+x+z = (y + u) + z = (u + y) + z = u + \y + s) = (y + z) + u, 
+x + z > y + z. 
+2) Aus 
+x = y 
+folgt natürlich 
+x + s = y + z. 
+3) Aus 
+x < y 
+folgt 
+y > x, 
+also nach 1) 
+y + z > x + z, 
+x + z < y + z. 
+Satz 20: Aus 
+x + z> y + z bzw. x + z = y + z bzw. x + z <y + z 
+folgt 
+x > y bzw. x = y bzw. x<y. 
+Beweis: Folgt aus Satz 19, da die drei Fälle beide Male sich 
+ausschließen und alle Möglichkeiten erschöpfen. 
+Satz 21: Aus 
+x > y, z > ic 
+12 Kap. 1: Natürliche Zahlen. Sj 3: Ordnung. 
+folgt 
+also 
+Satz 26: Aus 
+folgt 
+Beweis: Sonst wäre 
+also nach Satz 25 
+u> 1, 
+y =2: x + 1. 
+y < x + 1 
+y^x. 
+y>x, 
+y>x + 1. 
+folgt 
+x + z > y + u. 
+Beweis: Nach Satz 19 ist 
+x + z > y + z 
+und 
+y + z = z+y>u+y = y + u, 
+also 
+x + z > y + u. 
+Satz 22: Ans 
+x^y, z>u oder x > y, z>u 
+folgt 
+x + z > y + u. 
+Beweis: Mit dem Gleichheitszeichen in der Voraussetzung 
+durch Satz 19, sonst durch Satz 21 erledigt. 
+Satz 23: Aus 
+x>y, zlSlu 
+folgt 
+x + z>y + u. 
+Beweis: Mit zwei Gleichheitszeichen in der Voraussetzung 
+klar; sonst durch Satz 22 erledigt. 
+Satz 24: x>\. 
+Beweis: Entweder ist 
+x = 1 
+oder 
+x — u' = u +1 :> 1. 
+Satz 25: Aus 
+y>x 
+y = x +1. 
+Beweis: y = x + u, 
+Satz 22—27. 13 
+Satz 27: In jeder nicht leeren Menge natürlicher Zahlen gibt es 
+eine Meinste (d. h. eine, die kleiner ist als jede etwaige andere). 
+Beweis: 3i sei die gegebene Menge. SSI sei die Menge der x, 
+die _j jeder Zahl aus 31 sind. 
+1 gehört zu 3Ji nach Satz 24. Nicht jedes x gehört zu S0J; 
+denn für jedes y aus 31 gehört y + 1 nicht zu 3R, wegen 
+y + l>y-
+Also gibt es in üJt ein m, so daß m + 1 nicht zu ffl gehört; 
+denn sonst müßte nach Axiom 5 jede natürliche Zahl zu 3Jt ge­
+hören. 
+Von jenem m behaupte ich, daß es _i jedem n aus 3t ist und 
+zu 31 gehört. Ersteres steht schon fest. Letzteres folgt indirekt 
+so: "Wäre m nicht zu 31 gehörig, so wäre für jedes n aus 31 
+m < n, 
+also nach Satz 25 
+m + 1 < w; 
+»j +1 würde also zu 9J£ gehören, gegen das Obige. 
+14 Kap. 1: Natürliche Zahlen. § 4: Multiplikation. 
+§ 4. 
+Multiplikation. 
+Satz 28, zugleich Definition 6: Auf genau eine Art läßt sich 
+jedem Zahlenpaar x, y eine natürliche Zahl, x • y genannt (• sprich: 
+mal; aber man schreibt den Punkt meist nicht), so zuordnen, daß 
+1) x • 1 = x für jedes x, 
+2) x • y' — x - y + x für jedes x und jedes y. 
+x • y heißt das Produkt von x mit y oder die durch Multiplikation 
+von x mit y entstehende Zahl. 
+Beweis (mutatis mutandis wörtlich mit dem des Satzes 4 über­
+einstimmend): A) Zunächst zeigen wir, daß es bei jedem festen x 
+höchstens eine Möglichkeit gibt, xy für alle y so zu definieren, daß 
+x • 1 = x 
+und 
+xy' = xy+x für jedes y. 
+Es seien ay and by für alle y definiert und so beschaffen, daß 
+a, = x, bl — x, 
+ayi = ay + x, by> = by + x für jedes y. 
+9R sei die Menge der y mit 
+ay = by. 
+I) a, = x = b,: 
+1 gehört also zu SR. 
+II) Ist y zu 9W gehörig, so ist 
+av = <V 
+also 
+ay. = ay + x = by+x = b,y, 
+also y' zu SR gehörig. 
+Daher ist SR die Menge aller natürlichen Zahlen; d. h. für 
+jedes y ist 
+ay = by. 
+B) Wir zeigen jetzt, daß es zu jedem x eine Möglichkeit gibt, 
+xy für alle y so zu definieren, daß 
+Satz 28—29, Definition 6. 15 
+und 
+xy' = xy + x für jedes y. 
+SR sei die Menge der x, zu denen es eine (also nach A) genau 
+eine) solche Möglichkeit gibt. 
+I) Für 
+x = 1 
+leistet 
+xy = y 
+das Gewünschte. Denn 
+xy' — y' = y + 1 = xy + x. 
+Also gehört 1 zu SR. 
+II) Es sei x zu SR gehörig, also ein xy für alle y vorhanden. 
+Dann leistet 
+x'y = xy + y 
+das Gewünschte bei x'. Denn 
+x' • 1 = X • 1 +1 = # + 1 = x' 
+und 
+#V = xy' + y' = (xy+x)+y' = xy + (x + y') = xy + (x + y)' 
+= xy + (x'+y) = a;y+(y + a/) = (xy + y) + x' = x'y + x'. 
+Also gehört x' zu SR. 
+Daher umfaßt SR alle x. 
+Satz 29 (kommutatives Gesetz der Multiplikation): 
+xy = yx. 
+Beweis: y sei fest, SR die Menge der x, für die die Behaup­
+tung gilt. 
+I) Es ist 
+y-l = y 
+und nach der Konstruktion beim Beweise des Satzes 28 
+1-2/ = y, 
+also 
+1-y = y-l, 
+1 zu SR gehörig. 
+II) Ist x zu SR gehörig, so ist 
+xy = yx, 
+also 
+xy + y = yx + y = yx'. 
+16 Kap. 1: Natürliche Zahlen. § 4: Multiplikation. 
+Nach der Konstruktion beim Beweise des Satzes 28 ist 
+x'y = xy + y, 
+also 
+x'y = yx', 
+also x' zu 9JJ gehörig. 
+Die Behauptung gilt also für alle x. 
+Satz 30 (distributives Gesetz): 
+x (y + z) = xy + xz. 
+Vorbemerkung: Die aus Satz 30 und Satz 29 fließende Formel 
+(y + s) x = yx + zx 
+und ähnliche Analoga späterhin brauchen nicht besonders als Sätze 
+formuliert oder auch nur aufgeschrieben zu werden. 
+Beweis: Bei festen x, y sei W die Menge der z, für die die 
+Behauptung gilt. 
+I) x (y + 1) = xy' = xy + x = xy + X-1; 
+1 gehört zu 9Ä. 
+II) Wenn z zu 9)1 gehört, ist 
+x (y + z) = xy + xz, 
+also 
+x(y + z') = x((y + z)') = x(y + z) + x = (xy + xz)+x 
+= xy + (xz + x) = xy + xz', 
+also s' zu Wt gehörig. 
+Daher gilt die Behauptung stets. 
+Satz 31 (assoziatives Gesetz der Multiplikation): 
+(xy)z — x{yz). 
+Beweis: x und y seien fest, äJi die Menge der z, für die die 
+Behauptung gilt. 
+I) (xy)-\ = xy =• x(y-l); 
+also gehört 1 zu 50i. 
+II) z gehöre zu 3Jt. Dann ist 
+(xy)z = x(yz), 
+also unter Benutzung von Satz 30 
+(xy)z' = (xy)z + xy = x(yz) + xy = x(yz+y) = x(yz'), 
+also z' zu SR gehörig. 
+SR umfaßt also alle natürlichen Zahlen. 
+2) Aus 
+folgt natürlich 
+3) Aus 
+folgt 
+also nach 1) 
+Satz 30—35. 17 
+Satz 32: Aus 
+x > y bzw. x = y bzw. x < y 
+folgt 
+xz > ys bzw. xz = yz bzw. xz<yz. 
+Beweis: 1) Aus 
+x> y 
+folgt 
+x = y + u, 
+xz = (y + u)z = yz +uz> yz. 
+x = y 
+xz = yz. 
+x<y 
+y>x, 
+yz > xz, 
+xz < yz. 
+Satz 33: Aus 
+xz > yz bzw. xz = yz bzw. xz < yz 
+folgt 
+x > y bzw. x = y bzw. x <c y. 
+Beweis: Folgt aus Satz 32, da die drei Fälle beide Male sich 
+ausschließen und alle Möglichkeiten erschöpfen. 
+Satz 34: Aus 
+x > y, z >u 
+folgt 
+xz > yu. 
+Beweis: Nach Satz 32 ist 
+xz > yz 
+und 
+yz = zy>uy = yu, 
+also 
+xz > yu. 
+Satz 35: Aus 
+x^y, z >u oder x > y, z^u 
+folgt 
+xz > yu. 
+Beweis: Mit dem Gleichheitszeichen in der Voraussetzung 
+durch Satz 32, sonst durch Satz 34 erledigt. 
+Landau, Grundlagen der Analysis. 2 
+18 Kap. 1: Natürliche Zahlen. § 4: Multiplikation. 
+Satz 36: Aus 
+xTjiy, z~^iu 
+folgt 
+xz > yu. 
+Beweis: Mit zwei Gleichheitszeichen in der Voraussetzung 
+klar; sonst durch Satz 35 erledigt. 
+Satz 36—39, Definition 7—8. 19 
+Kapitel 2. 
+Brüche. 
+§ i. 
+Definition und Äquivalenz. 
+Definition 7: Unter einem Bruch ~ (sprich: xt über x2) ver­
+steht man das Paar der natürlichen Zahlen xt, x2 (in dieser Reihen­
+folge). 
+Definition S: 
+Satz 37: 
+Beweis: 
+Satz 38: -4ms 
+folgt 
+Beweis: 
+also 
+Satz 39: -4ms 
+Xy 
+x2 
+h 
+y* 
+wenn 
+= ytx,. 
+xl xl 
+x2 x,' 
+xtx2 
+= X.,. 
+X, y_i 
+X-i y. 
+yA 
+xx 
+y* X,' 
+x, yt 
+= 
+= 
+xx yt 
+— 
+yt 
+xt y% 
+X, 
+Beweis: xxy^ = ytx2, yle., = styt 
+folgt 
+20 Kap. 2: Brüche. § 1: Definition und Äquivalenz, 
+also 
+Stets ist 
+(xy)(zu) = aj(y(*«)) == x((yz)u) = a;(u(y*)) = (xu)(yz) 
+daher ist 
+und 
+& = (*/i2/,)(^a) = (*,*,) (y,y,)> 
+folglich nach dem Obigen 
+(*i*i)(ytyi) = (*iOG/i2/2), 
+Auf Grund der Sätze 37 bis 39 zerfallen alle Brüche in Klassen, 
+so daß 
+— CSJ —=-
+^2 2^2 
+Satz 40: 
+Beweis: ^(x^x) — x1(xxs) = {xlx)xi 
+5. und ^ 
+«/* 
+x.x 
+CSJ —i— 
+^2 
+Satz 40—43, Definition 9—10. 21 
+§ 2. 
+Ordnung. 
+Definition 9: xA>h 
+x* y* 
+(> sprich: größer als), wenn 
+xxy,_>yxx^. 
+Definition 10: < 
+(< sprich: Meiner als), wenn 
+00 Ii 
+Satz 41: Sind —, — beliebig, so liegt genau einer der Fälle 
+x* y* 
+x, y, xi ^Vi xi ^ Vx 
+— — , — j=> — , — <- — 
+xt y% xa y% X2 Vi 
+vor. 
+Beweis: Es liegt für xx, xi,yl, y2 genau einer der Fälle 
+= Vi*» xxy2>yi*t, <«/,a2 
+vor. 
+Satz 42: Aus 
+folgt 
+Beweis: Aus 
+folgt 
+Satz 43: Aus 
+?1>Ä 
+y^^-^i 
+y* 
+x1yi>yixt 
+yt-
+x* V* 
+Iv > Ä 
+y, x2' 
+folgt 
+22 Kap. 2: Brüche. § 2 : Ordnung. 
+folgt 
+Satz 44: Aus 
+folgt 
+x.y^y.x, 
+ylx2>xly2. 
+x, y, x, s, y, u, 
+M2 
+^ ;> M! 
+Vorbemerkung: Ist also ein Bruch einer Klasse größer als 
+ein Bruch einer anderen Klasse, so gilt dies für alle Repräsen­
+tantenpaare der beiden Klassen. 
+Beweis: yx u2 = ut y2, zx x2 — x, , x1y2> yt x2, 
+also 
+ly.«.)^!«,) = Ks/,) 
+also nach Satz 32 
+(«/, x2) (z, u2) = (w, £,) (x, y,) > (m, *r3) («/, x2), 
+also nach Satz 33 
+Zx U% > U, Z.-,. 
+Satz 45: ^4ms 
+*I _ «/» 2/, Mi 
+< — , ~ -- , ~ x, y2 x2 z2 y2 u2 
+folgt 
+*i < «*, 
+^2 u2' 
+Vorbemerkung: Ist also ein Bruch einer Klasse kleiner als 
+ein Bruch einer anderen Klasse, so gilt dies für alle Repräsen­
+tantenpaare der beiden Klassen. 
+Beweis: Nach Satz 43 ist 
+V\ > 5 • 
+y2 x,' 
+wegen 
+</* W2 X» Z-l 
+ist also nach Satz 44 
+Beweis: Aus 
+Satz 44—48, Definition 11—12. 23 
+s± < M« 
+Z2 MS ' 
+Definition 11: ^ > 
+> ^ oder x-y ~ . 
+•*2 ?/2 ^2 2^2 
+sprich: größer oder äquivalent.) 
+Definition 12: 
+«2 2/2 
+bedeutet 
+Xl < oder ^ ~ 
+^2 2/2 ^2 2^2 
+(< sprich: kleiner oder äquivalent.) 
+Satz 46: Aus 
+x, > Vi zx yx ux 
+X* Vi X2 2/2 M2 
+Beweis: Mit > in der Voraussetzung ist dies durch Satz 44 
+klar; anderenfalls ist 
+z, x, M, u. 
+«/„ «*, 
+Satz 47: .4ws 
+xLrsjzi y±r*j~y 
+~ y„' «2 ^' j/2 "2 
+folgt 
+Beweis: Mit < in der Voraussetzung ist dies durch Satz 45 
+klar; anderenfalls ist 
+zx xx yl ux 
+•—- r^i — - r~j —- rs^ • — . 
+^2 V* M» 
+Satz 48: ^LMS 
+xi. > h 
+x„ ~ ys 
+also nach Satz 42 
+24 Kap. 2: Brüche. § 2 : Ordnung. 
+Beweis: Satz 38 und Satz 42. 
+Satz 49: Aus 
+folgt 
+~ y, 
+y, 
+Beweis: Satz 38 und Satz 43. 
+Satz 50 (Transitivität der Ordnung): Aus 
+< Ii II < A 
+*2 y»' y, 32 
+folgt 
+Beweis: xt yt < #, x2, yl et < y2, 
+x, 
+also 
+x, z. < z,x.. 
+Satz 51: J.ws 
+*. y. y2 ^ ^ y» y* *• 
+Beweis: Mit dem Aquivalenzzeichen in der Voraussetzung 
+durch Satz 45, sonst durch Satz 50 erledigt. 
+Satz 52: Aus 
+Xt < y. y. < 
+*2~y2' y,~*2 
+<r gi 
+Beweis: Mit zwei Äquivalenz zeichen in der Voraussetzung 
+durch Satz 39, sonst durch Satz 51 erledigt. 
+folgt 
+Satz 49—55. 
+00 
+si X2 
+BEWEIS: (x1 + x1)xt = xtxt + xtXj > x,xs, 
+> 5. 
+x% Xi 
+x 
+Satz 54: Zu —• gibt es ein 
+xi 
+#2 x2 
+Beweis: x, x, < x, x2 + x, xt — x, (x,+x,), 
+X2 -\- X2 xs 
+Satz 55: Ist 
+so gibt es ein — mit 
+x, y, 
+a\ < *t_ < Vi 
+xt s». y* 
+Beweis: xxy% < y,x2, 
+also 
+x,x2 + x,«/„<x,x2 + y,x2, xt«/, + y,y2< yxx% + yly2, 
+*i(*. + yt) < (*. + »i)*n <2/i(A;»+2/2)> 
+Satz 53: Zu — gibt es ein 
+26 Kap. 2 : Brüche. § 3: Addition. 
+§ 3. 
+Addition. 
+X tf 
+Definition 13: Unter -l + y (+ sprich: plus) versteht man den 
+Bruch X^±JL^ . 
+x*y, 
+X V 
+Er heißt die Summe von 1 und —• oder der durch Addition 
+von 1 su --1 entstehende Bruch. 
+y> x, 
+Satz 56: Aus 
+folgt 
+xx yt zx ut 
+— rvj — - r\j - -
+x, yt' z2 u2 
+xt , st y, u, 
+- H <~ — + - • 
+x% z2 y2 u2 
+Vorbemerkung: Die Klasse der Summe hängt also nur von 
+den Klassen ab, zu denen die „Summanden" gehören. 
+Beweis: x,y2 - ytx2, z^t, = uxz2, 
+also 
+(xly1)(ziu2) = (ylx2)(z2u2), (ztu2){x2y2) = K (z2«/,), 
+also 
+(x.z^iy^iK) ' - {ylu2)(x2z2\ (zLx2)(y2u2) = (uly2)(x2z1), 
+(«i^H*/,«,) + 0,0 (*/2« = (ylu2)(x2z2) + (u1y2)(x2z2), 
+(x1z2 + z1x2)(y2u2) = (?/, + ' 
+x1si + ztxi y,«, + «,«/, 
+r*j 
+ry 'y /yt I ry 
+Satz 57: ' + « ~ ' ' 2. 
+Beweis: Nach Definition 13 und Satz 40 ist 
+/y np /v» /y I /y /y (/y> _L /Y> ) /y 
+1 rv —— <-\j ~ r\j 
+/vi /y* /y» -yi /y» /v> 
+Satz 58 (kommutatives Gesetz der Addition): 
+SATZ 50—61, DEFINITION 13. 
+»8 Y4/ ^ x2 \Y» 
+Beweis: 1 + •'' !- * ~ • ' 2 + 1 
+\x2 yj z2 x2y2 z2 
+^ KVj + y, •>;)-2 + u'..?/,) ^ Y2)^ + (Y,*„) + (Y2 
+<>8Y,K ^2(Y2^2) 
+^ (^',I,Y2*S) + (*,?/,)*S) + (-',;'/,)^ (R,(//,z2) + ,R2(y, + (S,f/J 
+^ *2(Y2^) ~ »S(Y»^) 
+^ (y,z_,) + ((Y, g,) X2 + (G, Y./) AR2) ^ (Y, *»)JHM*_+ ^ ^ X* 
+~ ^(Y2*2) ^(Y***) 
+X2 W2G2 x2 \*/2 V 
+Satz 60: 'r' -i- '"1 > *'. 
+xi Y2 
+Beweis: x, y, + yt x2 > AI, Y2, 
+(A?t Y*+Y. X* > K Y») ^ == xi CY2 »2) = ^<X Y2)> 
+, Y. W2 + ?A Z2 AJ, 
+1 IM > —. 
+^ Y2 Y_i •^2 
+Satz 61: Aus 
+folgt 
+^ Y2 
+_|_ zy > Y_i_ _|_ G_I 
+XJ £J W2 
+Beweis: AUS 
+FOLGT 
+WEGEN 
+IST ALSO 
+UND 
+ALSO 
+(xt y2) z2 > (y, xt) z2. 
+[xy)z = x(yz) = x(zy) = (xz)y 
+K*2) Y2>(Y. 
+(^X,)W2 = (G.YJA;,, I 
+(*I *2 + Y2 > (Y. *2 + Y«) ^ • 
+(*, G2 + x2) (y2 z2) > {y, z2 + z, ya) (x2 z2), 
+Beweis: ^ + y*±l±x* ?I£I±M«. r^^ + .->. 
+Y2 x,yt y*xi Y2 X«. 
+Satz 59 (ASSOZIATIVES GESETZ DER ADDITION): 
+28 Kap. 2: Brüche. § 3: Addition. 
+x., y2 x2 yx x3 y., 
+x, z, y, z, , x. z, y. z, 
+-'• + •— > -! + — &sw. 1 + - ~-+-
+#s y2 z2 x2 z2 y., z2 
+ozw. -l + *i<^- + 
+x2 £2 #2 
+Beweis: DER ERSTE TEIL IST SATZ 61, DER ZWEITE IN SATZ 56 
+ENTHALTEN, DER DRITTE EINE FOLGE DES ERSTEN WEGEN 
+> *•, 
+y% x2 
+y, z, x, z, 
++•-, 
+y* z* xz 2i 
+x, z, y, z. 
+Satz 63: Aus 
+folgt 
+x. z, y, z, , x, z. y, z, 
+—'- + —'- > —• + - 1 FEW. -T + ^ivi-'l-5 
+«2 ^2 */2 X2 *>2 Vi Si 
+x. z, y. z, 
+bzw. + •-*- < ^ + J 
+y, K 
+Xl - ^ bzw. Xy ~ V± bzw. Xl 
+xt Vi xs y^ x2 Vi 
+Beweis: FOLGT AUS SATZ 62, DA DIE DREI FÄLLE BEIDE MALE SICH 
+AUSSCHLIEßEN UND ALLE MÖGLICHKEITEN ERSCHÖPFEN. 
+Satz 64: Aus 
+folgt 
+> y_, 2j > «, 
+x.t yt' z% u„ 
+Xy , Ii ¥x + . 
+x., z2 yt «*9 
+Beweis: NACH SATZ 61 IST 
+xa "r £2 2/2 
+x, , x1gi + elxi ylea + gly% yx z, 
+—_ _| r\j >• rv j- — 
+rc2 x2^2 y2 s8 
+Satz 62: ^4ms 
+Satz 62—67. 29 
+also 
+x. z, y, u. •— + — > — + — xa s„ y., u. 
+Satz 65: Aus 
+~ y,' wa x2 y. 
+*. > * *. w« orfer ^ y. 
+x, y, u. 
+— + —• > — + - 1 
+^2 y2 M2 
+Beweis: Mit dem Aquivalenzzeichen in der Voraussetzung 
+durch Satz 56 und Satz 61, sonst durch Satz 64 erledigt. 
+Satz 66: Aus 
+x> > y. *i > «i 
+*2 ~ y2' *2 ~ 
+*» e% y2 M2 
+Beweis: Mit zwei Äquivalenzzeichen in der Voraussetzung 
+durch Satz 56, sonst durch Satz 65 erledigt. 
+Satz 67: Ist 
+x± > yi 
+y2' 
+y2 
+eiwe Lösung —. Siwd — tmd —1 Lösungen, so ist 
+u„ w„ 
+Vorbemerkung: Für 
+< Mi. 
+~ y2 
+gibt es nach Satz 60 keine Lösung. 
+Beweis: Die zweite Behauptung folgt unmittelbar aus Satz 63; 
+denn für 
+a. *» Ä1 y> j- w> 
+1 r-j 1 
+y2 », y2 w>2 
+ist nach jenem Satz 
+1», W„ 
+30 Kap. 2: Brüche. § 3: Addition. 
+DIE EXISTENZ EINES —- (ERSTE BEHAUPTUNG) ERGIBT SICH FOLGENDER­
+es 
+MAßEN. ES IST 
+ES WERDE u aus 
+= Vt^ + u 
+BESTIMMT UND 
+ut = u, m3 = x2y., 
+GESETZT. DANN IST — LÖSUNG WEGEN 
+2/. . m, yt , « 2/,^ , «• y,x,_ + u x,y2 x, — -| r^j 1 r\j 1 r\j — rvi rsj — . 
+2/2 «2 & ^2 2/2 ^2/2 ^2 2/2 «,2/2 ^2/2 X1 
+Definition 14: Das beim Beweise des Satzes 67 konstruierte spe­
+zielle heißt — — — (— SPRICH: MINUS) oder die Differenz X— mi-
+ms x2 y2 x2 
+y y x nus — oder der durch Subtraktion des Bruches — vom Bruche -•' 
+2/2 2/2 »2 
+entstehende Bruch. 
+AUS 
+2/, , «, 
+X2 «/2 V2 
+FOLGT ALSO 
+«2 X2 2/2 
+Satz 68—70, Definition 14—15. 31 
+§ 4. 
+Multiplikation. 
+OC II 
+Definition 15: Unter —- • (-SPRICH: MAL; ABER MAN SCHREIBT 
+xs V* 
+OC tf 
+DEN PUNKT MEIST NICHT) versteht man den Bruch —L-k. 
+xty, 
+Er heißt das Produkt von 1 mit 1 oder der durch Multipli-
+kation von •-' mit —• entstehende Bruch. 
+x2 y» 
+Satz 68: Aus 
+folgt 
+xx yx z, m, 
+— - , — ro — 
+x, y, z. m2 
+^ 5 ^ ^ ^> 
+x, z2 y, u.,' 
+Vorbemerkung: DIE KLASSE DES PRODUKTES HÄNGT ALSO NUR 
+VON DEN KLASSEN AB, ZU DENEN DIE „FAKTOREN" GEHÖREN. 
+Beweis: xty., = ylx.2, z1u3 == utz.,, 
+ALSO 
+(*,&)(*!».) = 
+(*,«,) (ya«2) = {ylu^)(x.1z2), 
+Satz 69 (KOMMUTATIVES GESETZ DER MULTIPLIKATION): 
+x, y, ^ //, 5 
+Vi y* x,' 
+n . x, w. «, Vi x. y. x. 
+Beweis: — — --'."-J- rv/ 1 nj •1 —'. 
+Satz 70 (ASSOZIATIVES GESETZ DER MULTIPLIKATION): 
+32 Kap. 2: Brüche. § 4: Multiplikation. 
+Beweis: + ^a±*.A^ ^^2 + ^ 
+Z2 \YA zj x2 y2z2 x,(yaz.) 
+x, (Y.Q + a-.Q.Y,) ^ xAy^ + xj^y^ rj FOY.K (S, *,)Y. 
+^ (2/2*2) ^(Y***) ^2(^2^2) ~ 0*. Y2) ^ 02OY2 
+^ *,y, , ^ Y *, 
+rvj [ r\j j . 
+X2 Vi X2 Z2 X2 Vi X2 Z2 
+SATZ 73: Aus 
+Xl Vi -L Xl V\ T. Xl Vi 
+-1- > — bzw. — ~ &w. -1 < ~l 
+YS ^ Y2 a?2 Y2 
+folgt 
+x, z. y, z, 7 x, z, y. z. , x, z. y, z, 
+x2 ^ Y2 ^ x2 z2 Y2 ^2 #2 z„ Y2 #2 
+Beweis: 1) Aus 
+*x > y± 
+x2 Y3 
+FOLGT 
+2) AUS 
+FOLGT NACH SATZ 68 
+3) AUS 
+K (Y> *i) > (YI *J *A), 
+^ f», ^ > LIA ^ 1? 
+x2 ^ Y2^ Y2 et 
+xi Vi 
+CO 
+x2 y* 
+*± i». ^ 1«. ,£l 
+^2 ^2 Y2 ^2 
+y2 
+« . I x. y, \ z, x. y. z. (x,«,) z, Beweis: M- ~}~ <~ —- — ~ -p-^— 
+«.(y,*,) x, y,g x, /Y, z,\ 
+^ — ^ — — — 
+X2^tgl) ^2 2M2 ^2 \2/2 V 
+SATZ 71 (DISTRIBUTIVES GESETZ): 
+'.) 
+FOLGT 
+ALSO NACH 1) 
+Satz 71—75. 33 
+Satz 73: Aus 
+x* g2 2/2 *2 g2 2/2 *a «2 */2 g; 
+V, ^, , X, ^. y. 2. 1 x. 2. y, 2, 
+y, 7 X. W. , X. y - l2w. — bziv 1 — J 
+x2 y% x2 y-i x2 y2 
+Beweis: FOLGT AUS SATZ 72, DA DIE DREI FÄLLE BEIDE MALE SICH 
+AUSSCHLIEßEN UND ALLE MÖGLICHKEITEN ERSCHÖPFEN. 
+Satz 74: Aus 
+x, y. 2, u, 
+xi y% u2 
+folgt 
+Sy y \ ^1 
+X2 >?2 U2 
+Beweis: NACH SATZ 72 IST 
+x2 z2 y2 z2 
+UND 
+Vi #2 z2 Vi u2 y% y* u: 
+ALSO 
+XJL t L > y± ^5 
+x2 z2 y2 u%' 
+Satz 75: Aus 
+xi y, z, u, , x, y. z. u, 
+, -±>-± oder —' > —, — >-1 
+Xi Z2 U2 X2 Z^2 ^2 M2 
+?l £l > II Jh. 
+X2 zt y% U2 
+Beweis: MIT DEM ÄQUIVALENZZEICHEN IN DER VORAUSSETZUNG 
+DURCH SATZ 68 UND SATZ 72, SONST DURCH SATZ 74 ERLEDIGT. 
+Landau, Grundlagen der Analysis. 3 
+y2 z3 x2 z2 
+x% z% y% st 
+34 Kap. 2: Brüche. § 4: Multiplikation. 
+xx>Vx fl_ > Ml 
+folgt 
+x-i ~ y2' ~ «, 
+^2 ^2 ^ 2/j M2 
+Beweis: Mit zwei Aquivalenzzeichen in der Voraussetzung 
+durch Satz 68, sonst durch Satz 75 erledigt. 
+Satz 77: Die Äquivalenz 
+II. u. x. 
+^--J-ru-!-, 
+y,«, «2 
+wo — Mwd — gegeben sind, hat eine Lösung —. Sind —- ««d — 
+Lösungen, so ist 
+v, w, 
+— r-v< —-. 
+V, M>2 
+Beweis: Die zweite Behauptung folgt unmittelbar aus Satz 
+73; denn für 
+y, v* ~ y* 
+ist nach jenem Satz 
+v, w, — r*j —-. 
+Die Existenz eines — (erste Behauptung) ergibt sich folgender-
+u2 
+maßen. Für 
+«, = x,yt, u, = x2yt 
+ist ~ Lösung wegen 
+y. ra M. y, r_, «.y, y, ^ (^.^.v. ^ SiCy.y«) ^ *. 
+y2 **, w2 y2 ^y, y, ~ foyjy. ^(y,ya) ~ «2* 
+Satz 76: Aus 
+Satz 76—80, Definition 16—19. 35 
+§5. 
+Rationale Zahlen und ganze Zahlen. 
+Definition 16: Unter einer rationalen Zahl versteht man die 
+Menge aller einem festen Bruch äquivalenten Brüche (ALSO EINE KLASSE 
+IM SINNE DES § 1). 
+GROßE LATEINISCHE BUCHSTABEN BEZEICHNEN DURCHWEG, WOFERN 
+NICHTS ANDERES GESAGT WIRD, RATIONALE ZAHLEN. 
+Definition 17: X = Y 
+(= SPRICH: GLEICH), wenn beide Mengen dieselben Brüche umfassen. 
+Anderenfalls 
+X =# Y 
+(=J= SPRICH: UNGLEICH). 
+TRIVIAL SIND DIE DREI SÄTZE: 
+Satz 78: X = X. 
+Satz 79: Aus 
+X = Y 
+Y = X. 
+folgt 
+Satz 80: Aus 
+folgt 
+X = Y. Y = Z 
+X = Z. 
+Definition 18: • X>Y 
+(> SPRICH: GRÖßER ALS), wenn für einen (ALSO NACH SATZ 44 FÜR JE 
+3C Ii 
+EINEN) Bruch — bzw. — aus der Menge X bzw. Y 
+x,, y, 
+x2 y, 
+ist. 
+Definition 19: X< Y 
+(< SPRICH: KLEINER ALS), wenn für einen (ALSO NACH SATZ 45 FÜR JE 
+EINEN) Bruch —1 bzw. — aus der Menge X bzw. Y 
+x2 - yt 
+x% y* 
+ist. 
+36 Kap. 2: Brüche. § 5: Rationale Zahlen und ganze Zahlen. 
+folgt 
+Beweis: Satz 42. 
+Satz 83: Aus 
+folgt 
+X>Y 
+Y< X. 
+X< Y 
+Y>X. 
+Beweis: Satz 43. 
+Definition 20: X> Y 
+bedeutet 
+X>Y oder X = Y. 
+SPRICH: GRÖßER ODER GLEICH.) 
+Definition 21: X^Y 
+bedeutet 
+X<Y oder X = Y. 
+(F^ SPRICH: KLEINER ODER GLEICH.) 
+Satz 84: Aus 
+folgt 
+Beweis: Satz 48. 
+Satz 85: Aus 
+folgt 
+x;> Y 
+F<X. 
+x<; Y 
+Y>X. 
+Beweis: Satz 49. 
+Satz 86 (TRANSITIVITÄT DER ORDNUNG): Aus 
+X< Y, Y<Z 
+folgt 
+X<Z. 
+Beweis: Satz 50. 
+Satz 87: Aus 
+X< Y, r< Z oder X< Y, Y<Z 
+Satz 81: Sind X, Y beliebig, so liegt genau einer der Fälle 
+X = Y, X>Y, X<Y 
+vor. 
+Beweis: SATZ 41. 
+Satz 82: Aus 
+X< Z. 
+Beweis: Satz 51. 
+folgt 
+Satz 81—96, Definition 20—22. 37 
+X + Z>Y+ Z bzw. X + Z = Y+Zbzw. X + Z< Y+Z. 
+Beweis: Satz 62. 
+folgt 
+Satz 88: Aus 
+X< Y, Y<Z 
+folgt 
+X<Z. 
+Beweis: Satz 52. 
+Satz 89: Zu X gibt es ein 
+Z>X. 
+Beweis: Satz 53. 
+Satz 90: Zu X gibt es ein 
+Z< X. 
+Beweis: Satz 54. 
+Satz 91: Ist 
+X<Y, 
+so gibt es ein Z mit 
+X< Z< Y. 
+Beweis: Satz 55. 
+Definition 22: Unter X+Y (+ sprich: plus) versteht man die 
+Klasse, der eine (also nach Satz 56 jede) Summe eines Bruches aus 
+X und eines Bruches aus Y angehört. 
+Biese rationale Zahl heißt die Summe von X und Y oder die 
+durch Addition von Y zu X entstehende rationale Zahl. 
+Satz 92 (kommutatives Gesetz der Addition): 
+X+Y = Y+X. 
+Beweis: Satz 58. 
+Satz 93 (assoziatives Gesetz der Addition): 
+(X+ Y) + Z= X+{Y+Z). 
+Beweis: Satz 59. 
+Satz 94: X + Y>X. 
+Beweis: Satz 60. 
+Satz 95: Aus 
+X> Y 
+folgt 
+X + Z> Y+Z. 
+Beweis: Satz 61. 
+Satz 96: Aus 
+X> Y bzw. X = Y bzw. X< Y 
+38 Kap. 2: Brüche. § 5: Rationale Zahlen und ganze Zahlen. 
+Satz 97: Aus 
+X + Z> Y+Z bzw. X + Z = Y+Z bzw. X + Z< Y+Z 
+folgt 
+X>Y bzw. X = Y bzw. X< Y. 
+Beweis: SATZ 63. 
+Satz 98: Aus 
+X>Y, Z> II 
+folgt 
+X + Z> Y+ U. 
+Beweis: SATZ 64. 
+Satz 99: Aus 
+X> Y, Z> U oder X>Y, Z^ ü 
+folgt 
+X+Z>Y+U. 
+Beweis: SATZ 6B. 
+Satz 100: Aus 
+X>Y, U 
+folgt 
+X+Z>Y+ U. 
+Beweis: SATZ 66. 
+Satz 101: Ist 
+X> Y, 
+so hat 
+Y+.U = X 
+genau eine Lösung U. 
+Vorbemerkung: FÜR 
+X< Y 
+GIBT ES NACH SATZ 94 KEINE LÖSUNG. 
+Beweis: SATZ 67. 
+Definition 23: Dies U heißt X — Y (— SPRICH: MINUS) oder die 
+Differenz X minus Y oder die durch Subtraktion der rationalen Zahl 
+Y von der rationalen Zahl X entstehende rationale Zahl. 
+Definition 24: Unter X- Y (• SPRICH: MAL; ABER MAN SCHREIBT 
+DEN PUNKT MEIST NICHT) versteht man die Klasse, der ein (ALSO NACH 
+Satz 68 jedes) Produkt eines Bruches aus X mit einem Bruche aus 
+Y angehört. 
+Diese rationale Zahl heißt das Produkt von X mit Y oder die 
+durch Multiplikation von X mit Y entstehende rationale Zahl. 
+Satz 102 (KOMMUTATIVES GESETZ DER MULTIPLIKATION): 
+XY = YX. 
+Beweis: SATZ 69. 
+Satz 97—111, Definition 23—24. 
+Satz 103 (ASSOZIATIVES GESETZ DER MULTIPLIKATION): 
+(XY)Z = X(YZ). 
+Beweis: SATZ 70. 
+Satz 104 (DISTRIBUTIVES GESETZ): 
+X(Y+Z) = XY+ XZ. 
+Beweis: SATZ 71. 
+Satz 105: Aus 
+X>Y bzw. X = Y bzw. X< Y 
+folgt 
+XZ> YZ bzw. XZ = YZ bzw. XZ < YZ. 
+Beweis: SATZ 72. 
+Satz 106: Aus 
+XZ> YZ bzw. XZ = YZ bzw. XZ< YZ 
+folgt 
+X>Y bzw. X = Y bzw. X< F. 
+Beweis: Satz 73. 
+Satz 107: Aus 
+X>Y, Z>U 
+folgt 
+XZ> YU. 
+Beweis: SATZ 74. 
+Satz 108: Aus 
+X>Y, Z>U oder X>Y, Z>V 
+folgt 
+XZ> YU. 
+Beweis: SATZ 75. 
+Satz 109: Aus 
+X^Y, Z> U 
+folgt 
+XZ> YU. 
+Beweis: SATZ 76. 
+Satz 110: Die Gleichung 
+YU = X, 
+wo X und Y gegeben sind, hat genau eine Lösung U. 
+Beweis: SATZ 77. 
+Satz 111: Aus 
+40 Kap. 2: Brüche. § 5: Bationale Zahlen und ganze Zahlen. 
+folgt 
+x>y bzw. x = y bzw. x < y 
+und umgekehrt. 
+Beweis: x-l>y-l bzw. x-1 — y-1 bzw. x-l<y-l 
+bedeutet dasselbe wie 
+x>y bzw. x = y bzw. x<y. 
+Definition 25: Eine rationale Zahl heißt ganz, wenn unter den 
+x 
+Brüchen, deren Gesamtheit sie ist, ein Bruch y vorkommt. 
+Dies x ist nach Satz 111 eindeutig bestimmt, und umgekehrt entspricht jedem x genau eine ganze Zahl. 
+Satz 112: £.+ y.r>Jx+lt 
+x y xy 
+TT~T7-
+Vorbemerkung: Summe und Produkt zweier ganzer Zahlen sind also ganze Zahlen. 
+Beweis: 1) Nach Satz 57 ist 
+x y x + y 
+T + T TT' 
+2) Nach Definition 15 ist 
+x y xy xy 
+Satz 113: Die ganzen Zahlen genügen den fünf Axiomen der 
+natürlichen Zahlen, wenn die Klasse von y an Stelle von 1 genommen 
+x x' 
+wird und als Nachfolger der Klasse von y die Klasse von --- an­
+gesehen wird. 
+Beweis: Q sei die Menge der ganzen Zahlen. 
+1) Die Klasse von y gehört zu 
+2) Zu jeder ganzen Zahl haben wir einen Nachfolger eindeutig 
+erklärt. 
+3) Er ist stets von der Klasse von y verschieden, da stets 
+x' 1. 
+Satz 112—113, Definition 25—26. 41 
+4) STIMMEN DIE KLASSEN VON -z. UND -Y- ÜBEREIN, SO IST 
+x = y, 
+x y 
+x UND DIE KLASSEN VON Y UND Y STIMMEN ÜBEREIN. 
+5) EINE MENGE SR VON GANZEN ZAHLEN HABE DIE EIGENSCHAFTEN: 
+I) DIE KLASSE VON Y GEHÖRT ZU SR. 
+II) FALLS DIE KLASSE VON ZU SR GEHÖRT, SO GEHÖRT DIE KLASSE 
+VON Y ZU SR. 
+DANN BEZEICHNE SR DIE MENGE DER x, FÜR DIE DIE KLASSE VON 
+Y ZU SR GEHÖRT. ALSDANN IST 1 ZU SR UND MIT JEDEM x VON SR AUCH 
+x' ZU SR GEHÖRIG. ALSO GEHÖRT JEDE NATÜRLICHE ZAHL ZU SR, ALSO 
+JEDE GANZE ZAHL ZU SR. 
+DA =, >, <, SUMME UND PRODUKT (NACH SATZ 111 UND 112) 
+DEN ALTEN BEGRIFFEN ENTSPRECHEN, HABEN DIE GANZEN ZAHLEN ALLE 
+EIGENSCHAFTEN, DIE WIR IN KAPITEL 1 FÜR DIE NATÜRLICHEN ZAHLEN BE­
+WIESEN HABEN. 
+DAHER WERFEN WIR DIE NATÜRLICHEN ZAHLEN WEG, ERSETZEN SIE 
+DURCH DIE ENTSPRECHENDEN GANZEN ZAHLEN UND HABEN FORTAN (DA AUCH 
+DIE BRÜCHE ÜBERFLÜSSIG WERDEN) IN BEZUG AUF DAS BISHERIGE NUR VON 
+RATIONALEN ZAHLEN ZU REDEN. (DIE NATÜRLICHEN ZAHLEN VERBLEIBEN 
+PAARWEISE ÜBER UND UNTER DEM STRICH IM BEGRIFF DES BRUCHES, UND 
+DIE BRÜCHE BLEIBEN ALS INDIVIDUEN DER MENGE, DIE RATIONALE ZAHL 
+HEIßT.) 
+Definition 26: (DAS FREIGEWORDENE ZEICHEN) x bezeichnet die ganze 
+00 
+Zahl, die durch die Klasse von Y gegeben ist. 
+IN UNSERER NEUEN SPRACHE IST ALSO Z. B. 
+X-l = X; 
+DENN 
+00^ 1 OC. * 1 00, 
+— csj rsj — . 
+X2 1 xt-l X2 
+42 Kap. 2: Brüche. § 5: Rationale Zahlen und ganze Zahlen. 
+x 
+Satz 114: Ist Z die zum Bruch — gehörige rationale Zahl, so ist 
+yZ — x. 
+„ y x yx xy x Beweis: %— <~ ~— <~ <~ —. 1 y l-y l-y 1 
+Definition 27: Das V des Satzes 110 heißt Quotient von X 
+durch Y oder die durch Division von X durch Y entstehende rationale 
+Zahl. Es werde mit ^ bezeichnet (sprich: X durch Y). 
+Sind X und Y ganze Zahlen, also X — x, Y = y, so be­
+deutet die durch die Definitionen 26 und 27 erklärte rationale Zahl 
+- nach Satz 114 die Klasse, der der Bruch — im alten Sinne an-
+y y 
+gehört. Eine Verwechselung beider Zeichen --- ist nicht zu be­
+fürchten, da Brüche in Zukunft nicht mehr gesondert vorkommen 
+SC 
+werden; es bezeichnet fortan ••- stets eine rationale Zahl. Um-
+y 
+x 
+gekehrt läßt sich jede rationale Zahl in der Form darstellen, 
+auf Grund von Satz 114 und Definition 27. 
+Satz 115: Sind X und Y gegeben, so gibt es ein z mit 
+zX>Y. 
+Y Beweis: ^ ist eine rationale Zahl; nach Satz 89 gibt es (in X 
+unserer neuen Sprache) ganze Zahlen z, v mit 
+* T 
+v > V • 
+Nach Satz 111 ist 
+also nach Satz 105 
+Satz 114—118, Definition 27—29. 43 
+Kapitel 3. 
+Schnitte. 
+§ i-
+Definition. 
+Definition 28: Eine Menge von rationalen Zahlen heißt Schnitt, wenn 
+1) sie eine rationale Zahl, aber nicht jede rationale Zahl enthält; 
+2) jede rationale Zahl der Menge kleiner ist als jede nicht zur 
+Menge gehörige rationale Zahl; 
+3) in ihr keine größte rationale Zahl vorkommt (d. h. Zahl, die 
+größer als jede etwaige andere, von ihr verschiedene ist). 
+Man nennt auch die Menge Unterklasse, die Menge der nicht 
+in ihr enthaltenen rationalen Zahlen Oberklasse und redet ent­
+sprechend von Unterzahlen und Oberzahlen. 
+Kleine griechische Buchstaben bedeuten durchweg, wenn nichts 
+anderes gesagt wird, Schnitte. 
+Definition 29: % = n 
+(= sprich: gleich), wenn jede Unterzahl bei | Unterzahl bei i] und 
+jede Unterzahl bei rj Unierzahl bei % ist. 
+Mit anderen Worten: wenn die Mengen identisch sind. 
+Anderenfalls 
+(=t= sprich: ungleich). 
+Trivial sind die drei Sätze: 
+Satz 116: £ = 
+Satz 117: Aus 
+folgt 
+Satz 118: Aus 
+£ = v 
+l = n, n -
+folgt 
+44 Kap. 3: Schnitte. § 1: Definition. 
+Satz 119: Ist X Obersahl bei g und 
+XX> X, 
+so ist X, Obersahl bei £. 
+Beweis: FOLGT AUS 2) DER DEFINITION 28. 
+Satz 120: Ist X Untersahl bei % und 
+X,< X, 
+so ist Xt Untersahl bei |. 
+Beweis: FOLGT AUS 2) DER DEFINITION 28. 
+NATÜRLICH IST UMGEKEHRT DIE FORDERUNG DES SATZES 120 MIT 
+2) DER DEFINITION 28 IDENTISCH. UM ALSO VON IRGEND EINER MENGE 
+RATIONALER ZAHLEN ZU ZEIGEN, DAß SIE EIN SCHNITT IST, GENÜGT STETS 
+DER NACHWEIS VON: 
+1) SIE IST NICHT LEER, UND ES GIBT EINE RATIONALE ZAHL, DIE NICHT 
+DARIN LIEGT. 
+2) MIT JEDER IHRER ZAHLEN GEHÖRT JEDE KLEINERE DAZU. 
+3) ZU JEDER IHRER ZAHLEN GIBT ES IN IHR EINE GRÖßERE. 
+Satz 119—123, Definition 30—31. 45 
+§ 2. 
+Ordnung. 
+Definition 30: Sind § und tj Schnitte, so ist 
+I > V 
+(> sprich: größer als), tvenn es eine Unterzahl bei £ gibt, die Über­
+zahl bei rj ist. 
+Definition 31: Sind § und tj Schnitte, so ist 
+& < n 
+(< sprich: kleiner als), wenn es eine Oberzahl bei | gibt, die Unter­
+zahl bei 7] ist. 
+Satz 121: Aus 
+1 > R) 
+folgt 
+n < |. 
+Beweis: Es gibt eben eine Oberzahl bei 17, die Unterzahl bei 
+l ist. 
+Satz 122: Aus 
+% < n 
+folgt 
+Beweis: Es gibt eben eine Unterzahl bei tj, die Oberzahl bei 
+i ist. 
+Satz 123: Sind §, v beliebig, so liegt genau einer der Fälle 
+DO»-. 
+Beweis: 1) 
+i = rh £ > tj 
+sind unverträglich nach Definition 29 und Definition 30. 
+£ = V, £ < ^ 
+sind unverträglich nach Definition 29 und Definition 31. 
+Aus 
+46 Kap. 3: Schnitte. § 2: Ordnung. 
+i 
+würde folgen, daß es eine Unterzahl X bei £ gibt, die Oberzahl 
+bei v ist, und eine Oberzahl Y bei £, die Unterzahl bei 7] ist. 
+Nach 2) der Definition 28 wäre also zugleich 
+x < r, x > Y. 
+Folglich liegt höchstens einer der drei Fälle vor. 
+2) Ist 
+£=M, 
+so stimmen die Unterklassen nicht überein. Also ist entweder eine 
+gewisse Unterzahl bei £ Oberzahl bei v und alsdann 
+£ > V, 
+oder eine gewisse Unterzahl bei rj Oberzahl bei £ und alsdann 
+£ < n-
+Definition 32: £ > 
+6erfe««fe£ 
+£ > r/ orfer £ — r/. 
+sprich: größer oder gleich.) 
+Definition 33: £ < ij 
+Z»erfewtfe£ 
+£ < 17 orfer | = i2. 
+sprich: kleiner oder gleich.) 
+Satz 124: Aus 
+folgt 
+Beweis: Satz 121. 
+Satz 125: Aus 
+£=^ 
+folgt 
+Beweis: Satz 122. 
+Satz 126 (Transitivität der Ordnung): Aus 
+£ < 12, 12 < £ 
+£<£• 
+Beweis; Es gibt eine Oberzahl X bei £, die Unterzahl bei y 
+ist; und eine Oberzahl Y bei rj, die Unterzahl bei £ ist. Wegen 
+Satz 124—128, Definition 32—33. 47 
+der Schnitteigenschaft 2) von tj ist 
+x< r, 
+also Y Oberzahl bei £. Daher ist 
+£<?• 
+Satz 127: Aus 
+I = f> n < $ oder £ < % fj^t, 
+folgt 
+£<£• 
+Beweis: Mit dem Grleichheitszeichen in der Voraussetzung klar: 
+sonst durch Satz 126 erledigt. 
+Satz 128: Aus 
+folgt 
+£^£. 
+Beweis: Mit zwei Gleichheitszeichen in der Voraussetzung 
+klar; sonst durch Satz 127 erledigt. 
+48 Kap. 3: Schnitte. § 3: Addition. 
+§ 3. 
+Addition. 
+Satz 129: I) Es seien | und rj Schnitte. Dann ist die Menge 
+der rationalen Zahlen, die sich in der Form X+Y darstellen lassen, 
+wo X Untersahl bei %, Y Untersahl bei r\ ist, ein Schnitt. 
+II) Keine Zahl dieser Menge läßt sich als Summe einer Obersahl 
+bei | und einer Oberzahl bei rj darstellen. 
+Beweis: 1) Geht man von irgend einer Unterzahl X bei | und 
+irgend einer Unterzahl Y bei rj aus. so gehört X+Y zur Menge. 
+Geht man von irgend einer Oberzahl X, bei | und irgend einer 
+Oberzahl bei n aus, so ist für alle Unterzahlen X bzw. Y bei 
+| bzw. rj 
+x<x,, r<r1( 
+also 
+X+Y< Z.+F,, 
+X.+F^X+F; 
+Xj + Y, gehört also nicht zur Menge. Und II) ist schon mitbewiesen. 
+2) Es ist zu zeigen, daß jede Zahl, die kleiner als eine Zahl 
+der Menge ist, auch zur Menge gehört. Es sei also X Unterzahl 
+bei |, Y Unterzahl bei rj und 
+Z<_ X+Y. 
+Dann ist 
+(X+r)xfr<(X + r)-1' 
+also nach Satz 106 
+_Z__ 1 
+X+Y' < ' 
+also nach Satz 105 
+und 
+_ Z 
+Satz 129—132, Definition 34. 49 
+NACH DER ZWEITEN SCHNITTEIGENSCHAFT BEI £ BZW. rj IST ALSO X ^— ^ 
+X+Y 
+BZW. T ^j.—=. UNTERZAHL BEI £ BZW. TI. X+Y ' 
+DIE SUMME DIESER BEIDEN RATIONALEN ZAHLEN IST DAS GEGEBENE 
+Z, WEGEN 
+Z Z Z 
+X X + Y + YX+Y = {X+YyX+Y = Z 
+3) IST EINE ZAHL DER MENGE GEGEBEN, SO HAT SIE DIE FORM 
+X+Y, WO X UNTERZAHL BEI £, Y UNTERZAHL BEI r\ IST. MAN WÄHLE 
+NACH DER DRITTEN SCHNITTEIGENSCHAFT EINE UNTERZAHL 
+X, > X 
+BEI £; DANN IST 
+X,+F> X + Y, 
+ALSO EINE ZAHL DER MENGE > X+Y VORHANDEN. 
+Definition 34: Der in Satz 129 konstruierte Schnitt heißt £ + y 
+(+ SPRICH: PLUS). Er heißt auch die Summe von £ und y oder der 
+durch Addition von r\ zu 5 entstehende Schnitt. 
+Satz 130 (KOMMUTATIVES GESETZ DER ADDITION): 
+l+V = n+t 
+Beweis: JEDES X + Y IST AUCH Y+X UND UMGEKEHRT. 
+Satz 131 (ASSOZIATIVES GESETZ DER ADDITION): 
++ + S = £+0? + Ö-
+Beweis: JEDES (X+ Y) + Z IST AUCH X + (Y+Z) UND UMGEKEHRT 
+Satz 132: Bei jedem Schnitt gibt es, wenn A gegeben ist, eine 
+Unterzahl X und eine Oberzahl U mit 
+U-X = A. 
+Beweis: XT SEI IRGEND EINE UNTERZAHL. WIR BETRACHTEN ALLE 
+RATIONALEN ZAHLEN 
+X, + nA, 
+WO n GANZ IST. SIE SIND NICHT LAUTER UNTERZAHLEN; DENN- IST Y 
+IRGEND EINE OBERZAHL, SO IST 
+r>x„ 
+ALSO NACH SATZ IIB BEI PASSENDEM n 
+nA > F-XT, 
+Xt+nÄ > (Y-X^ + X, = Y, 
+ALSO Xx + nA OBERZAHL. 
+Landau, Grundlagen der Analysis. 4 
+50 Kap. 3: Schnitte. § 3: Addition. 
+IN DER MENGE DER n, FÜR DIE Xt + nA OBERZAHL IST, gibt ES 
+NACH SATZ 27 EINE KLEINSTE GANZE ZAHL; SIE HEIßE u. 
+IST 
+u = 1, 
+SO SETZE MAN 
+X = Xt, ü = Xt+A; 
+IST 
+u > 1, 
+so SETZE man 
+X = Xt + (u-l) A, U = Xt + uA = X + A. 
+JEDESMAL IST X UNTERZAHL, U OBERZAHL UND 
+U-X = A. 
+Satz 133: l + v > £. 
+Beweis: Y SEI EINE UNTERZAHL BEI rj. NACH SATZ 132 WÄHLE 
+MAN EINE UNTERZAHL X BEI £ UND EINE OBERZAHL U BEI £ MIT 
+U-X = Y; 
+DANN IST 
+U = X+Y 
+OBERZAHL BEI £ UND UNTERZAHL BEI £ -f-rj. DAHER IST 
+£ + n > £• 
+Satz 134: Aus 
+I > *j 
+folgt 
+£ + £ > ri + t. 
+Beweis: ES GIBT EINE OBERZAHL Y BEI rj, DIE UNTERZAHL BEI £ 
+IST. MAN WÄHLE EINE GRÖßERE UNTERZAHL 
+X > Y 
+BEI |; X IST ALSO OBERZAHL BEI rj. NACH SATZ 132 WÄHLE MAN BEI 
+£ EINE OBERZAHL Z UND EINE UNTERZAHL U MIT 
+JZ- U = X-Y. 
+DANN IST 
+Y+Z = F+((X-F) + £7) = (F+(X-F))+ = X+ ff, 
+ALSO UNTERZAHL BEI £ + £ UND (NACH SATZ 129, II)) OBERZAHL BEI rj + G. 
+DAHER IST 
+£ + £ > ^ + G. 
+Satz 135; Aus 
+£ > rj bzw. £ = rj bzw. £ < R/ 
+Satz 133—140. 51 
+folgt 
+l + £ > v + £ foie. | + g = v + £ bzw. £ + £ < 1} + £. 
+Beweis: Der erste Teil ist Satz 134, der zweite klar, der 
+dritte eine Folge des ersten wegen 
+,? + £>£ + £, 
+£.+ £<->? + £. 
+Satz 136: 4ms 
+§ + £ > n + £ I + £ = >, + £ £ + £<>,+ £ 
+£ > o^tü. % = 7] bzw. £ < r;. 
+Beweis: Folgt aus Satz 135, da die drei Fälle beide Male 
+sich ausschließen und alle Möglichkeiten erschöpfen. 
+Satz 137: Aus 
+£ > n, £ > u 
+folgt 
+§ + £ > 7] + V. 
+Beweis: Nach Satz 134 ist 
+£ + £>»? + £ 
+und 
+r? + £ = t, + 7]> V + 7] = 7j + V, 
+also 
+£ + £ > 7] + v. 
+Satz 138: Aus 
+£ ^ r], £ > v oder £>•>?, £ > v 
+folgt 
+l + l>7] + V. 
+Beweis: Mit dem Gleichheitszeichen in der Voraussetzung 
+durch Satz 134, sonst durch Satz 137 erledigt. 
+Satz 139 : Aus 
+l > 7], £ > V 
+folgt 
+£ + £ > 7] + V. 
+Beweis: Mit zwei Gleichheitszeichen in der Voraussetzung-
+klar; sonst durch Satz 138 erledigt. 
+Satz 140: Ist 
+4* 
+52 Kap. 3 : Schnitte. § 3: Addition. 
+so hat 
+V + V = L 
+genau eine Lösung v. 
+Vorbemerkung: Für 
+gibt es nach Satz 138 keine Lösung. 
+Beweis: I) Es gibt höchstens eine Lösung; denn für 
+Vl =1= V2 
+ist nach Satz 135 
+n + vt =|= rj + v2. 
+II) Ich zeige zunächst, daß die Menge der rationalen Zahlen 
+der Form X—Y (also X > Y), wo X Unterzahl bei g, YOberzahl 
+bei rj ist, einen Schnitt bildet. 
+1) Wir wissen aus dem Anfang des Beweises des Satzes 134, 
+daß es ein solches X — Y gibt. 
+Keine Oberzahl Xx bei % ist ein solches X—Y; denn für jede 
+Zahl dieser Form ist 
+X- Y< (X- Y) + Y = X < X,. 
+2) Ist ein X—Y obiger Art gegeben und 
+U < X - Y, 
+so ist 
+U + Y< (X-Y)+Y = X, 
+also 
+ü+ Y = X, 
+Unterzahl bei {•, 
+U = X2- Y 
+zu unserer Menge gehörig. 
+3) Ist ein X — Y obiger Art gegeben, so wähle man bei § eine 
+Unterzahl 
+X8> X. 
+Dann ist 
+ix3-r) + r>(x-r)+r, 
+X3-Y> X-Y, 
+also X3— Y eine größere Zahl unserer Menge als die gegebene 
+X- r. 
+Unsere Menge ist also ein Schnitt: er heiße v. 
+Von ihm werden wir 
+N + v = I 
+beweisen. Hierzu genügt es, zweierlei zu zeigen: 
+Definition 35. 53 
+A) Jede Unterzahl bei v + rj ist Unterzahl bei g. 
+B) Jede Unterzahl bei § ist Unterzahl bei V + TJ. 
+Ad A) Jede Unterzahl bei v + r] hat die Form 
+(X-F)+F,, 
+wo X Unterzahl bei £, Y Oberzahl bei TJ, YT Unterzahl bei r\ und 
+X > Y 
+ist. Nun ist 
+F> ri: 
+((x- Y)+rj+(Y— r.) = (X—F)+( F,+(r- r,))=(x- r) + F = x, 
+(X- F) + F, < x, 
+also (X — F) + F, Unterzahl bei |. 
+Ad B) et) Die gegebene Unterzahl bei | sei zugleich Oberzahl 
+bei JJ und heiße alsdann F. Man wähle eine Unterzahl X bei | mit 
+X > Y 
+und nach Satz 132 bei TJ eine Unterzahl Ft und eine Oberzahl 
+. r, mit 
+r2- F, = X- F. 
+Dann ist 
+F> F,, 
+also 
+F,+ (F— YT) = ((X — F)+ F,) + (F— F,) = (X —F) + (F, + (F- F,)) 
+= (X-F)+F = X, 
+F-F, = X-F2, 
+F= (F-FJ+F, = (X-F2)+F1; 
+also F Unterzahl bei v + rj. 
+b) Ist die gegebene Unterzahl bei % Unterzahl bei TJ, so ist 
+sie kleiner als jede in a) als Unterzahl bei V + TJ nachgewiesene 
+rationale Zahl, also selbst Unterzahl bei V + TJ. 
+Definition 35: Bas v des Satzes 140 heißt % — T\ (— sprich: 
+minus). § — y\ heißt auch die Differenz § minus r\ oder der durch 
+Subtraktion des rj von § entstehende Schnitt. 
+54 Kap. 3: Schnitte. §4: Multiplikation. 
+§ 4. 
+Multiplikation. 
+Satz 141: I) Es seien | und rj Schnitte. Dann ist die Menge 
+der rationalen Zahlen, die sich in der Form XY sehreiben lassen, wo 
+X Untersahl bei jj, Y Untersahl bei n ist, ein Schnitt. 
+II) Keine Zahl dieser Menge läßt sich als Produkt einer Obersahl 
+bei ! und einer Obersahl bei rj darstellen. 
+Beweis: 1) Geht man von irgend einer Unterzahl X bei § und 
+irgend einer Unterzahl Y bei rj aus, so gehört XY zur Menge. 
+Geht man von irgend einer Oberzahl X, bei % und irgend einer 
+Oberzahl Yt bei rj aus, so ist für alle Unterzahlen X bzw. Y bei 
+| bzw. tj 
+X<X,, Y<Yt, 
+also 
+I7< X, Y„ 
+X, Yt #= XY; 
+X, Y, gehört also nicht zur Menge. Und II) ist schon mitbewiesen. 
+2) Es sei X Unterzahl bei jj, Y Unterzahl bei v und 
+XY. 
+Dann ist 
+*(i*)-(x£-)* = i.z=4 
+1xZ^1xiXY) = (lxx)Y= Y, Z 
+x X 
+also •= Unterzahl bei 17. Die Gleichung 
+zeigt also, daß Z zu unserer Menge gehört. 
+3) Ist eine Zahl der Menge gegeben, so hat sie die Form XI", 
+wo X Unterzahl bei g, Y Unterzahl bei rj ist. Man wähle bei % 
+eine Unterzahl 
+X,>X; 
+Satz 141—145, Definition 36. 55 
+dann ist 
+I,r>XY, 
+also eine Zahl der Menge >X7 vorhanden. 
+Definition 36: Der in Satz 141 konstruierte Schnitt heißt %rj 
+(•sprich: mal; aber man schreibt den Punkt meist nicht). Er heißt 
+auch das Produkt von | mit n oder der durch Multiplikation von % 
+mit rj entstehende Schnitt. 
+Satz 112 (kommutatives Gesetz der Multiplikation): 
+Beweis: Jedes XY ist auch YX und umgekehrt. 
+Satz 143 (assoziatives Gesetz der Multiplikation): 
+Beweis: Jedes (XY)Z ist auch X(YZ) und umgekehrt. 
+Satz 144 (distributives Gesetz): 
+60?+Ö = 
+Beweis: I) Jede Unterzahl bei g (rj + g) ist 
+X(Y+Z) = XY+XZ, 
+wo X, Y, Z bzw. Unterzahlen bei £, v, £ sind. Die Zahl XY+ XZ 
+ist Unterzahl bei | >? + i; £. 
+II) Jede Unterzahl bei £ v + £ g hat die Form 
+XY+XtZ, 
+wo X, Y, X,, Z bzw. Unterzahlen bei jj, JJ, £, g sind. Im Falle 
+X ^ X, sei die Zahl X, im Falle X < X, die Zahl X, mit X2 be­
+zeichnet. Dann ist X2 Unterzahl bei £, also X2(Y+Z) Unterzahl 
+bei £(JJ + £). Aus 
+iri x, r, 
+x,z^ X2Z 
+folgt 
+xr+x.z^.x.r+x.z = x2(F+z); 
+also ist XY+XtZ Unterzahl bei £(;? + £). 
+Satz 145: Aus 
+£ > t] bzw. £ = rj bzw. £ < »j 
+££>i?£ fcew. |? = nt, bzw. £g<»?£. 
+Beweis: 1) Aus 
+56 Kap. 3: Schnitte. § 4: Multiplikation. 
+folgt nach Satz 140 bei passendem v 
+% = rj + v, 
+also 
+U = fa + v)6 = i?S + v6>i?6. 
+2) Aus 
+i = n 
+folgt natürlich 
+3) Aus 
+folgt 
+also nach 1) 
+vi>U, 
+U<nl-
+Satz 146: Aus 
+U>vibzw- U = vihzw-
+folgt 
+£ > rj bzw. % = rj bzw. %<rj. 
+Beweis: Folgt aus Satz 145, da die drei Fälle beide Male 
+sich ausschließen und alle Möglichkeiten erschöpfen. 
+Satz 147: Aus 
+£>rj, g>« 
+folgt 
+\%>rjv. 
+Beweis: Nach Satz 145 ist 
+%%>rj% 
+und 
+r/t = in > vi] = rj v. 
+also 
+H>rjv. 
+Satz 148: Aus 
+l^rj, £>v oder 
+folgt 
+ll>rjv. 
+Beweis: Mit dem Gleichheitszeichen in der Voraussetzung 
+durch Satz 145, sonst durch Satz 147 erledigt. 
+Satz 149: Aus 
+Satz 146—152, Definition 37. 57 
+und setze 
+Dann ist 
+also 
+Y = ix 
+r< A x, = I, 
+X = X. Y 
+Unterzahl bei £ • 1*. 
+Satz 152: Ist £ gegeben, so hat die Gleichung 
+$v = 1* 
+eine Lösung v. 
+folgt 
+Beweis: Mit zwei Gleichheitszeichen in der Voraussetzung 
+klar; sonst durch Satz 148 erledigt. 
+Satz 150: Für jede rationale Zahl R bildet die Menge der ratio­
+nalen Zahlen < R einen Schnitt. 
+Beweis: 1) Nach Satz 90 gibt es ein X < R. R selbst ist 
+nicht < R. 
+2) Ist 
+X<R, X^R, 
+so ist 
+X< Xt. 
+3) Ist 
+X<R, 
+so gibt es nach Satz 91 ein X, mit 
+X < X, < R. 
+Definition 37: Der in Satz 150 konstruierte Schnitt heißt R*. 
+(Große lateinische Buchstaben mit Sternen bedeuten also Schnitte, 
+nicht rationale Zahlen.) 
+Satz 151: 6 1* = £. 
+Beweis: £-1* ist die Menge aller XY, wo X Unterzahl bei 
+£ und 
+r< i 
+ist. 
+Jedes solche XY ist < X, also Unterzahl bei £. 
+Umgekehrt sei eine Unterzahl X bei £ gegeben. Dann wähle 
+man bei £ eine Unterzahl 
+X. >X 
+58 Kap. 3: Schnitte. § 4: Multiplikation. 
+Beweis: Wir betrachten die Menge aller Zahlen ~, wo X 
+• X 
+eine beliebige Oberzahl bei jj mit etwaiger Ausnahme der kleinsten 
+(wenn es nämlich eine gibt) ist. Wir zeigen, daß diese Menge ein 
+Schnitt ist. 
+1) Es gibt eine Zahl der Menge: denn wenn X eine Oberzahl 
+bei £ ist, ist X+Xauch eine, aber nicht die kleinste, also 
+' ' X + X 
+zur Menge gehörig. 
+Es gibt eine rationale Zahl, die nicht zur Menge gehört; denn 
+ist Xj irgend eine Unterzahl bei £, so ist für alle Oberzahlen X 
+bei l 
+X#= Xt, 
+also, wegen 
+x x = 1 = Xl X 1 
+l i_ 
+X ~l~ X, ' 
+^- ist daher nicht zu unserer Menge gehörig. 
+2) Ist eine Zahl ~ unserer Menge gegeben, also X Oberzahl 
+X 
+bei I, und 
+1 
+so ist 
+*7X< ^ X = 1 = Ujj, 
+also 
+also Oberzahl bei £ und nicht die kleinste; wegen 
+v \j = i, 
+u 
+ist also U zu unserer Menge gehörig. 
+3) Ist eine Zahl unserer Menge gegeben, also X Oberzahl 
+X 
+bei | und nicht die kleinste, so wähle man bei g eine Oberzahl 
+X,< X 
+Satz 152. 59 
+und alsdann nach Satz 91 ein X2 mit 
+X, < Xa < X. 
+Dann ist Xa Oberzahl bei £ und nicht die kleinste; aus 
+X% X X X ~ ^ = X 
+folgt 
+1 1^ 
+X^X' 
+so daß wir eine Zahl unserer Menge gefunden haben, die größer 
+ist als die gegebene. 
+Unsere Menge ist also ein Schnitt; er heiße v. 
+Von ihm werden wir 
+£v = 1* 
+beweisen. Hierzu genügt es, zweierlei zu zeigen: 
+A) Jede Unterzahl bei £v ist < 1. 
+B) Jede rationale Zahl < 1 ist Unterzahl bei £u. 
+Ad A) Jede Unterzahl bei £v hat die Form 
+X 1 
+A X, ' 
+wo X Unterzahl bei £, X, Oberzahl bei £ ist. Aus 
+X<Xt 
+folgt 
+Ad B) Es sei 
+Ü<1. 
+Wir wählen irgend eine Unterzahl X bei £ und dann nach Satz 
+132 eine Unterzahl X, bei £ und eine Oberzahl X, bei £ mit 
+Xa-X, = (1- *7)X. 
+Dann ist 
+X%-Xt<{\-lJ)X„ 
+(X2-X,)+ UX2<(1-ü)Xt + UX, = Xa = (X2 — XJ + X,, 
+ÜX,<Xt, 
+Xa = ^ C/)XA - ~(UXi)<.~jjX1 = -ß . 
+X 
+-=r ist also Oberzahl bei £ und nicht die kleinste. Aus U 
+60 Kap. 3: Schnitte. § 4: Multiplikation. 
+folgt 
+U1J = 
+77 — ?J — X — • 
+U U 
+hier ist X, Unterzahl bei g, ^ Unterzahl bei v; also ist ff Unter­
+ST 
+ff 
+zahl bei g I>. 
+Satz 153: Die Gleichung 
+Vv = g, 
+wo g, 77 gegeben sind, hat genau eine Lösung v. 
+Beweis: I) Es gibt höchstens eine Lösung; denn für 
+ist nach Satz 145 
+IJV1 4= rjv2. 
+II) Ist t die durch Satz 152 als vorhanden nachgewiesene Lö­
+sung von 
+fjt = 1*, 
+so genügt 
+v = t% 
+unserer Gleichung; denn nach Satz 151 ist 
+rjv = jj(tg) = (IJT)| = 1*| - g. 
+g 
+Definition 38: Das v des Satzes 153 heißt — (sprich: | durch 
+I ^ 7/). — heißt auch der Quotient von g durch rj oder der durch Division 
+von g durch rj entstehende Schnitt. 
+Satz 153—155, Definition 38—40. 61 
+§ 5. 
+Rationale Schnitte und ganze Schnitte. 
+Definition 39: Ein Schnitt der Form X* heißt rationaler Schnitt. 
+Definition 40: Ein Schnitt der Form x* heißt ganzer Schnitt. 
+(Kleine lateinische Buchstaben mit Sternen bedeuten also 
+Schnitte, nicht ganze Zahlen.) 
+Satz 154: Aus 
+X>Y bzw. X = Ybzw. X< Y 
+folgt 
+X* > Y* bzw. X* = Y* bzw. X* < Y* 
+und umgekehrt. 
+Beweis: I) 1) Aus 
+X> Y 
+folgt, daß Y Unterzahl bei X* ist. Y ist Oberzahl bei Y*. Also 
+X* > Y*. 
+2) Aus 
+X—Y 
+folgt natürlich 
+X* = Y* 
+3) Aus 
+X< Y 
+folgt 
+Y> X, 
+also nach 1) 
+Y* > X*, 
+X*< Y*. 
+II) Die Umkehrung ist klar, da die drei Fälle beide Male sich 
+ausschließen und alle Möglichkeiten erschöpfen. 
+Satz 155: (X+ Yf = X*+Y*; 
+(X - Yf = X* - r* falls X > Y; 
+(XY)* = X* Z*; 
+/X\* _ X* 
+\Y) ~ Y* ' 
+Beweis: I) a) Jede Unterzahl bei X* + Y* ist die Summe einer 
+62 Kap. 3: Schnitte. § 5: Bationale Schnitte und ganze Schnitte. 
+rationalen Zahl < X und einer rationalen Zahl < F; sie ist also 
+< X + F, also Unterzahl bei (X + F)*. 
+b) Jede Unterzahl U bei (X+ F)* ist < X + F. Aus 
+x + r<J-' 
+r/ = X X + Y + Y X+Y 
+folgt, daß U Summe einer rationalen Zahl < X und einer ratio­
+nalen Zahl < F ist, also Unterzahl bei X* + F* ist. 
+Daher ist 
+(x+ F)* = x*+ r*. 
+II) Aus 
+folgt 
+also nach I) 
+X> Y 
+X = (X-F)+F, 
+X* = (X- F)*+F*, 
+(X-F)* = X*-Y*. 
+III) a) Jede Unterzahl bei X*Y* ist Produkt einer rationalen 
+Zahl <X und einer rationalen Zahl <F; sie ist also < XY, 
+also Unterzahl bei (XYf. 
+b) Jede Unterzahl U bei (XF)* ist < XF. Es werde nach 
+Satz 91 eine rationale Zahl Ul mit 
+U< U1 < XF 
+gewählt. Dann ist 
+und 
+Durch 
+J7 
+X 
+F " 
+X. 
+ü 
+ist also U als das Produkt einer Unterzahl bei X* und einer Unter-
+zahl bei F* dargestellt. U ist also Unterzahl bei X*F*. 
+Daher ist 
+(XF)* = X*F*. 
+IV) X = y-Y, 
+Satz 156. 63 
+also nach III) 
+x* = (4)*r*> 
+(X\*_ x* 
+\ Y) ~ Y* ' 
+Satz 156: Die ganzen Schnitte genügen den fünf Axiomen der 
+natürlichen Zahlen, wenn 1* an Stelle von 1 genommen wird und 
+(x*y = (x'f 
+gesetzt wird. 
+Beweis: Q* sei die Menge der ganzen Schnitte. 
+1) 1* gehört zu 
+2) Zu x* ist (x*)' in Q* vorhanden. 
+3) Stets ist 
+«'4=1, 
+also 
+[x'f 4= 1*, 
+(x*)' 4= 1*. 
+4) Aus 
+(x*y = (y*)' 
+[x'f = (y'T, 
+x' = y', 
+X = y, 
+X* = y*. 
+5) Eine Menge SR* von ganzen Schnitten habe die Eigen­
+schaften : 
+I) 1* gehört zu SR*. 
+II) Ealls x* zu SR* gehört, so gehört (x*)' zu SR*. 
+Dann bezeichne SR die Menge der x, für die x* zu SR* gehört. 
+Alsdann ist 1 zu SR gehörig und mit jedem x von SR auch x' zu 
+SR gehörig. Also gehört jede ganze Zahl zu SR, also jeder ganze 
+Schnitt zu SR*. 
+Da =,>,<, Summe, Differenz (wofern vorhanden), Produkt 
+und Quotient bei rationalen Schnitten nach Satz 154 und Satz 155 
+den alten Begriffen entsprechen, haben die rationalen Schnitte alle 
+Eigenschaften, die wir in Kapitel 2 für rationale Zahlen bewiesen 
+haben, und insbesondere die ganzen Schnitte alle bewiesenen Eigen­
+schaften der ganzen Zahlen. 
+Daher werfen wir die rationalen Zahlen weg, ersetzen sie 
+64 Kap. 3: Schnitte. § 5: Rationale Schnitte und ganze Schnitte. 
+durch die entsprechenden rationalen Schnitte und haben fortan in 
+bezug auf das Bisherige nur noch von Schnitten zu reden. (Die 
+rationalen Zahlen verbleiben aber in Mengen beim Begriff des 
+Schnittes.) 
+Definition 41: (Das freigewordene Zeichen) X bezeichnet den 
+rationalen Schnitt X*, auf den auch das Wort rationale Zahl über­
+geht; ebenso geht das Wort ganze Zahl auf die ganzen Schnitte über. 
+Also schreiben wir jetzt z. B. statt 
+einfach 
+1* 
+i j = i« 
+Satz 157: Die rationalen Zahlen sind die Schnitte, bei denen es 
+eine kleinste Oberzahl X gibt. Und zwar ist alsdann X der Schnitt. 
+Beweis: 1) Beim Schnitt X (dem alten X*) ist X (rationale 
+Zahl im alten Sinne) kleinste Oberzahl. 
+2) Gibt es bei einem Schnitt g eine kleinste Oberzahl X, so 
+ist jede Unterzahl < X, jede Oberzahl 2^ X, der Schnitt also X 
+(das alte X*). 
+Satz 158: Es sei £ ein Schnitt. Dann ist X Unterzahl genau 
+dann, wenn 
+X<6, 
+also Oberzahl genau dann, wenn 
+X^l 
+Beweis: 1) Ist X Unterzahl bei so ist, da X Oberzahl bei 
+X (dem alten X*) ist, 
+X<|. 
+2) Ist X Oberzahl bei jj und zwar die kleinste, so ist nach 
+Satz 157 
+x = i. 
+3) Ist X Oberzahl bei j; und zwar nicht die kleinste, so wähle 
+man eine kleinere Oberzahl X,. Dann ist X, Unterzahl bei X, 
+also 
+x>|. 
+Satz 159: Ist 
+so gibt es ein Z mit 
+!< z< n. 
+Satz 157—161, Definition 41. 65 
+Dann ist 
++ + i' 
+Man wähle Zx und Z% nach Satz 159 mit 
+6<Z,<g + g, n<Z%<n + %. 
+Dann ist 
+z.z^^ + tKv+t) = (§ + 6h + (6 + Ö£^(6 + 6h+G; + iK 
+= (6ij + i?Ö + (£ + l)e = 6fl + ((6 + fl) + l)g^6i? + (^-6i?) = Z. 
+In 
+ist 
+Z.Z' 
+X = |- = Z-±- > (Zt z8) A = z, > £; 
+also Z in gewünschter Weise zerlegt. 
+Satz 161: Hei jedem % hat 
+£6 = s 
+genau eine Lösung. 
+Beweis: I) Es gibt höchstens eine Lösung; denn aus 
+Si> £« 
+folgt 
+I, £, > £ Ja • 
+II) Wir betrachten die Menge der rationalen Zahlen X mit 
+XX <l 
+Sie bildet einen Schnitt. Denn: 
+Landau, Grundlagen der Analysis. 5 
+Beweis: Man wähle eine Oberzahl X bei £, die Unterzahl bei 
+rj ist, und dann eine größere Unterzahl Z bei tj. Dann ist nach 
+Satz 158 
+|^ X< Z<n. 
+Satz 160: Jedes 
+z> in 
+läßt sich auf die Form bringen 
+Z = XY, X^l, Y^rj. 
+Beweis: Es bezeichne % den kleinsten der beiden Schnitte 1 und 
+z-u 
+66 Kap. 3: Schnitte. § 5: Bationale Schnitte und ganze Schnitte. 
+1) Ist 
+so ist 
+Ist 
+so ist 
+2) Aus 
+folgt 
+3) Es sei 
+X<1 und X<£, 
+IX<I-1 == X<g. 
+X ^ 1 und X ^ g, 
+XX ^ X • 1 = X^g. 
+xx<g, r< x 
+YY< XX <g. 
+xx<g. 
+Man wähle Z kleiner als der kleinste der beiden Schnitte 1 und 
+g-XX Dann ist 
+Z<1, Z-
+X + (X + 1) 
+g-xx 
+X + (X + 1)' 
+alsdann ist 
+X + Z> X 
+und 
+(X + Z)(X + Z) = (X + Z)X + (X + Z)Z<(XX + ZX) + (X + 1)Z 
+= XX + (X + (X + 1))£< XX-t-(g-XX) = g. 
+Nennen wir den konstruierten Schnitt |, so behaupten wir 
+nunmehr 
+II = t 
+Wäre 
+ll>£, 
+so wählen wir Z nach Satz 159 mit 
+||>Z>g. 
+Als Unterzahl bei || wäre 
+Z — X, X2, Xj < |, X, < g; 
+wenn X die größte der Zahlen X, und X2 bedeutet, wäre 
+X<|, 
+z^xx<s, 
+gegen das Obige. 
+Satz 162, Definition 42. 67 
+Wir setzen 
+Dann ist 
+Nun ist 
+x—y = u. 
+y + u = x<\' y = y + y, 
+u<y. 
+(v + iv)(v + w) = (v + w) v + (v + w) w = (vv + wv) + (viv+w w) 
+= + iv)) + w w, 
+5* 
+Wäre 
+GG<£, 
+so wählen wir Z nach Satz 159 mit 
+GG<^<£. 
+Z hätte nach Satz 160 die Form 
+Z= X,X2, X.^G, X2^G; 
+wenn X die kleinste der Zahlen X, und X„ bedeutet, wäre 
+X^G, 
+z^ xx^t, 
+gegen das Obige. 
+Definition 42: Jeder Schnitt, der keine rationale Zahl ist, heißt 
+irrationale Zahl. 
+IFSATZ 162: Es gibt eine irrationale Zahl. 
+Beweis: Es genügt zu zeigen, daß die nach Satz 161 vor­
+handene Lösung von 
+GG = R 
+irrational ist. 
+Sonst wäre 
+T _ 5 . 
+* ~ 2/' 
+unter allen solchen Darstellungen wählen wir nach Satz 27 eine 
+solche, in der y möglichst klein ist. Wegen 
+~ ~~ y y ~~ yy 
+ist 
+yy<i'(yy) = xx = (i'y)y<(V y)(Vy), 
+y < x < 1'«/. 
+68 Kap. 3: Schnitte. § 5: Rationale Schnitte und ganze Schnitte. 
+also, 
+y — u — t 
+gesetzt, 
+xx + tt = (y + u)(y + u) + tt = (yy+V (yu)) + (uu + tt) 
+= (yy + (Vu)(u + t)) + (uu + tt) 
+= (yy+V {uu)) + ((V (ut)+uu) + tt) 
+.= (yy + V (uu)) + (u + t){u + t) 
+= (yy+V(uu)) + yy == V (yy)+ V (uu) = a:a; + l'(wit 
+tt = 1'(KM), 
+gegen 
+Satz 163—165, Definition 43. 69 
+Kapitel 4. 
+Reelle Zahlen. 
+Definition. 
+Definition 43: Die Seimitte nennen wir jetzt positive Zahlen; 
+und entsprechend sagen wir jetzt positive rationale Zahl statt bisher 
+rationale Zahl und positive ganze Zahl statt bisher ganze Zahl. 
+Wir erschaffen eine neue, von den positiven Zahlen verschiedene 
+Zahl 0 (sprich: Null). 
+Wir erschaffen ferner Zahlen, die von den positiven und von 0 
+verschieden sind, negative genannt, derart, daß wir jedem % (d. h. jeder 
+positiven Zahl) eine negative Zahl zuordnen, die wir — | (— sprich: 
+minus) nennen. 
+Dabei gelten — £ und — ij als dieselbe Zahl (als gleich) genau 
+dann, wenn £ und ?/ dieselbe Zahl sind. 
+Die Gesamtheit der positiven Zahlen, der 0 und der negativen 
+Zahlen nennen wir reelle Zahlen. 
+Große griechische Buchstaben bedeuten, wenn nichts anderes 
+gesagt wird, durchweg reelle Zahlen. Gleich schreiben wir =, 
+ungleich (verschieden) 4=-
+Für jedes 3 und jedes H liegt somit genau einer der Fälle 
+3 = H, 3 =i= H 
+vor. Bei den reellen Zahlen vermischen sich die Begriffe der 
+Identität und Gleichheit, so daß die drei Sätze trivial sind: 
+Satz 163: 3 = 3. 
+Satz 164: Aus 
+3 — H 
+folgt 
+H = 3. 
+Satz 165: Aus 
+3 = H, H = Z 
+3 = Z. 
+folgt 
+70 Kap. 4: Reelle Zahlen. Sj 2: Ordnung. 
+§2. 
+Ordnung. 
+Definition 44: 
+i
+g, wenn 3 — g, 
+0, wenn 3 = 0, 
+g, weww Ä = — g. 
+Die ZaA/, heißt der absolute Betrag von 3. 
+Satz 166: \S\ ist für positives und negatives 3 positiv. 
+Beweis: Definition 44. 
+Definition 45: Sind 3 und H nicht beide positiv, so ist 
+3>H 
+genau dann, wenn 
+entweder 3 negativ, H negativ und \3\<.\H\. 
+oder 3 — 0, H negativ, 
+oder 3 positiv, H negativ, 
+oder 3 positiv, H = 0. 
+(> sprich: größer als.) 
+Man beachte, daß wir für positives 3 nebst positivem H die 
+Begriffe > und < schon haben und letzteren sogar in dem einen 
+Falle der Definition 45 benutzten. 
+Definition 46: 3<H 
+genau dann, wenn 
+11 > 3. 
+(< sprich: kleiner als.) 
+Man beachte, daß für positives 3 nebst positivem H Definition 
+46 im Einklang mit unseren alten Begriffen steht. 
+Satz 167: Sind 3, H beliebig, so liegt genau einer der Fälle 
+3 = H, 3>H, 3<H 
+vor. 
+Beweis: 1) Sind 3 und H positiv, wissen wir dies aus Satz 123. 
+2) Ist 3 positiv, H = 0 oder H negativ, so ist 
+3^H, 
+ferner nach Definition 45 
+3>H 
+Satz 166—168, Definition 44—48. 71 
+und nach Definition 46 
+3 nicht < 77. 
+3) Ist 3 = 0, 77 positiv, so ist 
+3 4= 77, 
+femer nach Definition 45 
+3 nicht >77 
+und nach Definition 46 
+3 < 77. 
+4) Ist 3 = 0, 77 = 0, so ist 
+3 = H, 
+3 nicht > 77, 
+3 nicht < 77. 
+5) Ist S = 0, 77 negativ, so ist 
+S=¥H, 
+3>H, 
+3 nicht < 77. 
+6) Ist 3 negativ, 77 positiv oder 77 = 0, so ist 
+£#= 77, 
+3 nicht > 77, 
+3 < 77 
+7) Ist 3 negativ, 77 negativ, so ist 
+S =N 77, 3>H, 3 nicht < 77 für | G| < |77J, 
+A = 77, 3 nicht > 77, £ nicht < 77 für 13\ = j77|, 
+3 4= 77, Ä nicht > 77, S< 77 für |Sj > |77J. 
+DEFINITION 47: 3 > 77 
+OEDEWTE£ 
+3> H oder 3 — 77. 
+(2I sprich: größer oder gleich.) 
+DEFINITION 48: £ ^ 77 
+oedewfei 
+3 < 77 ODER 3 — H. 
+sprich: kleiner oder gleich.) 
+SATZ 168: ^4«S 
+£>77 
+77<£ 
+wwd umgekehrt. 
+BEWEIS: Definition 46. 
+72 Kap. 4: Reelle Zahlen. § 2: Ordnung. 
+ist gewiß 
+2) Es sei 
+Dann ist 
+also 
+3) Es sei 
+Dann ist 
+5<0, 
+s < z. 
+Z = 0. 
+77 <0, 
+3<0, 
+3< z. 
+Z<0. 
+#<0, 
+S<0. 
+Satz 169: Die positiven Zahlen sind die Zahlen >0; die nega­
+tiven Zahlen sind die Zahlen < 0. 
+Beweis: 1) Nach Definition 45 ist 
+i>o. 
+2) Aus 
+folgt nach Definition 45 
+S = l 
+3) Nach Definition 46 ist 
+-£<0. 
+4) Aus 
+£<0 
+folgt nach Definition 46 
+S = -t 
+Satz 170: |Ä|>0. 
+Beweis: Definition 44, Satz 166 und Satz 169. 
+Satz 171 (Transitivität der Ordnung): Aus 
+3 < //, n< z 
+folgt 
+S< Z. 
+Beweis: 1) Es sei 
+Z >0. 
+Falls 
+3>0, 
+ist 
+H >0, 
+und wir haben den alten Satz 126. 
+Falls 
+Satz 169—173, Definition 49-51. 73 
+Ferner ist 
+\3\>\H\, \H\>\Z\, 
+also 
+|S|>|Z|, 
+A< Z. 
+Satz 172: Aus 
+S^H, H < Z oder * < //, //^ Z 
+/bZfltf 
+Z. 
+Beweis: Mit dem Gleichheitszeichen in der Voraussetzung klar: 
+sonst durch Satz 171 erledigt. 
+Satz 173: Aus 
+3^H, H<Z 
+folgt 
+3^Z. 
+Beweis: Mit zwei Gleichheitszeichen in der Voraussetzung 
+klar; sonst durch Satz 172 erledigt. 
+Definition 49: Ist 
+3^0, 
+so heißt 3 rational, wenn 
+3 = 0 
+oder 
+3 < 0, [ 31 rational. 
+Wir haben also jetzt positive rationale Zahlen, die rationale 
+Zahl 0 und negative rationale Zahlen. 
+Definition 50: Ist 
+£<0, 
+so heißt 3 irrational, wenn es nicht rational ist. 
+Wir haben also jetzt positive irrationale Zahlen und negative 
+irrationale Zahlen. (Zahlen'? Ja; wir hatten ein irrationales £; 
+also ist die positive Zahl % + X stets irrational, da aus 
+l + X = Y 
+folgen würde 
+l == Y-X; 
+und — (| + X) ist stets negativ irrational.) 
+Definition 51: Ist 
+3^0, 
+so heißt 3 ganz, wenn 
+3 = 0 
+oder 
+£<0, \3 \ ganz. 
+74 Kap. 4: Reelle Zahlen. § 2: Ordnung. 
+Wir haben also jetzt positive ganze Zahlen, die ganze Zahl 0 
+und negative ganze Zahlen. 
+Satz 174: Jede ganze Zahl ist rational. 
+Beweis: Für die positiven Zahlen wissen wir das; für 0 und 
+negative Zahlen folgt es aus Definition 49 und Definition 51. 
+Satz 174—175, Definition 52. 75 
+Addition. 
+Definition 52: 
+-(\g\ + \H\) , wenn 3<0, #<0; 
+0 /, wenn 3>0, H<0, \3\ = \H\; 
+3 + H = { _(|//|_|£|)J [\S)<\H\; 
+H+3 , wenn A<0, H>0; 
+H , «üeww Ä = 0; 
+3 , wenn H = 0. 
+(+ sprich: plus.) 3 + H heißt die Summe von 3 und H oder die 
+durch Addition von H zu 3 entstehende Zahl. 
+Man beachte bei dieser Definition: 
+1) Für 
+3>0, II > 0 
+haben wir den Begriff 3 + H schon aus Definition 34. 
+2) Er wurde auch in Definition 52 benutzt. 
+3) Der dritte Fall der Definition benutzt den Begriff der 
+Summe im zweiten Fall. 
+4) Der vierte und fünfte Fall überdecken sich, wenn 
+S = H = 0; 
+aber dann ist die als 3+H definierte Zahl die gleiche (nämlich 0). 
+Satz 175 (kommutatives Gesetz der Addition): 
+3+H = H+3. 
+Beweis: Für 
+3 = 0 
+sind beide Zahlen H; für 
+H = 0 
+sind beide Z. 
+Für 
+3>0, H > 0 
+liegt der alte Satz 130 vor. 
+76 Kap. 4: Reelle Zahlen. § 3: Addition. 
+Für 
+A<0, #< 0 
+ist nach Satz 130 
+3 + H = -(\3\+\H\) - -(\H\ + \3\) = H+3. 
+Für 
+£<0, H>0 
+war die Behauptung geradezu Definition. 
+Für 
+S'>0, /7<() 
+ist nach dem vorangehenden Fall 
+H + 3 = 3 + H, 
+also 
+3 + H = # + 
+Definition 53: — 3 = j , ü, « _ n 
+( \3\ für 3 < 0. 
+(— sprich: minus.) 
+Man beachte, daß wir für 5 > 0 den Begriff — 3 aus Defi­
+nition 43 schon haben. 
+Satz 176: Ist 
+3 > 0 FRSW. 3 — 0 bzw. 3 < 0, 
+so is£ 
+— £< 0 bzw. —3 — 0 bzw. —3>0 
+und umgekehrt. 
+Beweis: Definition 43 und Definition 53. 
+Satz 177: -(-3) = 3. 
+Beweis: Definitionen 43, 44 und 53. 
+Satz 178: \-3\ = \3\. 
+Beweis: Definitionen 43, 44 und 53. 
+Satz 179: 3+ (-3) = 0. 
+Beweis: Definition 52, Definition 53 und Satz 178. 
+Satz 180: -(3 + H) = -3 + (-H). 
+Beweis: Nach Satz 175 ist 
+-(3 + H) = -(H+3) 
+und 
+-3 + (-H) = -H+(-3); 
+daher darf ohne Beschränkung der Allgemeinheit 
+S^H 
+Satz 176—180, Definition 53. 77 
+vorausgesetzt werden; denn mindestens eine der Relationen 
+5^ TL H^S 
+besteht, und aus 
+-(H + 3) = -H+(-3) 
+folgt eben 
+-(3 + H) = -3 + (-H). 
+Es sei also 
+3^ IL 
+1) Ist 
+B>0, H>0, 
+so ist 
+-3 + (-H) = - (3+H). 
+2) Ist 
+3>0, H = 0, 
+so ist 
+-3 + (-H) = -3 + 0 = -3 = -(3 + 0) = -(3 + H). 
+3) Ist 
+3>0, //< 0, 
+so ist 
+entweder 
+3>\H\, 
+also 
+3 + H = 3-\H\, 
+-3 + (-H) = -3+\H\ = -(3-\H\) = -(S + H): 
+oder 
+3 = \H\, 
+also 
+3+H = 0, 
+-3+(-H) = -3+\H\ = 0 = -(Ä + /J); 
+oder 
+Ä<|//|, 
+also 
+3 + H = - (\H\-S), 
+-B + (-H) = -3+\H\ = \H\-S = -(S + H). 
+4) Ist 
+3=0, 
+so ist 
+-£• + (-//) = 0 + (- H) = -H = -(0 + H) = -(S + H). 
+5) Ist 
+S<0, 
+so ist 
+/7<0, 
+S + = -(|S| + |/7|). 
+-3+(-H) = \ S\ + \H\ = - (S + H). 
+78 Kap. 4: Reelle Zahlen. § 3: Addition. 
+Definition 54: 3-H = S + (-H). 
+(— sprich: minus.) 3 — H heißt die Differenz 3 minus H oder die 
+durch Subtraktion des H von 3 entstehende Zahl. 
+Man beachte, daß Definition 54 (wie es sein muß) für 
+3>H>0 
+mit der alten Definition 35 übereinstimmt; denn dann ist 
+3>0, -//<0. [3\>\-H\, 3 + (-H) = \3\-\-H\ = 3-H 
+Satz 181: -(3-H) = H-S. 
+Beweis: Nach Satz 180 und Satz 177 ist 
+-(3-H) = -(3 + (-H)) = -3+(-(-H)) - -3 + H = H+(-3) 
+= H-S. 
+Satz 182; Aus 
+3-H>0 bzw. 3-H = 0 bzw. 3- H< 0 
+folgt 
+3 > H bzw. 3 = H bzw. 3 < H 
+und umgekehrt. 
+Beweis: Da — H auch eine beliebige reelle Zahl ist, darf 
+man — H statt H schreiben und hat demnach das Entsprechen der 
+Fälle bei 
+3 + H > 0 bzw. 3 + H = 0 bzw. 3 + H < 0 
+und 
+3 >— H bzw. 3 — — H bzw. 3 < — H 
+zu zeigen. 
+In der Tat ist für 3 — 0 oder H = 0 die Behauptung klar: 
+im übrigen gelten im Fall 
+3>0, H>0 
+und in den drei ersten Fällen der Definition 52, wenn der dritte 
+in die drei Unterfälle 
+\H\>\3\, \H\ = \3\, \H\<[3\ 
+zerlegt wird, beide Male resp. die Zeichen 
+><> = <:> = <. 
+Satz 183: Aus 
+3> H bzw. 3 = H bzw. 3< H 
+I 
+Satz 181—185, Definition 54. 79 
+so ist 
+2) Ist 
+so ist 
+3) Ist 
+so ist 
+3>0, 
+= 
+3 = 0, 
+3 = 1-1. 
+S<0, 
+-S = |Ä| = ([Ä| + l)-l, 
+3 = _((|S| + 1)-1) = + 
+Satz 185: Aus 
+3 = H = ^-I?, 
+S + tf = + -fc + I?,). 
+Beweis: 1) Es sei 
+£>0, i7>0. 
+Dann ist, da 
+(a + ß) + (y + d) = (« + £) + (* + ,,) = ((« + /?) + <J) + R 
+= Y + (« + (/J + *)) = (Y + A) + (/J + tf) 
+ist, 
+(S++ & + = + 
+also die Behauptung wahr. 
+folgt 
+— 3 < — H bzw. — 3 = — H bzw. — 3 > — H 
+und umgekehrt. 
+Beweis: Nach Satz 182 entspricht ersteres den Fällen 
+3-H>0 bzw. 3-H = 0 bzw. 3-H<.0, 
+letzteres den Fällen 
+-H-(-3)>0 bzw. -H-{-3) = 0 bzw. -J/-(-3)<0; 
+also liefert 
+-H-(-3) = -H+(-(-3)) = -JF+Ä = 3 + (-H) = 3-H 
+alles. 
+Satz 184: Jede reelle Zahl läßt sich als Differenz zweier positiver 
+Zahlen darstellen. 
+Beweis: 1) Ist 
+80 Kap. 4: Reelle Zahlen. § 3: Addition. 
+2) Es sei 
+3<0, 27<0. 
+Dann ist nach Satz 181 
+It-lx = -3>0, == -H>0, 
+also nach 1) 
+-3 + (-H) = •(61 + %)_(gI + t?i), 
+3 + H = _(_£+(-77)) = (g1 + J?1)-(g2 + r/2). 
+3) Es sei 
+S>0, Z/<0, 
+also 
+6I-6«>0, »?2 — > 0. 
+A) Ist 
+3>\H\, 
+so ist 
+II-!. >'?.-'2I> 
+also 
+6, + FLI = ((6. - + 60 + % = & - Ü + (6.+Vi) = (l+Vi) + & - 6.) 
+= (6,+vi)+((% - +(D. - Y - (i. - ^.Ö) 
+= ((6,+IJJ + fo, - Vi)) + (& -6.) - (v, - Vi)) 
+= (S,+fo. + ta, - Vi))) + (& - W - fa, - IJ J) 
+= (6.+ ((&.-5.)-(17.-1,)), 
+(fe + q.)= &-g,)-0j,-fl,) = 3-\H\ = 3 + H. 
+B) Ist 
+S<|#|, 
+so ist nach A) 
+S + H = _(_//+(_£)) = + 
+= (ti+vd-fc+vJ-
+C) Ist 
+Ä = \H\, 
+also 
+SI — S2 = V%-Vi, 
+so ist 
+SI == t* + (v,-v,), 
+t. + FI = 62 + ^2) 
+S + J5T = 0 = (gl+r?l)_(g2 + rj2). 
+4) Es sei 
+A<0, Ii > 0. 
+Satz 186—187. 81 
+Dann ist nach 3) 
+3+H = (G,+ 1,0 -(6, + %). 
+5) Es sei 
+3 = 0. 
+Dann ist 
+6, = 6., 
+S + /f = H. 
+a) Für 
+ist 
+K-%) + (£I + %) = (FAI-F.L + ^ + SI = *2i + £I = + 
+b) Für 
+rA - % 
+ist 
+H = 0 = (gi + J?i)-(!,+ ,,,). 
+c) Für 
+»2i < % 
+ist nach a) 
+ff = -(-77) = 
+6) Es sei 
+// = 0. 
+Dann ist nach 5) 
+3+H = H+3 = fo,+ &)-(%+&,) = & + >/,)-&+»/.)• 
+Satz 186 (assoziatives Gesetz der Addition): 
+(3+H)+Z = 3 + (H+Z). 
+Beweis: Nach Satz 184 ist 
+3 = SI —H = nt-u%, Z = 
+Nach Satz 185 ist 
+(S + 7J) + Z = ((6, + ^)-(6,+ %)) + (&,-&) 
+= ((6, + ^)+ 6.)-((&, + %)+ 6.) = (6,+ FOI+ £,))-(5.+(%+«) 
+= (6, - 6.) + (IN, + Ü - fo, + £.)) = 3 + (H+Z). 
+Satz 187: J5e» gegebenen 3, H hat 
+H+Y = £ 
+Landau, Grundlagen der Analysis. 6 
+82 Kap. 4; Reelle Zahlen. § 3 : Addition. 
+genau eine Lösung Y, nämlich 
+Y = 3-H. 
+Beweis: 1) Y = 3 — H 
+ist eine Lösung, da nach Satz 186 
+H + (3-H) = (3-H)+H = {3 + (-H))+H = 3+{-H+H) 
+= 3 + 0 = 3. 
+2) Aus 
+H+Y = 3 
+folgt 
+3-H = 3 + (-H) = -H+3 = -H+{H+Y) = {- H+H)+Y 
+= 0 + Y = Y. 
+Satz 188: Es ist 
+3 + Z > H + Z 6^w. £ + Z = /7 + Z few. S + Z < H + Z, 
+,;'e nachdem 
+3> H bzw. 3—H bzw. 3< H. 
+Beweis: Nach Satz 182 gilt ersteres, je nachdem 
+(ff+Z)-(F+Z)>0 bzw. (£ + Z)-(77+Z) = 0 
+bzw. (S+Z)-(fT+Z)<0; 
+letzteres, je nachdem 
+3 — H > 0 bzw. 2-/7 = 0 bzw. £- 77<0. 
+Aus 
+(* + Z) -(77+ Z) = (3+ Z) + (-Z + (- 77)) = (3+ (Z+ (-Z))) + (- /7) 
+= S + (-77) = 3-H 
+folgen also die Behauptungen. 
+Satz 189: Aus 
+3> H, Z>Y 
+folgt 
+3+Z>H + Y. 
+Beweis: Nach Satz 188 ist 
+3 + Z> H + Z 
+und 
+77 + Z = Z + H>Y + H = H+Y, 
+also 
+3 + Z > H + Y. 
+Satz 190: Aus 
+3 > H, Z > Y oder 5>H, Z>Y 
+Satz 188—191. 83 
+6* 
+folgt 
+S+Z> H+Y. 
+Beweis: Mit dem Grleichheitszeichen in der Voraussetzung 
+durch Satz 188, sonst durch Satz 189 erledigt. 
+Satz 191: Aus 
+S> H, Z> Y 
+folgt 
+S + Z> H+Y. 
+Beweis: Mit zwei Grleichheitszeichen in der Voraussetzung 
+klar; sonst durch Satz 190 erledigt. 
+84 Kap. 4: Reelle Zahlen. § 4: Multiplikation. 
+§ 4. 
+Multiplikation. 
+Definition 55: 
+I
+— wenn 3>0, // < 0 oder 3<0, H>0; 
+\3\\H\, wenn S<0, H<0; 
+0, wenn 3 = 0 oder H = 0. 
+(• sprich: mal; aber man schreibt den Punkt meist nicht.) 3 • H 
+heißt das Produkt von 3 mit H oder die durch Multiplikation von 3 
+mit H entstehende Zahl. 
+Man beachte, daß 3 • H für 3 > 0, H > 0 uns schon aus Defi­
+nition 36 bekannt ist, was ja auch in Definition 55 benutzt wurde. 
+Satz 192: Es ist 
+3H = 0 
+DANN und nur dann, wenn mindestens eine der beiden Zahlen 3, H 
+Null ist. 
+Beweis: Definition 55. 
+Satz 193: \3 H\ = \3\\U\. 
+Beweis: Definition 55. 
+Satz 194 (kommutatives Gesetz der Multiplikation): 
+3 H — B 3. 
+Beweis: Das ist für 3>0, H > 0 der Satz 142 und folgt 
+sonst aus Definition 55, da die rechte Seite dieser Definition (nach 
+Satz 142) und die Pallunterscheidung in 3, H symmetrisch sind. 
+Satz 195: 3-1 = 3-
+Beweis: Für 3 > 0 folgt dies aus Satz 151; für 3 = 0 aus 
+Definition 55: für 3 < ü ist nach Definition 55 
+3-1 = -(|Ä|-1) = -\3\ = 3. 
+Satz 196: Ist 
+S =|= 0, H =|= 0, 
+so ist 
+3H = \3\\H\ bßw. SH = -i\3\\H\), 
+je nachdem keine oder zwei bzw. genau eine der Zahlen 3, H negativ sind. 
+Satz 192—200, Definition 55. 85 
+Beweis: Definition 55. 
+Satz 197: (~3)H = 3(-H) = — (3H). 
+Beweis: 1) Ist eine der Zahlen 3, H Null, so sind alle drei 
+Ausdrücke 0. 
+2) Ist 
+3 4= o, ##=0. 
+so haben nach Satz 193 alle drei Ausdrücke denselben absoluten 
+Betrag |£||2I|, und nach Satz 196 sind alle drei >0 bzw. < 0, 
+je nachdem genau eine bzw. keine oder zwei der Zahlen 3, H 
+negativ sind. 
+Satz 198: (-3)(-H) = 3H. 
+Beweis: Nach Satz 197 ist 
+(-3)(-H) = 3{-{-H)) = 3H. 
+Satz 199 (assoziatives Gesetz der Multiplikation): 
+(3H) Z = 3 (HZ). 
+Beweis: 1) Ist eine der Zahlen 3, H, Z Null, so sind beide 
+Seiten der Behauptung 0. 
+2) Ist 
+3 4=0, #4=0, Z4=0, 
+so haben nach Satz 193 beide Seiten denselben absoluten Betrag 
+(\3\\H\)\Z\ = |Ä|(|ff|[Z|), 
+und nach Satz 196 sind beide Seiten > 0 bzw. < 0, je nachdem 
+keine oder genau zwei bzw. genau eine oder drei der Zahlen 3, 
+H, Z negativ sind. 
+Satz 200: gfo-g) = grj-gg. 
+Beweis: 1) Für 
+ist 
+(v-i) + i - % 
+also nach Satz 144 
++ = in, 
+gfa-g) = gr/-gg. 
+2) Für 
+i? = g 
+ist 
+u = u, 
+g(rj-g) = g-0 = 0 = gi,-gg. 
+86 Kap. 4: Reelle Zahlen. § 4: Multiplikation. 
+3) Für 
+ist nach 1) 
+$(t-v) = U-iv, 
+gfo-ß) = g(-(g-q)) - -(g(g-i?)) = -(ge-gi?) = g^-gg. 
+Satz 201 (distributives Gesetz): 
+S(H+Z) = SH+SZ. 
+Beweis: 1) Es sei 
+5>0. 
+Nach Satz 184 ist 
+nach Satz 185 somit 
+H+Z = (t2l+g1)-(^+y, 
+also nach Satz 200 und Satz 144 
+S(H+Z) = Sfa + tt-Sfa+Ü = {S^ + SQ-iS^ + SQ, 
+also nach Satz 185 und Satz 200 
+S(H+Z) = (g^-Svi + iS^-sü = SiK-nJ + Bfa-tt 
+= SH+SZ. 
+2) Es sei 
+S = 0. 
+Dann ist 
+S(H+Z) = 0 = SH+SZ. 
+3) Es sei 
+£<0. 
+Dann ist nach 1) 
+(-S)(H+Z) = (_£)tf + (-Ä)Z, 
+also 
+-(£(#+Z)) = {-B)H+{-S)Z, 
+S(H+Z) = -((-S)H+(-8)Z) = -((-8)H) + (-((-B)Z)) 
+= SH+SZ. 
+Satz 202: 3(H-Z) = SH-SZ. 
+Beweis: Nach Satz 201 ist 
+S(H-Z) = S(H+(-Z)) = SH + S(-Z) = SH+(-(3Z)) 
+= SH-SZ. 
+Satz 203: Es sei 
+3>H. 
+Satz 201—204. 
+eine Lösung wegen 
+HY = , 
+2) Es sei 
+H<0. 
+Aus 
+Z > 0 bzw. Z = 0 bzw. Z < 0 
+FOLGT DANN 
+3Z>HZ bzw. SZ - HZ bzw. 3Z<HZ. 
+Beweis: 3 — H > 0, 
+also 
+{3-H)Z>0 bzw. (3-H)Z = 0 bzw. (S-H)Z< 
+je nachdem 
+Z > 0 bzw. Z = U bzw. Z < 0. 
+Da nach Satz 202 
+(3-H)Z = Z(3-H) = Z3-ZH = 3Z-HZ 
+ist, ist in diesen Fällen nach Satz 182 
+3Z>HZ bzw. = //Z bzw. 3Z< HZ. 
+Satz 204: Die GLEICHUNG 
+HY = 3, 
+wo 3, H GEGEBEN SIND UND 
+H H= 0 
+IST, HAT GENAU EINE LÖSUNG Y. 
+Beweis: I) Es gibt höchstens eine Lösung; denn aus 
+HY, = 3 = HY, 
+folgt 
+0 = HYL-HYI = H(YT-Y,), 
+also nach Satz 192 
+0 = Y.-Y,, 
+F, = F8. 
+II) 1) Es sei 
+H>0. 
+Dann ist 
+88 Kap. 4: Reelle Zahlen. § 4: Multiplikation. 
+Dann ist 
+eine Lösung. Denn nach 1) ist 
+3 = = \H\(-Y) = (-\H\)Y=HY. 
+Definition 56: Das Y des Satzes 204 heißt — (sprich: 3 durch 
+II 
+H). -^r heißt auch der Quotient von 3 durch H oder die durch Division Ii 
+von 3 durch H entstehende Zahl. 
+Man beachte, daß (wie es sein muß) dies für 3 > 0, H > 0 mit 
+der alten Definition 38 übereinstimmt. 
+Satz 205, Definition 56. 89 
+§ 5. 
+Dedekindscher Hauptsatz. 
+Satz 205: Gegeben sei irgend eine Einteilung aller reellen Zahlen 
+in zwei Klassen mit folgenden Eigenschaften. 
+1) Es gibt eine Zahl der ersten Klasse und eine Zahl der zweiten 
+Klasse. 
+2) Jede Zahl der ersten Klasse ist kleiner als jede Zahl der 
+zweiten Klasse. 
+Dann gibt es genau eine reelle Zahl 3, so daß jedes H < 3 zur 
+ersten, jedes H > 3 zur zweiten Klasse gehört. 
+Mit anderen Worten: Jede Zahl der ersten Klasse ist 5? 3, 
+jede Zahl der zweiten Klasse > 3-
+Torbemerkung: Es ist umgekehrt klar, daß jede reelle Zahl 
+3 genau zwei solche Einteilungen erzeugt: die eine mit H^S 
+als erster, H > 3 als zweiter Klasse; die andere mit H < 3 als 
+erster, H^.3 als zweiter Klasse. 
+Beweis : A) Mehr als ein solches 3 kann es nicht geben; denn 
+wäre 
+sowohl zur zweiten als auch zur ersten Klasse gehören. 
+B) Zum Nachweis der Existenz eines 3 unterscheiden wir vier 
+Fälle: 
+I) Es gebe eine positive Zahl in der ersten Klasse. 
+Wir betrachten den Schnitt, der folgendermaßen erzeugt wird: 
+Jede positive rationale Zahl kommt in die Unterklasse, wenn sie 
+in der ersten Klasse liegt, ohne die etwaige größte rationale Zahl 
+der ersten Klasse zu sein; sonst (d. h. wenn sie die etwaige größte 
+rationale Zahl der ersten Klasse ist oder in der zweiten Klasse 
+liegt) in die Oberklasse. Das ist wirklich ein Schnitt. Denn: 
+und leisteten 3\ und 32 das Gewünschte, so würde wegen 
+90 Kap. 4: Reelle Zahlen. § 5: Dedekindscher Hauptsatz. 
+1) Da die erste Klasse eine positive Zahl enthält, enthält sie 
+jede kleinere positive rationale Zahl (eine solche gibt es nach 
+Satz 158), also eine, zu der es in der ersten Klasse eine größere 
+gibt. Die Unterklasse ist also nicht leer. 
+Da die zweite Klasse eine Zahl enthält, enthält sie jede 
+größere positive rationale Zahl (eine solche gibt es nach Satz 158). 
+Die Oberklasse ist also nicht leer. 
+2) Jede Zahl der Unterklasse ist kleiner als jede der Ober­
+klasse; denn jede Zahl der ersten Klasse ist kleiner als jede der 
+zweiten Klasse, und die etwaige größte positive rationale Zahl der 
+ersten Klasse ist gewiß größer als jede Zahl der Unterklasse. 
+3) Die Unterklasse enthält keine größte positive rationale 
+Zahl. Denn entweder die erste Klasse enthält schon keine solche. 
+Oder sie enthält eine solche; dann war diese in die Oberklasse 
+getan, und unter den positiven rationalen Zahlen, die kleiner als 
+eine gegebene sind, gibt es schon nach Satz 91 keine größte. 
+Die durch unseren Schnitt definierte positive Zahl nennen wir 
+3 und behaupten, daß sie die gestellten Forderungen erfüllt. 
+a) Es sei H mit 
+H<z 3 
+gegeben. Wir wählen nach Satz 159 (mit g = H, i\ = 3, wenn 
+H > 0 ist; mit £ = ~j^pj > V = 3, wenn II ^ 0 ist) ein Z mit 
+// < Z < 3. 
+Dann ist Z Unterzahl bei 3, also zur ersten Klasse gehörig; daher 
+gehört H zur ersten Klasse. 
+b) Es sei H mit 
+H> 3 
+gegeben. Wir wählen nach Satz 159 ein Z mit 
+3 < Z < H. 
+Dann ist Z Oberzahl bei 3 und (nach Satz 159) nicht die kleinste, 
+also zur zweiten Klasse gehörig; daher gehört H zur zweiten 
+Klasse. 
+II) J ede positive Zahl liege in der zweiten Klasse; 0 liege in 
+der ersten Klasse. 
+Dann liegt jede negative Zahl in der ersten Klasse, und 
+3 = 0 
+leistet das Gewünschte. 
+III) 0 liege in der zweiten Klasse; jede negative Zahl liege 
+in der ersten Klasse. 
+Satz 205. 91 
+Dann liegt jede positive Zahl in der zweiten Klasse, und 
+Ä = 0 
+leistet das Gewünschte. 
+IV) Es gebe eine negative Zahl in der zweiten Klasse. 
+Dann betrachten wir folgende neue Einteilung: 
+H in der neuen ersten Klasse, wenn — H in der alten zweiten 
+Klasse lag; 
+H in der neuen zweiten Klasse, wenn — H in der alten ersten 
+Klasse lag. 
+Diese Einteilung genügt offenbar den beiden Bedingungen des 
+Satzes 205. Denn 
+1) in jeder Klasse liegt eine Zahl; 
+2) aus 
+HT <H, 
+folgt nach Satz 183 
+-H, < -HX. 
+Überdies fällt die neue Einteilung unter Fall I), da es eine 
+positive Zahl in der neuen ersten Klasse gibt. Nach I) existiert 
+also eine Zahl S,, so daß jedes 
+// < Ä, 
+in der neuen ersten Klasse, jedes 
+FI > £, 
+in der neuen zweiten Klasse liegt. Wird 
+— ST = S 
+gesetzt, so folgt aus 
+H < S bzw. H > A, 
+daß 
+— H > ST bzw. — H < S, 
+ist. Also liegt — HIN der neuen zweiten bzw. neuen ersten Klasse, 
+also H in der alten ersten bzw. alten zweiten Klasse. 
+92 Kap. 5: Komplexe Zahlen. § 1: Definition. 
+Kapitel 5. 
+Komplexe Zahlen. 
+§ I. 
+Definition. 
+Definition 57: Eine komplexe Zahl ist ein Paar reeller Zahlen 
+3J, SA (in bestimmter Reihenfolge). Wir bezeichnen die komplexe 
+Zahl mit [3,, 32\ Dabei gelten [31, 32] und [Ht, H,\ als dieselbe 
+Zahl (als gleich; schreibe: =) genau dann, wenn 
+S = H " = II 
+HL "LJ «2 "2 
+ist; sonst als ungleich (verschieden; schreibe: =|=). 
+Kleine deutsche Buchstaben bedeuten durchweg komplexe 
+Zahlen. 
+Für jedes £ und jedes t) liegt somit genau einer der Fälle 
+l = % E =1= t) 
+vor. Bei den komplexen Zahlen vermischen sich die Begriffe der 
+Identität und Gleichheit, so daß die drei Sätze trivial sind: 
+Satz 206: j = j. 
+Satz 207: Aus 
+folgt 
+Satz 208: Aus 
+folgt 
+l = 9 
+9 == E-
+E = i-
+Definition 58: n = [0, OJ. 
+Definition 59: e = [1, 0]. 
+Die Buchstaben n und e bleiben also für bestimmte komplexe 
+Zahlen reserviert. 
+Satz 206—212, Definition 57—60. 93 
+§ 2. 
+Addition. 
+Definition 60: Ist 
+E = [3» SJ, t) = [Ht, HA, 
+so ist 
++ = |X + #15 Ä. + iTJ. 
+(+ sprich: plus.) £ +1) fteiZM die Summe von £ wnd t) odw d/'e dwrcA 
+Addition von t) 0« r. entstehende (komplexe) ZaA/. 
+Satz 309 (kommutatives Gresetz der Addition): 
+r + tt = tt + r. 
+Beweis: [3, + H,, 3. +HA = [//, + 3,, tfB + S,J. 
+Satz 210: i + n = g. 
+Beweis: 3j + [0, 0] = [St + 0, S. + O] = [£„ 
+Satz 211 (assoziatives Gresetz der Addition): 
+(E + 9) + 8 = E + fe + S)-
+Beweis: Ist 
+E = IX, XL 9 = L#i> ffJ, i = lzi> z»l, 
+so ist nach Satz 186 
+fe + t>)+s = l'£,+tf„ s,+//1J+[z1)zJ] = [(5l+y/1) + z1, (*,+/#,) +z,j 
+= Ia.+C^+ZJ, S,+ (fl,+ZT)] = [5„ SJ+I'TJ.+Z,, Ä.+Z,] = E+(D+8). 
+Satz 212: Bei gegebenen j, t) Aof 
+tj + u — j 
+genau eine Losung u, nämlich, 
+E = IX > X]> 15 = [-ÖD äsJ 
+U = [3,-H,, 32-H2). 
+Beweis: Für jedes 
+U = [Y„ Y2] 
+ist 
+94 Kap. 5: Komplexe Zahlen. §2: Addition. 
+und es wird genau 
+H. + Y, = 3„ H2+Y2 = 3., 
+verlangt, so daß Satz 187 alles beweist. 
+Definition 61; Das u des Satzes 212 heißt g — t) (— sprich: 
+minus). £ — t) heißt auch die Differenz r minus t) oder die durch Sub­
+traktion des t) von £ entstehende Zahl. 
+Satz 213: Es ist 
+•r-tj = n 
+dann und nur dann, wenn 
+E = 9-
+Beweis: Es ist 
+3>-HT = St-Ht = 0 
+genau dann, wenn 
+S, = H1, 3t = //,. 
+Definition 62: -r = n-f. 
+(— links sprich: minus.) 
+Satz 214: Für 
+? = [£,, £,] 
+-E = -£,]. 
+Beweis: -[£,, S,l = [0, 0]-[Ä„ SJ = [0-£„ 0-Ä.1 
+Satz 215: -(-E) = E-
+Beweis: Nach Satz 177 ist 
+Satz 216: E + (~E) = n. 
+Beweis: Nach Satz 179 ist 
+*. + (-*,) = 0, S, + (-£«2) = 0. 
+Satz 217: - (j + 9) = - E + (- tj). 
+Beweis: Nach Satz 180 ist, 
+r = [Ä„ ÄJ, t) = [//,, ff,] 
+gesetzt, 
+Satz 213—219, Definition 61—62. 95 
+= [-ff,, -£,] + [-#„ -Ht\ = + 
+Satz 218: je — tj = r + (-tj). 
+Beweis: [2, - H„ 2,- H,\ = \S,, St] + [-#,, - H2). 
+Satz 219: - (r -t)) = t) - r. 
+Beweis: -fe-t)) = -(£ + (-*))) = -$+(-(-9)) =-£ + 9 
+= ? + = 9-?-
+96 Kap. 5: Komplexe Zahlen. §3: Multiplikation. 
+§ 3. 
+Multiplikation. 
+Definition 63: Ist 
+E = [X, X]» = ÄF]. 
+so ist 
+E-9 = [Ä.ff.-Ä.IT,, Ä.ff. + S.ffJ. 
+(• sprich: mal; aber man schreibt den Punkt meist nicht.) j; • t) 
+ÄeiÄ das Produkt von j mi£ t) oder die dwrcÄ Multiplikation von i 
+mit t) entstehende Zahl. 
+Satz 220 (kommutatives Gesetz der Multiplikation): 
+E9 = »JE-
+Beweis: [3t, SJ[ffl( ff,] - Xff,-Ä,ff2, ^/J.+ S.TJJ 
+= [ff, ^ - ff2 S,, ff, S2 + ff2 A/J = [7?,, ff,] [3, , X |. 
+Satz 221: Es ist 
+E9 = n 
+dewm wwd wwr dann, wenn mindestens eine der beiden Zahlen r, 1) 
+gto'cA n ist. 
+Beweis: Es sei 
+E = X, X], 9 = [ff„ ff.L-
+1) Aus 
+E = n 
+folgt 
+A, — A2 = 0, 
+itj = [O-ff.-0-ff,, O-ff. + 0-ffJ = (0, 0] = n. 
+2) Aus 
+t) = n 
+folgt nach Satz 220 und 1) 
+Et) = t)i' = nr. = n. 
+3) Aus 
+rt) = n 
+soll gefolgert werden, daß 
+£ = n oder tj = n 
+Satz 220—224, Definition 63. 97 
+ist. Wir dürfen daher voraussetzen 
+TJ 4= N, 
+d. h. 
+ff,ff,+ff,ff, >0, 
+und haben 
+E = N> 
+d.h. 
+ff = £ = 0 
+zu beweisen. 
+Nach Voraussetzung ist 
+ff, ff,-ff, ff, = 0 = ff, ff, + ff.il,, 
+also 
+0 = (ff, ff, - ff, ff,) ff, + (ff, ff2 + ff, ff,) ff, 
+= ((ff, ff,) ff, - (ff, ff,) ff,) + ((ff, ff,) ff2 + (ff, ff,) IQ 
+= (ff, (ff, ff,) - ff2 (ff, ff,)) + (ff, (ff, ff,) + ff, (ff, ff,)) 
+= ((ff, (ff, ff,) - ff2 (ff, ff,)) + ff2 (ff, ff,)) + ff, (ff, ff,) 
+= ff,{ff,ff,) + ff,(ff,ff2) = ff,(ff,ff, + ff,ff2). 
+also 
+K = 0, 
+ff, //, = 0 == ff,ff,. 
+Da ff, und ff, nicht beide 0 sind, ist also 
+ff = 0 
+Satz 222: je = £. 
+Beweis: [ff,, ff,] [1, 0] = [ff, • 1 - ff, • 0, ff, • 0 + ff, • 1J = [ff,, ff J. 
+Satz 223: j(-c) = -j. 
+Beweis: [ff„ ff,][-l, 0] = [ff, (-1) - ff, • 0, ff,-0 +ff2(-l)] 
+= [-£., - ff,]. 
+Satz 224: (— E) 9 = E (- 9) == — (E *})• 
+Beweis: 1) 
+[- ff„ - ffJ [ff,, ff,] = [(- ff,) ff, - (- ff,) ff,, (- ff,) ff, + (- ff2) ff,] 
+= [- (Ä, ff,) + S, ff,, - (ff, ff2) - ff2 ff,] 
+= [-(ff, ff,-ff, ff,), - (ff, ff, + ff, ff,)] 
+= -([ff„ff,][ff„ff2]), 
+(-E)9 = -(E9)-
+2) Nach 1) ist 
+E(-9) = (-9)E = - tos) = -(E9)-
+Landau, Grundlagen der Analysis. 7 
+98 Kap. 5: Komplexe Zahlen. § 3: Multiplikation. 
+Satz 225: (-£)(-$) = 19-
+Beweis: Nach Satz 224 ist 
+(-r)(-t|) = £(-(-*))) = rü. 
+Satz 226 (assoziatives Gesetz der Multiplikation): 
+(E9)i = £ (9 ä)-
+Beweis: In diesem Beweise werde der Übersichtlichkeit wegen 
+ausnahmsweise zur Abkürzung 
+{3 + H) + Z = 3 + H + Z, 
+(3H)Z = 3 HZ 
+gesetzt, so daß auch 
+£+(27+Z) = S* + ff+Z, 
+3 {HZ) = 3 HZ 
+ist. 
+Es werde 
+l = [S„ St], 9 = [77,, 772], J = [ZN ZJ 
+gesetzt. Dann ist 
+= [S.ff.-S.ff,, Ä.ff. + S.FFJFO, ZJ 
+= [(£, 77, - S2 772) Z, - (S, 772 + ä, 77.) Z„ 
+(S, 77, - St 772) Z2 + (S, 772 + X 77,) Z,] 
+= [(X 77, Z, - S, 772 Z,) - (3, 772 Z2 + £2 77, Z2), 
+(X 77, Z2 - St 772 Z.) + (S, 772 Z, + £2 77, ZJ] 
+= [(3,77, Z, + (- (32 772 Z,))) + (- (S, 772 Z2 + 32 77, Z,)), 
+(X 772 Z, + X 77, Z,) + (S, 77, Z2 + (- (£, 772 Z,)))] 
+= [5,77, Z, - (X 772 Z, + X 772 Z2 + 3,77, ZF), 
+(Ä, 772 Z, + A2 77, Z, + £, 77, Z2) — 32 772 Z2]. 
+Wegen 
+Efoä) = (9*)E 
+entsteht durch Buchstabenvertauschung (77 statt 3, Z statt 77, £ 
+statt Z) 
+E *) = [#, Z, S, - (772 Z2 £, + 77, Z2 32 + 77, Z, £,), 
+(77, Z2 Ä, + 772 Z, X + 77, Z, S2) - ff2 Z2 ÄJ. 
+Wegen 
+S77Z = £(77Z) = (FFZ)S = HZ3, 
+^ + B + r = A + (B + r) = (ß + R) + ^ = 5 + R+^/ 
+Satz 225—229. 99 
+erkennt man an den ausgerechneten Ausdrücken 
+(£9)8 = ER­
+satz 227 (distributives Gesetz): 
+Beweis: 
+[S„ £,]([ff„ ff,] + [Z„ ZJ) = [£",', S,][ff, + Z„ ff2+Z,] 
+= [S1(ff1 + Z1)-S1(ff1 + ZJ, ^(ff. + Z.J + ^ff. + Z,)] 
+= [(S,ffL+£,Z1)+(-(Stff,)+(-(£,Z,))), (S,ff2+£,Z2) + (S2ff,+S,Z,)] 
+= [(5, ff, - £, ff,) + (£\ Z, - £2 Z,), (S, ff, + S2 ff,) + (Ä, Z, + S, Z,)] 
+= [£,ff,-S,ff2, S,ff, + £<,ff,] + [S,Z,-S2Z,, S,Z, + S2Z,] 
+= [SIJÄ,][ff1,ff,] + [S1, SJCZ^Z,]. 
+Satz 228: Efo-ä) = St) — SS-
+Beweis : r(t)-ä) = E(t) + (-ä)) = Etj + j(-ä) = E9 + (-(Eä)) 
+= E9 —SS-
+Satz 229: Z>«e Gleichung 
+9« = i', 
+?CO £, TJ gegeben sind und 
+l) 4= N 
+AA£ genau eine Lösung u. 
+Beweis: 1) Es gibt höchstens eine Lösung; denn aus 
+tjll, = E = t)U, 
+folgt 
+N = t}u,-tju, = 9(TTI-tt.)» 
+also nach Satz 221 
+N = U,-U,, 
+u, = u,. 
+2) Ist 
+t) = [ff,, ff,], 
+so ist 
+ff = ff, ff, 4- ff, ff, > 0, 
+und 
+_ [ff, _ffL] 
+" ~~ ['ff"' H 1 
+ist eine Lösung wegen 
+7 * 
+100 Kap. 5: Komplexe Zahlen. § 3: Multiplikation. 
+9U — - ^])E 
+(" H.H. + H„H„ — (H. H,) + H.H.~\ RL M 
+= [ // > // —-JE = [1,0]J = er = r. 
+Definition 64: Das u des Satzes 229 heißt •-- (sprich: j durch t)). 
+r 
+-— AeüW ÖMCÄ der Quotient von £ dwrcA t) oder die dwre/« Division 
+von j durch entstehende Zahl. 
+Satz 230—239, Definition 64. 101 
+§ 4. 
+Subtraktion. 
+Satz 230: 
+Beweis: 
+Satz 231: 
+Beweis: 
+Satz 232: 
+Beweis: 
+(E — 9) + 9 = E-
+(E - 9) + 9 = 9 + (E - 9) = E-
+(E + 9)~9 = E-
+9 + E = E + 9-
+E - (E - 9) = 9-
+(E - 9) + 9 = E-
+Satz 233: (E - 9) - ä = E - (9 + ä)-
+Beweis: (9 + ä) + ((E-9)-g) = ((E~9) -i) + (ä + 9) 
+= (((E-9)-ä) + ä) + 9 = (E-9) + 9 = E-
+Beweis: (E + (9 ~ ä)) + ä = E + (fo-8) + 8) = E + 9-
+Satz 235: (E — 9) + 3 = E — (9-*)• 
+Beweis: ((j- 9) + 3) + (9- 5) = (E - 9) + (ä + (9 - S» 
+Satz 236: (E + ä) — (9 + ä) = E — 9-
+Beweis: (r - 9) + (9 + 5) = ((E - 9) + 9) + ft = E + ä-
+Satz 237: (E _ g) + (ä - u) = (E + ä)-(9 + u)-
+Beweis: (te-to) + (j-u)) + Oj + u) = (E - 9) + «S ~ u) + (« + 
+= (E-9) + (((ä-") + u) + 9) = (E-9) + (ä + 9) = (E-9) + (9 + ä) 
+Satz 238: &-!})-(*-») = fe + u)-(ö + j). 
+Beweis: Nach Satz 237 und Satz 236 ist 
+(te+u)-(9 + ä)) + (ä-u) = ((E+«)+ä)-((9 + ä)+u) 
+= (E + (u + ä))"(9 + (ä + u)) = E-9-
+Satz 239: Es ist 
+Satz 234: (E + 9) - i = E + (9 - *)• 
+= (E~9) + 9 = E-
+= ((E-9) + 9) + ä = E + 3-
+E-9 = i-
+dann und nur dann, wenn 
+E + u = 9H 
+Beweis: Satz 213 und Satz 238. 
+9 + 5-
+102 Kap. 5: Komplexe Zahlen. § 5: Division. 
+Satz 240: Ist 
+so ist 
+Beweis: 
+Satz 241: Ist 
+so ist 
+Beweis: 
+Satz 242: Ist 
+so ist 
+Beweis: 
+Satz 243: Ist 
+so ist 
+Beweis: (t)ä) — 
+i 
+Satz 244: Ist 
+so ist 
+§5. 
+Division. 
+9 4= n, 
+19 = £• 
+£- tj = t) | = j. 
+E-i = E. 
+9? = 
+J # ii) t) =f= n, 
+E = 9-
+E^ 
+ri 4= n, 5 4= n, 
+Et) 9 
+Satz 240—249. 
+Beweis: 5 = s(y i) = ER­
+satz 245: Ist 
+T) #= N, 5 4= N, 
+so is£ 
+E_ _ E_ 
+9 5 ~ 9~' 
+Beweis: _ _ i, _ 
+Satz 246: Ist 
+so ist 
+Beweis: 
+Satz 247: Ist 
+so ist 
+T) 4= N, Ä 4= N, 
+El = S 95 9' 
+T) 4= N, U 4= N, 
+1.1 = Ii T) U T)U ' 
+Beweis: (f-|)(9u)=l(l(u9)) = f((lu)9) 
+= fö9) = { (98) = (f 9)ä = Eo-
+Satz 248: /Sit 
+T) 4= N, } + TI, U + N, 
+so is< 
+1 i = 1" 
+i 9*' 
+u 
+Beweis: Nach Satz 247 und Satz 246 ist 
+HL.! = (EU)S = E(U§) = 1 
+93 » (9*)« 9(i«) 9' Satz 249: Ist 
+E 4= N. 
+104 
+so ist 
+Kap. 5 : Komplexe Zahlen. § 5: Division. 
+n = n. 
+Beweis: 
+Satz 350: Ist 
+so ist 
+Beweis: 
+Satz 251: Ist 
+so ist 
+dann und nur dann, wenn 
+Beweis: 1) Ist 
+go ist nach Satz 250 
+2) Ist 
+?n - n. 
+E 4= tt, 
+= e. 
+E 
+?e = E-
+9 4= n, 
+« = e 
+9 
+E = 9-E = 9, 
+_ 9 
+9 9 
+E 
+= e. 
+so ist nach Satz 222 
+Satz 252: Ist 
+so ist 
+E = 9e = 9-
+9 4 n, u + n, 
+dann und nur dann, wenn 
+Beweis: Für 
+ist die Behauptung klar. 
+Sonst ist nach Satz 248 
+E 
+9 
+E« 
+i 
+1 9 
+i 
+u 
+i 
+u 
+9ä-n 
+EU 
+95' 
+so daß Satz 251 die Behauptung liefert. 
+Satz 250—256. 
+so ist 
+,9 9' 9 9 Satz 254: Js< 
+t) 4= n, u =1= n, 
+E . 8 = S" + 95 
+9 u t)U 
+so istf 
+Beweis: Nach Satz 246 und Satz 253 ist 
+JL + i. = Iu + 91 ... EU + 9* 
+9 11 l)U t)U t) u 
+Satz 255: Ist 
+9 4= n, 
+E _1 _ E -i 
+9 9 9 
+so ist 
+Beweis: 9 (!-»-) = = E-a-
+Satz 256: Is* 
+9 4= n, «#n, 
+I _ 1 = EU-9S 
+9 u gu 
+Beweis: Nach Satz 246 und Satz 255 ist 
+1 _ 1 = E« _ 11 = E"-95 
+QU t)U t)U t)U 
+Satz 253: Ist 
+9 4 n, 
+so ist 
+1 + 1 = E + * 
+t) t) ^ 
+Beweis: t, (| +j) = 9 | + 91 = i + 
+106 Kap. 5: Komplexe Zahlen. § 6: Konjugierte Zahlen. 
+§6. 
+Konjugierte Zahlen. 
+Definition 65: Zu 
+E = [X, X] 
+heißt 
+t = [X> -X] 
+konjugiert komplex. 
+Satz 257: t = r. 
+Beweis: [X, -(-X)] = [X. XL 
+.Satz 258: Es ist 
+E = n 
+E = n. 
+Beweis: X = 0, — X = 0 
+ist dasselbe wie 
+X = 0, X = 0. 
+Satz 259: Es ist 
+E = E 
+dawra M«d »«r daww, wenn j die .Form 
+E = [X 0] 
+Beweis: Es ist 
+Ai - &i, A2 A2 
+dann und nur dann, wenn 
+X = o. 
+Satz 260: f+tj = E + 9-
+Beweis: Für 
+E = [X. XL 9 = [77,, ff,] 
+ist 
+5 + 9 = [X + ff,, - (X + ff,)] = [5, + fft, - X + (- ff,)] 
+= [X, -X] + [#., -Ä.] = E + 9-
+Satz 257—263, Definition 65. 107 
+Satz 261: E9 = E9-
+Beweis: Für 
+£ = [£,, #,], 9 = [Hlt Ht] 
+ist 
+Eg = [StH.-S.H,,- (8tH2 + 8,11$ 
+= _(-£,) Äi(_//s) + (-S2)/71] 
+= [8lf -£*][#,, -Äj = Er­
+satz 262: E^9 = E~9-
+Beweis: Wegen 
+ist nach Satz 260 
+E = (E - 9) + 9 
+E = E~=9 + 9, 
+Satz 263: Für 
+ist 
+Beweis: Wegen 
+ist nach Satz 261 
+nach Satz 258 ist 
+also 
+E_g = E~9-
+9 4= n 
+(})" 
+E = |9 
+9 4 n 
+108 Kap. 5: Komplexe Zahlen. § 7: Absoluter Betrag. 
+§ 7. 
+Absoluter Betrag. 
+Definition 66: Es bedeute \Jt, die nach Satz 161 eindeutig 
+vorhandene (positive) Lösimg | von 
+tt = G. 
+Definition 67: \J0 = 0. 
+Definition 68: \[St, St]\ = ^KKTSt 3, • 
+(| | sprich: absoluter Betrag.) 
+Satz 264: |E| I > °. F E * «' 
+Iei ( = 0 für r = n. 
+Beweis: Definitionen 68, 66 und 67. 
+Satz 265: \[S1} St]\ > |SJ, 
+|[Ä„ S2]|^|S2|. 
+Beweis: |[Slf \[S,, S2]\ 
+Aus 
+folgt 
+da sonst 
+__ yf p v W I = "I ™L •'—' 11 I *-'X I 7 
+| _^ H H ' V2 I I M2 I 
+SS^HH, S>0, //> 0 
+0 < 21 < //, 
+SS < IUI 
+wäre. Damit ist Satz 265 bewiesen. 
+Satz 266: Aus 
+[S, 0] [S, 0] = [H, 0] [//, 0], S>0, 7/^0 
+S = //• 
+Beweis: Wegen 
+[Z, 0][Z, 0] = [ZZ-0-0, Z-O + O-Z] = [ZZ, 0] 
+ist nach Voraussetzung 
+[SS, 0] = [HH, 0], 
+SS — HH. 
+Satz 264—269, Definition 66—68. 109 
+so folgt 
+also nach Satz 161 
+Ist 
+so folgt 
+S>0, 
+//// - 35>0, 
+H>0, 
+I = II. 
+s = o, 
+HH = SS = 0, 
+H = 0 = S. 
+Satz 267: 0] [|j|, 0] = rr. 
+Beweis: Wird 
+gesetzt, so ist 
+[lEl,0][|E|,0] = [|E[|EI,0] = [S.X + S.X.O] 
+= [XX-X(—X)> X) + SiSi] = [£*,, A"2][SJ5—X] — EE-
+Satz 268: |Et,| = 
+Beweis: Nach Satz 267 und Satz 261 ist 
+[lE9l,0][|?9|,0] = = (Et))(E9) = (ES)(99) 
+= ([lEl,0][|El,0])([|t,|,0][|t,|,0]) 
+= ([lEl,0][|ö|,0])([|j|,0][|^|,0]) 
+= [lEl|t)|-0-0, |j|.0 + 0.|t,|][|r||t)|-0.0, |E|.0 + 0.|o|] 
+= [lEllt)|,0][|S|H,|,0], 
+nach Satz 266 also 
+|E*)I = |Ell9l-
+Satz 269: Ist 
+so ist 
+t) 4= n, 
+_ lEl 
+191' 
+Beweis: |t)|>0, 
+r 
+also nach Satz 268 
+Ist 
+110 Kap. 5: Komplexe Zahlen. §7: Absoluter Betrag. 
+t E ' 
+9|l9l = lsl, 
+17 
+Satz 270: Aus 
+Iii 
+l9l' 
+E + 9 = e 
+lE| + |t)|^l. 
+Beweis: Ist 
+E = [£,. ff], 9 = [#i> 
+so ist nach Satz 265 
+(El = | Ail = Ax, 
+|ü|^|ffj^ff„ 
+also 
+|EI + |9I^X + #X = 1. 
+Satz 271: X + l)l^lsl + M-
+Beweis: 1) Ist 
+E + 9 = «, 
+so ist die linke Seite der Behauptung 0, also der rechten. 
+2) Ist 
+je + 9 =|= tt, 
+so ist, wegen E | 9 = E + 9 £ + 9 E + 9 E + 9 
+nach Satz 270 
+E + 9 E + 9 
+^1, 
+also nach Satz 269 
+Iii , 
+IE + 9I lE + 91 
+!E| + l9! = lE + 9l(J|L + ^)^lE + 9l 
+Satz 272: = 
+Beweis: (-3,)(-A.) + (-3t)(-3S) = 3^ + 3,3,. 
+Satz 273: >||E|-|9!I-
+Beweis: E = 9 + (E~ 9); 
+also nach Satz 271 
+Satz 270—273. 111 
+El ^|9| + |r-T)i, 
+iE-Ö|^|E|-|H|-
+Hieraus folgt, wenn 5 und t) vertauscht werden, 
+LÖ-EJ > |TJ!-|S|, 
+also nach Satz 272 
+LS-9L = L-(9-S)L = = -(ISL-L9L)-
+Aus 
+folgt aber, da |/7| entweder H oder —77 ist, 
+£==|ff|. 
+Daher ist 
+.S-TJL^LLSL-MI-
+112 Kap. 5: Komplexe Zahlen. § 8: Summen und Produkte. 
+§8. 
+Summen und Produkte. 
+Satz 274: Ist 
+x<y, 
+so können die m 5= x nicht auf die n^ky ein-eindeutig bezogen werden. 
+Unter Beziehen verstehe ich in diesem Paragraphen immer 
+ein-eindeutiges Beziehen. 
+Beweis: Es sei 9# die Menge der x, für die die Behauptung 
+bei allen y~>x wahr ist. 
+I) Ist 
+i < y, 
+so kann m — 1 nicht auf die n < y bezogen werden; denn ent­
+spricht dem m = 1 das n = 1, so bleibt kein m für n = y übrig; 
+ist m = 1 auf ein n > 1 bezogen, so bleibt kein m für n = 1 
+übrig. 
+1 gehört also zu 3JJ. 
+II) Es gehöre x zu ÜJJi, und es sei 
+x + 1 < y. 
+Wenn eine Beziehung der m RE= x +1 auf die n^y vorliegt, so 
+unterscheiden wir zwei Fälle. 
+a) Dem m = x + 1 entspricht n = y. Dann sind die m ^ x 
+auf die n :£= y — 1 bezogen; das geht nicht wegen 
+x < y — 1. 
+ß) Dem m = x + 1 entspricht ein n = n0 < y. Dann sei m — m0 
+die dem n = y entsprechende Zahl, also m0<.x + l. Man be­
+trachte nun folgende abgeänderte Beziehung der m<x + l auf 
+die n : - y. 
+I Ist m 4= m0, m =j= * + 1, so gelte das Alte. 
+/ m = m0 entspreche n — n0. 
+{ m = x + 1 entspreche n = y. 
+Dann haben wir eine Beziehung von der soeben in a) als unmög­
+lich nachgewiesenen Art. 
+Also gehört x + 1 zu SDt, und die Behauptung ist bewiesen. 
+Satz 274—275. 113 
+Da die Beweise der folgenden Sätze 275 bis 278 und 280 bis 
+286 nebst zugehörigen Definitionen für Summen und Produkte 
+wörtlich dieselben wären, machen wir das, um lange Wieder­
+holungen zu vermeiden, nur einmal und wählen ein neutrales 
+Zeichen welches durchweg + oder durchweg • bedeuten soll. 
+Das einstweilen neutrale Zeichen [<[ wird später entsprechend in 
+zwei Zeichen (2 bei +, JT bei •) gespalten werden. 
+Unter definiert verstehe ich in dieser ganzen Entwicklung: 
+als komplexe Zahl definiert. 
+Satz 275: Es sei x fest, f(n) für n<x definiert. Dann gibt 
+es genau ein für n<x definiertes 
+&(») 
+(ausführlicher geschrieben 
+8*.f(»). 
+abgekürzt geschrieben 
+8(»)) 
+mit folgenden Eigenschaften: 
+9,(1) = f(l), 
+Qx{n+1) = Qx{n)+-\(n + l) für n<.x. 
+Beweis: 1) Zunächst zeigen wir, daß es höchstens ein solches 
+Qz(n) gibt. 
+Es mögen g(rc) und fi(w) die geforderten Eigenschaften haben. 
+5K sei die aus den n<x mit 
+8(n) = h(w) 
+und den n > x bestehende Menge. 
+i) 9(i) = f(i) = &(i); 
+1 gehört also zu ÜDf. 
+II) n gehöre zu 9JJ. Dann ist 
+entweder 
+n<x, g(w) = h(w), 
+also 
+g(» + l) = g(«) + f(n + l) = ^{n) + \{n + l) = ß> + 1), 
+also n + 1 zu SD? gehörig; 
+oder 
+n x, 
+also 
+n + 1 > x 
+und n + 1 auch zu 9K gehörig. 
+Landau, Grundlagen der Analysis. ^ 
+114 Kap. 5: Komplexe Zahlen. § 8: Summen und Produkte. 
+Daher ist 9K die Menge aller positiven ganzen Zahlen; für 
+jedes n < x ist also 
+ß(n) = fi(ra), 
+w. z. b. w. 
+2) Wir zeigen jetzt, daß es zu jedem x, wenn f (n) für n < x 
+definiert ist, ein passendes g^w) gibt. 
+9JJ sei die Menge der x, für die dies wahr ist, für die es also, 
+wenn f (») für »< a; definiert ist, nach 1) genau ein passendes 
+Qx(n) gibt. 
+I) Für x = 1 leistet, wenn f(l) definiert ist, 
+9,(1) = f(l) 
+das Gewünschte (da die zweite Forderung wegen der Unmöglich­
+keit von n < 1 nicht erhoben wird). 1 gehört also zu äft. 
+II) Es sei x zu SR gehörig. Wenn f (n) für n < a; + 1 definiert 
+ist, ist es für w < a; definiert, also hier genau ein zugehöriges Qx(n) 
+vorhanden. Nun leistet 
+9l+1 I 8.(*) + f (* + 1) für n = x + 1 
+das Gewünschte bei x+1. Denn erstens ist 
+9^(1) = 9a:(l) = f(l). 
+Zweitens gilt für 
+n < x 
+(wegen n + 1 < «) 
+9^.(» + 1) = &(» + !) = 9,W*f(w + 1) = fe+.W^-fCn + l), 
+während für 
+9x+I (» +1) = 9, (*) 4 f (* +1) = g*+1 (») * f (» +1) 
+ist; aus 
+w < # + 1 
+folgt also jedenfalls 
+8»M(» + 1) = flfi(»)*f(» + l). 
+Daher gehört x + 1 zu SR, und SR umfaßt alle positiven ganzen 
+Zahlen. 
+Satz 276: Wenn f («) /M> W < x +1 definiert ist, gilt für die 
+zugehörigen Qx(n) und Qz+i(n) 
+g^ + l) = QX(X)+-UX + 1). 
+Satz 276—279, Definition 69. 115 
+8* 
+Beweis: Das kam bei der Konstruktion in 2), II) des vorigen 
+Beweises vor. 
+Definition 69: Ist f (n) für n < x definiert, so ist 
+X 
+K h») = ß«(«) (= 9«.f(*))-
+n = 1 
+Wenn •+ die Bedeutung + hat, schreibt man 
+2 f(«0; n = i 
+www -+> die Bedeutung • hat, schreibt man 
+n tw-
+»=i 
+(2 sprich: Summe; TJ sprich: Produkt.) 
+Statt n kann in diesen Zeichen auch jeder andere Buchstabe 
+stehen, der positive ganze Zahlen bezeichnet. 
+Satz 277: Ist f(l) definiert, so ist 
+k K») = f(i)-
+n — l 
+Beweis: 9,(1) = f(l). 
+Satz 278: Ist f(w) für n<x+l definiert, so ist 
+XKHn) = £ f(n)*f(*+l). 
+n = 1 w = 1 
+Beweis: Satz 276. 
+X 
+Satz 279: 2 E = E [«, 0]. 
+»i = i 
+Beweis: j sei fest, äft die Menge der x, für die dies gilt. 
+I) Nach Satz 277 ist 
+S E = E = l-e = E[1,0]. 
+»1=1 
+1 gehört also zu 9K. 
+II) Wenn x zu SR gehört, so folgt aus Satz 278 
+Xi\= SE +E = E[*,0]+s[l,0] = E([*,0j + [1,0]) 
+n = 1 »1=1 
+= Et«+ 1,0]. 
+# +1 gehört also zu 93t. 
+Daher gilt die Behauptung für alle x. 
+116 Kap. 5: Komplexe Zahlen. §8: Summen und Produkte. 
+Satz 280: Sind F(L) und F(L + L) definiert, so ist 
+l;Z\{n) = F(L)*F(L + L). n = 1 
+Beweis: Nach Satz 278 und Satz 277 ist 
+1S1F(»)= £ F(«)*F(L + L) = F(L)*F(L + L). 
+»4=1 »1=1 
+Satz 281: Ist f(w) für n<x + y definiert, so ist 
+x + y x y 
+£ F(») = £ F(»)* £ !(* + »)• 
+N=L N=L »J=L 
+Beweis: Bei festem x sei 3JJ die Menge der y, für die dies gilt. 
+I) Ist f (n) für w < a: -f-1 definiert, so ist nach Satz 278 und 
+Satz 277 
+Qu J \ CC 35 1 
+£ F(») = £ F(N)*F(*+I) = £ F(»)* £ F(« + »)• »1=1 N=L W=L W=L 
+1 gehört also zu W. 
+II) 2/ gehöre zu äft. Wenn f («) für n<x + (y + l) definiert 
+ist, so ist nach Satz 278 (auf x + y statt x angewendet) 
+x + (y + l) (x + y) + l x + y 
+£ F(») = £ F(») = £ F(»)*F((*+Y) + I) 
+« = 1 ra=L N=L 
+= / £ F(»)* £ F(a + «)WF(* + (Y + L)) \W = L n = L / 
+- £ F(»)W £ F(*+»)*F(* + (Y + I))L 
+W=L \n = 1 / 
+also nach Satz 278 (auf «/ statt f(x + w) statt f(») angewendet) 
+a; 2/ + 1 
+= £ F (»)•*- £ F (*+»)• 
+W = 1 »4=1 
+i/ +1 gehört also zu 3JJ, und der Satz ist bewiesen. 
+Satz 282: Sind f(w) wwd G(w) /w> W<X definiert, so ist 
+£ (F(»)*8(»)) = £ F(»)# £ 8(»). 
+»1=1 »4 = 1 »4=1 
+Beweis: 9Ji sei die Menge der x, für die dies gilt. 
+I) Sind f (1) und G (1) definiert, so ist 
+£ (F(N)*G(N)) = F(L)*G(L) = £ F«+£ G(N). 
+»J=L »4=1 »4=1 
+1 gehört also zu ffll. 
+Satz 280—283. 117 
+II) x gehöre zu SR. Sind f (n) und g(n) für n'fjLx + l definiert, 
+so ist, mit Rücksicht auf 
+. (z + t)) + (i + u) = (U;:;: Q) ::: u = (S * fr t))) •:• u 
+•• I'(8 - r) :•: n) :•: u = (3 ::R):V(I) ::: u) = IR :•: g) :•: fo:::-u), 
+"S^fM + gM) = S (f(>0*g(»))*(f(3 + i)-*-g(* + i)) 
+w = 1 n = 1 
+= ( S t»* 3 g(»)Wf(*+l)*8(s + l)) 
+= (5 f(»)*f(* + l)W( S 8(»)^8(*+l)) 
+\w = 1 / \w = 1 / 
+X + 1 x+1 
+= S K»)* S g(n). 
+n = 1 11 = 1 
+Also gehört a? + l zu SR, und die Behauptung gilt stets. 
+Satz 283: s(n) beziehe die n < a: auf die m<x. f(n) sei für 
+n <x definiert. Dann ist 
+K f (*(»»)) = £ f(»). 
+M = 1 »1=1 
+Beweis: Zur Abkürzung werde 
+f (*(»)) = 8(») 
+gesetzt. 
+SR sei die Menge der x, für die die Behauptung 
+3 8(») = 2 f(») 
+M = 1 W = 1 
+(bei allen zulässigen s und f) wahr ist. 
+I) Für 
+a; = 1 
+ist 
+S(l) = 1, 
+also, wenn f(l) definiert ist, 
+| 8(M) = g(l) = f(l) = £ f(n). 
+w = 1 n = 1 
+1 gehört also zu SR. 
+II) a? gehöre zu SR. Es beziehe s (w) die n < x + 1 auf die 
+m ^ a; + 1, und f (n) sei für ra 5= a; + 1 definiert. 
+1) Falls 
+s (x + 1) = X + 1, 
+118 Kap. 5: Komplexe Zahlen. §8: Summen und Produkte. 
+bezieht s (w) die n < x auf die m<x. Alsdann ist 
+£ = £ K»), 
+n=l n = l 
+Q(X+1) = f(*+l), 
+also 
+x+1 a: x «+ 1 
+£ 8(») = £ 8(»)*8(*+L) = £ FW + HZ+I) = £ f(«)-
+n = 1 w = 1 w = 1 n = 1 
+2) Falls 
+s(a;+ 1) < aj + 1, s(l) = 1, 
+bezieht s (w) die w mit 1 + 1<M<# + 1 auf die m mit 1 +1 < m 
+< a; + 1; also bezieht .9 (1 + n) — 1 die n < a; auf die m ^ a\ 
+Daher ist 
+ä; aj a; 
+£ g(l+n)= £ f(s(l + «)) = £ f(i + (s(i + „)_i)) 
+w = 1 n=l n=1 
+= i f(i+»), 
+w = 1 
+also nach Satz 281 
+x + l x X x+l 
+£ g(») = 8(i)-*- £ 8(i+») = f(i)* £ f(i+»)= £ f(»)-
+M = l M=l M=l M = l 
+3) Falls 
+s(a;+l)<a; + l, s(l)> 1, 
+werde 
+s(l) = a 
+gesetzt und b aus 
+1 <&<» + l, s(6) = 1 
+bestimmt. Dann ist 
+a > 1, 6 > 1. 
+a) Es sei 
+u<lx+ 1. 
+Dann bezieht sowohl 
+!
+1 für n = 1, 
+a für n = b, 
+s (») für 1 <. nlS x + 1, n +^b 
+als auch 
+r a für w = 1, 
+s2(») = < 1 für n = a, 
+\ n für 1 < w < x + 1, » =|= « 
+die » ^ ai + 1 auf die m ^ a; + 1. 
+Satz 283. 119 
+Nun ist 
+s(n) — s2(s,(«)) für n^x + 1. 
+Denn durch ^(s^w)) geht über 
+1 via 1 in a = s(l), 
+6 via o in 1 = s(b), 
+jedes andere 1 via s(n) in s(w). 
+s,(w) läßt 1, und s2(ri) läßt a; + l unverändert. Nach 2) und 
+1) ist also 
+x+1 x+1 as +1 x+1 .'c+l 
+S 8(«)= 3 f(«(n))= 2 f («,(*»)) = 3 f(*») = S f(»)-
+n—l n=l n=l w = 1 •» = 1 
+/3) Es sei 
+a = a;+l, o<a; + l. 
+Dann bezieht 
+!
+ö für n — l, 
+1 für n — b, 
+n für 1 < w ^ a; + 1, n +^b 
+die n^Sx + 1 auf die m^£x+l. Ferner ist 
+s(w) = st(«,(»)) für ntükx+1. 
+Denn durch geht über 
+1 via Ii in o = s(l), 
+b via 1 in 1 = s (6), 
+jedes andere n^.x + 1 via « in s (n). 
+sa in) läßt a; +1 unverändert. Nach 1) und 2) ist also 
+aj + l x-\-i x+l x + i x+l 
+X g(»)= X f(8(«))= 3 !(*,(*,(»))) = X f(*,(»))= S f(»)-
+m = 1 n=l n=l n=\ n=l 
+y) Es sei 
+a = 6 = x + 1. 
+Ist a; = 1, so ist 
+x+1 x+1 
+X 9 ('*)< = 2 f(n) 
+w == 1 n = 1 
+trivial. 
+Ist a; > 1, so bezieht 
+/ 1 für » = 1, 
+st(n) — <aj + l für n = x + 1, 
+\ s (n) für 1 < n < x + 1 
+120 Kap. 5: Komplexe Zahlen. § 8: Summen und Produkte, 
+die n^x + 1 auf die m^x+1. Folglich ist nach 1) 
+<BS18(»)= £ Q(n)^Q(x+l) = L(l)+-Xz\(n + l)) + Q(x+l) n=1 n—1 \ n=1 ' 
+\n = l I 
+= (g(* + l)**s\(n + l))-*-8(l) 
+= (F(S(* + l))^-*||f(*(N + l))J-HFF(*(l)) 
+= (f(l)**iiN(s.(» + l))W,(* + l) 
+\ n = l / 
+= (f (Si (1)) * *£1 f (Sl (n +1))) f (*t (x +1)) 
+= S f(*.(»))-^f(*.(* + i)) =f(*.(«)) =*s1f(»). 
+w = 1 w = 1 « = 1 
+Daher gehört x+1 zu SD?, und der Satz ist bewiesen. 
+In Definition 70 und Satz 284 bis Satz 286 bezeichnen aus­
+nahmsweise lateinische Buchstaben ganze (nicht notwendig positive) 
+Zahlen. 
+Definition 70: Es sei 
+y = x, 
+f(») für 
+y~—n~^ix 
+definiert. Dann ist 
+^pß j — y 
+K f(n) = S f((»+j,)-l). 
+n=y n=1 
+Statt n kann auch irgend ein anderer Buchstabe stehen, der 
+ganze Zahlen bezeichnet. 
+Man beachte 
+x+1 > y; y = (n + y) — l^x für 1 n ^ (x + 1) — y; 
+ferner, daß für y = 1 die Definition 70 (wie es sein muß) im Ein­
+klang mit Definition 69 steht. 
+Satz 284: Es sei 
+Satz 284—285, Definition 70. 121 
+F(W) sei für 
+YLE^n~S.x 
+definiert. Dann ist 
+£ F(») = S FW + I F(N). 
+n = y W> = Y N = U-{-\ 
+Beweis: Nach Definition 70 und Satz 281 ist 
+X {X+\) — Y 
+S F(») = Z F((» + Y)-L) 
+« = y w = 1 
+(tt + 1) — Y X-—U 
+= Z F((N + Y)-I)* S F(((((« + D-Y) + «) + Y)-I); 
+n=l N=1 
+denn 
+((W + L)-*/) + 0Z-M) = (AJ + (_«)) + ((«+L) + (_Y)) 
+= (AF + ((-«) + (H + L))) + (-Y) = + 
+Nun ist 
+(((M+1)-Y) + n) + Y = ((M+L)-J,) + (Y + N) 
+= {((u+l)-y)+y) + n == » + (« + 1), 
+also nach Definition 70 
+a; it (AS + 1) — (U + 1) 
+2 F(») = S F(»)* S F((» + (« + I))-I) 
+U X 
+= z TW* z m 
+N=Y W=M+1 
+Satz 285: Es sei 
+F(W) /WR 
+V = N = X 
+definiert. Dann ist 
+Z F(N) = "S" F(N-*). 
+N = Y N — Y-\-V 
+Beweis: Nach Definition 70 ist die linke Seite der Behauptung 
+(X + L)-Y 
+= S F((N + Y)-L), 
+N = 1 
+die rechte (man beachte Y£«-s£ä; für Y + v^n^x + v) 
+{{X + V) + \)-{Y + V) 
+= Z F(((» + (» + »))-L)-»); 
+n = 1 
+122 Kap. 5: Komplexe Zahlen. §8: Summen und Produkte, 
+hierin ist 
+((x + v) + l)-(y+v) = (l + (* + »)) + ((-») + (- 2/)) 
+= (1+ ((« + «)+ (-»))) + (-») = (1 + *)-!, = (z + 1)-j, 
+und 
+((» + (Y+t>)) -1) - v = (n + {y+v)) - (1 + v) = (> + «/) + ») + (-» + (-1)) 
+= (((»+Y)+«)+(-»))+(-!) = ((»+Y)+(»+(-«)))-I = (»+Y)-I-
+Satz 286: #s sei 
+«/^^', 
+f(w) /wr 
+2/ = N = * 
+definiert, s (n) beziehe die n mit y^£n^Sx auf die m mit y ^£m^x. 
+Bann ist 
+£ F («(»)) = £ F(n). 
+n = y n—y 
+Beweis: s,(») — s((» + y) — 1) — («/ — 1) 
+bezieht die positiven n'=(x + l) — y auf die positiven m^(x + T) — y. 
+Daher ist nach Satz 283 
+x (x+l) — y {x+\) — y 
+£ F(*(«)) = £ F(*((» + S,)-I)) = £ F(*,(»)+ (»-!)) 
+n =y n = l n—1 
+(x+l) — y (x + l) — y x 
+= £ F(w+ («/-!)) = £ F((» + Y)-I)= £ F(»)-
+n=\ » = 1 n—y 
+Üblich ist statt 
+2 FR») 
+n = y 
+auch die saloppe Schreibweise 
+F(Y) + F(Y+I) + - + F(*) 
+(und entsprechend beim Produkt); aber völlig einwandfrei ist z. B. 
+f(l) + f(l + l) + f((l + l) + l) + f(((l + l) + l)+l), 
+mit anderen Worten 
+a+b+c+b 
+(was also nach Definition auf die alte Addition zurückführt und 
+((a + 6) + c) + b 
+bedeutet), oder z. B. 
+abcbfgbi!lmopC|rftubmEt)g. 
+Satz 286—287. 123 
+also leistet 
+2 [|F(»)L,0] = [|F(1)|,0]; 
+n — l 
+3 = LF(L)L 
+bei a; = 1 das Gewünschte. 1 gehört also zu 9J{. 
+II) x gehöre zu 9Jt. Ist f(n) für n^x + 1 definiert, so gibt 
+es ein 3t mit 
+I X 
+I 2 F(»)|^S., 
+I»=I 
+I [|F(»)|,0] = [3t,0\. 
+n = 1 
+Nach Satz 278 und Satz 271 ist 
+\x + 1 
+I 2 N») 
+!w= 1 
+= I 2 F(«) + F(* + I) ^ 2 F(») +LF(* + I)L 
+! W = 1 »1=1 
+<S1 + |F(z + L)L, 
+Man kann auch ruhig z. B. 
+a-B + c 
+im Sinne von 
+a + (-b) + c 
+schreiben, da jedenfalls 
+F(L) + F(L + L) + F((L + L) + L) 
+mit 
+F(L) = O, F (1 + 1) = — 6, F((L + L) + L) = c 
+gemeint ist. 
+Nunmehr bedeuten kleine lateinische Buchstaben wiederum 
+positive ganze Zahlen. 
+Satz 287: Ist f (n) für n^x definiert, so gibt es ein 3, so daß 
+X 
+S F(») ^s, 
+i = i 
+2 [|FWI,O] = [3,0]. 
+n = 1 
+Beweis: 9Ji sei die Menge der x, für die es (bei beliebigem 
+f(w)) ein solches 3 gibt. 
+I) Ist F(L) definiert, so ist 
+2 F(»)' = LF(I)L, 
+n — 1 
+124 Kap. 5: Komplexe Zahlen. § 8: Summen und Produkte, 
+gesetzt wird, 
+S1+[f(* + l)l 
+x+1 
+S F(») 
+n = l 
+Andererseits ist nach Satz 278 
+X+1 X 
+S DF(»)L,O]= S [|F(»)L,O] + [[F(*+I)],OJ 
+n =1 n — l 
+= [Ä1,0] + [|f(* + l)|,0] = [St + |f(^ + l)|, 0 + 0] = [Ä,0]. 
+S leistet also das Gewünschte bei x + 1; also gehört x+1 zu ffl, 
+und der Satz ist bewiesen. 
+Satz 288: Ist f (n) für n^x definiert, so ist 
+0 N F(») 
+n= 1 
+= N [IF(»)I,O]. 
+»i=i 
+Beweis: 3Jt sei die Menge der x, für die dies gilt. 
+I) Ist f(l) definiert, so ist 
+TT F(«)!,OL = [|F(i)l,O] = FL [|F(»)!,0]. 
+n = 1 n = 1 
+Also gehört 1 zu üft. 
+II) x gehöre zu Ist f(n) für w < a+ 1 definiert, so ist 
+nach Satz 278 und Satz 268 
+xn[\\(n)\,o] = FR OF(n)I,O]-[IF(^+I)I,O] 
+n = 1 n = 1 
+F[ F(n) ,O].[|F(3 + L)],0] 
+»1=1 
+fl f(n) .|f(» + 1)1-0.0, N f(») -0 + 0.|f(* + L)| 
+n = 1 w = 1 
+N FW|.|F(*+I)I,O 
+n = 1 
+33+1 
+N F(») »O 
+n = 1 
+N f(n).f(* + L),0 
+w = 1 1 
+also a: + 1 zu 9J£ gehörig, und der Satz ist bewiesen. 
+Satz 289: Ist f (») fwr w ^ a; definiert, so ist 
+IT F(») = N 
+w = 1 
+also, wenn 
+Satz 288—289. 
+dann und nur dann, wenn ein n<x mit 
+f(») = n 
+vorhanden ist. 
+Beweis: 9Ä sei die Menge der x, für die dies gilt. 
+I) TT fOO = n 
+n = 1 
+ist mit 
+f(l) = n 
+identisch. Also gehört 1 zu 3Ä. 
+II) x gehöre zu W. 
+x+1 
+TT f(») = n 
+n= 1 
+bedeutet 
+ft f(»)-f(* + l) = n; 
+n = l 
+nach Satz 221 ist hierfür notwendig und hinreichend 
+x 
+IT f(ra) = n oder \(x + l) = n, 
+n= l 
+also (da x zu 9K gehört) notwendig und hinreichend 
+f(») : n für ein n <x oder für n = x+1. 
+x + 1 gehört also zu 3K, und der Satz ist bewiesen. 
+126 Kap. 5: Komplexe Zahlen. §9: Potenzen. 
+§ 9. 
+Potenzen. 
+In diesem Paragraphen mögen kleine lateinische Buchstaben 
+ganze Zahlen bezeichnen. 
+Definition 71: 
+E 
+| [ j für x>0, 
+»= 1 
+e für i 4= n, x = 0, 
+e 
+•-,ir /w- E 4= n, ^ < 0. 
+(Sprich: E hoch Nicht definiert ist also f lediglich für 
+E = n, x ^ 0. 
+Man beachte, daß für 
+E 4= n, x < 0 
+nach der ersten Zeile der Definition 71 und Satz 289 
+6 
+ist, so daß dann ^ einen Sinn hat. 
+E 
+Satz 290: Für 
+ETtl 
+ist 
+t 4- n. 
+Beweis: Für x>0 folgt dies aus Satz 289, für x — 0 aus 
+der Definition und für x < 0 aus 
+f E1*1 4= n. 
+Satz 291: 
+Beweis: 
+Satz 292: Es sei 
+oder 
+S' = II E = E-
+n = 1 
+z>0 
+E 4= n, t) 4= n. 
+Satz 290—293, Definition 71. 127 
+2) Es sei 
+Dann ist 
+3) Es sei 
+Nach 1) ist 
+(ST))* = JF TF. 
+X = 0, G 4= N, T) #= N. 
+(jnf = E = ee = f 9* 
+A; < 0, i =|= N, L) =1= N. 
+e _ e _ e E 
+OYF • " RJ; »* _ xx ' NX " 
+(S^)* = ff. 
+Satz 293: ex = e. 
+Beweis: Nach Satz 292 ist 
+et = e = (ee)1 = e^e*, 
+N = exex — e*e = e*(e* —e), 
+also (nach Satz 290 und Satz 221) 
+Dann ist 
+FEN)* = ff. 
+Vorbemerkung: Beide Seiten haben jedenfalls einen Sinn; 
+denn für x ^ 0 ist 
+ict) N. 
+Beweis: 1) Bei festen r, t) sei SR die Menge der x > 0 mit 
+FEN)A: = ff. 
+I) Nach Satz 291 ist 
+(SN)' = JCN = SY, 
+also 1 zu SR gehörig. 
+II) Ist x zu SR gehörig, so ist 
+w+' =an1(sö) = n («)•(? 9) = (f = (fs)Of 9) 
+n = 1 w = 1 
+(
+a; \ I x \ %-\-\ x-\-l 
+n EE n 9 9 = n E- n 9 = s^tr, 
+w=l /\w=l / w = l n=\ 
+also a; + 1 zu SR gehörig. 
+Für x > 0 ist also stets 
+128 Kap. 5: Komplexe Zahlen. § 9: Potenzen. 
+ß) Es sei 
+Dann ist 
+A) Für 
+ist nach 1) 
+B) Für 
+ist 
+C) Für 
+ist nach 1) 
+x > 0, y < 0. 
+«4 « GLYL GL»!' 
+*>|Y| 
+y. Ii J. y E 1 
+X = |«/| 
+4 — P — RO r*+V 
+C 4 — 4 
+*<|Y| 
+Satz 294: Es sei 
+x>0, y>0 
+oder 
+S 4= n. 
+Dann ist 
+ff = f+y. 
+Beweis: 1) Es sei 
+x > 0, y > 0. 
+Dann ist nach Satz 281 
+x y x-\-y 
+ff= N S- N S = N ? = R+2/-
+W = 1 »1=1 w = 1 
+2) Es sei 
+E 4= n 
+und nicht zugleich 
+x > 0, «/ > 0. 
+«) Es sei 
+x < 0, «/ < 0. 
+Dann ist nach 1) 
+^ „ EE E _E_ 
+Satz 294—297. 
+y) Es sei 
+x < 0, y > 0. 
+Dann ist nach /3) 
+ff = ff = = 
+6") Es sei 
+x = 0. 
+Dann ist 
+ff = ES» = f = f+y 
+s) Es sei 
+x^=0, y = 0. 
+Dann ist nach d) 
+FF = f f = F+* = 
+Satz 295: J"«r 
+E 4= N 
+f _ f-y_ 
+E 
+Beweis: Nach Satz 294 ist 
+nach Satz 290 ist 
+f 4= N, also 
+E; 
+Satz 296: Für 
+E 4= N 
+e 
+F 1 
+Beweis: Nach Satz 295 ist 
+^ _ E_ R0-a.-
+E* E* ? 
+Satz 297: Es sei 
+x > 0, «/ > 0 
+ODER 
+E 4= 
+Dann ist 
+(ff = fy. 
+Beweis: 1) Es sei 
+E = It, x>0, y: 
+Landau, Grundlagen der Analysis. 
+130 Kap. 5: Komplexe Zahlen. § 9: Potenzen. 
+Dann ist nach Satz 289 
+ify = (nj = ny = n = nxy = fy. 
+2) Es sei 
+i" =1= n. 
+a) Bei festen £, x sei SR die Menge der y > 0 mit 
+(fr = ty. 
+I) (S? = f = f1; 
+1 gehört also zu SR. 
+II) «/ gehöre zu SR. Dann ist nach Satz 294 
+(Xy+i = (f)y(fY = ff = fy+x = F 
+also +1 zu SR gehörig. 
+Für y > 0 ist also die Behauptung wahr. 
+b) Es sei 
+V = 0. 
+Dann ist 
+(f)y = E = F. 
+c) Es sei 
+3,<0. 
+Dann ist nach a) 
+(sT = t'\ 
+also nach Satz 296 und a) 
+- 1_ = = E _ R-(«I,I) _ 
+Satz 298—299. 131 
+§ 10. 
+Einordnung der reellen Zahlen. 
+Satz 298: [S + H,0] = [3, 0] + [ff, 0]; 
+[S-H,0] = [*,0]-[ff,0]; 
+[3H,0] = [3,0][H,0]; 
+M 
+H 
+[8,01 
+[H,0] 
+falls ff =\= 0; 
+[-3,0] = -[5,0]; 
+\[3,0}\ = \S\. 
+Beweis: 1) [5, 0] + [ff, 0] = [3 + H, 0 + 0] = [S + H 0]. 
+2) [3, 0] - [H, 0] = [S-H, 0 - 0] = [S-H, 0]. 
+3) [3,0][ff,0] = [3H-0-0, 3-0 + 0-H] = [3H,0]. 
+4) Nach 3) ist, falls H 0, 
+[H,0] 
+H 
+= 
+ff O 
+ff ff = [X 0], 
+0 
+[3, 0] _ 
+[H,Ö] [II ' 
+5) -[ff,0] = [-5, -0] = [-Ä.0]. 
+6) \5\ = \f\3\\3\ = SJSS = \/3S+~Ö-0= \[S, 0]|. 
+Satz 299: Die komplexen Zahlen der Form [x, 0] geniigen den 
+fünf Axiomen der natürlichen Zahlen, wenn [1, 0] an Stelle von 1 
+genommen wird und 
+[x, 0]' = [x1, 0] 
+gesetzt wird. 
+Beweis: [3] sei die Menge der [x, 0]. 
+1) [1, 0] gehört zu [3]. 
+2) Mit [x, 0] ist [x, 0]' in [£] vorhanden. 
+3) Stets ist 
+x' 4= 1, 
+132 Kap. 5: Komplexe Zahlen. § 10: Einordnung der reellen Zahlen. 
+also 
+[x1, 0] #= [1, 0], 
+[x, 0]' 4= [1, 0]. 
+4) Aus 
+[x, 0]' \y, O]' 
+folgt 
+[*', 0] W, O], 
+SC' 
+[*, 0] B, O]. 
+5) Eine Menge [SR] von Zahlen aus [$] habe die Eigenschaften: 
+I) [1, 0] gehört zu [SR]. 
+II) Falls [«, 0] zu [SR] gehört, so gehört [x, 0]' zu [SR]. 
+Dann bezeichne SR die Menge der x, für die [x, 0] zu [SR] ge­
+hört. Alsdann ist 1 zu SR gehörig und mit jedem x von SR auch 
+x' zu SR gehörig. Also gehört jede positive ganze Zahl x zu 
+SR, also jedes [x, 0] zu [SR]. 
+Da Summe, Differenz, Produkt und (wofern vorhanden) Quo­
+tient zweier [3, 0] nach Satz 298 den alten Begriffen entsprechen, 
+desgleichen die Zeichen — [3, 0] und \[3, 0]|; da man 
+definieren kann, so haben also die komplexen Zahlen [3, 0] alle 
+Eigenschaften, die wir in Kapitel 4 für reelle Zahlen bewiesen 
+haben, und insbesondere die Zahlen [x, 0] alle bewiesenen Eigen­
+schaften der positiven ganzen Zahlen. 
+Daher werfen wir die reellen Zahlen weg, ersetzen sie durch 
+die entsprechenden komplexen Zahlen [3, 0] und brauchen nur von 
+komplexen Zahlen zu reden. (Die reellen Zahlen verbleiben aber 
+paarweise im Begriff der komplexen Zahl.) 
+Definition 72: (Das freigewordene Zeichen) 3 bezeichnet die 
+komplexe Zahl [3, 0], auf die auch das Wort reelle Zahl übergeht. 
+Ebenso heißt jetzt [3, 0] bei ganzem 3 ganze Zahl, bei rationalem 3 
+rationale Zahl, bei irrationalem 3 irrationale Zahl, bei positivem 3 
+positive Zahl, bei negativem 3 negative Zahl. 
+Also schreiben wir z. B. 0 statt n, 1 statt e. 
+Nunmehr können wir die komplexen Zahlen mit kleinen oder 
+[3, 0] > [H, 0] für 3 > H, 
+[3, 0] < [H, 0] für 3 < H 
+Satz 300—301, Definition 72—73. 133 
+Durch Satz 301 ist das Zeichen [ ] unnötig geworden; die 
+komplexen Zahlen sind eben die Zahlen ux + u2 i, wo ux und u, 
+reell sind; gleichen bzw. verschiedenen Paaren w,, u., entsprechen 
+gleiche bzw. verschiedene Zahlen, und Summe, Differenz, Produkt 
+zweier komplexer Zahlen u, + u2i, v1 + vii (wo w,, u2, vt, v2 reell 
+sind) bildet man nach den Formeln 
+(w1 + M2i) + («'i + *'.*) = K + ^O + K+ «'.)*) 
+K + M)-K + v) = K-^ + K-^)*-
+(M, + w2 i) (»4 + v2 i) = (ux vx - u2 v2) + (M, vt + w2 i. 
+Man braucht sich nicht einmal diese Formeln zu merken, sondern 
+nur, daß die Gesetze der reellen Zahlen erhalten bleiben und 
+Satz 300 gilt; danach rechnet man einfach so: 
+(u1 + uti) + (vl + vti) = (ul+vl) + (u2i + v2i) = (w, + vx) + (ut + v2)i, 
+(u1 + uii) — (v1 + v2i) = (u1 — v1) + (u2i — v2i) = (M, — vx) + (u2 — v2) i, 
+(Mj + itjiJ^+Dji) = (w, + uii)vl + (ux + u%i)v„i 
+= ulvl + u2iv1 + u1v2i + uai v2 i 
+= ux v j + w2 v1i + u1 v2 i + w, »2 i i 
+= uxvt + u2vti + utv2i + u2 v2 (— 1) 
+- (w, — u2 vt) + (w, W2 + u, vt) i. 
+großen Buchstaben beliebiger Alphabete (auch promiscue) bezeichnen. 
+Für die folgende spezielle Zahl ist aber ein kleiner lateinischer 
+Buchstabe üblich auf Grund der 
+Definition 73: i = [0, 1]. 
+Satz 300: »t = -1. 
+Beweis: ii = [0,1][0,1] = [0-0-1-1, 0-1 + 1-0] 
+= [-1,0] = -1. 
+Satz 301: Für reelle u2 ist 
+w, + u2i = [«,, wj. 
+Zu jeder komplexen Zahl x gibt es also genau ein Paar reeller Zahlen 
+M, , u2 mit 
+x = ux + u2i. 
+Beweis: Für reelle u1} u2 ist 
+u, + u2i = [«,, 0] + [«„ 0][0, 1] = [«„ 0] + K-0-0-l, «s-l + 0-0] 
+= K, 0] + [0, wj = [w,, MJ. 
+134 Kap. 5: Komplexe Zahlen. § 10: Einordnung der reellen Zahlen. 
+Was die Division betrifft, so ergibt die Rechnung, wenn i 
+und v2 nicht beide 0 sind, 
+M, + ut i _ (M, + M2 i) (vl — v2 i) _ (ulv1 + uava) + (— (u^A + U^V^i 
+V,+VJ ~ (Vi+V2i)(Vl—V2i) ~ (VlVi+V-2V2) + (—(VlV2)+V2Vi)i 
+_ (w, + w2 + (— (ut t>„) + w2 g,) i _ M,«, + »t2«2 — (M,t>2) + M,«i 
+als kanonische Darstellung im Sinne des Satzes 301. 
