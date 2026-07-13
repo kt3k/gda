@@ -67,7 +67,7 @@ Edmund Landau.
 
 ## Vorwort für den Kenner.
 
-<!-- Anmerkung: Seite VII (der Anfang dieses Vorworts) fehlt in der OCR-Vorlage; der Text setzt mitten im Satz auf Seite VIII ein. -->
+> *Anmerkung: Seite VII (der Anfang dieses Vorworts) fehlt in der Scan-Vorlage; der Text setzt mitten im Satz auf Seite VIII ein.*
 
 widerlegen) läßt; und da man seit vielen Jahrzehnten die Beweisbarkeit aller dieser Dinge kennt, ist es dem Lernenden wirklich zu gönnen, daß er die (durchweg ganz leichten) Beweise zu Beginn seines Studiums lernt.
 

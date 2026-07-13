@@ -1,0 +1,6 @@
+node_modules/
+.next/
+out/
+# pages/ 内の本文 md はビルド時にリポジトリ直下からコピーされる(単一ソース維持)
+pages/vorwort.md
+pages/kapitel-*.md
