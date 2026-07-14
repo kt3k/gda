@@ -12,6 +12,16 @@ const de = [
   { text: 'Kapitel 5. Komplexe Zahlen', link: '/de/kapitel-5' },
 ]
 
+const en = [
+  { text: 'Overview', link: '/en' },
+  { text: 'Preface', link: '/en/vorwort' },
+  { text: 'Chapter 1. Natural Numbers', link: '/en/kapitel-1' },
+  { text: 'Chapter 2. Fractions', link: '/en/kapitel-2' },
+  { text: 'Chapter 3. Cuts', link: '/en/kapitel-3' },
+  { text: 'Chapter 4. Real Numbers', link: '/en/kapitel-4' },
+  { text: 'Chapter 5. Complex Numbers', link: '/en/kapitel-5' },
+]
+
 const ja = [
   { text: '概要', link: '/ja' },
   { text: '序文', link: '/ja/vorwort' },
@@ -30,11 +40,13 @@ export default defineConfig({
   basePath: process.env.PAGES_BASE_PATH ?? undefined,
   topNav: [
     { text: 'Deutsch', link: '/de' },
+    { text: 'English', link: '/en' },
     { text: '日本語訳', link: '/ja' },
   ],
   socials: [{ icon: 'github', link: 'https://github.com/kt3k/gda' }],
   sidebar: {
     '/de': de,
+    '/en': en,
     '/ja': ja,
   },
   markdown: {

@@ -1,8 +1,10 @@
 node_modules/
 docs/dist/
 .vocs/
-# docs/pages/{de,ja}/ の本文 md は sync.mjs がリポジトリ直下 / ja/ から生成する(単一ソース維持)
+# docs/pages/{de,en,ja}/ の本文 md は sync.mjs がリポジトリ直下 / en/ / ja/ から生成する(単一ソース維持)
 docs/pages/de/vorwort.md
 docs/pages/de/kapitel-*.md
+docs/pages/en/vorwort.md
+docs/pages/en/kapitel-*.md
 docs/pages/ja/vorwort.md
 docs/pages/ja/kapitel-*.md

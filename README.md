@@ -4,9 +4,9 @@ Edmund Landau, *Grundlagen der Analysis (Das Rechnen mit ganzen, rationalen, irr
 
 OCR されたスキャン PDF([main.pdf](main.pdf))からテキストを抽出・修正し、markdown 化したものです。数式は LaTeX(` ```math ` / `$...$`)で記述しています。
 
-ドキュメントサイト: **https://kt3k.github.io/gda/**(ドイツ語原文 `/de/` と日本語訳 `/ja/`、[vocs](https://vocs.dev) 製)
+ドキュメントサイト: **https://kt3k.github.io/gda/**(ドイツ語原文 `/de/`・英訳 `/en/`・日本語訳 `/ja/`、[vocs](https://vocs.dev) 製)
 
-日本語訳は [ja/](ja/) ディレクトリにあります(LLM による機械翻訳)。
+日本語訳は [ja/](ja/)、英訳は [en/](en/) ディレクトリにあります(いずれも LLM による機械翻訳)。
 
 ## Inhaltsverzeichnis
 
