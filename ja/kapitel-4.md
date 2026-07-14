@@ -438,8 +438,7 @@ $\Xi < 0$ で $|\Xi|$ が整であることをいう。
 \Xi + \mathrm{H} =
 \begin{cases}
 -(|\Xi| + |\mathrm{H}|), & \text{wenn } \Xi < 0,\ \mathrm{H} < 0; \\
-0, & \text{wenn } \Xi > 0,\ \mathrm{H} < 0,\ |\Xi| = |\mathrm{H}|; \\
-|\Xi| - |\mathrm{H}| \ \text{ないし} \ -(|\mathrm{H}| - |\Xi|), & \text{wenn } \Xi > 0,\ \mathrm{H} < 0,\ |\Xi| > |\mathrm{H}| \ \text{ないし} \ |\Xi| < |\mathrm{H}|; \\
+\left.\begin{matrix} |\Xi| - |\mathrm{H}| \\ 0 \\ -(|\mathrm{H}| - |\Xi|) \end{matrix}\right\}\!, & \text{wenn } \Xi > 0,\ \mathrm{H} < 0, \ \begin{cases} |\Xi| > |\mathrm{H}|; \\ |\Xi| = |\mathrm{H}|; \\ |\Xi| < |\mathrm{H}|; \end{cases} \\
 \mathrm{H} + \Xi, & \text{wenn } \Xi < 0,\ \mathrm{H} > 0; \\
 \mathrm{H}, & \text{wenn } \Xi = 0; \\
 \Xi, & \text{wenn } \mathrm{H} = 0.
@@ -801,7 +800,7 @@ $\Xi > 0$ に対しては、$-\Xi$ という概念をすでに定義 43 から�
 に分けるものとする)、いずれの側にもそれぞれ次の記号が成り立つ:
 
 ```math
->, \ =, \ <; \qquad >, \ =, \ <.
+> \ < \ > \ = \ < \ > \ = \ <.
 ```
 
 **定理 183:** もし
@@ -986,7 +985,11 @@ B) もし
 ならば、A) により
 
 ```math
-\Xi + \mathrm{H} = -(-\mathrm{H} + (-\Xi)) = -((\xi_2 + \eta_2) - (\xi_1 + \eta_1)) = (\xi_1 + \eta_1) - (\xi_2 + \eta_2).
+\begin{aligned}
+\Xi + \mathrm{H} &= -(-\mathrm{H} + (-\Xi)) = -((\eta_2 - \eta_1) + (\xi_2 - \xi_1)) \\
+&= -((\eta_2 + \xi_2) - (\eta_1 + \xi_1)) = (\eta_1 + \xi_1) - (\eta_2 + \xi_2) \\
+&= (\xi_1 + \eta_1) - (\xi_2 + \eta_2).
+\end{aligned}
 ```
 
 C) もし

@@ -752,7 +752,7 @@ hence
 **Theorem 65:** From
 
 ```math
-\frac{x_1}{x_2} > \frac{y_1}{y_2}, \quad \frac{z_1}{z_2} \sim \frac{u_1}{u_2} \quad\text{or}\quad \frac{x_1}{x_2} \sim \frac{y_1}{y_2}, \quad \frac{z_1}{z_2} > \frac{u_1}{u_2}
+\frac{x_1}{x_2} \gtrsim \frac{y_1}{y_2}, \quad \frac{z_1}{z_2} > \frac{u_1}{u_2} \quad\text{or}\quad \frac{x_1}{x_2} > \frac{y_1}{y_2}, \quad \frac{z_1}{z_2} \gtrsim \frac{u_1}{u_2}
 ```
 
 it follows that
@@ -1057,7 +1057,7 @@ hence
 **Theorem 75:** From
 
 ```math
-\frac{x_1}{x_2} > \frac{y_1}{y_2}, \quad \frac{z_1}{z_2} \sim \frac{u_1}{u_2} \quad\text{or}\quad \frac{x_1}{x_2} \sim \frac{y_1}{y_2}, \quad \frac{z_1}{z_2} > \frac{u_1}{u_2}
+\frac{x_1}{x_2} \gtrsim \frac{y_1}{y_2}, \quad \frac{z_1}{z_2} > \frac{u_1}{u_2} \quad\text{or}\quad \frac{x_1}{x_2} > \frac{y_1}{y_2}, \quad \frac{z_1}{z_2} \gtrsim \frac{u_1}{u_2}
 ```
 
 it follows that

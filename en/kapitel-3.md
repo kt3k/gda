@@ -1178,13 +1178,13 @@ X_1 < X_2 < X.
 Then $X_2$ is an upper number for $\xi$ and not the smallest; from
 
 ```math
-\left(\frac{1}{X}\right) X_2 < \left(\frac{1}{X}\right) X = 1 = \left(\frac{1}{X_2}\right) X_2
+X_2 \frac{1}{X} < X \frac{1}{X} = 1 = X_2 \frac{1}{X_2}
 ```
 
 it follows that
 
 ```math
-\frac{1}{X} < \frac{1}{X_2},
+\frac{1}{X_2} > \frac{1}{X},
 ```
 
 so that we have found a number of our set that is greater than the given one.

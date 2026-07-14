@@ -1252,13 +1252,13 @@ X_1 < X_2 < X.
 なる $X_2$ を選ぶ。このとき $X_2$ は $\xi$ における上数であり、最小のものではない。
 
 ```math
-\left(\frac{1}{X}\right) X_2 < \left(\frac{1}{X}\right) X = 1 = \left(\frac{1}{X_2}\right) X_2
+X_2 \frac{1}{X} < X \frac{1}{X} = 1 = X_2 \frac{1}{X_2}
 ```
 
 から
 
 ```math
-\frac{1}{X} < \frac{1}{X_2},
+\frac{1}{X_2} > \frac{1}{X},
 ```
 
 が従い、こうして、与えられた数より大きい、われわれの集合の数が見出された。

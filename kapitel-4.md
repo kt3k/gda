@@ -412,8 +412,7 @@ Wir haben also jetzt positive ganze Zahlen, die ganze Zahl 0 und negative ganze 
 \Xi + \mathrm{H} =
 \begin{cases}
 -(|\Xi| + |\mathrm{H}|), & \text{wenn } \Xi < 0,\ \mathrm{H} < 0; \\
-0, & \text{wenn } \Xi > 0,\ \mathrm{H} < 0,\ |\Xi| = |\mathrm{H}|; \\
-|\Xi| - |\mathrm{H}| \ \text{bzw.} \ -(|\mathrm{H}| - |\Xi|), & \text{wenn } \Xi > 0,\ \mathrm{H} < 0,\ |\Xi| > |\mathrm{H}| \ \text{bzw.} \ |\Xi| < |\mathrm{H}|; \\
+\left.\begin{matrix} |\Xi| - |\mathrm{H}| \\ 0 \\ -(|\mathrm{H}| - |\Xi|) \end{matrix}\right\}\!, & \text{wenn } \Xi > 0,\ \mathrm{H} < 0, \ \begin{cases} |\Xi| > |\mathrm{H}|; \\ |\Xi| = |\mathrm{H}|; \\ |\Xi| < |\mathrm{H}|; \end{cases} \\
 \mathrm{H} + \Xi, & \text{wenn } \Xi < 0,\ \mathrm{H} > 0; \\
 \mathrm{H}, & \text{wenn } \Xi = 0; \\
 \Xi, & \text{wenn } \mathrm{H} = 0.
@@ -775,7 +774,7 @@ und in den drei ersten Fällen der Definition 52, wenn der dritte in die drei Un
 zerlegt wird, beide Male resp. die Zeichen
 
 ```math
->, \ =, \ <; \qquad >, \ =, \ <.
+> \ < \ > \ = \ < \ > \ = \ <.
 ```
 
 **Satz 183:** Aus
@@ -960,7 +959,11 @@ B) Ist
 so ist nach A)
 
 ```math
-\Xi + \mathrm{H} = -(-\mathrm{H} + (-\Xi)) = -((\xi_2 + \eta_2) - (\xi_1 + \eta_1)) = (\xi_1 + \eta_1) - (\xi_2 + \eta_2).
+\begin{aligned}
+\Xi + \mathrm{H} &= -(-\mathrm{H} + (-\Xi)) = -((\eta_2 - \eta_1) + (\xi_2 - \xi_1)) \\
+&= -((\eta_2 + \xi_2) - (\eta_1 + \xi_1)) = (\eta_1 + \xi_1) - (\eta_2 + \xi_2) \\
+&= (\xi_1 + \eta_1) - (\xi_2 + \eta_2).
+\end{aligned}
 ```
 
 C) Ist

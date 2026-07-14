@@ -810,7 +810,7 @@ x_1 y_2 > y_1 x_2
 **定理 65:**
 
 ```math
-\frac{x_1}{x_2} > \frac{y_1}{y_2}, \quad \frac{z_1}{z_2} \sim \frac{u_1}{u_2} \quad\text{または}\quad \frac{x_1}{x_2} \sim \frac{y_1}{y_2}, \quad \frac{z_1}{z_2} > \frac{u_1}{u_2}
+\frac{x_1}{x_2} \gtrsim \frac{y_1}{y_2}, \quad \frac{z_1}{z_2} > \frac{u_1}{u_2} \quad\text{または}\quad \frac{x_1}{x_2} > \frac{y_1}{y_2}, \quad \frac{z_1}{z_2} \gtrsim \frac{u_1}{u_2}
 ```
 
 から
@@ -1139,7 +1139,7 @@ x_1 y_2 > y_1 x_2,
 **定理 75:**
 
 ```math
-\frac{x_1}{x_2} > \frac{y_1}{y_2}, \quad \frac{z_1}{z_2} \sim \frac{u_1}{u_2} \quad\text{または}\quad \frac{x_1}{x_2} \sim \frac{y_1}{y_2}, \quad \frac{z_1}{z_2} > \frac{u_1}{u_2}
+\frac{x_1}{x_2} \gtrsim \frac{y_1}{y_2}, \quad \frac{z_1}{z_2} > \frac{u_1}{u_2} \quad\text{または}\quad \frac{x_1}{x_2} > \frac{y_1}{y_2}, \quad \frac{z_1}{z_2} \gtrsim \frac{u_1}{u_2}
 ```
 
 から

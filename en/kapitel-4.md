@@ -412,8 +412,7 @@ We thus now have positive integers, the integer 0, and negative integers.
 \Xi + \mathrm{H} =
 \begin{cases}
 -(|\Xi| + |\mathrm{H}|), & \text{if } \Xi < 0,\ \mathrm{H} < 0; \\
-0, & \text{if } \Xi > 0,\ \mathrm{H} < 0,\ |\Xi| = |\mathrm{H}|; \\
-|\Xi| - |\mathrm{H}| \ \text{resp.} \ -(|\mathrm{H}| - |\Xi|), & \text{if } \Xi > 0,\ \mathrm{H} < 0,\ |\Xi| > |\mathrm{H}| \ \text{resp.} \ |\Xi| < |\mathrm{H}|; \\
+\left.\begin{matrix} |\Xi| - |\mathrm{H}| \\ 0 \\ -(|\mathrm{H}| - |\Xi|) \end{matrix}\right\}\!, & \text{if } \Xi > 0,\ \mathrm{H} < 0, \ \begin{cases} |\Xi| > |\mathrm{H}|; \\ |\Xi| = |\mathrm{H}|; \\ |\Xi| < |\mathrm{H}|; \end{cases} \\
 \mathrm{H} + \Xi, & \text{if } \Xi < 0,\ \mathrm{H} > 0; \\
 \mathrm{H}, & \text{if } \Xi = 0; \\
 \Xi, & \text{if } \mathrm{H} = 0.
@@ -775,7 +774,7 @@ and in the first three cases of Definition 52, if the third is decomposed into t
 there hold both times, respectively, the signs
 
 ```math
->, \ =, \ <; \qquad >, \ =, \ <.
+> \ < \ > \ = \ < \ > \ = \ <.
 ```
 
 **Theorem 183:** From
@@ -960,7 +959,11 @@ B) If
 then by A)
 
 ```math
-\Xi + \mathrm{H} = -(-\mathrm{H} + (-\Xi)) = -((\xi_2 + \eta_2) - (\xi_1 + \eta_1)) = (\xi_1 + \eta_1) - (\xi_2 + \eta_2).
+\begin{aligned}
+\Xi + \mathrm{H} &= -(-\mathrm{H} + (-\Xi)) = -((\eta_2 - \eta_1) + (\xi_2 - \xi_1)) \\
+&= -((\eta_2 + \xi_2) - (\eta_1 + \xi_1)) = (\eta_1 + \xi_1) - (\eta_2 + \xi_2) \\
+&= (\xi_1 + \eta_1) - (\xi_2 + \eta_2).
+\end{aligned}
 ```
 
 C) If

@@ -1178,13 +1178,13 @@ X_1 < X_2 < X.
 Dann ist $X_2$ Oberzahl bei $\xi$ und nicht die kleinste; aus
 
 ```math
-\left(\frac{1}{X}\right) X_2 < \left(\frac{1}{X}\right) X = 1 = \left(\frac{1}{X_2}\right) X_2
+X_2 \frac{1}{X} < X \frac{1}{X} = 1 = X_2 \frac{1}{X_2}
 ```
 
 folgt
 
 ```math
-\frac{1}{X} < \frac{1}{X_2},
+\frac{1}{X_2} > \frac{1}{X},
 ```
 
 so daß wir eine Zahl unserer Menge gefunden haben, die größer ist als die gegebene.
