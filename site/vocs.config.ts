@@ -29,7 +29,7 @@ export default defineConfig({
   // GitHub Pages (kt3k.github.io/gda) 用。ローカルでは未設定のまま。
   basePath: process.env.PAGES_BASE_PATH ?? undefined,
   topNav: [
-    { text: 'Deutsch (Original)', link: '/de' },
+    { text: 'Deutsch', link: '/de' },
     { text: '日本語訳', link: '/ja' },
   ],
   socials: [{ icon: 'github', link: 'https://github.com/kt3k/gda' }],
