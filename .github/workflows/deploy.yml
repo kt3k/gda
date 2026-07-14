@@ -21,7 +21,7 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
-          node-version: 22
+          node-version: 24
           cache: npm
           cache-dependency-path: site/package-lock.json
       - run: npm ci
@@ -30,10 +30,13 @@ jobs:
         working-directory: site
         env:
           PAGES_BASE_PATH: /gda
-      - run: touch site/out/.nojekyll
+          # KaTeX をビルド時に HTML 展開するためメモリを多めに要する
+          # (public リポジトリの ubuntu-latest ランナーは 4 コア / RAM 16GB)
+          NODE_OPTIONS: --max-old-space-size=8192
+      - run: touch site/docs/dist/.nojekyll
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: site/out
+          path: site/docs/dist
 
   deploy:
     needs: build

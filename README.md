@@ -4,6 +4,10 @@ Edmund Landau, *Grundlagen der Analysis (Das Rechnen mit ganzen, rationalen, irr
 
 OCR されたスキャン PDF([main.pdf](main.pdf))からテキストを抽出・修正し、markdown 化したものです。数式は LaTeX(` ```math ` / `$...$`)で記述しています。
 
+ドキュメントサイト: **https://kt3k.github.io/gda/**(ドイツ語原文 `/de/` と日本語訳 `/ja/`、[vocs](https://vocs.dev) 製)
+
+日本語訳は [ja/](ja/) ディレクトリにあります(LLM による機械翻訳)。
+
 ## Inhaltsverzeichnis
 
 - [Vorwort](vorwort.md) — Vorwort für den Lernenden / Vorwort für den Kenner
@@ -20,5 +24,5 @@ OCR されたスキャン PDF([main.pdf](main.pdf))からテキストを抽出�
 
 ## 既知の欠落
 
-- 元のスキャン PDF には本の **VII ページ(Vorwort für den Kenner の冒頭)が物理的に欠落**しています。該当箇所は [vorwort.md](vorwort.md) 内に HTML コメントで明示しています。
+- 元のスキャン PDF には本の **VII ページ(Vorwort für den Kenner の冒頭)が物理的に欠落**しています。該当箇所は [vorwort.md](vorwort.md) 内に注記しています。
 - OCR 由来の細かい欠落(ページ境界で失われた数式など)が数箇所あり、各ファイル内にそのまま(捏造せずに)残しています。

@@ -2,19 +2,23 @@
   "name": "gda-site",
   "version": "0.0.0",
   "private": true,
+  "type": "module",
   "scripts": {
-    "sync": "cp ../vorwort.md ../kapitel-1.md ../kapitel-2.md ../kapitel-3.md ../kapitel-4.md ../kapitel-5.md pages/",
-    "dev": "npm run sync && next dev",
-    "build": "npm run sync && next build"
+    "postinstall": "patch-package",
+    "sync": "node sync.mjs",
+    "dev": "npm run sync && vocs dev",
+    "build": "npm run sync && vocs build",
+    "preview": "vocs preview"
   },
   "dependencies": {
-    "next": "^14.2.0",
-    "nextra": "^3.3.0",
-    "nextra-theme-docs": "^3.3.0",
-    "react": "^18.3.0",
-    "react-dom": "^18.3.0"
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "vocs": "^1.4.1"
   },
   "devDependencies": {
-    "typescript": "^5.9.3"
+    "katex": "^0.16.11",
+    "patch-package": "^8.0.1",
+    "rehype-katex": "^7.0.1",
+    "remark-math": "^6.0.0"
   }
 }
