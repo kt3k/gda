@@ -1329,10 +1329,14 @@ X_2 = \left(\frac{1}{U} \cdot U\right) X_2 = \frac{1}{U} (UX_2) < \frac{1}{U} \c
 
 したがって $\frac{X_1}{U}$ は $\xi$ における上数であり、最小のものではない。
 
+```math
+U \cdot \frac{X_1}{U} = X_1
+```
+
 から
 
 ```math
-U = X_1 \cdot \frac{1}{X_1/U};
+U = \frac{X_1}{X_1/U} = X_1 \cdot \frac{1}{X_1/U};
 ```
 
 が従う。ここで $X_1$ は $\xi$ における下数、$\frac{1}{X_1/U}$ は $v$ における下数である。よって $U$ は $\xi v$ における下数である。

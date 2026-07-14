@@ -1253,10 +1253,14 @@ X_2 = \left(\frac{1}{U} \cdot U\right) X_2 = \frac{1}{U} (UX_2) < \frac{1}{U} \c
 
 $\frac{X_1}{U}$ ist also Oberzahl bei $\xi$ und nicht die kleinste. Aus
 
+```math
+U \cdot \frac{X_1}{U} = X_1
+```
+
 folgt
 
 ```math
-U = X_1 \cdot \frac{1}{X_1/U};
+U = \frac{X_1}{X_1/U} = X_1 \cdot \frac{1}{X_1/U};
 ```
 
 hier ist $X_1$ Unterzahl bei $\xi$, $\frac{1}{X_1/U}$ Unterzahl bei $v$; also ist $U$ Unterzahl bei $\xi v$.

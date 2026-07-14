@@ -784,54 +784,6 @@ there hold both times, respectively, the signs
 \Xi > \mathrm{H} \ \text{resp.} \ \Xi = \mathrm{H} \ \text{resp.} \ \Xi < \mathrm{H}
 ```
 
-then\
-2) If\
-then\
-3) If\
-then\
-$\Xi > 0$,\
-$\Xi = (\Xi + 1) - 1$.\
-$\Xi = 0$,\
-$\Xi = 1 - 1$.\
-$\Xi < 0$,\
-$-\Xi = |\Xi| = (|\Xi| + 1) - 1$,\
-$\Xi = -((|\Xi| + 1) - 1) = 1 - (|\Xi| + 1)$.
-
-**Theorem 185:** From
-
-```math
-\Xi = \xi_1 - \xi_2, \quad \mathrm{H} = \eta_1 - \eta_2
-```
-
-follows
-
-```math
-\Xi + \mathrm{H} = (\xi_1 + \eta_1) - (\xi_2 + \eta_2).
-```
-
-**Proof:** 1) Let
-
-```math
-\Xi > 0, \quad \mathrm{H} > 0.
-```
-
-Then, since
-
-```math
-\begin{aligned}
-(\alpha + \beta) + (\gamma + \delta) &= (\alpha + \beta) + (\delta + \gamma) = ((\alpha + \beta) + \delta) + \gamma \\
-&= \gamma + (\alpha + (\beta + \delta)) = (\gamma + \alpha) + (\beta + \delta)
-\end{aligned}
-```
-
-we have
-
-```math
-(\Xi + \mathrm{H}) + (\xi_2 + \eta_2) = (\Xi + \xi_2) + (\mathrm{H} + \eta_2) = \xi_1 + \eta_1,
-```
-
-so the assertion is true.
-
 follows
 
 ```math
@@ -863,6 +815,79 @@ yields everything.
 **Theorem 184:** Every real number can be represented as the difference of two positive numbers.
 
 **Proof:** 1) If
+
+```math
+\Xi > 0,
+```
+
+then
+
+```math
+\Xi = (\Xi + 1) - 1.
+```
+
+2) If
+
+```math
+\Xi = 0,
+```
+
+then
+
+```math
+\Xi = 1 - 1.
+```
+
+3) If
+
+```math
+\Xi < 0,
+```
+
+then
+
+```math
+-\Xi = |\Xi| = (|\Xi| + 1) - 1,
+```
+
+```math
+\Xi = -((|\Xi| + 1) - 1) = 1 - (|\Xi| + 1).
+```
+
+**Theorem 185:** From
+
+```math
+\Xi = \xi_1 - \xi_2, \quad \mathrm{H} = \eta_1 - \eta_2
+```
+
+follows
+
+```math
+\Xi + \mathrm{H} = (\xi_1 + \eta_1) - (\xi_2 + \eta_2).
+```
+
+**Proof:** 1) Let
+
+```math
+\Xi > 0, \quad \mathrm{H} > 0.
+```
+
+Then, since
+
+```math
+\begin{aligned}
+(\alpha + \beta) + (\gamma + \delta) &= (\alpha + \beta) + (\delta + \gamma) = ((\alpha + \beta) + \delta) + \gamma \\
+&= \gamma + (\alpha + (\beta + \delta)) = (\gamma + \alpha) + (\beta + \delta)
+\end{aligned}
+```
+
+we have
+
+```math
+(\Xi + \mathrm{H}) + (\xi_2 + \eta_2) = \xi_1 + \eta_1,
+```
+
+so the assertion is true.
 
 2) Let
 
@@ -1552,6 +1577,20 @@ In other words: Every number of the first class is $\leqq \Xi$, every number of 
 
 **Proof:** A) There cannot be more than one such $\Xi$; for if
 
+```math
+\Xi_1 < \Xi_2
+```
+
+and if $\Xi_1$ and $\Xi_2$ both did what is required, then $\frac{\Xi_1 + \Xi_2}{1+1}$ would, because of
+
+```math
+(1+1)\Xi_1 = \Xi_1 + \Xi_1 < \Xi_1 + \Xi_2 < \Xi_2 + \Xi_2 = (1+1)\Xi_2,
+```
+
+```math
+\Xi_1 < \frac{\Xi_1 + \Xi_2}{1+1} < \Xi_2
+```
+
 belong both to the second and to the first class.
 
 B) To prove the existence of a $\Xi$ we distinguish four cases:
@@ -1559,8 +1598,6 @@ B) To prove the existence of a $\Xi$ we distinguish four cases:
 I) Suppose there is a positive number in the first class.
 
 We consider the cut which is generated as follows: Every positive rational number goes into the lower class if it lies in the first class without being the possible greatest rational number of the first class; otherwise (i.e. if it is the possible greatest rational number of the first class, or lies in the second class) it goes into the upper class. This is really a cut. For:
-
-and if $\Xi_1$ and $\Xi_2$ both did what is required, then because of
 
 1) Since the first class contains a positive number, it contains every smaller positive rational number (such a number exists by Theorem 158), hence one to which there is a greater one in the first class. Therefore the lower class is not empty.
 

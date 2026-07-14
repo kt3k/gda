@@ -784,54 +784,6 @@ zerlegt wird, beide Male resp. die Zeichen
 \Xi > \mathrm{H} \ \text{bzw.} \ \Xi = \mathrm{H} \ \text{bzw.} \ \Xi < \mathrm{H}
 ```
 
-so ist\
-2) Ist\
-so ist\
-3) Ist\
-so ist\
-$\Xi > 0$,\
-$\Xi = (\Xi + 1) - 1$.\
-$\Xi = 0$,\
-$\Xi = 1 - 1$.\
-$\Xi < 0$,\
-$-\Xi = |\Xi| = (|\Xi| + 1) - 1$,\
-$\Xi = -((|\Xi| + 1) - 1) = 1 - (|\Xi| + 1)$.
-
-**Satz 185:** Aus
-
-```math
-\Xi = \xi_1 - \xi_2, \quad \mathrm{H} = \eta_1 - \eta_2
-```
-
-folgt
-
-```math
-\Xi + \mathrm{H} = (\xi_1 + \eta_1) - (\xi_2 + \eta_2).
-```
-
-**Beweis:** 1) Es sei
-
-```math
-\Xi > 0, \quad \mathrm{H} > 0.
-```
-
-Dann ist, da
-
-```math
-\begin{aligned}
-(\alpha + \beta) + (\gamma + \delta) &= (\alpha + \beta) + (\delta + \gamma) = ((\alpha + \beta) + \delta) + \gamma \\
-&= \gamma + (\alpha + (\beta + \delta)) = (\gamma + \alpha) + (\beta + \delta)
-\end{aligned}
-```
-
-ist,
-
-```math
-(\Xi + \mathrm{H}) + (\xi_2 + \eta_2) = (\Xi + \xi_2) + (\mathrm{H} + \eta_2) = \xi_1 + \eta_1,
-```
-
-also die Behauptung wahr.
-
 folgt
 
 ```math
@@ -863,6 +815,79 @@ alles.
 **Satz 184:** Jede reelle Zahl läßt sich als Differenz zweier positiver Zahlen darstellen.
 
 **Beweis:** 1) Ist
+
+```math
+\Xi > 0,
+```
+
+so ist
+
+```math
+\Xi = (\Xi + 1) - 1.
+```
+
+2) Ist
+
+```math
+\Xi = 0,
+```
+
+so ist
+
+```math
+\Xi = 1 - 1.
+```
+
+3) Ist
+
+```math
+\Xi < 0,
+```
+
+so ist
+
+```math
+-\Xi = |\Xi| = (|\Xi| + 1) - 1,
+```
+
+```math
+\Xi = -((|\Xi| + 1) - 1) = 1 - (|\Xi| + 1).
+```
+
+**Satz 185:** Aus
+
+```math
+\Xi = \xi_1 - \xi_2, \quad \mathrm{H} = \eta_1 - \eta_2
+```
+
+folgt
+
+```math
+\Xi + \mathrm{H} = (\xi_1 + \eta_1) - (\xi_2 + \eta_2).
+```
+
+**Beweis:** 1) Es sei
+
+```math
+\Xi > 0, \quad \mathrm{H} > 0.
+```
+
+Dann ist, da
+
+```math
+\begin{aligned}
+(\alpha + \beta) + (\gamma + \delta) &= (\alpha + \beta) + (\delta + \gamma) = ((\alpha + \beta) + \delta) + \gamma \\
+&= \gamma + (\alpha + (\beta + \delta)) = (\gamma + \alpha) + (\beta + \delta)
+\end{aligned}
+```
+
+ist,
+
+```math
+(\Xi + \mathrm{H}) + (\xi_2 + \eta_2) = \xi_1 + \eta_1,
+```
+
+also die Behauptung wahr.
 
 2) Es sei
 
@@ -1552,6 +1577,20 @@ Mit anderen Worten: Jede Zahl der ersten Klasse ist $\leqq \Xi$, jede Zahl der z
 
 **Beweis:** A) Mehr als ein solches $\Xi$ kann es nicht geben; denn wäre
 
+```math
+\Xi_1 < \Xi_2
+```
+
+und leisteten $\Xi_1$ und $\Xi_2$ das Gewünschte, so würde $\frac{\Xi_1 + \Xi_2}{1+1}$ wegen
+
+```math
+(1+1)\Xi_1 = \Xi_1 + \Xi_1 < \Xi_1 + \Xi_2 < \Xi_2 + \Xi_2 = (1+1)\Xi_2,
+```
+
+```math
+\Xi_1 < \frac{\Xi_1 + \Xi_2}{1+1} < \Xi_2
+```
+
 sowohl zur zweiten als auch zur ersten Klasse gehören.
 
 B) Zum Nachweis der Existenz eines $\Xi$ unterscheiden wir vier Fälle:
@@ -1559,8 +1598,6 @@ B) Zum Nachweis der Existenz eines $\Xi$ unterscheiden wir vier Fälle:
 I) Es gebe eine positive Zahl in der ersten Klasse.
 
 Wir betrachten den Schnitt, der folgendermaßen erzeugt wird: Jede positive rationale Zahl kommt in die Unterklasse, wenn sie in der ersten Klasse liegt, ohne die etwaige größte rationale Zahl der ersten Klasse zu sein; sonst (d. h. wenn sie die etwaige größte rationale Zahl der ersten Klasse ist oder in der zweiten Klasse liegt) in die Oberklasse. Das ist wirklich ein Schnitt. Denn:
-
-und leisteten $\Xi_1$ und $\Xi_2$ das Gewünschte, so würde wegen
 
 1) Da die erste Klasse eine positive Zahl enthält, enthält sie jede kleinere positive rationale Zahl (eine solche gibt es nach Satz 158), also eine, zu der es in der ersten Klasse eine größere gibt. Die Unterklasse ist also nicht leer.
 

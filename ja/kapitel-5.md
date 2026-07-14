@@ -38,6 +38,10 @@
 
 **定理 208:**
 
+```math
+\mathfrak{x} = \mathfrak{y}, \quad \mathfrak{y} = \mathfrak{z}
+```
+
 から
 
 ```math
@@ -115,7 +119,7 @@
 \mathfrak{x} = [\Xi_1, \Xi_2], \quad \mathfrak{y} = [\mathrm{H}_1, \mathrm{H}_2]
 ```
 
-のとき
+とおけば、
 
 ```math
 \mathfrak{u} = [\Xi_1 - \mathrm{H}_1, \Xi_2 - \mathrm{H}_2].
@@ -192,6 +196,10 @@
 **定理 215:** $-(-\mathfrak{x}) = \mathfrak{x}$.
 
 **証明:** 定理 177 により
+
+```math
+-(-\Xi_1) = \Xi_1, \quad -(-\Xi_2) = \Xi_2.
+```
 
 **定理 216:** $\mathfrak{x} + (-\mathfrak{x}) = \mathfrak{n}$.
 

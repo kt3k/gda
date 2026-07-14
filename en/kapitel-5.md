@@ -36,6 +36,10 @@ it follows that
 
 **Theorem 208:** From
 
+```math
+\mathfrak{x} = \mathfrak{y}, \quad \mathfrak{y} = \mathfrak{z}
+```
+
 it follows that
 
 ```math
@@ -103,7 +107,7 @@ then by Theorem 186
 \mathfrak{y} + \mathfrak{u} = \mathfrak{x}
 ```
 
-has exactly one solution $\mathfrak{u}$, namely, for
+has exactly one solution $\mathfrak{u}$, namely, setting
 
 ```math
 \mathfrak{x} = [\Xi_1, \Xi_2], \quad \mathfrak{y} = [\mathrm{H}_1, \mathrm{H}_2]
@@ -176,6 +180,10 @@ we have
 **Theorem 215:** $-(-\mathfrak{x}) = \mathfrak{x}$.
 
 **Proof:** By Theorem 177 we have
+
+```math
+-(-\Xi_1) = \Xi_1, \quad -(-\Xi_2) = \Xi_2.
+```
 
 **Theorem 216:** $\mathfrak{x} + (-\mathfrak{x}) = \mathfrak{n}$.
 

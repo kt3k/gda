@@ -750,7 +750,11 @@ x_1 y_2 > y_1 x_2
 ```
 
 ```math
-\frac{y_1}{y_2} + \frac{z_1}{z_2} > \frac{x_1}{x_2} + \frac{z_1}{z_2}.
+\frac{y_1}{y_2} + \frac{z_1}{z_2} > \frac{x_1}{x_2} + \frac{z_1}{z_2},
+```
+
+```math
+\frac{x_1}{x_2} + \frac{z_1}{z_2} < \frac{y_1}{y_2} + \frac{z_1}{z_2}.
 ```
 
 により第一の部分の帰結である。
@@ -796,8 +800,6 @@ x_1 y_2 > y_1 x_2
 ```math
 \frac{y_1}{y_2} + \frac{z_1}{z_2} \sim \frac{z_1}{z_2} + \frac{y_1}{y_2} > \frac{u_1}{u_2} + \frac{y_1}{y_2} \sim \frac{y_1}{y_2} + \frac{u_1}{u_2},
 ```
-
-定理 62: から
 
 したがって
 

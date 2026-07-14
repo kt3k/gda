@@ -36,6 +36,10 @@ folgt
 
 **Satz 208:** Aus
 
+```math
+\mathfrak{x} = \mathfrak{y}, \quad \mathfrak{y} = \mathfrak{z}
+```
+
 folgt
 
 ```math
@@ -109,6 +113,8 @@ genau eine Lösung $\mathfrak{u}$, nämlich,
 \mathfrak{x} = [\Xi_1, \Xi_2], \quad \mathfrak{y} = [\mathrm{H}_1, \mathrm{H}_2]
 ```
 
+gesetzt,
+
 ```math
 \mathfrak{u} = [\Xi_1 - \mathrm{H}_1, \Xi_2 - \mathrm{H}_2].
 ```
@@ -176,6 +182,10 @@ ist
 **Satz 215:** $-(-\mathfrak{x}) = \mathfrak{x}$.
 
 **Beweis:** Nach Satz 177 ist
+
+```math
+-(-\Xi_1) = \Xi_1, \quad -(-\Xi_2) = \Xi_2.
+```
 
 **Satz 216:** $\mathfrak{x} + (-\mathfrak{x}) = \mathfrak{n}$.
 

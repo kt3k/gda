@@ -9,3 +9,5 @@ https://kt3k.github.io/gda/
 ## Editorial note
 
 The missing page 7 in the original pdf has been supplemented with a screenshot from Google Books.
+
+Small OCR-related gaps (formulas lost at page boundaries, scrambled text blocks in the proofs of Satz 62, 152, 183–185, 205, 208, 212 and 215) have been restored by checking against the source scan.
