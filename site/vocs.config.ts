@@ -14,22 +14,22 @@ const de = [
 
 const en = [
   { text: 'Overview', link: '/en' },
-  { text: 'Preface', link: '/en/vorwort' },
-  { text: 'Chapter 1. Natural Numbers', link: '/en/kapitel-1' },
-  { text: 'Chapter 2. Fractions', link: '/en/kapitel-2' },
-  { text: 'Chapter 3. Cuts', link: '/en/kapitel-3' },
-  { text: 'Chapter 4. Real Numbers', link: '/en/kapitel-4' },
-  { text: 'Chapter 5. Complex Numbers', link: '/en/kapitel-5' },
+  { text: 'Preface', link: '/en/preface' },
+  { text: 'Chapter 1. Natural Numbers', link: '/en/chapter-1' },
+  { text: 'Chapter 2. Fractions', link: '/en/chapter-2' },
+  { text: 'Chapter 3. Cuts', link: '/en/chapter-3' },
+  { text: 'Chapter 4. Real Numbers', link: '/en/chapter-4' },
+  { text: 'Chapter 5. Complex Numbers', link: '/en/chapter-5' },
 ]
 
 const ja = [
   { text: '概要', link: '/ja' },
-  { text: '序文', link: '/ja/vorwort' },
-  { text: '第1章 自然数', link: '/ja/kapitel-1' },
-  { text: '第2章 分数', link: '/ja/kapitel-2' },
-  { text: '第3章 切断', link: '/ja/kapitel-3' },
-  { text: '第4章 実数', link: '/ja/kapitel-4' },
-  { text: '第5章 複素数', link: '/ja/kapitel-5' },
+  { text: '序文', link: '/ja/preface' },
+  { text: '第1章 自然数', link: '/ja/chapter-1' },
+  { text: '第2章 分数', link: '/ja/chapter-2' },
+  { text: '第3章 切断', link: '/ja/chapter-3' },
+  { text: '第4章 実数', link: '/ja/chapter-4' },
+  { text: '第5章 複素数', link: '/ja/chapter-5' },
 ]
 
 export default defineConfig({
