@@ -29,5 +29,5 @@ OCR されたスキャン PDF([main.pdf](main.pdf))からテキストを抽出�
 
 ## 既知の欠落
 
-- 元のスキャン PDF には本の **VII ページ(Vorwort für den Kenner の冒頭)が物理的に欠落**しています。該当箇所は [vorwort.md](vorwort.md) 内に注記しています。
+- 元のスキャン PDF には本の **VII ページ(Vorwort für den Kenner の冒頭)が物理的に欠落**しています。該当部分は Google Books の版のスクリーンショット([scans/seite-vii-google-books.png](scans/seite-vii-google-books.png))から文字起こしして補い、[vorwort.md](vorwort.md) 内に注記しています。
 - OCR 由来の細かい欠落(ページ境界で失われた数式など)が数箇所あり、各ファイル内にそのまま(捏造せずに)残しています。
