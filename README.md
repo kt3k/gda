@@ -2,7 +2,7 @@
 
 Grundlagen der Analysis is a book by [Edmund Landau](https://en.wikipedia.org/wiki/Edmund_Landau) (1877 - 1938).
 
-This repository contains the original pdf and English and Japanese translations. The contents are organized in [vocs][https://github.com/wevm/vocs] documentation site for readability.
+This repository contains the original pdf and English and Japanese translations. The contents are organized in [vocs](https://github.com/wevm/vocs) documentation site for readability.
 
 
 - [Vorwort](vorwort.md) — Vorwort für den Lernenden / Vorwort für den Kenner
