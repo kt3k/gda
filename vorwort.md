@@ -53,8 +53,6 @@ Edmund Landau.
 
 ## Vorwort für den Kenner.
 
-> *Anmerkung: Seite VII (der Anfang dieses Vorworts) fehlt in der Scan-Vorlage (main.pdf). Der Text bis „(ein Schlauer würde hinzufügen: oder widerlegen)" wurde aus einem Google-Books-Digitalisat ergänzt (siehe scans/seite-vii-google-books.png im Repository).*
-
 Dies Büchlein ist eine Konzession an die (leider in der Mehrzahl befindlichen) Kollegen, welche meinen Standpunkt in der folgenden Frage **nicht** teilen.
 
 Während auf der Schule naturgemäß auf strengen und lückenlosen Aufbau der Elementarmathematik verzichtet werden muß, soll der mathematische Hochschulunterricht den Hörer nicht nur mit dem Stoff und den Ergebnissen, sondern auch mit den Beweismethoden bekannt machen. Auch wer Mathematik hauptsächlich für die Anwendungen auf Physik und andere Wissenschaften lernt, also vielfach sich selbst weitere mathematische Hilfssätze zurechtlegen muß, kann auf dem betretenen Pfade nur dann sicher weiterschreiten, wenn er gehen gelernt hat, d. h. zwischen falsch und wahr, zwischen Vermutungen und Beweisen (oder, wie manche so schön sagen, zwischen unstrengen und strengen Beweisen) unterscheiden kann.

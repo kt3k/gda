@@ -53,8 +53,6 @@ Edmund Landau.
 
 ## Preface for the Expert.
 
-> *Note: Page VII (the beginning of this preface) is missing from the scanned source (main.pdf). The text up to "(a clever fellow would add: or refute)" has been supplied from a Google Books digitization (see scans/seite-vii-google-books.png in the repository).*
-
 This little book is a concession to those colleagues (unfortunately in the majority) who do **not** share my standpoint on the following question.
 
 While at school one must naturally forgo a rigorous and gapless construction of elementary mathematics, university instruction in mathematics should acquaint the student not only with the material and the results, but also with the methods of proof. Even one who learns mathematics chiefly for its applications to physics and other sciences, and who therefore must often work out further mathematical lemmas for himself, can proceed securely along the beaten path only if he has learned to walk, i.e., if he can distinguish between false and true, between conjectures and proofs (or, as some so nicely say, between non-rigorous and rigorous proofs).
