@@ -22,6 +22,11 @@ OCR されたスキャン PDF([main.pdf](main.pdf))からテキストを抽出�
 - [Kapitel 5. Komplexe Zahlen](kapitel-5.md)
   - § 1. Definition / § 2. Addition / § 3. Multiplikation / § 4. Subtraktion / § 5. Division / § 6. Konjugierte Zahlen / § 7. Absoluter Betrag / § 8. Summen und Produkte / § 9. Potenzen / § 10. Einordnung der reellen Zahlen
 
+## 編集方針
+
+- **原本の書誌メタ情報は本文 markdown に収録しない。** スキャン原本の標題紙・奥付にあたる情報(書名・著者肩書・出版社・発行年・copyright 表記・印刷所など)は、本文ではないため vorwort.md / ja/vorwort.md の冒頭から除外している。書誌情報はこの README の冒頭に記載する。
+- 本文そのものは改変しない。OCR 由来の欠落・不明箇所は捏造せず、注記のみ入れる。
+
 ## 既知の欠落
 
 - 元のスキャン PDF には本の **VII ページ(Vorwort für den Kenner の冒頭)が物理的に欠落**しています。該当箇所は [vorwort.md](vorwort.md) 内に注記しています。
