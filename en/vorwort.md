@@ -4,9 +4,9 @@
 
 **1.** Please do not read the following Preface for the Expert!
 
-**2.** I presuppose only logical thinking and the German language as known; nothing from school mathematics, let alone from higher mathematics.
+**2.** I presuppose only logical thinking and the English language as known; nothing from school mathematics, let alone from higher mathematics.
 
-To forestall objections: One number, no number, two cases, all things from a given totality, and the like, are clear verbal constructs of the German language. Theorem 1, Theorem 2, . . ., Theorem 301 (likewise with axioms, definitions, chapters, sections) or 1), 2) and the like in case distinctions are labels which distinguish the theorems, axioms, . . ., cases, and which are more convenient for looking things up than if I were to speak, say, of Theorem Light Blue, Theorem Dark Blue, and the like. Up to "301" the introduction of the so-called positive integers would in fact present no difficulty; the first difficulty — overcome in Chapter 1 — lies in the totality of the positive integers
+To forestall objections: One number, no number, two cases, all things from a given totality, and the like, are clear verbal constructs of the English language. Theorem 1, Theorem 2, . . ., Theorem 301 (likewise with axioms, definitions, chapters, sections) or 1), 2) and the like in case distinctions are labels which distinguish the theorems, axioms, . . ., cases, and which are more convenient for looking things up than if I were to speak, say, of Theorem Light Blue, Theorem Dark Blue, and the like. Up to "301" the introduction of the so-called positive integers would in fact present no difficulty; the first difficulty — overcome in Chapter 1 — lies in the totality of the positive integers
 
 ```math
 1, \ldots
