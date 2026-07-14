@@ -38,6 +38,8 @@ export default defineConfig({
     'Edmund Landau, Grundlagen der Analysis (1930) — deutscher Originaltext und japanische Übersetzung',
   // GitHub Pages (kt3k.github.io/gda) 用。ローカルでは未設定のまま。
   basePath: process.env.PAGES_BASE_PATH ?? undefined,
+  // OG 画像(docs/public/og.png、scripts/generate-og.py で生成)
+  ogImageUrl: 'https://kt3k.github.io/gda/og.png',
   topNav: [
     { text: 'Deutsch', link: '/de' },
     { text: 'English', link: '/en' },
