@@ -1,3 +1,16 @@
+diff --git a/node_modules/vocs/_lib/app/index.server.js b/node_modules/vocs/_lib/app/index.server.js
+index f74ee70..ecea1d0 100644
+--- a/node_modules/vocs/_lib/app/index.server.js
++++ b/node_modules/vocs/_lib/app/index.server.js
+@@ -20,7 +20,7 @@ export async function prerender(location) {
+     }))).filter(Boolean);
+     const { config } = await resolveVocsConfig();
+     const { basePath } = config;
+-    return (_jsx(ConfigProvider, { config: config, children: _jsx(NuqsAdapter, { children: _jsx(StaticRouter, { location: location, basename: basePath, children: _jsx(Routes, { children: unwrappedRoutes.map((route) => (_jsx(Route, { path: route.path, element: route.element }, route.path))) }) }) }) }));
++    return (_jsx(ConfigProvider, { config: config, children: _jsx(NuqsAdapter, { children: _jsx(StaticRouter, { location: `${basePath ?? ''}${location}`, basename: basePath, children: _jsx(Routes, { children: unwrappedRoutes.map((route) => (_jsx(Route, { path: route.path, element: route.element }, route.path))) }) }) }) }));
+ }
+ export async function render(req) {
+     const { config } = await resolveVocsConfig();
 diff --git a/node_modules/vocs/_lib/vite/plugins/llms.js b/node_modules/vocs/_lib/vite/plugins/llms.js
 index 4cdb8da..38964cc 100644
 --- a/node_modules/vocs/_lib/vite/plugins/llms.js
