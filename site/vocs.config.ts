@@ -1,6 +1,27 @@
-import { defineConfig } from 'vocs'
+import { defineConfig } from 'vocs/config'
 import remarkMath from 'remark-math'
 import rehypeKatex from 'rehype-katex'
+
+// vocs は組み込みの shiki をユーザーの rehype プラグインより先に実行するため、
+// $$ ブロックのデフォルト HAST(<pre><code class="language-math">)が
+// コードブロックとして食われてしまう。math ノードを <div class="math math-display">
+// に変えて shiki を素通りさせ、後段の rehype-katex に処理させる。
+function remarkMathDisplayDiv() {
+  return (tree: any) => {
+    const walk = (node: any) => {
+      if (node.type === 'math') {
+        node.data = {
+          ...node.data,
+          hName: 'div',
+          hProperties: { className: ['math', 'math-display'] },
+          hChildren: [{ type: 'text', value: node.value }],
+        }
+      }
+      if (node.children) for (const child of node.children) walk(child)
+    }
+    walk(tree)
+  }
+}
 
 const de = [
   { text: 'Übersicht', link: '/de' },
@@ -35,13 +56,14 @@ const ja = [
 export default defineConfig({
   title: 'Grundlagen der Analysis',
   description:
-    'Edmund Landau, Grundlagen der Analysis (1930) — deutscher Originaltext und japanische Übersetzung',
+    'Edmund Landau, Grundlagen der Analysis (1930) — deutscher Originaltext, English translation, 日本語訳',
+  // GitHub Pages(kt3k.github.io/gda)向けの完全静的出力
+  renderStrategy: 'full-static',
   // GitHub Pages (kt3k.github.io/gda) 用。ローカルでは未設定のまま。
   basePath: process.env.PAGES_BASE_PATH ?? undefined,
-  // OG 画像(docs/public/og.png、scripts/generate-og.py で生成)
-  // 注: 文字列形式は vocs のバグ(useOgImageUrl の early return)で無視されるため、
-  // 全パスにマッチするパスマップ形式で指定している。
-  ogImageUrl: { '/': 'https://kt3k.github.io/gda/og.png' },
+  baseUrl: 'https://kt3k.github.io/gda',
+  // OG 画像(public/og.png、scripts/generate-og.py で生成)
+  ogImageUrl: 'https://kt3k.github.io/gda/og.png',
   topNav: [
     { text: 'Deutsch', link: '/de' },
     { text: 'English', link: '/en' },
@@ -54,7 +76,7 @@ export default defineConfig({
     '/ja': ja,
   },
   markdown: {
-    remarkPlugins: [remarkMath],
+    remarkPlugins: [remarkMath, remarkMathDisplayDiv],
     rehypePlugins: [[rehypeKatex, { strict: false }]],
   },
 })

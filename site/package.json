@@ -4,7 +4,6 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "postinstall": "patch-package",
     "sync": "node sync.mjs",
     "dev": "npm run sync && vocs dev",
     "build": "npm run sync && vocs build",
@@ -13,11 +12,12 @@
   "dependencies": {
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "vocs": "^1.4.1"
+    "vite": "^8.0.0",
+    "vocs": "^2.5.3",
+    "waku": "^1.0.0-beta.6"
   },
   "devDependencies": {
     "katex": "^0.16.11",
-    "patch-package": "^8.0.1",
     "rehype-katex": "^7.0.1",
     "remark-math": "^6.0.0"
   }

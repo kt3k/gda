@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""OG 画像(site/docs/public/og.png、1200x630)を生成する。
+"""OG 画像(site/public/og.png、1200x630)を生成する。
 
 書影は main.pdf の標題紙(2ページ目)をレンダリングしてトリムしたもの。
 フォントは KaTeX 付属の Computer Modern 系(site/node_modules/katex)を使う。
@@ -16,7 +16,7 @@ from PIL import Image, ImageDraw, ImageFilter, ImageFont
 
 ROOT = Path(__file__).resolve().parent.parent
 FONT_DIR = ROOT / 'site/node_modules/katex/dist/fonts'
-OUT = ROOT / 'site/docs/public/og.png'
+OUT = ROOT / 'site/public/og.png'
 
 W, H = 1200, 630
 COVER_H = 520

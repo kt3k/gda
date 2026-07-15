@@ -33,10 +33,10 @@ jobs:
           # KaTeX をビルド時に HTML 展開するためメモリを多めに要する
           # (public リポジトリの ubuntu-latest ランナーは 4 コア / RAM 16GB)
           NODE_OPTIONS: --max-old-space-size=8192
-      - run: touch site/docs/dist/.nojekyll
+      - run: touch site/dist/.nojekyll
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: site/docs/dist
+          path: site/dist
 
   deploy:
     needs: build
