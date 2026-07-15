@@ -1,8 +1,8 @@
 # Grundlagen der Analysis
 
-Grundlagen der Analysis is a book by [Edmund Landau](https://en.wikipedia.org/wiki/Edmund_Landau) (1877 - 1938).
+Grundlagen der Analysis is a math textbook by [Edmund Landau](https://en.wikipedia.org/wiki/Edmund_Landau) (1877 - 1938), which is now in public domain.
 
-This repository contains the original pdf and English and Japanese translations. The contents are organized in [vocs](https://github.com/wevm/vocs) documentation site for readability.
+This repository reorganized the textbook into docs website (using [vocs](https://github.com/wevm/vocs)) along with English and Japanese translations.
 
 https://kt3k.github.io/gda/
 
