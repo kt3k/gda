@@ -103,7 +103,7 @@ x + y' &= (x + y)',
 ```math
 \begin{aligned}
 f(1) &= x',\\
-f(z') &= (f(z))' \quad \text{für } z < y.
+f(z') &= (f(z))' \quad (z < y \text{ のとき}).
 \end{aligned}
 ```
 

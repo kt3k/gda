@@ -1276,7 +1276,7 @@
 **定理 264:**
 
 ```math
-|\mathfrak{x}| \begin{cases} > 0 & \text{für } \mathfrak{x} \neq \mathfrak{n}, \\ = 0 & \text{für } \mathfrak{x} = \mathfrak{n}. \end{cases}
+|\mathfrak{x}| \begin{cases} > 0 & (\mathfrak{x} \neq \mathfrak{n} \text{ のとき}), \\ = 0 & (\mathfrak{x} = \mathfrak{n} \text{ のとき}). \end{cases}
 ```
 
 **証明:** 定義 68、66 および 67。
@@ -1636,9 +1636,9 @@ x < y - 1.
 
 ```math
 \begin{cases}
-\text{Ist } m \neq m_0,\ m \neq x + 1, \text{ so gelte das Alte.} \\
-m = m_0 \text{ entspreche } n = n_0. \\
-m = x + 1 \text{ entspreche } n = y.
+m \neq m_0,\ m \neq x + 1 \text{ のときは従来どおりとする。} \\
+m = m_0 \text{ には } n = n_0 \text{ を対応させる。} \\
+m = x + 1 \text{ には } n = y \text{ を対応させる。}
 \end{cases}
 ```
 
@@ -1673,7 +1673,7 @@ m = x + 1 \text{ entspreche } n = y.
 ```math
 \begin{aligned}
 \mathfrak{g}_x(1) &= \mathfrak{f}(1), \\
-\mathfrak{g}_x(n + 1) &= \mathfrak{g}_x(n) \dotplus \mathfrak{f}(n + 1) \quad \text{für } n < x.
+\mathfrak{g}_x(n + 1) &= \mathfrak{g}_x(n) \dotplus \mathfrak{f}(n + 1) \quad (n < x \text{ のとき}).
 \end{aligned}
 ```
 
@@ -1741,8 +1741,8 @@ II) $x$ が $\mathfrak{M}$ に属するとする。$\mathfrak{f}(n)$ が $n \leq
 
 ```math
 \mathfrak{g}_{x+1}(n) = \begin{cases}
-\mathfrak{g}_x(n) & \text{für } n \leqq x, \\
-\mathfrak{g}_x(x) \dotplus \mathfrak{f}(x + 1) & \text{für } n = x + 1
+\mathfrak{g}_x(n) & (n \leqq x \text{ のとき}), \\
+\mathfrak{g}_x(x) \dotplus \mathfrak{f}(x + 1) & (n = x + 1 \text{ のとき})
 \end{cases}
 ```
 
@@ -2098,9 +2098,9 @@ a < x + 1.
 
 ```math
 s_1(n) = \begin{cases}
-1 & \text{für } n = 1, \\
-a & \text{für } n = b, \\
-s(n) & \text{für } 1 < n \leqq x + 1,\ n \neq b
+1 & (n = 1 \text{ のとき}), \\
+a & (n = b \text{ のとき}), \\
+s(n) & (1 < n \leqq x + 1,\ n \neq b \text{ のとき})
 \end{cases}
 ```
 
@@ -2108,9 +2108,9 @@ s(n) & \text{für } 1 < n \leqq x + 1,\ n \neq b
 
 ```math
 s_2(n) = \begin{cases}
-a & \text{für } n = 1, \\
-1 & \text{für } n = a, \\
-n & \text{für } 1 < n \leqq x + 1,\ n \neq a
+a & (n = 1 \text{ のとき}), \\
+1 & (n = a \text{ のとき}), \\
+n & (1 < n \leqq x + 1,\ n \neq a \text{ のとき})
 \end{cases}
 ```
 
@@ -2119,16 +2119,16 @@ n & \text{für } 1 < n \leqq x + 1,\ n \neq a
 さて、
 
 ```math
-s(n) = s_2(s_1(n)) \quad \text{für } n \leqq x + 1.
+s(n) = s_2(s_1(n)) \quad (n \leqq x + 1 \text{ のとき}).
 ```
 
 である。なぜなら、$s_2(s_1(n))$ によって
 
 ```math
 \begin{aligned}
-&1 \text{ via } 1 \text{ in } a = s(1), \\
-&b \text{ via } a \text{ in } 1 = s(b), \\
-&\text{jedes andere } n \leqq x + 1 \text{ via } s(n) \text{ in } s(n).
+&1 \text{ は } 1 \text{ を経て } a = s(1) \text{ に移り}, \\
+&b \text{ は } a \text{ を経て } 1 = s(b) \text{ に移り}, \\
+&\text{他のすべての } n \leqq x + 1 \text{ は } s(n) \text{ を経て } s(n) \text{ に移る}.
 \end{aligned}
 ```
 
@@ -2152,25 +2152,25 @@ a = x + 1, \quad b < x + 1.
 
 ```math
 s_3(n) = \begin{cases}
-b & \text{für } n = 1, \\
-1 & \text{für } n = b, \\
-n & \text{für } 1 < n \leqq x + 1,\ n \neq b
+b & (n = 1 \text{ のとき}), \\
+1 & (n = b \text{ のとき}), \\
+n & (1 < n \leqq x + 1,\ n \neq b \text{ のとき})
 \end{cases}
 ```
 
 は $n \leqq x + 1$ を $m \leqq x + 1$ に対応させる。さらに
 
 ```math
-s(n) = s_1(s_3(n)) \quad \text{für } n \leqq x + 1.
+s(n) = s_1(s_3(n)) \quad (n \leqq x + 1 \text{ のとき}).
 ```
 
 である。なぜなら、$s_1(s_3(n))$ によって
 
 ```math
 \begin{aligned}
-&1 \text{ via } b \text{ in } a = s(1), \\
-&b \text{ via } 1 \text{ in } 1 = s(b), \\
-&\text{jedes andere } n \leqq x + 1 \text{ via } n \text{ in } s(n).
+&1 \text{ は } b \text{ を経て } a = s(1) \text{ に移り}, \\
+&b \text{ は } 1 \text{ を経て } 1 = s(b) \text{ に移り}, \\
+&\text{他のすべての } n \leqq x + 1 \text{ は } n \text{ を経て } s(n) \text{ に移る}.
 \end{aligned}
 ```
 
@@ -2202,9 +2202,9 @@ $x > 1$ ならば、
 
 ```math
 s_4(n) = \begin{cases}
-1 & \text{für } n = 1, \\
-x + 1 & \text{für } n = x + 1, \\
-s(n) & \text{für } 1 < n < x + 1
+1 & (n = 1 \text{ のとき}), \\
+x + 1 & (n = x + 1 \text{ のとき}), \\
+s(n) & (1 < n < x + 1 \text{ のとき})
 \end{cases}
 ```
 
@@ -2253,7 +2253,7 @@ $n$ の代わりに、整数を表す他の任意の文字を用いてもよい�
 次のことに注意せよ:
 
 ```math
-x + 1 > y; \quad y \leqq (n + y) - 1 \leqq x \quad \text{für } 1 \leqq n \leqq (x + 1) - y;
+x + 1 > y; \quad y \leqq (n + y) - 1 \leqq x \quad (1 \leqq n \leqq (x + 1) - y \text{ のとき});
 ```
 
 さらに、$y = 1$ に対して定義 70 が(そうあるべきように)定義 69 と一致していることにも注意せよ。
@@ -2615,7 +2615,7 @@ II) $x$ が $\mathfrak{M}$ に属するとする。
 が必要かつ十分であり、したがって($x$ が $\mathfrak{M}$ に属するから)
 
 ```math
-\mathfrak{f}(n) = \mathfrak{n} \quad \text{für ein } n \leqq x \text{ oder für } n = x + 1.
+\mathfrak{f}(n) = \mathfrak{n} \quad (\text{ある } n \leqq x \text{ または } n = x + 1 \text{ のとき}).
 ```
 
 が必要かつ十分である。
@@ -2630,9 +2630,9 @@ II) $x$ が $\mathfrak{M}$ に属するとする。
 
 ```math
 \mathfrak{x}^x = \begin{cases}
-\displaystyle\prod_{n=1}^{x} \mathfrak{x} & \text{für } x > 0, \\
-\mathfrak{e} & \text{für } \mathfrak{x} \neq \mathfrak{n},\ x = 0, \\
-\dfrac{\mathfrak{e}}{\mathfrak{x}^{|x|}} & \text{für } \mathfrak{x} \neq \mathfrak{n},\ x < 0.
+\displaystyle\prod_{n=1}^{x} \mathfrak{x} & (x > 0 \text{ のとき}), \\
+\mathfrak{e} & (\mathfrak{x} \neq \mathfrak{n},\ x = 0 \text{ のとき}), \\
+\dfrac{\mathfrak{e}}{\mathfrak{x}^{|x|}} & (\mathfrak{x} \neq \mathfrak{n},\ x < 0 \text{ のとき}).
 \end{cases}
 ```
 
@@ -3104,7 +3104,7 @@ y < 0
 [\Xi + H, 0] &= [\Xi, 0] + [H, 0]; \\
 [\Xi - H, 0] &= [\Xi, 0] - [H, 0]; \\
 [\Xi H, 0] &= [\Xi, 0][H, 0]; \\
-\left[\frac{\Xi}{H}, 0\right] &= \frac{[\Xi, 0]}{[H, 0]}, \quad \text{falls } H \neq 0; \\
+\left[\frac{\Xi}{H}, 0\right] &= \frac{[\Xi, 0]}{[H, 0]}, \quad (H \neq 0 \text{ のとき}); \\
 [-\Xi, 0] &= -[\Xi, 0]; \\
 |[\Xi, 0]| &= |\Xi|.
 \end{aligned}
@@ -3217,11 +3217,11 @@ II) $[x, 0]$ が $[\mathfrak{M}]$ に属するならば、$[x, 0]'$ は $[\mathf
 二つの $[\Xi, 0]$ の和・差・積および(存在する場合には)商は、定理 298 により旧来の概念に対応し、記号 $-[\Xi, 0]$ と $|[\Xi, 0]|$ も同様であり、また
 
 ```math
-[\Xi, 0] > [H, 0] \quad \text{für } \Xi > H,
+[\Xi, 0] > [H, 0] \quad (\Xi > H \text{ のとき}),
 ```
 
 ```math
-[\Xi, 0] < [H, 0] \quad \text{für } \Xi < H
+[\Xi, 0] < [H, 0] \quad (\Xi < H \text{ のとき})
 ```
 
 と定義することができるから、複素数 $[\Xi, 0]$ は、我々が第4章で実数について証明したすべての性質をもち、特に数 $[x, 0]$ は、正の整数について証明されたすべての性質をもつ。

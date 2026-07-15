@@ -267,7 +267,7 @@ x + 1 = x'
 かつ
 
 ```math
-x + y' = (x + y)' \quad \text{für jedes } y.
+x + y' = (x + y)' \quad (\text{任意の } y \text{ について}).
 ```
 
 となるように定義する方法は高々一つしかないことを示す。
@@ -275,7 +275,7 @@ x + y' = (x + y)' \quad \text{für jedes } y.
 $a_y$ と $b_y$ がすべての $y$ に対して定義されていて、
 
 ```math
-a_{y'} = (a_y)', \quad b_{y'} = (b_y)' \quad \text{für jedes } y.
+a_{y'} = (a_y)', \quad b_{y'} = (b_y)' \quad (\text{任意の } y \text{ について}).
 ```
 
 であるとする。
@@ -331,7 +331,7 @@ x + 1 = x'
 かつ
 
 ```math
-x + y' = (x + y)' \quad \text{für jedes } y.
+x + y' = (x + y)' \quad (\text{任意の } y \text{ について}).
 ```
 
 となるように定義する方法が存在することを示す。
@@ -603,13 +603,13 @@ B) $x$ を固定し、$\mathfrak{M}$ を、1), 2), 3) のうちの一つ(した�
 I) $y = 1$ に対しては、定理 3 により、
 
 ```math
-x = 1 = y \quad \text{(Fall 1))}
+x = 1 = y \quad \text{(場合 1))}
 ```
 
 であるか、または
 
 ```math
-x = u' = 1 + u = y + u \quad \text{(Fall 2))}.
+x = u' = 1 + u = y + u \quad \text{(場合 2))}.
 ```
 
 である。
@@ -627,7 +627,7 @@ x = y,
 したがって
 
 ```math
-y' = y + 1 = x + 1 \quad \text{(Fall 3) für } y');
+y' = y + 1 = x + 1 \quad (y' \text{ に対する場合 3});
 ```
 
 であるか、または($y$ について場合 2) のとき)
@@ -645,7 +645,7 @@ u = 1,
 ならば
 
 ```math
-x = y + 1 = y' \quad \text{(Fall 1) für } y');
+x = y + 1 = y' \quad (y' \text{ に対する場合 1});
 ```
 
 ```math
@@ -659,7 +659,7 @@ u = w' = 1 + w,
 ```
 
 ```math
-x = y + (1 + w) = (y + 1) + w = y' + w \quad \text{(Fall 2) für } y');
+x = y + (1 + w) = (y + 1) + w = y' + w \quad (y' \text{ に対する場合 2});
 ```
 
 であるか、または($y$ について場合 3) のとき)
@@ -671,7 +671,7 @@ y = x + v,
 したがって
 
 ```math
-y' = (x + v)' = x + v' \quad \text{(Fall 3) für } y').
+y' = (x + v)' = x + v' \quad (y' \text{ に対する場合 3}).
 ```
 
 である。
@@ -1227,7 +1227,7 @@ x \cdot 1 = x
 かつ
 
 ```math
-xy' = xy + x \quad \text{für jedes } y.
+xy' = xy + x \quad (\text{任意の } y \text{ について}).
 ```
 
 となるように $xy$ を定義する方法は高々一通りしかないことを示す。
@@ -1239,7 +1239,7 @@ a_1 = x, \quad b_1 = x,
 ```
 
 ```math
-a_{y'} = a_y + x, \quad b_{y'} = b_y + x \quad \text{für jedes } y.
+a_{y'} = a_y + x, \quad b_{y'} = b_y + x \quad (\text{任意の } y \text{ について}).
 ```
 
 を満たすとする。
@@ -1289,7 +1289,7 @@ x \cdot 1 = x
 かつ
 
 ```math
-xy' = xy + x \quad \text{für jedes } y.
+xy' = xy + x \quad (\text{任意の } y \text{ について}).
 ```
 
 となるように $xy$ を定義する方法が存在することを示す。

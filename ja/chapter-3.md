@@ -1462,7 +1462,7 @@ II) 逆は明らかである。なぜなら、三つの場合はいずれの側�
 ```math
 \begin{gathered}
 (X + Y)^* = X^* + Y^*; \\
-(X - Y)^* = X^* - Y^* \quad \text{falls } X > Y; \\
+(X - Y)^* = X^* - Y^* \quad (X > Y \text{ のとき}); \\
 (XY)^* = X^* Y^*; \\
 \left(\frac{X}{Y}\right)^{\!*} = \frac{X^*}{Y^*}.
 \end{gathered}

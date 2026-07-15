@@ -1558,9 +1558,9 @@ x < y - 1.
 
 ```math
 \begin{cases}
-\text{Ist } m \neq m_0,\ m \neq x + 1, \text{ so gelte das Alte.} \\
-m = m_0 \text{ entspreche } n = n_0. \\
-m = x + 1 \text{ entspreche } n = y.
+\text{If } m \neq m_0,\ m \neq x + 1, \text{ let the old assignment stand.} \\
+\text{to } m = m_0 \text{ let } n = n_0 \text{ correspond.} \\
+\text{to } m = x + 1 \text{ let } n = y \text{ correspond.}
 \end{cases}
 ```
 
@@ -2010,9 +2010,9 @@ For under $s_2(s_1(n))$ there passes over
 
 ```math
 \begin{aligned}
-&1 \text{ via } 1 \text{ in } a = s(1), \\
-&b \text{ via } a \text{ in } 1 = s(b), \\
-&\text{every other } n \leqq x + 1 \text{ via } s(n) \text{ in } s(n).
+&1 \text{ via } 1 \text{ into } a = s(1), \\
+&b \text{ via } a \text{ into } 1 = s(b), \\
+&\text{every other } n \leqq x + 1 \text{ via } s(n) \text{ into } s(n).
 \end{aligned}
 ```
 
@@ -2048,9 +2048,9 @@ For under $s_1(s_3(n))$ there passes over
 
 ```math
 \begin{aligned}
-&1 \text{ via } b \text{ in } a = s(1), \\
-&b \text{ via } 1 \text{ in } 1 = s(b), \\
-&\text{every other } n \leqq x + 1 \text{ via } n \text{ in } s(n).
+&1 \text{ via } b \text{ into } a = s(1), \\
+&b \text{ via } 1 \text{ into } 1 = s(b), \\
+&\text{every other } n \leqq x + 1 \text{ via } n \text{ into } s(n).
 \end{aligned}
 ```
 

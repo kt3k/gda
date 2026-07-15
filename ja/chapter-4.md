@@ -59,9 +59,9 @@
 ```math
 |\Xi| =
 \begin{cases}
-\xi, & \text{wenn } \Xi = \xi, \\
-0, & \text{wenn } \Xi = 0, \\
-\xi, & \text{wenn } \Xi = -\xi.
+\xi, & (\Xi = \xi \text{ のとき}), \\
+0, & (\Xi = 0 \text{ のとき}), \\
+\xi, & (\Xi = -\xi \text{ のとき}).
 \end{cases}
 ```
 
@@ -437,11 +437,11 @@ $\Xi < 0$ で $|\Xi|$ が整であることをいう。
 ```math
 \Xi + \mathrm{H} =
 \begin{cases}
--(|\Xi| + |\mathrm{H}|), & \text{wenn } \Xi < 0,\ \mathrm{H} < 0; \\
-\left.\begin{matrix} |\Xi| - |\mathrm{H}| \\ 0 \\ -(|\mathrm{H}| - |\Xi|) \end{matrix}\right\}\!, & \text{wenn } \Xi > 0,\ \mathrm{H} < 0, \ \begin{cases} |\Xi| > |\mathrm{H}|; \\ |\Xi| = |\mathrm{H}|; \\ |\Xi| < |\mathrm{H}|; \end{cases} \\
-\mathrm{H} + \Xi, & \text{wenn } \Xi < 0,\ \mathrm{H} > 0; \\
-\mathrm{H}, & \text{wenn } \Xi = 0; \\
-\Xi, & \text{wenn } \mathrm{H} = 0.
+-(|\Xi| + |\mathrm{H}|), & (\Xi < 0,\ \mathrm{H} < 0 \text{ のとき}); \\
+\left.\begin{matrix} |\Xi| - |\mathrm{H}| \\ 0 \\ -(|\mathrm{H}| - |\Xi|) \end{matrix}\right\}\!, & (\Xi > 0,\ \mathrm{H} < 0 \text{ のとき}), \ \begin{cases} |\Xi| > |\mathrm{H}|; \\ |\Xi| = |\mathrm{H}|; \\ |\Xi| < |\mathrm{H}|; \end{cases} \\
+\mathrm{H} + \Xi, & (\Xi < 0,\ \mathrm{H} > 0 \text{ のとき}); \\
+\mathrm{H}, & (\Xi = 0 \text{ のとき}); \\
+\Xi, & (\mathrm{H} = 0 \text{ のとき}).
 \end{cases}
 ```
 
@@ -540,8 +540,8 @@ $\Xi < 0$ で $|\Xi|$ が整であることをいう。
 ```math
 -\Xi =
 \begin{cases}
-0 & \text{für } \Xi = 0, \\
-|\Xi| & \text{für } \Xi < 0.
+0 & (\Xi = 0 \text{ のとき}), \\
+|\Xi| & (\Xi < 0 \text{ のとき}).
 \end{cases}
 ```
 
@@ -1249,9 +1249,9 @@ c) もし
 ```math
 \Xi \cdot \mathrm{H} =
 \begin{cases}
--(|\Xi| \, |\mathrm{H}|), & \text{wenn } \Xi > 0,\ \mathrm{H} < 0 \ \text{または} \ \Xi < 0,\ \mathrm{H} > 0; \\
-|\Xi| \, |\mathrm{H}|, & \text{wenn } \Xi < 0,\ \mathrm{H} < 0; \\
-0, & \text{wenn } \Xi = 0 \ \text{または} \ \mathrm{H} = 0.
+-(|\Xi| \, |\mathrm{H}|), & (\Xi > 0,\ \mathrm{H} < 0 \ \text{または} \ \Xi < 0,\ \mathrm{H} > 0 \text{ のとき}); \\
+|\Xi| \, |\mathrm{H}|, & (\Xi < 0,\ \mathrm{H} < 0 \text{ のとき}); \\
+0, & (\Xi = 0 \ \text{または} \ \mathrm{H} = 0 \text{ のとき}).
 \end{cases}
 ```
 
