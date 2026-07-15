@@ -39,7 +39,9 @@ export default defineConfig({
   // GitHub Pages (kt3k.github.io/gda) 用。ローカルでは未設定のまま。
   basePath: process.env.PAGES_BASE_PATH ?? undefined,
   // OG 画像(docs/public/og.png、scripts/generate-og.py で生成)
-  ogImageUrl: 'https://kt3k.github.io/gda/og.png',
+  // 注: 文字列形式は vocs のバグ(useOgImageUrl の early return)で無視されるため、
+  // 全パスにマッチするパスマップ形式で指定している。
+  ogImageUrl: { '/': 'https://kt3k.github.io/gda/og.png' },
   topNav: [
     { text: 'Deutsch', link: '/de' },
     { text: 'English', link: '/en' },
