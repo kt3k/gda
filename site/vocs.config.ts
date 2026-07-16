@@ -64,6 +64,17 @@ export default defineConfig({
   baseUrl: 'https://kt3k.github.io/gda',
   // OG 画像(public/og.png、scripts/generate-og.py で生成)
   ogImageUrl: 'https://kt3k.github.io/gda/og.png',
+  head: {
+    style: [
+      {
+        // ヘッダーのロゴテキストを控えめに(デフォルトは text-2xl / font-bold)。
+        // 外部 CSS(_root.css)だと読み込みタイミングで一瞬大きく表示されるため、
+        // head に直接インラインして最初のペイントから適用させる。
+        textContent:
+          'div[data-v-logo-text]{font-size:1.125rem;line-height:1.75rem;font-weight:500}',
+      },
+    ],
+  },
   topNav: [
     { text: 'Deutsch', link: '/de' },
     { text: 'English', link: '/en' },
