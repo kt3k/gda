@@ -60,7 +60,7 @@ export default defineConfig({
   // GitHub Pages(kt3k.github.io/gda)向けの完全静的出力
   renderStrategy: 'full-static',
   // GitHub Pages (kt3k.github.io/gda) 用。ローカルでは未設定のまま。
-  basePath: process.env.PAGES_BASE_PATH ?? undefined,
+  basePath: process.env.PAGES_BASE_PATH,
   baseUrl: 'https://kt3k.github.io/gda',
   // OG 画像(public/og.png、scripts/generate-og.py で生成)
   ogImageUrl: 'https://kt3k.github.io/gda/og.png',
