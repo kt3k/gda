@@ -1,1 +1,8 @@
 @import 'katex/dist/katex.min.css';
+
+/* ヘッダーのロゴテキストを控えめに(デフォルトは text-2xl / font-bold) */
+div[data-v-logo-text] {
+  font-size: 1.125rem; /* text-lg */
+  line-height: 1.75rem;
+  font-weight: 500; /* medium */
+}
