@@ -8,9 +8,9 @@
 
 Um Einwänden vorzubeugen: Eine Zahl, keine Zahl, zwei Fälle, alle Dinge aus einer gegebenen Gesamtheit u. a. m. sind klare Wortgebilde der deutschen Sprache. Satz 1, Satz 2, . . ., Satz 301 (desgleichen bei Axiomen, Definitionen, Kapiteln, Paragraphen) oder 1), 2) u. dgl. bei Fallunterscheidungen sind Marken, die die Sätze, Axiome, . . ., Fälle unterscheiden und bei Nachschlagungen bequemer sind, als wenn ich etwa von Satz Hellblau, Satz Dunkelblau u. dgl. redete. Bis „301" würde überhaupt die Einführung der sogenannten positiven ganzen Zahlen keine Schwierigkeit machen; die erste — in Kap. 1 überwundene — Schwierigkeit liegt in der Gesamtheit der positiven ganzen Zahlen
 
-```math
+$$
 1, \ldots
-```
+$$
 
 mit der geheimnisvollen Punktreihe hinter dem Komma (in Kap. 1 natürliche Zahlen genannt), in der Definition der mit ihnen anzustellenden Rechenoperationen und den Beweisen der zugehörigen Sätze.
 
@@ -24,26 +24,26 @@ Bitte denke bei allem an die entsprechenden Stellen des Schulpensums; denn Du ha
 
 **4.** Das kleine Einmaleins, bereits der Satz
 
-```math
+$$
 2 \cdot 2 = 4,
-```
+$$
 
 kommt nicht vor; ich empfehle Dir aber als Übungsaufgabe zu Kap. 1, § 4.
 
-```math
+$$
 \begin{aligned}
 2 &= 1 + 1,\\
 4 &= ((1 + 1) + 1) + 1
 \end{aligned}
-```
+$$
 
 zu definieren und jenen Satz zu beweisen.
 
 **5.** Entschuldige, daß ich Dich duze; dies geschieht nicht nur, weil man den Leser mit „lies" und „siehe" anzureden pflegt, sondern weil dies Buch zum Teil in usum delphinarum geschrieben ist, indem meine Töchter bekanntlich (siehe E. Landau, Vorlesungen über Zahlentheorie, Bd. 1, S. V) schon mehrere Semester studieren (Chemie), schon auf der Schule Differential- und Integralrechnung gelernt zu haben glauben und heute noch nicht wissen, warum
 
-```math
+$$
 x \cdot y = y \cdot x
-```
+$$
 
 ist.
 
@@ -87,12 +87,12 @@ Es sind drei Stellen, an denen der Einwand Platz greift:
 
 Da alle drei Male die Sache analog liegt, spreche ich hier nur von $x + y$ für natürliche Zahlen $x, y$. Wenn ich etwa in einer Vorlesung über Zahlentheorie irgend einen Satz über natürliche Zahlen so beweise, daß ich erst die Richtigkeit für $1$ und dann aus der Richtigkeit für $x$ die für $x + 1$ beweise, so pflegt gelegentlich ein Zuhörer den Einwand zu erheben, ich hätte die Behauptung ja gar nicht vorher für $x$ bewiesen. Der Einwand ist unberechtigt, aber verzeihlich; der Student hatte eben nie vom Induktionsaxiom gehört. Grandjots Einwand klingt ähnlich; mit dem Unterschiede, daß er berechtigt war, so daß ich ihn auch verzeihen mußte. Auf Grund seiner fünf Axiome definiert Peano $x + y$ bei festem $x$ für alle $y$ folgendermaßen:
 
-```math
+$$
 \begin{aligned}
 x + 1 &= x',\\
 x + y' &= (x + y)',
 \end{aligned}
-```
+$$
 
 und er und Nachfolger meinen damit: $x + y$ ist allgemein definiert; denn die Menge der $y$, für die es definiert ist, enthält $1$ und mit $y$ auch $y'$.
 
@@ -100,12 +100,12 @@ Aber man hat ja $x + y$ gar nicht definiert.
 
 Es wäre in Ordnung, wenn man (was beim Peanoschen Wege nicht der Fall ist, da die Ordnung erst nach der Addition eingeführt wird) den Begriff „Zahlen $\leqq y$" hätte und von der Menge der $y$ spräche, zu denen es ein für $z \leqq y$ definiertes $f(z)$ mit den Eigenschaften gibt:
 
-```math
+$$
 \begin{aligned}
 f(1) &= x',\\
 f(z') &= (f(z))' \quad \text{für } z < y.
 \end{aligned}
-```
+$$
 
 So verläuft Dedekinds Begründung. Mit freundlicher Hilfe des Kollegen von Neumann in Princeton hatte ich nach vorheriger Einführung der Ordnung (was dem Leser nicht bequem gewesen wäre) einen derartigen Weg für dies Büchlein ausgearbeitet. In letzter Stunde erfuhr ich aber einen sehr viel einfacheren Beweis von Dr. Kalmar in Szeged; jetzt sieht die Sache so einfach und der Beweis den übrigen Beweisen des ersten Kapitels so ähnlich aus, daß auch der Kenner diese Pointe nicht gemerkt hätte, wenn ich nicht mein obiges Geständnis von Schuld und Sühne so ausführlich zu Protokoll gegeben hätte. Bei $x \cdot y$ geht es genau ebenso; $\sum_{n=1}^{m} x_n$ und $\prod_{n=1}^{m} x_n$ ist allerdings nur auf dem Dedekindschen Wege möglich; aber von Kap. 1, § 3 an hat man ja die Menge der $z \leqq y$.
 

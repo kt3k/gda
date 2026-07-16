@@ -16,9 +16,9 @@
 
 したがって、任意の $\Xi$ と任意の $\mathrm{H}$ に対して、
 
-```math
+$$
 \Xi = \mathrm{H}, \quad \Xi \neq \mathrm{H}
-```
+$$
 
 のうちのちょうど一つの場合が成り立つ。実数においては同一性と相等性の概念が融け合うので、次の三つの定理は自明である。
 
@@ -26,29 +26,29 @@
 
 **定理 164:**
 
-```math
+$$
 \Xi = \mathrm{H}
-```
+$$
 
 から
 
-```math
+$$
 \mathrm{H} = \Xi.
-```
+$$
 
 が従う。
 
 **定理 165:**
 
-```math
+$$
 \Xi = \mathrm{H}, \quad \mathrm{H} = \mathrm{Z}
-```
+$$
 
 から
 
-```math
+$$
 \Xi = \mathrm{Z}.
-```
+$$
 
 が従う。
 
@@ -56,14 +56,14 @@
 
 **定義 44:**
 
-```math
+$$
 |\Xi| =
 \begin{cases}
 \xi, & (\Xi = \xi \text{ のとき}), \\
 0, & (\Xi = 0 \text{ のとき}), \\
 \xi, & (\Xi = -\xi \text{ のとき}).
 \end{cases}
-```
+$$
 
 数 $|\Xi|$ を $\Xi$ の絶対値と呼ぶ。
 
@@ -73,9 +73,9 @@
 
 **定義 45:** $\Xi$ と $\mathrm{H}$ がともに正であるのではないとき、
 
-```math
+$$
 \Xi > \mathrm{H}
-```
+$$
 
 であるのは、
 
@@ -90,15 +90,15 @@ $\Xi$ が負、$\mathrm{H}$ が負で $|\Xi| < |\mathrm{H}|$ であるか、\
 
 **定義 46:**
 
-```math
+$$
 \Xi < \mathrm{H}
-```
+$$
 
 であるのは、
 
-```math
+$$
 \mathrm{H} > \Xi.
-```
+$$
 
 のとき、またそのときに限る。
 
@@ -108,9 +108,9 @@ $\Xi$ が負、$\mathrm{H}$ が負で $|\Xi| < |\mathrm{H}|$ であるか、\
 
 **定理 167:** $\Xi$、$\mathrm{H}$ が任意のとき、
 
-```math
+$$
 \Xi = \mathrm{H}, \quad \Xi > \mathrm{H}, \quad \Xi < \mathrm{H}
-```
+$$
 
 のうちのちょうど一つの場合が成り立つ。
 
@@ -118,15 +118,15 @@ $\Xi$ が負、$\mathrm{H}$ が負で $|\Xi| < |\mathrm{H}|$ であるか、\
 
 2) $\Xi$ が正で、$\mathrm{H} = 0$ または $\mathrm{H}$ が負なら、
 
-```math
+$$
 \Xi \neq \mathrm{H},
-```
+$$
 
 であり、さらに定義 45 により
 
-```math
+$$
 \Xi > \mathrm{H}
-```
+$$
 
 であり、定義 46 により
 
@@ -134,9 +134,9 @@ $\Xi$ は $< \mathrm{H}$ でない。
 
 3) $\Xi = 0$ で $\mathrm{H}$ が正なら、
 
-```math
+$$
 \Xi \neq \mathrm{H},
-```
+$$
 
 であり、さらに定義 45 により
 
@@ -144,9 +144,9 @@ $\Xi$ は $> \mathrm{H}$ でなく、
 
 定義 46 により
 
-```math
+$$
 \Xi < \mathrm{H}.
-```
+$$
 
 である。
 
@@ -176,9 +176,9 @@ $|\Xi| > |\mathrm{H}|$ のとき、$\Xi \neq \mathrm{H}$ であり、$\Xi$ は $
 
 **定義 47:**
 
-```math
+$$
 \Xi \geqq \mathrm{H}
-```
+$$
 
 は
 
@@ -188,9 +188,9 @@ $\Xi > \mathrm{H}$ または $\Xi = \mathrm{H}$ を意味する。
 
 **定義 48:**
 
-```math
+$$
 \Xi \leqq \mathrm{H}
-```
+$$
 
 は
 
@@ -200,15 +200,15 @@ $\Xi < \mathrm{H}$ または $\Xi = \mathrm{H}$ を意味する。
 
 **定理 168:**
 
-```math
+$$
 \Xi > \mathrm{H}
-```
+$$
 
 から
 
-```math
+$$
 \mathrm{H} < \Xi
-```
+$$
 
 が従い、逆も成り立つ。
 
@@ -234,45 +234,45 @@ $\Xi < 0$.
 
 **証明:** 1) 定義 45 により
 
-```math
+$$
 \xi > 0.
-```
+$$
 
 である。
 
 2)
 
-```math
+$$
 \Xi > 0
-```
+$$
 
 から、定義 45 により
 
-```math
+$$
 \Xi = \xi.
-```
+$$
 
 が従う。
 
 3) 定義 46 により
 
-```math
+$$
 -\xi < 0.
-```
+$$
 
 である。
 
 4)
 
-```math
+$$
 \Xi < 0
-```
+$$
 
 から、定義 46 により
 
-```math
+$$
 \Xi = -\xi.
-```
+$$
 
 が従う。
 
@@ -282,37 +282,37 @@ $\Xi < 0$.
 
 **定理 171**(順序の推移律):
 
-```math
+$$
 \Xi < \mathrm{H}, \quad \mathrm{H} < \mathrm{Z}
-```
+$$
 
 から
 
-```math
+$$
 \Xi < \mathrm{Z}.
-```
+$$
 
 が従う。
 
 **証明:** 1)
 
-```math
+$$
 \mathrm{Z} > 0.
-```
+$$
 
 とする。
 
 もし
 
-```math
+$$
 \Xi > 0,
-```
+$$
 
 ならば
 
-```math
+$$
 \mathrm{H} > 0,
-```
+$$
 
 であり、従来の定理 126 が適用される。
 
@@ -320,33 +320,33 @@ $\Xi < 0$.
 
 さらに
 
-```math
+$$
 |\Xi| > |\mathrm{H}|, \quad |\mathrm{H}| > |\mathrm{Z}|,
-```
+$$
 
 であり、ゆえに
 
-```math
+$$
 |\Xi| > |\mathrm{Z}|,
-```
+$$
 
-```math
+$$
 \Xi < \mathrm{Z}.
-```
+$$
 
 である。
 
 **定理 172:**
 
-```math
+$$
 \Xi \leqq \mathrm{H}, \ \mathrm{H} < \mathrm{Z} \quad \text{または} \quad \Xi < \mathrm{H}, \ \mathrm{H} \leqq \mathrm{Z}
-```
+$$
 
 から
 
-```math
+$$
 \Xi < \mathrm{Z}.
-```
+$$
 
 が従う。
 
@@ -354,15 +354,15 @@ $\Xi < 0$.
 
 **定理 173:**
 
-```math
+$$
 \Xi \leqq \mathrm{H}, \quad \mathrm{H} \leqq \mathrm{Z}
-```
+$$
 
 から
 
-```math
+$$
 \Xi \leqq \mathrm{Z}.
-```
+$$
 
 が従う。
 
@@ -370,15 +370,15 @@ $\Xi < 0$.
 
 **定義 49:**
 
-```math
+$$
 \Xi \leqq 0,
-```
+$$
 
 のとき、$\Xi$ が有理であるとは、
 
-```math
+$$
 \Xi = 0
-```
+$$
 
 であるか、または
 
@@ -388,37 +388,37 @@ $\Xi < 0$ で $|\Xi|$ が有理であることをいう。
 
 **定義 50:**
 
-```math
+$$
 \Xi \leqq 0,
-```
+$$
 
 のとき、$\Xi$ が無理であるとは、それが有理でないことをいう。
 
 こうしてわれわれは今や、正の無理数と負の無理数を持つ。(そのような数はあるのか?ある。われわれは無理な $\xi$ を持っていた。ゆえに正の数 $\xi + X$ は常に無理である。なぜなら
 
-```math
+$$
 \xi + X = Y
-```
+$$
 
 から
 
-```math
+$$
 \xi = Y - X;
-```
+$$
 
 が従うことになるからである。そして $-(\xi + X)$ は常に負の無理数である。)
 
 **定義 51:**
 
-```math
+$$
 \Xi \leqq 0,
-```
+$$
 
 のとき、$\Xi$ が整であるとは、
 
-```math
+$$
 \Xi = 0
-```
+$$
 
 であるか、または
 
@@ -434,7 +434,7 @@ $\Xi < 0$ で $|\Xi|$ が整であることをいう。
 
 **定義 52:**
 
-```math
+$$
 \Xi + \mathrm{H} =
 \begin{cases}
 -(|\Xi| + |\mathrm{H}|), & (\Xi < 0,\ \mathrm{H} < 0 \text{ のとき}); \\
@@ -443,7 +443,7 @@ $\Xi < 0$ で $|\Xi|$ が整であることをいう。
 \mathrm{H}, & (\Xi = 0 \text{ のとき}); \\
 \Xi, & (\mathrm{H} = 0 \text{ のとき}).
 \end{cases}
-```
+$$
 
 ($+$ は「プラス」と読む。)$\Xi + \mathrm{H}$ は $\Xi$ と $\mathrm{H}$ の和、または $\Xi$ への $\mathrm{H}$ の加法によって生じる数と呼ばれる。
 
@@ -451,9 +451,9 @@ $\Xi < 0$ で $|\Xi|$ が整であることをいう。
 
 1) 次の場合
 
-```math
+$$
 \Xi > 0, \quad \mathrm{H} > 0
-```
+$$
 
 には、$\Xi + \mathrm{H}$ という概念はすでに定義 34 から得られている。
 
@@ -463,87 +463,87 @@ $\Xi < 0$ で $|\Xi|$ が整であることをいう。
 
 4) 第四の場合と第五の場合は、次のとき互いに重なり合う:
 
-```math
+$$
 \Xi = \mathrm{H} = 0;
-```
+$$
 
 しかしそのとき、$\Xi + \mathrm{H}$ として定義される数は同一(すなわち 0)である。
 
 **定理 175**(加法の交換法則):
 
-```math
+$$
 \Xi + \mathrm{H} = \mathrm{H} + \Xi.
-```
+$$
 
 **証明:** もし
 
-```math
+$$
 \Xi = 0
-```
+$$
 
 ならば両方の数とも $\mathrm{H}$ であり、また
 
-```math
+$$
 \mathrm{H} = 0
-```
+$$
 
 ならば両方とも $\Xi$ である。
 
 また
 
-```math
+$$
 \Xi > 0, \quad \mathrm{H} > 0
-```
+$$
 
 の場合には、既知の定理 130 がそのまま当てはまる。
 
 また
 
-```math
+$$
 \Xi < 0, \quad \mathrm{H} < 0
-```
+$$
 
 の場合には、定理 130 により
 
-```math
+$$
 \Xi + \mathrm{H} = -(|\Xi| + |\mathrm{H}|) = -(|\mathrm{H}| + |\Xi|) = \mathrm{H} + \Xi.
-```
+$$
 
 また
 
-```math
+$$
 \Xi < 0, \quad \mathrm{H} > 0
-```
+$$
 
 の場合には、主張はまさに定義そのものであった。
 
 また
 
-```math
+$$
 \Xi > 0, \quad \mathrm{H} < 0
-```
+$$
 
 の場合には、直前の場合により
 
-```math
+$$
 \mathrm{H} + \Xi = \Xi + \mathrm{H},
-```
+$$
 
 ゆえに
 
-```math
+$$
 \Xi + \mathrm{H} = \mathrm{H} + \Xi.
-```
+$$
 
 **定義 53:**
 
-```math
+$$
 -\Xi =
 \begin{cases}
 0 & (\Xi = 0 \text{ のとき}), \\
 |\Xi| & (\Xi < 0 \text{ のとき}).
 \end{cases}
-```
+$$
 
 ($-$ は「マイナス」と読む。)
 
@@ -551,15 +551,15 @@ $\Xi > 0$ に対しては、$-\Xi$ という概念をすでに定義 43 から�
 
 **定理 176:** もし
 
-```math
+$$
 \Xi > 0 \ \text{ないし} \ \Xi = 0 \ \text{ないし} \ \Xi < 0,
-```
+$$
 
 ならば、それぞれ
 
-```math
+$$
 -\Xi < 0 \ \text{ないし} \ -\Xi = 0 \ \text{ないし} \ -\Xi > 0
-```
+$$
 
 であり、逆もまた成り立つ。
 
@@ -581,157 +581,157 @@ $\Xi > 0$ に対しては、$-\Xi$ という概念をすでに定義 43 から�
 
 **証明:** 定理 175 により
 
-```math
+$$
 -(\Xi + \mathrm{H}) = -(\mathrm{H} + \Xi)
-```
+$$
 
 かつ
 
-```math
+$$
 -\Xi + (-\mathrm{H}) = -\mathrm{H} + (-\Xi);
-```
+$$
 
 であるから、一般性を制限することなく
 
-```math
+$$
 \Xi \geqq \mathrm{H}
-```
+$$
 
 を仮定してよい。なぜなら、二つの関係
 
-```math
+$$
 \Xi \geqq \mathrm{H}, \quad \mathrm{H} \geqq \Xi
-```
+$$
 
 のうち少なくとも一方が成り立ち、また
 
-```math
+$$
 -(\mathrm{H} + \Xi) = -\mathrm{H} + (-\Xi)
-```
+$$
 
 からまさに
 
-```math
+$$
 -(\Xi + \mathrm{H}) = -\Xi + (-\mathrm{H}).
-```
+$$
 
 が従うからである。そこで、以下では次を仮定する:
 
-```math
+$$
 \Xi \geqq \mathrm{H}.
-```
+$$
 
 1) もし
 
-```math
+$$
 \Xi > 0, \quad \mathrm{H} > 0,
-```
+$$
 
 ならば
 
-```math
+$$
 -\Xi + (-\mathrm{H}) = -(\Xi + \mathrm{H}).
-```
+$$
 
 2) もし
 
-```math
+$$
 \Xi > 0, \quad \mathrm{H} = 0,
-```
+$$
 
 ならば
 
-```math
+$$
 -\Xi + (-\mathrm{H}) = -\Xi + 0 = -\Xi = -(\Xi + 0) = -(\Xi + \mathrm{H}).
-```
+$$
 
 3) もし
 
-```math
+$$
 \Xi > 0, \quad \mathrm{H} < 0,
-```
+$$
 
 ならば
 
 あるいは
 
-```math
+$$
 \Xi > |\mathrm{H}|,
-```
+$$
 
 したがって
 
-```math
+$$
 \Xi + \mathrm{H} = \Xi - |\mathrm{H}|,
-```
+$$
 
-```math
+$$
 -\Xi + (-\mathrm{H}) = -\Xi + |\mathrm{H}| = -(\Xi - |\mathrm{H}|) = -(\Xi + \mathrm{H});
-```
+$$
 
 あるいは
 
-```math
+$$
 \Xi = |\mathrm{H}|,
-```
+$$
 
 したがって
 
-```math
+$$
 \Xi + \mathrm{H} = 0,
-```
+$$
 
-```math
+$$
 -\Xi + (-\mathrm{H}) = -\Xi + |\mathrm{H}| = 0 = -(\Xi + \mathrm{H});
-```
+$$
 
 あるいは
 
-```math
+$$
 \Xi < |\mathrm{H}|,
-```
+$$
 
 したがって
 
-```math
+$$
 \Xi + \mathrm{H} = -(|\mathrm{H}| - \Xi),
-```
+$$
 
-```math
+$$
 -\Xi + (-\mathrm{H}) = -\Xi + |\mathrm{H}| = |\mathrm{H}| - \Xi = -(\Xi + \mathrm{H}).
-```
+$$
 
 4) もし
 
-```math
+$$
 \Xi = 0,
-```
+$$
 
 ならば
 
-```math
+$$
 -\Xi + (-\mathrm{H}) = 0 + (-\mathrm{H}) = -\mathrm{H} = -(0 + \mathrm{H}) = -(\Xi + \mathrm{H}).
-```
+$$
 
 5) もし
 
-```math
+$$
 \Xi < 0,
-```
+$$
 
 ならば
 
-```math
+$$
 \mathrm{H} < 0,
-```
+$$
 
-```math
+$$
 \Xi + \mathrm{H} = -(|\Xi| + |\mathrm{H}|),
-```
+$$
 
-```math
+$$
 -\Xi + (-\mathrm{H}) = |\Xi| + |\mathrm{H}| = -(\Xi + \mathrm{H}).
-```
+$$
 
 **定義 54:** $\Xi - \mathrm{H} = \Xi + (-\mathrm{H})$.
 
@@ -739,101 +739,101 @@ $\Xi > 0$ に対しては、$-\Xi$ という概念をすでに定義 43 から�
 
 定義 54 は(当然そうでなければならないが)
 
-```math
+$$
 \Xi > \mathrm{H} > 0
-```
+$$
 
 のとき、以前の定義 35 と一致することに注意せよ。実際、そのときは
 
-```math
+$$
 \Xi > 0, \quad -\mathrm{H} < 0, \quad |\Xi| > |-\mathrm{H}|, \quad \Xi + (-\mathrm{H}) = |\Xi| - |-\mathrm{H}| = \Xi - \mathrm{H}.
-```
+$$
 
 **定理 181:** $-(\Xi - \mathrm{H}) = \mathrm{H} - \Xi$.
 
 **証明:** 定理 180 と定理 177 により
 
-```math
+$$
 -(\Xi - \mathrm{H}) = -(\Xi + (-\mathrm{H})) = -\Xi + (-(-\mathrm{H})) = -\Xi + \mathrm{H} = \mathrm{H} + (-\Xi) = \mathrm{H} - \Xi.
-```
+$$
 
 **定理 182:** もし
 
-```math
+$$
 \Xi - \mathrm{H} > 0 \ \text{ないし} \ \Xi - \mathrm{H} = 0 \ \text{ないし} \ \Xi - \mathrm{H} < 0
-```
+$$
 
 ならば、それぞれ
 
-```math
+$$
 \Xi > \mathrm{H} \ \text{ないし} \ \Xi = \mathrm{H} \ \text{ないし} \ \Xi < \mathrm{H}
-```
+$$
 
 であり、逆もまた成り立つ。
 
 **証明:** $-\mathrm{H}$ もまた任意の実数であるから、$\mathrm{H}$ の代わりに $-\mathrm{H}$ と書いてよく、したがって
 
-```math
+$$
 \Xi + \mathrm{H} > 0 \ \text{ないし} \ \Xi + \mathrm{H} = 0 \ \text{ないし} \ \Xi + \mathrm{H} < 0
-```
+$$
 
 と
 
-```math
+$$
 \Xi > -\mathrm{H} \ \text{ないし} \ \Xi = -\mathrm{H} \ \text{ないし} \ \Xi < -\mathrm{H}
-```
+$$
 
 とにおける場合の対応を示せばよい。
 
 実際、$\Xi = 0$ または $\mathrm{H} = 0$ のときは主張は明らかである。それ以外では、
 
-```math
+$$
 \Xi > 0, \quad \mathrm{H} > 0
-```
+$$
 
 の場合と、定義 52 の最初の三つの場合とにおいて(ただし第三の場合は三つの小場合
 
-```math
+$$
 |\mathrm{H}| > |\Xi|, \quad |\mathrm{H}| = |\Xi|, \quad |\mathrm{H}| < |\Xi|
-```
+$$
 
 に分けるものとする)、いずれの側にもそれぞれ次の記号が成り立つ:
 
-```math
+$$
 > \ < \ > \ = \ < \ > \ = \ <.
-```
+$$
 
 **定理 183:** もし
 
-```math
+$$
 \Xi > \mathrm{H} \ \text{ないし} \ \Xi = \mathrm{H} \ \text{ないし} \ \Xi < \mathrm{H}
-```
+$$
 
 ならば、それぞれ
 
-```math
+$$
 -\Xi < -\mathrm{H} \ \text{ないし} \ -\Xi = -\mathrm{H} \ \text{ないし} \ -\Xi > -\mathrm{H}
-```
+$$
 
 であり、逆もまた成り立つ。
 
 **証明:** 定理 182 により、前者は次の場合に対応し
 
-```math
+$$
 \Xi - \mathrm{H} > 0 \ \text{ないし} \ \Xi - \mathrm{H} = 0 \ \text{ないし} \ \Xi - \mathrm{H} < 0,
-```
+$$
 
 後者は次の場合に対応する:
 
-```math
+$$
 -\mathrm{H} - (-\Xi) > 0 \ \text{ないし} \ -\mathrm{H} - (-\Xi) = 0 \ \text{ないし} \ -\mathrm{H} - (-\Xi) < 0;
-```
+$$
 
 ゆえに
 
-```math
+$$
 -\mathrm{H} - (-\Xi) = -\mathrm{H} + (-(-\Xi)) = -\mathrm{H} + \Xi = \Xi + (-\mathrm{H}) = \Xi - \mathrm{H}
-```
+$$
 
 がすべてを与える。
 
@@ -841,128 +841,128 @@ $\Xi > 0$ に対しては、$-\Xi$ という概念をすでに定義 43 から�
 
 **証明:** 1) もし
 
-```math
+$$
 \Xi > 0,
-```
+$$
 
 ならば
 
-```math
+$$
 \Xi = (\Xi + 1) - 1.
-```
+$$
 
 2) もし
 
-```math
+$$
 \Xi = 0,
-```
+$$
 
 ならば
 
-```math
+$$
 \Xi = 1 - 1.
-```
+$$
 
 3) もし
 
-```math
+$$
 \Xi < 0,
-```
+$$
 
 ならば
 
-```math
+$$
 -\Xi = |\Xi| = (|\Xi| + 1) - 1,
-```
+$$
 
-```math
+$$
 \Xi = -((|\Xi| + 1) - 1) = 1 - (|\Xi| + 1).
-```
+$$
 
 **定理 185:** もし
 
-```math
+$$
 \Xi = \xi_1 - \xi_2, \quad \mathrm{H} = \eta_1 - \eta_2
-```
+$$
 
 ならば
 
-```math
+$$
 \Xi + \mathrm{H} = (\xi_1 + \eta_1) - (\xi_2 + \eta_2).
-```
+$$
 
 **証明:** 1) いま
 
-```math
+$$
 \Xi > 0, \quad \mathrm{H} > 0.
-```
+$$
 
 とする。このとき、
 
-```math
+$$
 \begin{aligned}
 (\alpha + \beta) + (\gamma + \delta) &= (\alpha + \beta) + (\delta + \gamma) = ((\alpha + \beta) + \delta) + \gamma \\
 &= \gamma + (\alpha + (\beta + \delta)) = (\gamma + \alpha) + (\beta + \delta)
 \end{aligned}
-```
+$$
 
 であるから
 
-```math
+$$
 (\Xi + \mathrm{H}) + (\xi_2 + \eta_2) = \xi_1 + \eta_1,
-```
+$$
 
 となり、したがって主張は真である。
 
 2) いま
 
-```math
+$$
 \Xi < 0, \quad \mathrm{H} < 0.
-```
+$$
 
 とする。このとき定理 181 により
 
-```math
+$$
 \xi_2 - \xi_1 = -\Xi > 0, \quad \eta_2 - \eta_1 = -\mathrm{H} > 0,
-```
+$$
 
 ゆえに 1) により
 
-```math
+$$
 -\Xi + (-\mathrm{H}) = (\xi_2 + \eta_2) - (\xi_1 + \eta_1),
-```
+$$
 
-```math
+$$
 \Xi + \mathrm{H} = -(-\Xi + (-\mathrm{H})) = (\xi_1 + \eta_1) - (\xi_2 + \eta_2).
-```
+$$
 
 3) いま
 
-```math
+$$
 \Xi > 0, \quad \mathrm{H} < 0,
-```
+$$
 
 とする。したがって
 
-```math
+$$
 \xi_1 - \xi_2 > 0, \quad \eta_2 - \eta_1 > 0.
-```
+$$
 
 A) もし
 
-```math
+$$
 \Xi > |\mathrm{H}|,
-```
+$$
 
 ならば
 
-```math
+$$
 \xi_1 - \xi_2 > \eta_2 - \eta_1,
-```
+$$
 
 したがって
 
-```math
+$$
 \begin{aligned}
 \xi_1 + \eta_1 &= ((\xi_1 - \xi_2) + \xi_2) + \eta_1 = (\xi_1 - \xi_2) + (\xi_2 + \eta_1) = (\xi_2 + \eta_1) + (\xi_1 - \xi_2) \\
 &= (\xi_2 + \eta_1) + ((\eta_2 - \eta_1) + ((\xi_1 - \xi_2) - (\eta_2 - \eta_1))) \\
@@ -970,275 +970,275 @@ A) もし
 &= (\xi_2 + (\eta_1 + (\eta_2 - \eta_1))) + ((\xi_1 - \xi_2) - (\eta_2 - \eta_1)) \\
 &= (\xi_2 + \eta_2) + ((\xi_1 - \xi_2) - (\eta_2 - \eta_1)),
 \end{aligned}
-```
+$$
 
-```math
+$$
 (\xi_1 + \eta_1) - (\xi_2 + \eta_2) = (\xi_1 - \xi_2) - (\eta_2 - \eta_1) = \Xi - |\mathrm{H}| = \Xi + \mathrm{H}.
-```
+$$
 
 B) もし
 
-```math
+$$
 \Xi < |\mathrm{H}|,
-```
+$$
 
 ならば、A) により
 
-```math
+$$
 \begin{aligned}
 \Xi + \mathrm{H} &= -(-\mathrm{H} + (-\Xi)) = -((\eta_2 - \eta_1) + (\xi_2 - \xi_1)) \\
 &= -((\eta_2 + \xi_2) - (\eta_1 + \xi_1)) = (\eta_1 + \xi_1) - (\eta_2 + \xi_2) \\
 &= (\xi_1 + \eta_1) - (\xi_2 + \eta_2).
 \end{aligned}
-```
+$$
 
 C) もし
 
-```math
+$$
 \Xi = |\mathrm{H}|,
-```
+$$
 
 すなわち
 
-```math
+$$
 \xi_1 - \xi_2 = \eta_2 - \eta_1,
-```
+$$
 
 ならば
 
-```math
+$$
 \xi_1 = \xi_2 + (\eta_2 - \eta_1),
-```
+$$
 
-```math
+$$
 \xi_1 + \eta_1 = \xi_2 + \eta_2,
-```
+$$
 
-```math
+$$
 \Xi + \mathrm{H} = 0 = (\xi_1 + \eta_1) - (\xi_2 + \eta_2).
-```
+$$
 
 4) いま
 
-```math
+$$
 \Xi < 0, \quad \mathrm{H} > 0.
-```
+$$
 
 とする。このとき 3) により
 
-```math
+$$
 \Xi + \mathrm{H} = (\xi_1 + \eta_1) - (\xi_2 + \eta_2).
-```
+$$
 
 5) いま
 
-```math
+$$
 \Xi = 0.
-```
+$$
 
 とする。このとき
 
-```math
+$$
 \xi_1 = \xi_2,
-```
+$$
 
-```math
+$$
 \Xi + \mathrm{H} = \mathrm{H}.
-```
+$$
 
 a) もし
 
-```math
+$$
 \eta_1 > \eta_2
-```
+$$
 
 ならば
 
-```math
+$$
 (\eta_1 - \eta_2) + (\xi_1 + \eta_2) = ((\eta_1 - \eta_2) + \eta_2) + \xi_1 = \eta_1 + \xi_1 = \xi_1 + \eta_1,
-```
+$$
 
 b) もし
 
-```math
+$$
 \eta_1 = \eta_2
-```
+$$
 
 ならば
 
-```math
+$$
 \mathrm{H} = 0 = (\xi_1 + \eta_1) - (\xi_1 + \eta_2).
-```
+$$
 
 c) もし
 
-```math
+$$
 \eta_1 < \eta_2
-```
+$$
 
 ならば、a) により
 
-```math
+$$
 \mathrm{H} = -(-\mathrm{H}) = -((\xi_1 + \eta_2) - (\xi_1 + \eta_1)) = (\xi_1 + \eta_1) - (\xi_1 + \eta_2).
-```
+$$
 
 6) いま
 
-```math
+$$
 \mathrm{H} = 0.
-```
+$$
 
 とする。このとき 5) により
 
-```math
+$$
 \Xi + \mathrm{H} = \mathrm{H} + \Xi = (\eta_1 + \xi_1) - (\eta_2 + \xi_2) = (\xi_1 + \eta_1) - (\xi_2 + \eta_2).
-```
+$$
 
 **定理 186**(加法の結合法則):
 
-```math
+$$
 (\Xi + \mathrm{H}) + \mathrm{Z} = \Xi + (\mathrm{H} + \mathrm{Z}).
-```
+$$
 
 **証明:** 定理 184 により
 
-```math
+$$
 \Xi = \xi_1 - \xi_2, \quad \mathrm{H} = \eta_1 - \eta_2, \quad \mathrm{Z} = \zeta_1 - \zeta_2.
-```
+$$
 
 定理 185 により
 
-```math
+$$
 \begin{aligned}
 (\Xi + \mathrm{H}) + \mathrm{Z} &= ((\xi_1 + \eta_1) - (\xi_2 + \eta_2)) + (\zeta_1 - \zeta_2) \\
 &= ((\xi_1 + \eta_1) + \zeta_1) - ((\xi_2 + \eta_2) + \zeta_2) = (\xi_1 + (\eta_1 + \zeta_1)) - (\xi_2 + (\eta_2 + \zeta_2)) \\
 &= (\xi_1 - \xi_2) + ((\eta_1 + \zeta_1) - (\eta_2 + \zeta_2)) = \Xi + (\mathrm{H} + \mathrm{Z}).
 \end{aligned}
-```
+$$
 
 **定理 187:** $\Xi$, $\mathrm{H}$ が与えられたとき、
 
-```math
+$$
 \mathrm{H} + \Upsilon = \Xi
-```
+$$
 
 はちょうど一つの解 $\Upsilon$ をもつ。すなわち
 
-```math
+$$
 \Upsilon = \Xi - \mathrm{H}.
-```
+$$
 
 **証明:** 1)
 
-```math
+$$
 \Upsilon = \Xi - \mathrm{H}
-```
+$$
 
 は一つの解である。なぜなら、定理 186 により
 
-```math
+$$
 \mathrm{H} + (\Xi - \mathrm{H}) = (\Xi - \mathrm{H}) + \mathrm{H} = (\Xi + (-\mathrm{H})) + \mathrm{H} = \Xi + (-\mathrm{H} + \mathrm{H}) = \Xi + 0 = \Xi.
-```
+$$
 
 2) もし
 
-```math
+$$
 \mathrm{H} + \Upsilon = \Xi
-```
+$$
 
 ならば
 
-```math
+$$
 \Xi - \mathrm{H} = \Xi + (-\mathrm{H}) = -\mathrm{H} + \Xi = -\mathrm{H} + (\mathrm{H} + \Upsilon) = (-\mathrm{H} + \mathrm{H}) + \Upsilon = 0 + \Upsilon = \Upsilon.
-```
+$$
 
 **定理 188:** 次のうち
 
-```math
+$$
 \Xi + \mathrm{Z} > \mathrm{H} + \mathrm{Z} \ \text{ないし} \ \Xi + \mathrm{Z} = \mathrm{H} + \mathrm{Z} \ \text{ないし} \ \Xi + \mathrm{Z} < \mathrm{H} + \mathrm{Z},
-```
+$$
 
 のいずれが成り立つかは、それぞれ、次のいずれであるかに応じて定まる:
 
-```math
+$$
 \Xi > \mathrm{H} \ \text{ないし} \ \Xi = \mathrm{H} \ \text{ないし} \ \Xi < \mathrm{H}.
-```
+$$
 
 **証明:** 定理 182 により、前者が成り立つのは、それぞれ次に応じてである:
 
-```math
+$$
 (\Xi + \mathrm{Z}) - (\mathrm{H} + \mathrm{Z}) > 0 \ \text{ないし} \ (\Xi + \mathrm{Z}) - (\mathrm{H} + \mathrm{Z}) = 0 \ \text{ないし} \ (\Xi + \mathrm{Z}) - (\mathrm{H} + \mathrm{Z}) < 0;
-```
+$$
 
 後者が成り立つのは、それぞれ次に応じてである:
 
-```math
+$$
 \Xi - \mathrm{H} > 0 \ \text{ないし} \ \Xi - \mathrm{H} = 0 \ \text{ないし} \ \Xi - \mathrm{H} < 0.
-```
+$$
 
 そして
 
-```math
+$$
 (\Xi + \mathrm{Z}) - (\mathrm{H} + \mathrm{Z}) = (\Xi + \mathrm{Z}) + (-\mathrm{Z} + (-\mathrm{H})) = (\Xi + (\mathrm{Z} + (-\mathrm{Z}))) + (-\mathrm{H}) = \Xi + (-\mathrm{H}) = \Xi - \mathrm{H}
-```
+$$
 
 から、したがって主張が従う。
 
 **定理 189:** もし
 
-```math
+$$
 \Xi > \mathrm{H}, \quad \mathrm{Z} > \Upsilon
-```
+$$
 
 ならば
 
-```math
+$$
 \Xi + \mathrm{Z} > \mathrm{H} + \Upsilon.
-```
+$$
 
 **証明:** 定理 188 により
 
-```math
+$$
 \Xi + \mathrm{Z} > \mathrm{H} + \mathrm{Z}
-```
+$$
 
 かつ
 
-```math
+$$
 \mathrm{H} + \mathrm{Z} = \mathrm{Z} + \mathrm{H} > \Upsilon + \mathrm{H} = \mathrm{H} + \Upsilon,
-```
+$$
 
 ゆえに
 
-```math
+$$
 \Xi + \mathrm{Z} > \mathrm{H} + \Upsilon.
-```
+$$
 
 **定理 190:** もし
 
-```math
+$$
 \Xi \geqq \mathrm{H}, \ \mathrm{Z} > \Upsilon \quad \text{または} \quad \Xi > \mathrm{H}, \ \mathrm{Z} \geqq \Upsilon
-```
+$$
 
 ならば
 
-```math
+$$
 \Xi + \mathrm{Z} > \mathrm{H} + \Upsilon.
-```
+$$
 
 **証明:** 仮定に等号が現れる場合は定理 188 により、それ以外の場合は定理 189 により片付く。
 
 **定理 191:** もし
 
-```math
+$$
 \Xi \geqq \mathrm{H}, \quad \mathrm{Z} \geqq \Upsilon
-```
+$$
 
 ならば
 
-```math
+$$
 \Xi + \mathrm{Z} \geqq \mathrm{H} + \Upsilon.
-```
+$$
 
 **証明:** 仮定に二つの等号がある場合は明らかであり、それ以外は定理 190 により片付く。
 
@@ -1246,14 +1246,14 @@ c) もし
 
 **定義 55:**
 
-```math
+$$
 \Xi \cdot \mathrm{H} =
 \begin{cases}
 -(|\Xi| \, |\mathrm{H}|), & (\Xi > 0,\ \mathrm{H} < 0 \ \text{または} \ \Xi < 0,\ \mathrm{H} > 0 \text{ のとき}); \\
 |\Xi| \, |\mathrm{H}|, & (\Xi < 0,\ \mathrm{H} < 0 \text{ のとき}); \\
 0, & (\Xi = 0 \ \text{または} \ \mathrm{H} = 0 \text{ のとき}).
 \end{cases}
-```
+$$
 
 ($\cdot$ は「掛ける」と読む。ただしこの点はふつう書かない。)$\Xi \cdot \mathrm{H}$ を $\Xi$ と $\mathrm{H}$ との積、または $\Xi$ に $\mathrm{H}$ を乗ずる乗法によって生ずる数と呼ぶ。
 
@@ -1261,9 +1261,9 @@ $\Xi > 0$, $\mathrm{H} > 0$ の場合の $\Xi \cdot \mathrm{H}$ は定義 36 に
 
 **定理 192:**
 
-```math
+$$
 \Xi \mathrm{H} = 0
-```
+$$
 
 となるのは、二つの数 $\Xi$, $\mathrm{H}$ のうち少なくとも一方が 0 のとき、またそのときに限る。
 
@@ -1275,9 +1275,9 @@ $\Xi > 0$, $\mathrm{H} > 0$ の場合の $\Xi \cdot \mathrm{H}$ は定義 36 に
 
 **定理 194**(乗法の交換法則):
 
-```math
+$$
 \Xi \mathrm{H} = \mathrm{H} \Xi.
-```
+$$
 
 **証明:** $\Xi > 0$, $\mathrm{H} > 0$ の場合、これは定理 142 である。それ以外の場合は定義 55 から従う。なぜなら、この定義の右辺は(定理 142 により)、また場合分けも、$\Xi$, $\mathrm{H}$ に関して対称だからである。
 
@@ -1285,21 +1285,21 @@ $\Xi > 0$, $\mathrm{H} > 0$ の場合の $\Xi \cdot \mathrm{H}$ は定義 36 に
 
 **証明:** $\Xi > 0$ の場合、これは定理 151 から従う。$\Xi = 0$ の場合は定義 55 から従う。$\Xi < 0$ の場合は、定義 55 により
 
-```math
+$$
 \Xi \cdot 1 = -(|\Xi| \cdot 1) = -|\Xi| = \Xi.
-```
+$$
 
 **定理 196:**
 
-```math
+$$
 \Xi \neq 0, \quad \mathrm{H} \neq 0,
-```
+$$
 
 ならば
 
-```math
+$$
 \Xi \mathrm{H} = |\Xi| \, |\mathrm{H}| \quad \text{ないし} \quad \Xi \mathrm{H} = -(|\Xi| \, |\mathrm{H}|),
-```
+$$
 
 であり、数 $\Xi$, $\mathrm{H}$ のうち負のものが一つもないか二つあるか、あるいはちょうど一つあるかに応じて、それぞれ前者あるいは後者が成り立つ。
 
@@ -1311,9 +1311,9 @@ $\Xi > 0$, $\mathrm{H} > 0$ の場合の $\Xi \cdot \mathrm{H}$ は定義 36 に
 
 2)
 
-```math
+$$
 \Xi \neq 0, \quad \mathrm{H} \neq 0,
-```
+$$
 
 ならば、定理 193 により三つの式はすべて同じ絶対値 $|\Xi| \, |\mathrm{H}|$ をもち、定理 196 により、数 $\Xi$, $\mathrm{H}$ のうち負のものがちょうど一つあるか、それとも一つもないか二つあるかに応じて、三つの式はすべて $> 0$ あるいは $< 0$ である。
 
@@ -1321,29 +1321,29 @@ $\Xi > 0$, $\mathrm{H} > 0$ の場合の $\Xi \cdot \mathrm{H}$ は定義 36 に
 
 **証明:** 定理 197 により
 
-```math
+$$
 (-\Xi)(-\mathrm{H}) = \Xi(-(-\mathrm{H})) = \Xi \mathrm{H}.
-```
+$$
 
 **定理 199**(乗法の結合法則):
 
-```math
+$$
 (\Xi \mathrm{H}) \mathrm{Z} = \Xi (\mathrm{H} \mathrm{Z}).
-```
+$$
 
 **証明:** 1) 数 $\Xi$, $\mathrm{H}$, $\mathrm{Z}$ のうち一つが 0 ならば、主張の両辺はともに 0 である。
 
 2)
 
-```math
+$$
 \Xi \neq 0, \quad \mathrm{H} \neq 0, \quad \mathrm{Z} \neq 0,
-```
+$$
 
 ならば、定理 193 により両辺は同じ絶対値
 
-```math
+$$
 (|\Xi| \, |\mathrm{H}|) \, |\mathrm{Z}| = |\Xi| \, (|\mathrm{H}| \, |\mathrm{Z}|),
-```
+$$
 
 をもち、定理 196 により、数 $\Xi$, $\mathrm{H}$, $\mathrm{Z}$ のうち負のものが一つもないかちょうど二つあるか、それともちょうど一つあるか三つあるかに応じて、両辺はともに $> 0$ あるいは $< 0$ である。
 
@@ -1351,141 +1351,141 @@ $\Xi > 0$, $\mathrm{H} > 0$ の場合の $\Xi \cdot \mathrm{H}$ は定義 36 に
 
 **証明:** 1)
 
-```math
+$$
 \eta > \zeta
-```
+$$
 
 の場合、
 
-```math
+$$
 (\eta - \zeta) + \zeta = \eta,
-```
+$$
 
 であるから、定理 144 により
 
-```math
+$$
 \xi(\eta - \zeta) + \xi\zeta = \xi\eta,
-```
+$$
 
-```math
+$$
 \xi(\eta - \zeta) = \xi\eta - \xi\zeta.
-```
+$$
 
 2)
 
-```math
+$$
 \eta = \zeta
-```
+$$
 
 の場合、
 
-```math
+$$
 \eta - \zeta = 0,
-```
+$$
 
-```math
+$$
 \xi(\eta - \zeta) = \xi \cdot 0 = 0 = \xi\eta - \xi\zeta.
-```
+$$
 
 3)
 
-```math
+$$
 \eta < \zeta
-```
+$$
 
 の場合、1) により
 
-```math
+$$
 \xi(\zeta - \eta) = \xi\zeta - \xi\eta,
-```
+$$
 
-```math
+$$
 \xi(\eta - \zeta) = \xi(-(\zeta - \eta)) = -(\xi(\zeta - \eta)) = -(\xi\zeta - \xi\eta) = \xi\eta - \xi\zeta.
-```
+$$
 
 **定理 201**(分配法則):
 
-```math
+$$
 \Xi(\mathrm{H} + \mathrm{Z}) = \Xi\mathrm{H} + \Xi\mathrm{Z}.
-```
+$$
 
 **証明:** 1)
 
-```math
+$$
 \Xi > 0.
-```
+$$
 
 とする。定理 184 により
 
-```math
+$$
 \mathrm{H} = \eta_1 - \eta_2, \quad \mathrm{Z} = \zeta_1 - \zeta_2,
-```
+$$
 
 であり、したがって定理 185 により
 
-```math
+$$
 \mathrm{H} + \mathrm{Z} = (\eta_1 + \zeta_1) - (\eta_2 + \zeta_2),
-```
+$$
 
 であるから、定理 200 と定理 144 により
 
-```math
+$$
 \Xi(\mathrm{H} + \mathrm{Z}) = \Xi(\eta_1 + \zeta_1) - \Xi(\eta_2 + \zeta_2) = (\Xi\eta_1 + \Xi\zeta_1) - (\Xi\eta_2 + \Xi\zeta_2),
-```
+$$
 
 となり、さらに定理 185 と定理 200 により
 
-```math
+$$
 \Xi(\mathrm{H} + \mathrm{Z}) = (\Xi\eta_1 - \Xi\eta_2) + (\Xi\zeta_1 - \Xi\zeta_2) = \Xi(\eta_1 - \eta_2) + \Xi(\zeta_1 - \zeta_2) = \Xi\mathrm{H} + \Xi\mathrm{Z}.
-```
+$$
 
 2)
 
-```math
+$$
 \Xi = 0.
-```
+$$
 
 とする。このとき
 
-```math
+$$
 \Xi(\mathrm{H} + \mathrm{Z}) = 0 = \Xi\mathrm{H} + \Xi\mathrm{Z}.
-```
+$$
 
 3)
 
-```math
+$$
 \Xi < 0.
-```
+$$
 
 とする。このとき 1) により
 
-```math
+$$
 (-\Xi)(\mathrm{H} + \mathrm{Z}) = (-\Xi)\mathrm{H} + (-\Xi)\mathrm{Z},
-```
+$$
 
 であるから、
 
-```math
+$$
 -(\Xi(\mathrm{H} + \mathrm{Z})) = (-\Xi)\mathrm{H} + (-\Xi)\mathrm{Z},
-```
+$$
 
-```math
+$$
 \Xi(\mathrm{H} + \mathrm{Z}) = -((-\Xi)\mathrm{H} + (-\Xi)\mathrm{Z}) = -((-\Xi)\mathrm{H}) + (-((-\Xi)\mathrm{Z})) = \Xi\mathrm{H} + \Xi\mathrm{Z}.
-```
+$$
 
 **定理 202:** $\Xi(\mathrm{H} - \mathrm{Z}) = \Xi\mathrm{H} - \Xi\mathrm{Z}$.
 
 **証明:** 定理 201 により
 
-```math
+$$
 \Xi(\mathrm{H} - \mathrm{Z}) = \Xi(\mathrm{H} + (-\mathrm{Z})) = \Xi\mathrm{H} + \Xi(-\mathrm{Z}) = \Xi\mathrm{H} + (-(\Xi\mathrm{Z})) = \Xi\mathrm{H} - \Xi\mathrm{Z}.
-```
+$$
 
 **定理 203:**
 
-```math
+$$
 \Xi > \mathrm{H}.
-```
+$$
 
 とする。
 は一つの解である。なぜなら\
@@ -1495,93 +1495,93 @@ $\mathrm{H} < 0$ とする。
 
 このとき
 
-```math
+$$
 \mathrm{Z} > 0 \ \text{ないし} \ \mathrm{Z} = 0 \ \text{ないし} \ \mathrm{Z} < 0
-```
+$$
 
 から
 
-```math
+$$
 \Xi\mathrm{Z} > \mathrm{H}\mathrm{Z} \ \text{ないし} \ \Xi\mathrm{Z} = \mathrm{H}\mathrm{Z} \ \text{ないし} \ \Xi\mathrm{Z} < \mathrm{H}\mathrm{Z}.
-```
+$$
 
 が従う。
 
 **証明:**
 
-```math
+$$
 \Xi - \mathrm{H} > 0,
-```
+$$
 
 であるから、
 
-```math
+$$
 (\Xi - \mathrm{H})\mathrm{Z} > 0 \ \text{ないし} \ (\Xi - \mathrm{H})\mathrm{Z} = 0 \ \text{ないし} \ (\Xi - \mathrm{H})\mathrm{Z} < 0,
-```
+$$
 
 であって、それぞれ
 
-```math
+$$
 \mathrm{Z} > 0 \ \text{ないし} \ \mathrm{Z} = 0 \ \text{ないし} \ \mathrm{Z} < 0.
-```
+$$
 
 に応ずる。定理 202 により
 
-```math
+$$
 (\Xi - \mathrm{H})\mathrm{Z} = \mathrm{Z}(\Xi - \mathrm{H}) = \mathrm{Z}\Xi - \mathrm{Z}\mathrm{H} = \Xi\mathrm{Z} - \mathrm{H}\mathrm{Z}
-```
+$$
 
 であるから、これらの場合には定理 182 により
 
-```math
+$$
 \Xi\mathrm{Z} > \mathrm{H}\mathrm{Z} \ \text{ないし} \ \Xi\mathrm{Z} = \mathrm{H}\mathrm{Z} \ \text{ないし} \ \Xi\mathrm{Z} < \mathrm{H}\mathrm{Z}.
-```
+$$
 
 である。
 
 **定理 204:** 方程式
 
-```math
+$$
 \mathrm{H}\Upsilon = \Xi,
-```
+$$
 
 は、$\Xi$, $\mathrm{H}$ が与えられており
 
-```math
+$$
 \mathrm{H} \neq 0
-```
+$$
 
 であるとき、ちょうど一つの解 $\Upsilon$ をもつ。
 
 **証明:** I) 解は高々一つである。なぜなら、
 
-```math
+$$
 \mathrm{H}\Upsilon_1 = \Xi = \mathrm{H}\Upsilon_2
-```
+$$
 
 から
 
-```math
+$$
 0 = \mathrm{H}\Upsilon_1 - \mathrm{H}\Upsilon_2 = \mathrm{H}(\Upsilon_1 - \Upsilon_2),
-```
+$$
 
 が従い、したがって定理 192 により
 
-```math
+$$
 0 = \Upsilon_1 - \Upsilon_2,
-```
+$$
 
-```math
+$$
 \Upsilon_1 = \Upsilon_2.
-```
+$$
 
 となるからである。
 
 II) 1)
 
-```math
+$$
 \mathrm{H} > 0.
-```
+$$
 
 とする。このとき
 
@@ -1589,9 +1589,9 @@ II) 1)
 
 が一つの解である。なぜなら、1) により
 
-```math
+$$
 \Xi = |\mathrm{H}|(-\Upsilon) = (-|\mathrm{H}|)\Upsilon = \mathrm{H}\Upsilon.
-```
+$$
 
 だからである。
 
@@ -1615,19 +1615,19 @@ II) 1)
 
 **証明:** A) そのような $\Xi$ は二つ以上存在し得ない。なぜなら、もし
 
-```math
+$$
 \Xi_1 < \Xi_2
-```
+$$
 
 であって $\Xi_1$ と $\Xi_2$ がともに求められることを満たすならば、$\frac{\Xi_1 + \Xi_2}{1+1}$ は
 
-```math
+$$
 (1+1)\Xi_1 = \Xi_1 + \Xi_1 < \Xi_1 + \Xi_2 < \Xi_2 + \Xi_2 = (1+1)\Xi_2,
-```
+$$
 
-```math
+$$
 \Xi_1 < \frac{\Xi_1 + \Xi_2}{1+1} < \Xi_2
-```
+$$
 
 のゆえに、第二の組にも第一の組にも属することになるからである。
 
@@ -1649,15 +1649,15 @@ I) 第一の組に正の数が存在するとする。
 
 a)
 
-```math
+$$
 \mathrm{H} < \Xi
-```
+$$
 
 なる $\mathrm{H}$ が与えられたとする。定理 159 により($\mathrm{H} > 0$ のときは $\xi = \mathrm{H}$, $\eta = \Xi$ として、$\mathrm{H} \leqq 0$ のときは $\xi = \frac{\Xi}{1 + 1}$, $\eta = \Xi$ として)
 
-```math
+$$
 \mathrm{H} < \mathrm{Z} < \Xi.
-```
+$$
 
 なる $\mathrm{Z}$ を選ぶ。
 
@@ -1665,15 +1665,15 @@ a)
 
 b)
 
-```math
+$$
 \mathrm{H} > \Xi
-```
+$$
 
 なる $\mathrm{H}$ が与えられたとする。定理 159 により
 
-```math
+$$
 \Xi < \mathrm{Z} < \mathrm{H}.
-```
+$$
 
 なる $\mathrm{Z}$ を選ぶ。
 
@@ -1683,9 +1683,9 @@ II) どの正の数も第二の組に属し、0 は第一の組に属すると�
 
 このときどの負の数も第一の組に属し、
 
-```math
+$$
 \Xi = 0
-```
+$$
 
 が求められたことを満たす。
 
@@ -1693,9 +1693,9 @@ III) 0 は第二の組に属し、どの負の数も第一の組に属すると�
 
 このときどの正の数も第二の組に属し、
 
-```math
+$$
 \Xi = 0
-```
+$$
 
 が求められたことを満たす。
 
@@ -1713,46 +1713,46 @@ $-\mathrm{H}$ が旧第一の組に属していたならば、$\mathrm{H}$ は�
 
 2)
 
-```math
+$$
 \mathrm{H}_1 < \mathrm{H}_2
-```
+$$
 
 から、定理 183 により
 
-```math
+$$
 -\mathrm{H}_2 < -\mathrm{H}_1.
-```
+$$
 
 が従うからである。
 
 そのうえ、新第一の組には正の数が存在するから、新しい分割は場合 I) に該当する。したがって I) により、
 
-```math
+$$
 \mathrm{H} < \Xi_1
-```
+$$
 
 なるどの $\mathrm{H}$ も新第一の組に属し、
 
-```math
+$$
 \mathrm{H} > \Xi_1
-```
+$$
 
 なるどの $\mathrm{H}$ も新第二の組に属するような数 $\Xi_1$ が存在する。
 
-```math
+$$
 -\Xi_1 = \Xi
-```
+$$
 
 とおけば、
 
-```math
+$$
 \mathrm{H} < \Xi \quad \text{ないし} \quad \mathrm{H} > \Xi,
-```
+$$
 
 から
 
-```math
+$$
 -\mathrm{H} > \Xi_1 \quad \text{ないし} \quad -\mathrm{H} < \Xi_1
-```
+$$
 
 が従う。したがって $-\mathrm{H}$ はそれぞれ新第二の組あるいは新第一の組に属し、ゆえに $\mathrm{H}$ はそれぞれ旧第一の組あるいは旧第二の組に属する。

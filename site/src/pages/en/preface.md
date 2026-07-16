@@ -8,9 +8,9 @@
 
 To forestall objections: One number, no number, two cases, all things from a given totality, and the like, are clear verbal constructs of the English language. Theorem 1, Theorem 2, . . ., Theorem 301 (likewise with axioms, definitions, chapters, sections) or 1), 2) and the like in case distinctions are labels which distinguish the theorems, axioms, . . ., cases, and which are more convenient for looking things up than if I were to speak, say, of Theorem Light Blue, Theorem Dark Blue, and the like. Up to "301" the introduction of the so-called positive integers would in fact present no difficulty; the first difficulty — overcome in Chapter 1 — lies in the totality of the positive integers
 
-```math
+$$
 1, \ldots
-```
+$$
 
 with the mysterious row of dots after the comma (called natural numbers in Chapter 1), in the definition of the arithmetical operations to be performed with them, and in the proofs of the associated theorems.
 
@@ -24,26 +24,26 @@ Please keep in mind throughout the corresponding parts of the school curriculum;
 
 **4.** The multiplication table, even the theorem
 
-```math
+$$
 2 \cdot 2 = 4,
-```
+$$
 
 does not occur; but I recommend to you, as an exercise for Chapter 1, § 4, to define
 
-```math
+$$
 \begin{aligned}
 2 &= 1 + 1,\\
 4 &= ((1 + 1) + 1) + 1
 \end{aligned}
-```
+$$
 
 and to prove that theorem.
 
 **5.** Forgive me for addressing you familiarly; this happens not only because one is accustomed to address the reader with "read" and "see", but because this book is written in part in usum delphinarum, inasmuch as my daughters, as is well known (see E. Landau, Vorlesungen über Zahlentheorie, Vol. 1, p. V), have already been studying for several semesters (chemistry), believe they learned differential and integral calculus at school, and to this day do not know why
 
-```math
+$$
 x \cdot y = y \cdot x
-```
+$$
 
 holds.
 
@@ -87,12 +87,12 @@ There are three places at which the objection takes hold:
 
 Since the matter is analogous in all three cases, I speak here only of $x + y$ for natural numbers $x, y$. If, say, in a lecture course on number theory I prove some theorem about natural numbers by first proving its correctness for $1$ and then deriving its correctness for $x + 1$ from its correctness for $x$, a hearer will occasionally raise the objection that I had not previously proved the assertion for $x$ at all. The objection is unjustified, but pardonable; the student had simply never heard of the induction axiom. Grandjot's objection sounds similar; with the difference that it was justified, so that I also had to pardon it. On the basis of his five axioms, Peano defines $x + y$ for fixed $x$ and all $y$ as follows:
 
-```math
+$$
 \begin{aligned}
 x + 1 &= x',\\
 x + y' &= (x + y)',
 \end{aligned}
-```
+$$
 
 and he and his successors mean thereby: $x + y$ is defined generally; for the set of $y$ for which it is defined contains $1$, and with $y$ also $y'$.
 
@@ -100,12 +100,12 @@ But one has not defined $x + y$ at all.
 
 It would be in order if one had the concept "numbers $\leqq y$" (which is not the case on Peano's path, since order is introduced only after addition) and spoke of the set of $y$ for which there exists an $f(z)$, defined for $z \leqq y$, with the properties:
 
-```math
+$$
 \begin{aligned}
 f(1) &= x',\\
 f(z') &= (f(z))' \quad \text{for } z < y.
 \end{aligned}
-```
+$$
 
 This is how Dedekind's grounding proceeds. With the kind help of my colleague von Neumann in Princeton, I had worked out such a path for this little book, after a prior introduction of order (which would not have been convenient for the reader). At the last hour, however, I learned of a very much simpler proof from Dr. Kalmar in Szeged; now the matter looks so simple, and the proof so similar to the other proofs of the first chapter, that even the expert would not have noticed this point, had I not put my above confession of guilt and atonement on record at such length. With $x \cdot y$ it goes exactly the same way; $\sum_{n=1}^{m} x_n$ and $\prod_{n=1}^{m} x_n$, to be sure, is possible only by Dedekind's path; but from Chapter 1, § 3 on, one does have the set of the $z \leqq y$.
 

@@ -1,347 +1,377 @@
-# Chapter 5. Complex Numbers
+# 第5章 複素数
 
-## § 1. Definition
+## § 1. 定義
 
-**Definition 57:** A complex number is a pair of real numbers $\Xi_1, \Xi_2$ (in a definite order). We denote the complex number by $[\Xi_1, \Xi_2]$. Here $[\Xi_1, \Xi_2]$ and $[\mathrm{H}_1, \mathrm{H}_2]$ are regarded as the same number (as equal; written: $=$) if and only if
+**定義 57:** 複素数とは、(定まった順序での)実数の対 $\Xi_1, \Xi_2$ のことである。この複素数を $[\Xi_1, \Xi_2]$ で表す。その際、$[\Xi_1, \Xi_2]$ と $[\mathrm{H}_1, \mathrm{H}_2]$ が同じ数(等しい;記号 $=$)とみなされるのは、
 
-```math
+$$
 \Xi_1 = \mathrm{H}_1, \quad \Xi_2 = \mathrm{H}_2
-```
+$$
 
-holds; otherwise as unequal (distinct; written: $\neq$).
+であるとき、またそのときに限る。そうでないときは等しくない(相異なる;記号 $\neq$)とみなす。
 
-Small German letters will throughout stand for complex numbers.
+小文字のドイツ文字は一貫して複素数を表す。
 
-Thus for every $\mathfrak{x}$ and every $\mathfrak{y}$ exactly one of the cases
+したがって、任意の $\mathfrak{x}$ と任意の $\mathfrak{y}$ に対して、
 
-```math
+$$
 \mathfrak{x} = \mathfrak{y}, \quad \mathfrak{x} \neq \mathfrak{y}
-```
+$$
 
-occurs. For the complex numbers the concepts of identity and equality coincide, so that the three theorems are trivial:
+のうちのちょうど一方の場合が成り立つ。複素数においては同一性と相等性の概念が混じり合うので、次の三つの定理は自明である。
 
-**Theorem 206:** $\mathfrak{x} = \mathfrak{x}$.
+**定理 206:** $\mathfrak{x} = \mathfrak{x}$.
 
-**Theorem 207:** From
+**定理 207:**
 
-```math
+$$
 \mathfrak{x} = \mathfrak{y}
-```
+$$
 
-it follows that
+から
 
-```math
+$$
 \mathfrak{y} = \mathfrak{x}.
-```
+$$
 
-**Theorem 208:** From
+が従う。
 
-```math
+**定理 208:**
+
+$$
 \mathfrak{x} = \mathfrak{y}, \quad \mathfrak{y} = \mathfrak{z}
-```
+$$
 
-it follows that
+から
 
-```math
+$$
 \mathfrak{x} = \mathfrak{z}.
-```
+$$
 
-**Definition 58:** $\mathfrak{n} = [0, 0]$.
+が従う。
 
-**Definition 59:** $\mathfrak{e} = [1, 0]$.
+**定義 58:** $\mathfrak{n} = [0, 0]$.
 
-The letters $\mathfrak{n}$ and $\mathfrak{e}$ thus remain reserved for particular complex numbers.
+**定義 59:** $\mathfrak{e} = [1, 0]$.
 
-## § 2. Addition
+したがって文字 $\mathfrak{n}$ と $\mathfrak{e}$ は特定の複素数のために留保されたままである。
 
-**Definition 60:** If
+## § 2. 加法
 
-```math
+**定義 60:**
+
+$$
 \mathfrak{x} = [\Xi_1, \Xi_2], \quad \mathfrak{y} = [\mathrm{H}_1, \mathrm{H}_2],
-```
+$$
 
-then
+であるとき、
 
-```math
+$$
 \mathfrak{x} + \mathfrak{y} = [\Xi_1 + \mathrm{H}_1, \Xi_2 + \mathrm{H}_2].
-```
+$$
 
-($+$ read: plus.) $\mathfrak{x} + \mathfrak{y}$ is called the sum of $\mathfrak{x}$ and $\mathfrak{y}$, or the (complex) number obtained by addition of $\mathfrak{y}$ to $\mathfrak{x}$.
+とする。($+$ は「プラス」と読む。)$\mathfrak{x} + \mathfrak{y}$ を $\mathfrak{x}$ と $\mathfrak{y}$ の和、または $\mathfrak{x}$ に $\mathfrak{y}$ を加える加法によって得られる(複素)数という。
 
-**Theorem 209** (commutative law of addition):
+**定理 209**(加法の交換法則):
 
-```math
+$$
 \mathfrak{x} + \mathfrak{y} = \mathfrak{y} + \mathfrak{x}.
-```
+$$
 
-**Proof:** $[\Xi_1 + \mathrm{H}_1, \Xi_2 + \mathrm{H}_2] = [\mathrm{H}_1 + \Xi_1, \mathrm{H}_2 + \Xi_2]$.
+**証明:** $[\Xi_1 + \mathrm{H}_1, \Xi_2 + \mathrm{H}_2] = [\mathrm{H}_1 + \Xi_1, \mathrm{H}_2 + \Xi_2]$.
 
-**Theorem 210:** $\mathfrak{x} + \mathfrak{n} = \mathfrak{x}$.
+**定理 210:** $\mathfrak{x} + \mathfrak{n} = \mathfrak{x}$.
 
-**Proof:** $[\Xi_1, \Xi_2] + [0, 0] = [\Xi_1 + 0, \Xi_2 + 0] = [\Xi_1, \Xi_2]$.
+**証明:** $[\Xi_1, \Xi_2] + [0, 0] = [\Xi_1 + 0, \Xi_2 + 0] = [\Xi_1, \Xi_2]$.
 
-**Theorem 211** (associative law of addition):
+**定理 211**(加法の結合法則):
 
-```math
+$$
 (\mathfrak{x} + \mathfrak{y}) + \mathfrak{z} = \mathfrak{x} + (\mathfrak{y} + \mathfrak{z}).
-```
+$$
 
-**Proof:** If
+**証明:**
 
-```math
+$$
 \mathfrak{x} = [\Xi_1, \Xi_2], \quad \mathfrak{y} = [\mathrm{H}_1, \mathrm{H}_2], \quad \mathfrak{z} = [\mathrm{Z}_1, \mathrm{Z}_2],
-```
+$$
 
-then by Theorem 186
+であるとき、定理 186 により
 
-```math
+$$
 \begin{aligned}
 (\mathfrak{x} + \mathfrak{y}) + \mathfrak{z} &= [\Xi_1 + \mathrm{H}_1, \Xi_2 + \mathrm{H}_2] + [\mathrm{Z}_1, \mathrm{Z}_2] = [(\Xi_1 + \mathrm{H}_1) + \mathrm{Z}_1, (\Xi_2 + \mathrm{H}_2) + \mathrm{Z}_2] \\
 &= [\Xi_1 + (\mathrm{H}_1 + \mathrm{Z}_1), \Xi_2 + (\mathrm{H}_2 + \mathrm{Z}_2)] = [\Xi_1, \Xi_2] + [\mathrm{H}_1 + \mathrm{Z}_1, \mathrm{H}_2 + \mathrm{Z}_2] = \mathfrak{x} + (\mathfrak{y} + \mathfrak{z}).
 \end{aligned}
-```
+$$
 
-**Theorem 212:** For given $\mathfrak{x}, \mathfrak{y}$,
+である。
 
-```math
+**定理 212:** $\mathfrak{x}, \mathfrak{y}$ が与えられたとき、
+
+$$
 \mathfrak{y} + \mathfrak{u} = \mathfrak{x}
-```
+$$
 
-has exactly one solution $\mathfrak{u}$, namely, setting
+はちょうど一つの解 $\mathfrak{u}$ をもつ。すなわち、
 
-```math
+$$
 \mathfrak{x} = [\Xi_1, \Xi_2], \quad \mathfrak{y} = [\mathrm{H}_1, \mathrm{H}_2]
-```
+$$
 
-```math
+とおけば、
+
+$$
 \mathfrak{u} = [\Xi_1 - \mathrm{H}_1, \Xi_2 - \mathrm{H}_2].
-```
+$$
 
-**Proof:** For every
+である。
 
-```math
+**証明:** 任意の
+
+$$
 \mathfrak{u} = [\Upsilon_1, \Upsilon_2]
-```
+$$
 
-we have
+に対して
 
-```math
+$$
 \mathfrak{y} + \mathfrak{u} = [\mathrm{H}_1 + \Upsilon_1, \mathrm{H}_2 + \Upsilon_2],
-```
+$$
 
-and what is required is exactly that
+であり、要求されるのはちょうど
 
-```math
+$$
 \mathrm{H}_1 + \Upsilon_1 = \Xi_1, \quad \mathrm{H}_2 + \Upsilon_2 = \Xi_2
-```
+$$
 
-so that Theorem 187 proves everything.
+であるから、定理 187 がすべてを証明する。
 
-**Definition 61:** The $\mathfrak{u}$ of Theorem 212 is called $\mathfrak{x} - \mathfrak{y}$ ($-$ read: minus). $\mathfrak{x} - \mathfrak{y}$ is also called the difference $\mathfrak{x}$ minus $\mathfrak{y}$, or the number obtained by subtraction of $\mathfrak{y}$ from $\mathfrak{x}$.
+**定義 61:** 定理 212 の $\mathfrak{u}$ を $\mathfrak{x} - \mathfrak{y}$ と書く($-$ は「マイナス」と読む)。$\mathfrak{x} - \mathfrak{y}$ は $\mathfrak{x}$ 引く $\mathfrak{y}$ の差、または $\mathfrak{x}$ から $\mathfrak{y}$ を引く減法によって得られる数ともいう。
 
-**Theorem 213:** We have
+**定理 213:**
 
-```math
+$$
 \mathfrak{x} - \mathfrak{y} = \mathfrak{n}
-```
+$$
 
-if and only if
+であるのは、
 
-```math
+$$
 \mathfrak{x} = \mathfrak{y}.
-```
+$$
 
-**Proof:** We have
+のとき、またそのときに限る。
 
-```math
+**証明:**
+
+$$
 \Xi_1 - \mathrm{H}_1 = \Xi_2 - \mathrm{H}_2 = 0
-```
+$$
 
-if and only if
+であるのは、
 
-```math
+$$
 \Xi_1 = \mathrm{H}_1, \quad \Xi_2 = \mathrm{H}_2.
-```
+$$
 
-**Definition 62:** $-\mathfrak{x} = \mathfrak{n} - \mathfrak{x}$.
+のとき、またそのときに限る。
 
-($-$ on the left, read: minus.)
+**定義 62:** $-\mathfrak{x} = \mathfrak{n} - \mathfrak{x}$.
 
-**Theorem 214:** For
+(左の $-$ は「マイナス」と読む。)
 
-```math
+**定理 214:**
+
+$$
 \mathfrak{x} = [\Xi_1, \Xi_2]
-```
+$$
 
-we have
+に対して
 
-```math
+$$
 -\mathfrak{x} = [-\Xi_1, -\Xi_2].
-```
+$$
 
-**Proof:** $-[\Xi_1, \Xi_2] = [0, 0] - [\Xi_1, \Xi_2] = [0 - \Xi_1, 0 - \Xi_2]$.
+である。
 
-**Theorem 215:** $-(-\mathfrak{x}) = \mathfrak{x}$.
+**証明:** $-[\Xi_1, \Xi_2] = [0, 0] - [\Xi_1, \Xi_2] = [0 - \Xi_1, 0 - \Xi_2]$.
 
-**Proof:** By Theorem 177 we have
+**定理 215:** $-(-\mathfrak{x}) = \mathfrak{x}$.
 
-```math
+**証明:** 定理 177 により
+
+$$
 -(-\Xi_1) = \Xi_1, \quad -(-\Xi_2) = \Xi_2.
-```
+$$
 
-**Theorem 216:** $\mathfrak{x} + (-\mathfrak{x}) = \mathfrak{n}$.
+**定理 216:** $\mathfrak{x} + (-\mathfrak{x}) = \mathfrak{n}$.
 
-**Proof:** By Theorem 179 we have
+**証明:** 定理 179 により
 
-```math
+$$
 \Xi_1 + (-\Xi_1) = 0, \quad \Xi_2 + (-\Xi_2) = 0.
-```
+$$
 
-**Theorem 217:** $-(\mathfrak{x} + \mathfrak{y}) = -\mathfrak{x} + (-\mathfrak{y})$.
+である。
 
-**Proof:** By Theorem 180 we have, setting
+**定理 217:** $-(\mathfrak{x} + \mathfrak{y}) = -\mathfrak{x} + (-\mathfrak{y})$.
 
-```math
+**証明:** 定理 180 により、
+
+$$
 \mathfrak{x} = [\Xi_1, \Xi_2], \quad \mathfrak{y} = [\mathrm{H}_1, \mathrm{H}_2]
-```
+$$
 
-```math
+とおくと、
+
+$$
 \begin{aligned}
 -(\mathfrak{x} + \mathfrak{y}) &= [-(\Xi_1 + \mathrm{H}_1), -(\Xi_2 + \mathrm{H}_2)] = [-\Xi_1 + (-\mathrm{H}_1), -\Xi_2 + (-\mathrm{H}_2)] \\
 &= [-\Xi_1, -\Xi_2] + [-\mathrm{H}_1, -\mathrm{H}_2] = -\mathfrak{x} + (-\mathfrak{y}).
 \end{aligned}
-```
+$$
 
-**Theorem 218:** $\mathfrak{x} - \mathfrak{y} = \mathfrak{x} + (-\mathfrak{y})$.
+である。
 
-**Proof:** $[\Xi_1 - \mathrm{H}_1, \Xi_2 - \mathrm{H}_2] = [\Xi_1, \Xi_2] + [-\mathrm{H}_1, -\mathrm{H}_2]$.
+**定理 218:** $\mathfrak{x} - \mathfrak{y} = \mathfrak{x} + (-\mathfrak{y})$.
 
-**Theorem 219:** $-(\mathfrak{x} - \mathfrak{y}) = \mathfrak{y} - \mathfrak{x}$.
+**証明:** $[\Xi_1 - \mathrm{H}_1, \Xi_2 - \mathrm{H}_2] = [\Xi_1, \Xi_2] + [-\mathrm{H}_1, -\mathrm{H}_2]$.
 
-**Proof:**
+**定理 219:** $-(\mathfrak{x} - \mathfrak{y}) = \mathfrak{y} - \mathfrak{x}$.
 
-```math
+**証明:**
+
+$$
 -(\mathfrak{x} - \mathfrak{y}) = -(\mathfrak{x} + (-\mathfrak{y})) = -\mathfrak{x} + (-(-\mathfrak{y})) = -\mathfrak{x} + \mathfrak{y} = \mathfrak{y} + (-\mathfrak{x}) = \mathfrak{y} - \mathfrak{x}.
-```
+$$
 
-## § 3. Multiplication
+## § 3. 乗法
 
-**Definition 63:** If
+**定義 63:**
 
-```math
+$$
 \mathfrak{x} = [\Xi_1, \Xi_2], \quad \mathfrak{y} = [\mathrm{H}_1, \mathrm{H}_2],
-```
+$$
 
-then
+であるとき、
 
-```math
+$$
 \mathfrak{x} \cdot \mathfrak{y} = [\Xi_1\mathrm{H}_1 - \Xi_2\mathrm{H}_2, \Xi_1\mathrm{H}_2 + \Xi_2\mathrm{H}_1].
-```
+$$
 
-($\cdot$ read: times; but the dot is usually not written.) $\mathfrak{x} \cdot \mathfrak{y}$ is called the product of $\mathfrak{x}$ by $\mathfrak{y}$, or the number obtained by multiplication of $\mathfrak{x}$ by $\mathfrak{y}$.
+とする。($\cdot$ は「掛ける」と読む。ただし、この点はたいてい書かない。)$\mathfrak{x} \cdot \mathfrak{y}$ を $\mathfrak{x}$ と $\mathfrak{y}$ の積、または $\mathfrak{x}$ に $\mathfrak{y}$ を掛ける乗法によって得られる数という。
 
-**Theorem 220** (commutative law of multiplication):
+**定理 220**(乗法の交換法則):
 
-```math
+$$
 \mathfrak{x}\mathfrak{y} = \mathfrak{y}\mathfrak{x}.
-```
+$$
 
-**Proof:**
+**証明:**
 
-```math
+$$
 \begin{aligned}
 [\Xi_1, \Xi_2][\mathrm{H}_1, \mathrm{H}_2] &= [\Xi_1\mathrm{H}_1 - \Xi_2\mathrm{H}_2, \Xi_1\mathrm{H}_2 + \Xi_2\mathrm{H}_1] \\
 &= [\mathrm{H}_1\Xi_1 - \mathrm{H}_2\Xi_2, \mathrm{H}_1\Xi_2 + \mathrm{H}_2\Xi_1] = [\mathrm{H}_1, \mathrm{H}_2][\Xi_1, \Xi_2].
 \end{aligned}
-```
+$$
 
-**Theorem 221:** We have
+**定理 221:**
 
-```math
+$$
 \mathfrak{x}\mathfrak{y} = \mathfrak{n}
-```
+$$
 
-if and only if at least one of the two numbers $\mathfrak{x}, \mathfrak{y}$ equals $\mathfrak{n}$.
+であるのは、二つの数 $\mathfrak{x}, \mathfrak{y}$ の少なくとも一方が $\mathfrak{n}$ に等しいとき、またそのときに限る。
 
-**Proof:** Let
+**証明:**
 
-```math
+$$
 \mathfrak{x} = [\Xi_1, \Xi_2], \quad \mathfrak{y} = [\mathrm{H}_1, \mathrm{H}_2].
-```
+$$
 
-1) From
+とする。
 
-```math
+1)
+
+$$
 \mathfrak{x} = \mathfrak{n}
-```
+$$
 
-it follows that
+から
 
-```math
+$$
 \Xi_1 = \Xi_2 = 0,
-```
+$$
 
-```math
+$$
 \mathfrak{x}\mathfrak{y} = [0 \cdot \mathrm{H}_1 - 0 \cdot \mathrm{H}_2, 0 \cdot \mathrm{H}_2 + 0 \cdot \mathrm{H}_1] = [0, 0] = \mathfrak{n}.
-```
+$$
 
-2) From
+が従う。
 
-```math
+2)
+
+$$
 \mathfrak{y} = \mathfrak{n}
-```
+$$
 
-it follows by Theorem 220 and 1) that
+から、定理 220 と 1) により
 
-```math
+$$
 \mathfrak{x}\mathfrak{y} = \mathfrak{y}\mathfrak{x} = \mathfrak{n}\mathfrak{x} = \mathfrak{n}.
-```
+$$
 
-3) From
+が従う。
 
-```math
+3)
+
+$$
 \mathfrak{x}\mathfrak{y} = \mathfrak{n}
-```
+$$
 
-it is to be concluded that
+から
 
-```math
-\mathfrak{x} = \mathfrak{n} \text{ or } \mathfrak{y} = \mathfrak{n}
-```
+$$
+\mathfrak{x} = \mathfrak{n} \text{ または } \mathfrak{y} = \mathfrak{n}
+$$
 
-holds. We may therefore assume that
+であることを導かなければならない。そこで
 
-```math
+$$
 \mathfrak{y} \neq \mathfrak{n},
-```
+$$
 
-i.e.
+すなわち
 
-```math
+$$
 \mathrm{H}_1\mathrm{H}_1 + \mathrm{H}_2\mathrm{H}_2 > 0,
-```
+$$
 
-and have to prove
+と仮定してよく、
 
-```math
+$$
 \mathfrak{x} = \mathfrak{n},
-```
+$$
 
-i.e.
+すなわち
 
-```math
+$$
 \Xi_1 = \Xi_2 = 0
-```
+$$
 
-By hypothesis we have
+を証明すればよい。
 
-```math
+仮定により
+
+$$
 \Xi_1\mathrm{H}_1 - \Xi_2\mathrm{H}_2 = 0 = \Xi_1\mathrm{H}_2 + \Xi_2\mathrm{H}_1,
-```
+$$
 
-hence
+であるから、
 
-```math
+$$
 \begin{aligned}
 0 &= (\Xi_1\mathrm{H}_1 - \Xi_2\mathrm{H}_2)\mathrm{H}_1 + (\Xi_1\mathrm{H}_2 + \Xi_2\mathrm{H}_1)\mathrm{H}_2 \\
 &= ((\Xi_1\mathrm{H}_1)\mathrm{H}_1 - (\Xi_2\mathrm{H}_2)\mathrm{H}_1) + ((\Xi_1\mathrm{H}_2)\mathrm{H}_2 + (\Xi_2\mathrm{H}_1)\mathrm{H}_2) \\
@@ -349,104 +379,108 @@ hence
 &= ((\Xi_1(\mathrm{H}_1\mathrm{H}_1) - \Xi_2(\mathrm{H}_2\mathrm{H}_1)) + \Xi_2(\mathrm{H}_1\mathrm{H}_2)) + \Xi_1(\mathrm{H}_2\mathrm{H}_2) \\
 &= \Xi_1(\mathrm{H}_1\mathrm{H}_1) + \Xi_1(\mathrm{H}_2\mathrm{H}_2) = \Xi_1(\mathrm{H}_1\mathrm{H}_1 + \mathrm{H}_2\mathrm{H}_2),
 \end{aligned}
-```
+$$
 
-hence
+したがって
 
-```math
+$$
 \Xi_1 = 0,
-```
+$$
 
-```math
+$$
 \Xi_2\mathrm{H}_2 = 0 = \Xi_2\mathrm{H}_1.
-```
+$$
 
-Since $\mathrm{H}_1$ and $\mathrm{H}_2$ are not both $0$, we thus have
+である。$\mathrm{H}_1$ と $\mathrm{H}_2$ は両方とも $0$ ではないから、したがって
 
-```math
+$$
 \Xi_2 = 0.
-```
+$$
 
-**Theorem 222:** $\mathfrak{x}\mathfrak{e} = \mathfrak{x}$.
+である。
 
-**Proof:** $[\Xi_1, \Xi_2][1, 0] = [\Xi_1 \cdot 1 - \Xi_2 \cdot 0, \Xi_1 \cdot 0 + \Xi_2 \cdot 1] = [\Xi_1, \Xi_2]$.
+**定理 222:** $\mathfrak{x}\mathfrak{e} = \mathfrak{x}$.
 
-**Theorem 223:** $\mathfrak{x}(-\mathfrak{e}) = -\mathfrak{x}$.
+**証明:** $[\Xi_1, \Xi_2][1, 0] = [\Xi_1 \cdot 1 - \Xi_2 \cdot 0, \Xi_1 \cdot 0 + \Xi_2 \cdot 1] = [\Xi_1, \Xi_2]$.
 
-**Proof:**
+**定理 223:** $\mathfrak{x}(-\mathfrak{e}) = -\mathfrak{x}$.
 
-```math
+**証明:**
+
+$$
 [\Xi_1, \Xi_2][-1, 0] = [\Xi_1(-1) - \Xi_2 \cdot 0, \Xi_1 \cdot 0 + \Xi_2(-1)] = [-\Xi_1, -\Xi_2].
-```
+$$
 
-**Theorem 224:** $(-\mathfrak{x})\mathfrak{y} = \mathfrak{x}(-\mathfrak{y}) = -(\mathfrak{x}\mathfrak{y})$.
+**定理 224:** $(-\mathfrak{x})\mathfrak{y} = \mathfrak{x}(-\mathfrak{y}) = -(\mathfrak{x}\mathfrak{y})$.
 
-**Proof:** 1)
+**証明:** 1)
 
-```math
+$$
 \begin{aligned}
 [-\Xi_1, -\Xi_2][\mathrm{H}_1, \mathrm{H}_2] &= [(-\Xi_1)\mathrm{H}_1 - (-\Xi_2)\mathrm{H}_2, (-\Xi_1)\mathrm{H}_2 + (-\Xi_2)\mathrm{H}_1] \\
 &= [-(\Xi_1\mathrm{H}_1) + \Xi_2\mathrm{H}_2, -(\Xi_1\mathrm{H}_2) - \Xi_2\mathrm{H}_1] \\
 &= [-(\Xi_1\mathrm{H}_1 - \Xi_2\mathrm{H}_2), -(\Xi_1\mathrm{H}_2 + \Xi_2\mathrm{H}_1)] \\
 &= -([\Xi_1, \Xi_2][\mathrm{H}_1, \mathrm{H}_2]),
 \end{aligned}
-```
+$$
 
-```math
+$$
 (-\mathfrak{x})\mathfrak{y} = -(\mathfrak{x}\mathfrak{y}).
-```
+$$
 
-2) By 1) we have
+2) 1) により
 
-```math
+$$
 \mathfrak{x}(-\mathfrak{y}) = (-\mathfrak{y})\mathfrak{x} = -(\mathfrak{y}\mathfrak{x}) = -(\mathfrak{x}\mathfrak{y}).
-```
+$$
 
-**Theorem 225:** $(-\mathfrak{x})(-\mathfrak{y}) = \mathfrak{x}\mathfrak{y}$.
+である。
 
-**Proof:** By Theorem 224 we have
+**定理 225:** $(-\mathfrak{x})(-\mathfrak{y}) = \mathfrak{x}\mathfrak{y}$.
 
-```math
+**証明:** 定理 224 により
+
+$$
 (-\mathfrak{x})(-\mathfrak{y}) = \mathfrak{x}(-(-\mathfrak{y})) = \mathfrak{x}\mathfrak{y}.
-```
+$$
 
-**Theorem 226** (associative law of multiplication):
+である。
 
-```math
+**定理 226**(乗法の結合法則):
+
+$$
 (\mathfrak{x}\mathfrak{y})\mathfrak{z} = \mathfrak{x}(\mathfrak{y}\mathfrak{z}).
-```
+$$
 
-**Proof:** In this proof, for the sake of clarity, we exceptionally set as an abbreviation
+**証明:** この証明では、見やすさのため例外的に略記として
 
-```math
+$$
 (\Xi + \mathrm{H}) + \mathrm{Z} = \Xi + \mathrm{H} + \mathrm{Z},
-```
+$$
 
-```math
+$$
 (\Xi\mathrm{H})\mathrm{Z} = \Xi\mathrm{H}\mathrm{Z}
-```
+$$
 
-so that also
+とおく。したがって
 
-```math
+$$
 \Xi + (\mathrm{H} + \mathrm{Z}) = \Xi + \mathrm{H} + \mathrm{Z},
-```
+$$
 
-```math
+$$
 \Xi(\mathrm{H}\mathrm{Z}) = \Xi\mathrm{H}\mathrm{Z}
-```
+$$
 
-holds.
+でもある。
 
-Set
-
-```math
+$$
 \mathfrak{x} = [\Xi_1, \Xi_2], \quad \mathfrak{y} = [\mathrm{H}_1, \mathrm{H}_2], \quad \mathfrak{z} = [\mathrm{Z}_1, \mathrm{Z}_2]
-```
+$$
 
-Then we have
+とおく。このとき
 
-```math
+$$
 \begin{aligned}
 (\mathfrak{x}\mathfrak{y})\mathfrak{z} &= [\Xi_1\mathrm{H}_1 - \Xi_2\mathrm{H}_2, \Xi_1\mathrm{H}_2 + \Xi_2\mathrm{H}_1][\mathrm{Z}_1, \mathrm{Z}_2] \\
 &= [(\Xi_1\mathrm{H}_1 - \Xi_2\mathrm{H}_2)\mathrm{Z}_1 - (\Xi_1\mathrm{H}_2 + \Xi_2\mathrm{H}_1)\mathrm{Z}_2, (\Xi_1\mathrm{H}_1 - \Xi_2\mathrm{H}_2)\mathrm{Z}_2 + (\Xi_1\mathrm{H}_2 + \Xi_2\mathrm{H}_1)\mathrm{Z}_1] \\
@@ -454,45 +488,47 @@ Then we have
 &= [(\Xi_1\mathrm{H}_1\mathrm{Z}_1 + (-(\Xi_2\mathrm{H}_2\mathrm{Z}_1))) + (-(\Xi_1\mathrm{H}_2\mathrm{Z}_2 + \Xi_2\mathrm{H}_1\mathrm{Z}_2)), (\Xi_1\mathrm{H}_2\mathrm{Z}_1 + \Xi_2\mathrm{H}_1\mathrm{Z}_1) + (\Xi_1\mathrm{H}_1\mathrm{Z}_2 + (-(\Xi_2\mathrm{H}_2\mathrm{Z}_2)))] \\
 &= [\Xi_1\mathrm{H}_1\mathrm{Z}_1 - (\Xi_2\mathrm{H}_2\mathrm{Z}_1 + \Xi_1\mathrm{H}_2\mathrm{Z}_2 + \Xi_2\mathrm{H}_1\mathrm{Z}_2), (\Xi_1\mathrm{H}_2\mathrm{Z}_1 + \Xi_2\mathrm{H}_1\mathrm{Z}_1 + \Xi_1\mathrm{H}_1\mathrm{Z}_2) - \Xi_2\mathrm{H}_2\mathrm{Z}_2].
 \end{aligned}
-```
+$$
 
-Since
+である。
 
-```math
+$$
 \mathfrak{x}(\mathfrak{y}\mathfrak{z}) = (\mathfrak{y}\mathfrak{z})\mathfrak{x}
-```
+$$
 
-interchange of letters ($\mathrm{H}$ for $\Xi$, $\mathrm{Z}$ for $\mathrm{H}$, $\Xi$ for $\mathrm{Z}$) yields
+であるから、文字の入れ替え($\Xi$ の代わりに $\mathrm{H}$、$\mathrm{H}$ の代わりに $\mathrm{Z}$、$\mathrm{Z}$ の代わりに $\Xi$)によって
 
-```math
+$$
 \mathfrak{x}(\mathfrak{y}\mathfrak{z}) = [\mathrm{H}_1\mathrm{Z}_1\Xi_1 - (\mathrm{H}_2\mathrm{Z}_2\Xi_1 + \mathrm{H}_1\mathrm{Z}_2\Xi_2 + \mathrm{H}_2\mathrm{Z}_1\Xi_2), (\mathrm{H}_1\mathrm{Z}_2\Xi_1 + \mathrm{H}_2\mathrm{Z}_1\Xi_1 + \mathrm{H}_1\mathrm{Z}_1\Xi_2) - \mathrm{H}_2\mathrm{Z}_2\Xi_2].
-```
+$$
 
-Since
+が得られる。
 
-```math
+$$
 \Xi\mathrm{H}\mathrm{Z} = \Xi(\mathrm{H}\mathrm{Z}) = (\mathrm{H}\mathrm{Z})\Xi = \mathrm{H}\mathrm{Z}\Xi,
-```
+$$
 
-```math
+$$
 \Xi + \mathrm{H} + \mathrm{Z} = \Xi + (\mathrm{H} + \mathrm{Z}) = (\mathrm{H} + \mathrm{Z}) + \Xi = \mathrm{H} + \mathrm{Z} + \Xi
-```
+$$
 
-one sees from the expressions computed above that
+であるから、計算し終えた両式を見比べて
 
-```math
+$$
 (\mathfrak{x}\mathfrak{y})\mathfrak{z} = \mathfrak{x}(\mathfrak{y}\mathfrak{z}).
-```
+$$
 
-**Theorem 227** (distributive law):
+がわかる。
 
-```math
+**定理 227**(分配法則):
+
+$$
 \mathfrak{x}(\mathfrak{y} + \mathfrak{z}) = \mathfrak{x}\mathfrak{y} + \mathfrak{x}\mathfrak{z}.
-```
+$$
 
-**Proof:**
+**証明:**
 
-```math
+$$
 \begin{aligned}
 [\Xi_1, \Xi_2]([\mathrm{H}_1, \mathrm{H}_2] + [\mathrm{Z}_1, \mathrm{Z}_2]) &= [\Xi_1, \Xi_2][\mathrm{H}_1 + \mathrm{Z}_1, \mathrm{H}_2 + \mathrm{Z}_2] \\
 &= [\Xi_1(\mathrm{H}_1 + \mathrm{Z}_1) - \Xi_2(\mathrm{H}_2 + \mathrm{Z}_2), \Xi_1(\mathrm{H}_2 + \mathrm{Z}_2) + \Xi_2(\mathrm{H}_1 + \mathrm{Z}_1)] \\
@@ -501,850 +537,882 @@ one sees from the expressions computed above that
 &= [\Xi_1\mathrm{H}_1 - \Xi_2\mathrm{H}_2, \Xi_1\mathrm{H}_2 + \Xi_2\mathrm{H}_1] + [\Xi_1\mathrm{Z}_1 - \Xi_2\mathrm{Z}_2, \Xi_1\mathrm{Z}_2 + \Xi_2\mathrm{Z}_1] \\
 &= [\Xi_1, \Xi_2][\mathrm{H}_1, \mathrm{H}_2] + [\Xi_1, \Xi_2][\mathrm{Z}_1, \mathrm{Z}_2].
 \end{aligned}
-```
+$$
 
-**Theorem 228:** $\mathfrak{x}(\mathfrak{y} - \mathfrak{z}) = \mathfrak{x}\mathfrak{y} - \mathfrak{x}\mathfrak{z}$.
+**定理 228:** $\mathfrak{x}(\mathfrak{y} - \mathfrak{z}) = \mathfrak{x}\mathfrak{y} - \mathfrak{x}\mathfrak{z}$.
 
-**Proof:**
+**証明:**
 
-```math
+$$
 \mathfrak{x}(\mathfrak{y} - \mathfrak{z}) = \mathfrak{x}(\mathfrak{y} + (-\mathfrak{z})) = \mathfrak{x}\mathfrak{y} + \mathfrak{x}(-\mathfrak{z}) = \mathfrak{x}\mathfrak{y} + (-(\mathfrak{x}\mathfrak{z})) = \mathfrak{x}\mathfrak{y} - \mathfrak{x}\mathfrak{z}.
-```
+$$
 
-**Theorem 229:** The equation
+**定理 229:** 方程式
 
-```math
+$$
 \mathfrak{y}\mathfrak{u} = \mathfrak{x},
-```
+$$
 
-where $\mathfrak{x}, \mathfrak{y}$ are given and
+(ここで $\mathfrak{x}, \mathfrak{y}$ は与えられており、
 
-```math
+$$
 \mathfrak{y} \neq \mathfrak{n}
-```
+$$
 
-holds, has exactly one solution $\mathfrak{u}$.
+である)は、ちょうど一つの解 $\mathfrak{u}$ をもつ。
 
-**Proof:** 1) There is at most one solution; for from
+**証明:** 1) 解は高々一つである。なぜなら、
 
-```math
+$$
 \mathfrak{y}\mathfrak{u}_1 = \mathfrak{x} = \mathfrak{y}\mathfrak{u}_2
-```
+$$
 
-it follows that
+から
 
-```math
+$$
 \mathfrak{n} = \mathfrak{y}\mathfrak{u}_1 - \mathfrak{y}\mathfrak{u}_2 = \mathfrak{y}(\mathfrak{u}_1 - \mathfrak{u}_2),
-```
+$$
 
-hence by Theorem 221
+が従い、したがって定理 221 により
 
-```math
+$$
 \mathfrak{n} = \mathfrak{u}_1 - \mathfrak{u}_2,
-```
+$$
 
-```math
+$$
 \mathfrak{u}_1 = \mathfrak{u}_2.
-```
+$$
 
-2) If
+となるからである。
 
-```math
+2)
+
+$$
 \mathfrak{y} = [\mathrm{H}_1, \mathrm{H}_2],
-```
+$$
 
-then
+とすると、
 
-```math
+$$
 \mathrm{H} = \mathrm{H}_1\mathrm{H}_1 + \mathrm{H}_2\mathrm{H}_2 > 0,
-```
+$$
 
-and
+であり、
 
-```math
+$$
 \mathfrak{u} = \left[\frac{\mathrm{H}_1}{\mathrm{H}}, -\frac{\mathrm{H}_2}{\mathrm{H}}\right]\mathfrak{x}
-```
+$$
 
-is a solution, since
+は、
 
-```math
+$$
 \mathfrak{y}\mathfrak{u} = \left([\mathrm{H}_1, \mathrm{H}_2]\left[\frac{\mathrm{H}_1}{\mathrm{H}}, -\frac{\mathrm{H}_2}{\mathrm{H}}\right]\right)\mathfrak{x} = \left[\frac{\mathrm{H}_1\mathrm{H}_1 + \mathrm{H}_2\mathrm{H}_2}{\mathrm{H}}, \frac{-(\mathrm{H}_1\mathrm{H}_2) + \mathrm{H}_2\mathrm{H}_1}{\mathrm{H}}\right]\mathfrak{x} = [1, 0]\mathfrak{x} = \mathfrak{e}\mathfrak{x} = \mathfrak{x}.
-```
+$$
 
-**Definition 64:** The $\mathfrak{u}$ of Theorem 229 is called $\frac{\mathfrak{x}}{\mathfrak{y}}$ (read: $\mathfrak{x}$ over $\mathfrak{y}$). $\frac{\mathfrak{x}}{\mathfrak{y}}$ is also called the quotient of $\mathfrak{x}$ by $\mathfrak{y}$, or the number obtained by division of $\mathfrak{x}$ by $\mathfrak{y}$.
+であるから一つの解である。
 
-## § 4. Subtraction
+**定義 64:** 定理 229 の $\mathfrak{u}$ を $\frac{\mathfrak{x}}{\mathfrak{y}}$ と書く($\mathfrak{x}$ 割る $\mathfrak{y}$ と読む)。$\frac{\mathfrak{x}}{\mathfrak{y}}$ は $\mathfrak{x}$ を $\mathfrak{y}$ で割った商、または $\mathfrak{x}$ を $\mathfrak{y}$ で割る除法によって得られる数ともいう。
 
-**Theorem 230:**
+## § 4. 減法
 
-```math
+**定理 230:**
+
+$$
 (\mathfrak{x} - \mathfrak{y}) + \mathfrak{y} = \mathfrak{x}.
-```
+$$
 
-**Proof:**
+**証明:**
 
-```math
+$$
 (\mathfrak{x} - \mathfrak{y}) + \mathfrak{y} = \mathfrak{y} + (\mathfrak{x} - \mathfrak{y}) = \mathfrak{x}.
-```
+$$
 
-**Theorem 231:**
+**定理 231:**
 
-```math
+$$
 (\mathfrak{x} + \mathfrak{y}) - \mathfrak{y} = \mathfrak{x}.
-```
+$$
 
-**Proof:**
+**証明:**
 
-```math
+$$
 \mathfrak{y} + \mathfrak{x} = \mathfrak{x} + \mathfrak{y}.
-```
+$$
 
-**Theorem 232:**
+**定理 232:**
 
-```math
+$$
 \mathfrak{x} - (\mathfrak{x} - \mathfrak{y}) = \mathfrak{y}.
-```
+$$
 
-**Proof:**
+**証明:**
 
-```math
+$$
 (\mathfrak{x} - \mathfrak{y}) + \mathfrak{y} = \mathfrak{x}.
-```
+$$
 
-**Theorem 233:** $(\mathfrak{x} - \mathfrak{y}) - \mathfrak{z} = \mathfrak{x} - (\mathfrak{y} + \mathfrak{z})$.
+**定理 233:** $(\mathfrak{x} - \mathfrak{y}) - \mathfrak{z} = \mathfrak{x} - (\mathfrak{y} + \mathfrak{z})$.
 
-**Proof:**
+**証明:**
 
-```math
+$$
 \begin{aligned}
 (\mathfrak{y} + \mathfrak{z}) + ((\mathfrak{x} - \mathfrak{y}) - \mathfrak{z}) &= ((\mathfrak{x} - \mathfrak{y}) - \mathfrak{z}) + (\mathfrak{z} + \mathfrak{y}) \\
 &= (((\mathfrak{x} - \mathfrak{y}) - \mathfrak{z}) + \mathfrak{z}) + \mathfrak{y} = (\mathfrak{x} - \mathfrak{y}) + \mathfrak{y} = \mathfrak{x}.
 \end{aligned}
-```
+$$
 
-**Theorem 234:** $(\mathfrak{x} + \mathfrak{y}) - \mathfrak{z} = \mathfrak{x} + (\mathfrak{y} - \mathfrak{z})$.
+**定理 234:** $(\mathfrak{x} + \mathfrak{y}) - \mathfrak{z} = \mathfrak{x} + (\mathfrak{y} - \mathfrak{z})$.
 
-**Proof:**
+**証明:**
 
-```math
+$$
 (\mathfrak{x} + (\mathfrak{y} - \mathfrak{z})) + \mathfrak{z} = \mathfrak{x} + ((\mathfrak{y} - \mathfrak{z}) + \mathfrak{z}) = \mathfrak{x} + \mathfrak{y}.
-```
+$$
 
-**Theorem 235:** $(\mathfrak{x} - \mathfrak{y}) + \mathfrak{z} = \mathfrak{x} - (\mathfrak{y} - \mathfrak{z})$.
+**定理 235:** $(\mathfrak{x} - \mathfrak{y}) + \mathfrak{z} = \mathfrak{x} - (\mathfrak{y} - \mathfrak{z})$.
 
-**Proof:**
+**証明:**
 
-```math
+$$
 ((\mathfrak{x} - \mathfrak{y}) + \mathfrak{z}) + (\mathfrak{y} - \mathfrak{z}) = (\mathfrak{x} - \mathfrak{y}) + (\mathfrak{z} + (\mathfrak{y} - \mathfrak{z})) = (\mathfrak{x} - \mathfrak{y}) + \mathfrak{y} = \mathfrak{x}.
-```
+$$
 
-**Theorem 236:** $(\mathfrak{x} + \mathfrak{z}) - (\mathfrak{y} + \mathfrak{z}) = \mathfrak{x} - \mathfrak{y}$.
+**定理 236:** $(\mathfrak{x} + \mathfrak{z}) - (\mathfrak{y} + \mathfrak{z}) = \mathfrak{x} - \mathfrak{y}$.
 
-**Proof:**
+**証明:**
 
-```math
+$$
 (\mathfrak{x} - \mathfrak{y}) + (\mathfrak{y} + \mathfrak{z}) = ((\mathfrak{x} - \mathfrak{y}) + \mathfrak{y}) + \mathfrak{z} = \mathfrak{x} + \mathfrak{z}.
-```
+$$
 
-**Theorem 237:** $(\mathfrak{x} - \mathfrak{y}) + (\mathfrak{z} - \mathfrak{u}) = (\mathfrak{x} + \mathfrak{z}) - (\mathfrak{y} + \mathfrak{u})$.
+**定理 237:** $(\mathfrak{x} - \mathfrak{y}) + (\mathfrak{z} - \mathfrak{u}) = (\mathfrak{x} + \mathfrak{z}) - (\mathfrak{y} + \mathfrak{u})$.
 
-**Proof:**
+**証明:**
 
-```math
+$$
 \begin{aligned}
 ((\mathfrak{x} - \mathfrak{y}) + (\mathfrak{z} - \mathfrak{u})) + (\mathfrak{y} + \mathfrak{u}) &= (\mathfrak{x} - \mathfrak{y}) + ((\mathfrak{z} - \mathfrak{u}) + (\mathfrak{u} + \mathfrak{y})) \\
 &= (\mathfrak{x} - \mathfrak{y}) + (((\mathfrak{z} - \mathfrak{u}) + \mathfrak{u}) + \mathfrak{y}) = (\mathfrak{x} - \mathfrak{y}) + (\mathfrak{z} + \mathfrak{y}) = (\mathfrak{x} - \mathfrak{y}) + (\mathfrak{y} + \mathfrak{z}) \\
 &= ((\mathfrak{x} - \mathfrak{y}) + \mathfrak{y}) + \mathfrak{z} = \mathfrak{x} + \mathfrak{z}.
 \end{aligned}
-```
+$$
 
-**Theorem 238:** $(\mathfrak{x} - \mathfrak{y}) - (\mathfrak{z} - \mathfrak{u}) = (\mathfrak{x} + \mathfrak{u}) - (\mathfrak{y} + \mathfrak{z})$.
+**定理 238:** $(\mathfrak{x} - \mathfrak{y}) - (\mathfrak{z} - \mathfrak{u}) = (\mathfrak{x} + \mathfrak{u}) - (\mathfrak{y} + \mathfrak{z})$.
 
-**Proof:** By Theorem 237 and Theorem 236,
+**証明:** 定理 237 と定理 236 により
 
-```math
+$$
 \begin{aligned}
 ((\mathfrak{x} + \mathfrak{u}) - (\mathfrak{y} + \mathfrak{z})) + (\mathfrak{z} - \mathfrak{u}) &= ((\mathfrak{x} + \mathfrak{u}) + \mathfrak{z}) - ((\mathfrak{y} + \mathfrak{z}) + \mathfrak{u}) \\
 &= (\mathfrak{x} + (\mathfrak{u} + \mathfrak{z})) - (\mathfrak{y} + (\mathfrak{z} + \mathfrak{u})) = \mathfrak{x} - \mathfrak{y}.
 \end{aligned}
-```
+$$
 
-**Theorem 239:** We have
+**定理 239:**
 
-```math
+$$
 \mathfrak{x} - \mathfrak{y} = \mathfrak{z} - \mathfrak{u}
-```
+$$
 
-if and only if
+であるのは、
 
-```math
+$$
 \mathfrak{x} + \mathfrak{u} = \mathfrak{y} + \mathfrak{z}.
-```
+$$
 
-**Proof:** Theorem 213 and Theorem 238.
+のとき、またそのときに限る。
 
-## § 5. Division
+**証明:** 定理 213 と定理 238。
 
-**Theorem 240:** If
+## § 5. 除法
 
-```math
+**定理 240:**
+
+$$
 \mathfrak{y} \neq \mathfrak{n},
-```
+$$
 
-then
+ならば
 
-```math
+$$
 \frac{\mathfrak{x}}{\mathfrak{y}}\,\mathfrak{y} = \mathfrak{x}.
-```
+$$
 
-**Proof:**
+**証明:**
 
-```math
+$$
 \frac{\mathfrak{x}}{\mathfrak{y}}\,\mathfrak{y} = \mathfrak{y}\,\frac{\mathfrak{x}}{\mathfrak{y}} = \mathfrak{x}.
-```
+$$
 
-**Theorem 241:** If
+**定理 241:**
 
-```math
+$$
 \mathfrak{y} \neq \mathfrak{n},
-```
+$$
 
-then
+ならば
 
-```math
+$$
 \frac{\mathfrak{x}\mathfrak{y}}{\mathfrak{y}} = \mathfrak{x}.
-```
+$$
 
-**Proof:**
+**証明:**
 
-```math
+$$
 \mathfrak{y}\mathfrak{x} = \mathfrak{x}\mathfrak{y}.
-```
+$$
 
-**Theorem 242:** If
+**定理 242:**
 
-```math
+$$
 \mathfrak{x} \neq \mathfrak{n}, \quad \mathfrak{y} \neq \mathfrak{n},
-```
+$$
 
-then
+ならば
 
-```math
+$$
 \frac{\mathfrak{x}}{\frac{\mathfrak{x}}{\mathfrak{y}}} = \mathfrak{y}.
-```
+$$
 
-**Proof:**
+**証明:**
 
-```math
+$$
 \frac{\mathfrak{x}}{\mathfrak{y}}\,\mathfrak{y} = \mathfrak{x}.
-```
+$$
 
-**Theorem 243:** If
+**定理 243:**
 
-```math
+$$
 \mathfrak{y} \neq \mathfrak{n}, \quad \mathfrak{z} \neq \mathfrak{n},
-```
+$$
 
-then
+ならば
 
-```math
+$$
 \frac{\frac{\mathfrak{x}}{\mathfrak{y}}}{\mathfrak{z}} = \frac{\mathfrak{x}}{\mathfrak{y}\mathfrak{z}}.
-```
+$$
 
-**Proof:**
+**証明:**
 
-```math
+$$
 (\mathfrak{y}\mathfrak{z})\frac{\frac{\mathfrak{x}}{\mathfrak{y}}}{\mathfrak{z}} = \frac{\frac{\mathfrak{x}}{\mathfrak{y}}}{\mathfrak{z}}(\mathfrak{z}\mathfrak{y}) = \left(\frac{\frac{\mathfrak{x}}{\mathfrak{y}}}{\mathfrak{z}}\,\mathfrak{z}\right)\mathfrak{y} = \frac{\mathfrak{x}}{\mathfrak{y}}\,\mathfrak{y} = \mathfrak{x}.
-```
+$$
 
-**Theorem 244:** If
+**定理 244:**
 
-```math
+$$
 \mathfrak{z} \neq \mathfrak{n},
-```
+$$
 
-then
+ならば
 
-```math
+$$
 \frac{\mathfrak{x}\mathfrak{y}}{\mathfrak{z}} = \mathfrak{x}\,\frac{\mathfrak{y}}{\mathfrak{z}}.
-```
+$$
 
-**Proof:**
+**証明:**
 
-```math
+$$
 \left(\mathfrak{x}\,\frac{\mathfrak{y}}{\mathfrak{z}}\right)\mathfrak{z} = \mathfrak{x}\left(\frac{\mathfrak{y}}{\mathfrak{z}}\,\mathfrak{z}\right) = \mathfrak{x}\mathfrak{y}.
-```
+$$
 
-**Theorem 245:** If
+**定理 245:**
 
-```math
+$$
 \mathfrak{y} \neq \mathfrak{n}, \quad \mathfrak{z} \neq \mathfrak{n},
-```
+$$
 
-then
+ならば
 
-```math
+$$
 \frac{\mathfrak{x}}{\mathfrak{y}}\,\mathfrak{z} = \frac{\mathfrak{x}}{\frac{\mathfrak{y}}{\mathfrak{z}}}.
-```
+$$
 
-**Proof:**
+**証明:**
 
-```math
+$$
 \left(\frac{\mathfrak{x}}{\mathfrak{y}}\,\mathfrak{z}\right)\frac{\mathfrak{y}}{\mathfrak{z}} = \frac{\mathfrak{x}}{\mathfrak{y}}\left(\mathfrak{z}\,\frac{\mathfrak{y}}{\mathfrak{z}}\right) = \frac{\mathfrak{x}}{\mathfrak{y}}\,\mathfrak{y} = \mathfrak{x}.
-```
+$$
 
-**Theorem 246:** If
+**定理 246:**
 
-```math
+$$
 \mathfrak{y} \neq \mathfrak{n}, \quad \mathfrak{z} \neq \mathfrak{n},
-```
+$$
 
-then
+ならば
 
-```math
+$$
 \frac{\mathfrak{x}\mathfrak{z}}{\mathfrak{y}\mathfrak{z}} = \frac{\mathfrak{x}}{\mathfrak{y}}.
-```
+$$
 
-**Proof:**
+**証明:**
 
-```math
+$$
 \frac{\mathfrak{x}}{\mathfrak{y}}(\mathfrak{y}\mathfrak{z}) = \left(\frac{\mathfrak{x}}{\mathfrak{y}}\,\mathfrak{y}\right)\mathfrak{z} = \mathfrak{x}\mathfrak{z}.
-```
+$$
 
-**Theorem 247:** If
+**定理 247:**
 
-```math
+$$
 \mathfrak{y} \neq \mathfrak{n}, \quad \mathfrak{u} \neq \mathfrak{n},
-```
+$$
 
-then
+ならば
 
-```math
+$$
 \frac{\mathfrak{x}}{\mathfrak{y}} \cdot \frac{\mathfrak{z}}{\mathfrak{u}} = \frac{\mathfrak{x}\mathfrak{z}}{\mathfrak{y}\mathfrak{u}}.
-```
+$$
 
-**Proof:**
+**証明:**
 
-```math
+$$
 \begin{aligned}
 \left(\frac{\mathfrak{x}}{\mathfrak{y}} \cdot \frac{\mathfrak{z}}{\mathfrak{u}}\right)(\mathfrak{y}\mathfrak{u}) &= \frac{\mathfrak{x}}{\mathfrak{y}}\left(\frac{\mathfrak{z}}{\mathfrak{u}}(\mathfrak{u}\mathfrak{y})\right) = \frac{\mathfrak{x}}{\mathfrak{y}}\left(\left(\frac{\mathfrak{z}}{\mathfrak{u}}\,\mathfrak{u}\right)\mathfrak{y}\right) \\
 &= \frac{\mathfrak{x}}{\mathfrak{y}}(\mathfrak{z}\mathfrak{y}) = \frac{\mathfrak{x}}{\mathfrak{y}}(\mathfrak{y}\mathfrak{z}) = \left(\frac{\mathfrak{x}}{\mathfrak{y}}\,\mathfrak{y}\right)\mathfrak{z} = \mathfrak{x}\mathfrak{z}.
 \end{aligned}
-```
+$$
 
-**Theorem 248:** If
+**定理 248:**
 
-```math
+$$
 \mathfrak{y} \neq \mathfrak{n}, \quad \mathfrak{z} \neq \mathfrak{n}, \quad \mathfrak{u} \neq \mathfrak{n},
-```
+$$
 
-then
+ならば
 
-```math
+$$
 \frac{\frac{\mathfrak{x}}{\mathfrak{y}}}{\frac{\mathfrak{z}}{\mathfrak{u}}} = \frac{\mathfrak{x}\mathfrak{u}}{\mathfrak{y}\mathfrak{z}}.
-```
+$$
 
-**Proof:** By Theorem 247 and Theorem 246,
+**証明:** 定理 247 と定理 246 により
 
-```math
+$$
 \frac{\mathfrak{x}\mathfrak{u}}{\mathfrak{y}\mathfrak{z}} \cdot \frac{\mathfrak{z}}{\mathfrak{u}} = \frac{(\mathfrak{x}\mathfrak{u})\mathfrak{z}}{(\mathfrak{y}\mathfrak{z})\mathfrak{u}} = \frac{\mathfrak{x}(\mathfrak{u}\mathfrak{z})}{\mathfrak{y}(\mathfrak{z}\mathfrak{u})} = \frac{\mathfrak{x}}{\mathfrak{y}}.
-```
+$$
 
-**Theorem 249:** If
+**定理 249:**
 
-```math
+$$
 \mathfrak{x} \neq \mathfrak{n},
-```
+$$
 
-then
+ならば
 
-```math
+$$
 \frac{\mathfrak{n}}{\mathfrak{x}} = \mathfrak{n}.
-```
+$$
 
-**Proof:**
+**証明:**
 
-```math
+$$
 \mathfrak{x}\mathfrak{n} = \mathfrak{n}.
-```
+$$
 
-**Theorem 250:** If
+**定理 250:**
 
-```math
+$$
 \mathfrak{x} \neq \mathfrak{n},
-```
+$$
 
-then
+ならば
 
-```math
+$$
 \frac{\mathfrak{x}}{\mathfrak{x}} = \mathfrak{e}.
-```
+$$
 
-**Proof:**
+**証明:**
 
-```math
+$$
 \mathfrak{x}\mathfrak{e} = \mathfrak{x}.
-```
+$$
 
-**Theorem 251:** If
+**定理 251:**
 
-```math
+$$
 \mathfrak{y} \neq \mathfrak{n},
-```
+$$
 
-then
+ならば、
 
-```math
+$$
 \frac{\mathfrak{x}}{\mathfrak{y}} = \mathfrak{e}
-```
+$$
 
-if and only if
+であるのは、
 
-```math
+$$
 \mathfrak{x} = \mathfrak{y}.
-```
+$$
 
-**Proof:** 1) If
+のとき、またそのときに限る。
 
-```math
+**証明:** 1)
+
+$$
 \mathfrak{x} = \mathfrak{y},
-```
+$$
 
-then by Theorem 250
+ならば、定理 250 により
 
-```math
+$$
 \frac{\mathfrak{x}}{\mathfrak{y}} = \frac{\mathfrak{y}}{\mathfrak{y}} = \mathfrak{e}.
-```
+$$
 
-2) If
+2)
 
-```math
+$$
 \frac{\mathfrak{x}}{\mathfrak{y}} = \mathfrak{e},
-```
+$$
 
-then by Theorem 222
+ならば、定理 222 により
 
-```math
+$$
 \mathfrak{x} = \mathfrak{y}\mathfrak{e} = \mathfrak{y}.
-```
+$$
 
-**Theorem 252:** If
+**定理 252:**
 
-```math
+$$
 \mathfrak{y} \neq \mathfrak{n}, \quad \mathfrak{u} \neq \mathfrak{n},
-```
+$$
 
-then
+ならば、
 
-```math
+$$
 \frac{\mathfrak{x}}{\mathfrak{y}} = \frac{\mathfrak{z}}{\mathfrak{u}}
-```
+$$
 
-if and only if
+であるのは、
 
-```math
+$$
 \mathfrak{x}\mathfrak{u} = \mathfrak{y}\mathfrak{z}.
-```
+$$
 
-**Proof:** For
+のとき、またそのときに限る。
 
-```math
+**証明:**
+
+$$
 \mathfrak{z} = \mathfrak{n}
-```
+$$
 
-the assertion is clear.
+の場合には主張は明らかである。
 
-Otherwise, by Theorem 248,
+そうでない場合には、定理 248 により
 
-```math
+$$
 \frac{\frac{\mathfrak{x}}{\mathfrak{y}}}{\frac{\mathfrak{z}}{\mathfrak{u}}} = \frac{\mathfrak{x}\mathfrak{u}}{\mathfrak{y}\mathfrak{z}},
-```
+$$
 
-so that Theorem 251 yields the assertion.
+であるから、定理 251 が主張を与える。
 
-**Theorem 253:** If
+**定理 253:**
 
-```math
+$$
 \mathfrak{y} \neq \mathfrak{n},
-```
+$$
 
-then
+ならば
 
-```math
+$$
 \frac{\mathfrak{x}}{\mathfrak{y}} + \frac{\mathfrak{z}}{\mathfrak{y}} = \frac{\mathfrak{x} + \mathfrak{z}}{\mathfrak{y}}.
-```
+$$
 
-**Proof:**
+**証明:**
 
-```math
+$$
 \mathfrak{y}\left(\frac{\mathfrak{x}}{\mathfrak{y}} + \frac{\mathfrak{z}}{\mathfrak{y}}\right) = \mathfrak{y} \cdot \frac{\mathfrak{x}}{\mathfrak{y}} + \mathfrak{y} \cdot \frac{\mathfrak{z}}{\mathfrak{y}} = \mathfrak{x} + \mathfrak{z}.
-```
+$$
 
-**Theorem 254:** If
+**定理 254:**
 
-```math
+$$
 \mathfrak{y} \neq \mathfrak{n}, \quad \mathfrak{u} \neq \mathfrak{n},
-```
+$$
 
-then
+ならば
 
-```math
+$$
 \frac{\mathfrak{x}}{\mathfrak{y}} + \frac{\mathfrak{z}}{\mathfrak{u}} = \frac{\mathfrak{x}\mathfrak{u} + \mathfrak{y}\mathfrak{z}}{\mathfrak{y}\mathfrak{u}}.
-```
+$$
 
-**Proof:** By Theorem 246 and Theorem 253,
+**証明:** 定理 246 と定理 253 により
 
-```math
+$$
 \frac{\mathfrak{x}}{\mathfrak{y}} + \frac{\mathfrak{z}}{\mathfrak{u}} = \frac{\mathfrak{x}\mathfrak{u}}{\mathfrak{y}\mathfrak{u}} + \frac{\mathfrak{y}\mathfrak{z}}{\mathfrak{y}\mathfrak{u}} = \frac{\mathfrak{x}\mathfrak{u} + \mathfrak{y}\mathfrak{z}}{\mathfrak{y}\mathfrak{u}}.
-```
+$$
 
-**Theorem 255:** If
+**定理 255:**
 
-```math
+$$
 \mathfrak{y} \neq \mathfrak{n},
-```
+$$
 
-then
+ならば
 
-```math
+$$
 \frac{\mathfrak{x}}{\mathfrak{y}} - \frac{\mathfrak{z}}{\mathfrak{y}} = \frac{\mathfrak{x} - \mathfrak{z}}{\mathfrak{y}}.
-```
+$$
 
-**Proof:**
+**証明:**
 
-```math
+$$
 \mathfrak{y}\left(\frac{\mathfrak{x}}{\mathfrak{y}} - \frac{\mathfrak{z}}{\mathfrak{y}}\right) = \mathfrak{y} \cdot \frac{\mathfrak{x}}{\mathfrak{y}} - \mathfrak{y} \cdot \frac{\mathfrak{z}}{\mathfrak{y}} = \mathfrak{x} - \mathfrak{z}.
-```
+$$
 
-**Theorem 256:** If
+**定理 256:**
 
-```math
+$$
 \mathfrak{y} \neq \mathfrak{n}, \quad \mathfrak{u} \neq \mathfrak{n},
-```
+$$
 
-then
+ならば
 
-```math
+$$
 \frac{\mathfrak{x}}{\mathfrak{y}} - \frac{\mathfrak{z}}{\mathfrak{u}} = \frac{\mathfrak{x}\mathfrak{u} - \mathfrak{y}\mathfrak{z}}{\mathfrak{y}\mathfrak{u}}.
-```
+$$
 
-**Proof:** By Theorem 246 and Theorem 255,
+**証明:** 定理 246 と定理 255 により
 
-```math
+$$
 \frac{\mathfrak{x}}{\mathfrak{y}} - \frac{\mathfrak{z}}{\mathfrak{u}} = \frac{\mathfrak{x}\mathfrak{u}}{\mathfrak{y}\mathfrak{u}} - \frac{\mathfrak{y}\mathfrak{z}}{\mathfrak{y}\mathfrak{u}} = \frac{\mathfrak{x}\mathfrak{u} - \mathfrak{y}\mathfrak{z}}{\mathfrak{y}\mathfrak{u}}.
-```
+$$
 
-## § 6. Conjugate Numbers
+## § 6. 共役数
 
-**Definition 65:** To
+**定義 65:**
 
-```math
+$$
 \mathfrak{x} = [\Xi_1, \Xi_2]
-```
+$$
 
-the number
+に対して
 
-```math
+$$
 \overline{\mathfrak{x}} = [\Xi_1, -\Xi_2]
-```
+$$
 
-is called the complex conjugate.
+を共役複素数という。
 
-**Theorem 257:** $\overline{\overline{\mathfrak{x}}} = \mathfrak{x}$.
+**定理 257:** $\overline{\overline{\mathfrak{x}}} = \mathfrak{x}$.
 
-**Proof:** $[\Xi_1, -(-\Xi_2)] = [\Xi_1, \Xi_2]$.
+**証明:** $[\Xi_1, -(-\Xi_2)] = [\Xi_1, \Xi_2]$.
 
-**Theorem 258:** We have
+**定理 258:**
 
-```math
+$$
 \overline{\mathfrak{x}} = \mathfrak{n}
-```
+$$
 
-if and only if
+となるのは、
 
-```math
+$$
 \mathfrak{x} = \mathfrak{n}.
-```
+$$
 
-**Proof:**
+のとき、またそのときに限る。
 
-```math
+**証明:**
+
+$$
 \Xi_1 = 0, \quad -\Xi_2 = 0
-```
+$$
 
-is the same as
+は
 
-```math
+$$
 \Xi_1 = 0, \quad \Xi_2 = 0.
-```
+$$
 
-**Theorem 259:** We have
+と同じことである。
 
-```math
+**定理 259:**
+
+$$
 \overline{\mathfrak{x}} = \mathfrak{x}
-```
+$$
 
-if and only if $\mathfrak{x}$ has the form
+となるのは、$\mathfrak{x}$ が
 
-```math
+$$
 \mathfrak{x} = [\Xi, 0]
-```
+$$
 
-**Proof:** We have
+の形を持つとき、またそのときに限る。
 
-```math
+**証明:**
+
+$$
 \Xi_1 = \Xi_1, \quad -\Xi_2 = \Xi_2
-```
+$$
 
-if and only if
+となるのは、
 
-```math
+$$
 \Xi_2 = 0.
-```
+$$
 
-**Theorem 260:** $\overline{\mathfrak{x} + \mathfrak{y}} = \overline{\mathfrak{x}} + \overline{\mathfrak{y}}$.
+のとき、またそのときに限る。
 
-**Proof:** For
+**定理 260:** $\overline{\mathfrak{x} + \mathfrak{y}} = \overline{\mathfrak{x}} + \overline{\mathfrak{y}}$.
 
-```math
+**証明:**
+
+$$
 \mathfrak{x} = [\Xi_1, \Xi_2], \quad \mathfrak{y} = [\mathrm{H}_1, \mathrm{H}_2]
-```
+$$
 
-we have
+に対して
 
-```math
+$$
 \begin{aligned}
 \overline{\mathfrak{x} + \mathfrak{y}} &= [\Xi_1 + \mathrm{H}_1, -(\Xi_2 + \mathrm{H}_2)] = [\Xi_1 + \mathrm{H}_1, -\Xi_2 + (-\mathrm{H}_2)] \\
 &= [\Xi_1, -\Xi_2] + [\mathrm{H}_1, -\mathrm{H}_2] = \overline{\mathfrak{x}} + \overline{\mathfrak{y}}.
 \end{aligned}
-```
+$$
 
-**Theorem 261:** $\overline{\mathfrak{x}\mathfrak{y}} = \overline{\mathfrak{x}}\,\overline{\mathfrak{y}}$.
+である。
 
-**Proof:** For
+**定理 261:** $\overline{\mathfrak{x}\mathfrak{y}} = \overline{\mathfrak{x}}\,\overline{\mathfrak{y}}$.
 
-```math
+**証明:**
+
+$$
 \mathfrak{x} = [\Xi_1, \Xi_2], \quad \mathfrak{y} = [\mathrm{H}_1, \mathrm{H}_2]
-```
+$$
 
-we have
+に対して
 
-```math
+$$
 \begin{aligned}
 \overline{\mathfrak{x}\mathfrak{y}} &= [\Xi_1\mathrm{H}_1 - \Xi_2\mathrm{H}_2, -(\Xi_1\mathrm{H}_2 + \Xi_2\mathrm{H}_1)] \\
 &= [\Xi_1\mathrm{H}_1 - (-\Xi_2)(-\mathrm{H}_2), \Xi_1(-\mathrm{H}_2) + (-\Xi_2)\mathrm{H}_1] \\
 &= [\Xi_1, -\Xi_2][\mathrm{H}_1, -\mathrm{H}_2] = \overline{\mathfrak{x}}\,\overline{\mathfrak{y}}.
 \end{aligned}
-```
+$$
 
-**Theorem 262:** $\overline{\mathfrak{x} - \mathfrak{y}} = \overline{\mathfrak{x}} - \overline{\mathfrak{y}}$.
+である。
 
-**Proof:** Since
+**定理 262:** $\overline{\mathfrak{x} - \mathfrak{y}} = \overline{\mathfrak{x}} - \overline{\mathfrak{y}}$.
 
-```math
+**証明:**
+
+$$
 \mathfrak{x} = (\mathfrak{x} - \mathfrak{y}) + \mathfrak{y}
-```
+$$
 
-we have, by Theorem 260,
+により、定理 260 から
 
-```math
+$$
 \overline{\mathfrak{x}} = \overline{\mathfrak{x} - \mathfrak{y}} + \overline{\mathfrak{y}},
-```
+$$
 
-```math
+$$
 \overline{\mathfrak{x} - \mathfrak{y}} = \overline{\mathfrak{x}} - \overline{\mathfrak{y}}.
-```
+$$
 
-**Theorem 263:** For
+である。
 
-```math
+**定理 263:**
+
+$$
 \mathfrak{y} \neq \mathfrak{n}
-```
+$$
 
-we have
+に対して
 
-```math
+$$
 \overline{\left(\frac{\mathfrak{x}}{\mathfrak{y}}\right)} = \frac{\overline{\mathfrak{x}}}{\overline{\mathfrak{y}}}.
-```
+$$
 
-**Proof:** Since
+である。
 
-```math
+**証明:**
+
+$$
 \mathfrak{x} = \frac{\mathfrak{x}}{\mathfrak{y}}\,\mathfrak{y}
-```
+$$
 
-we have, by Theorem 261,
+により、定理 261 から
 
-```math
+$$
 \overline{\mathfrak{x}} = \overline{\left(\frac{\mathfrak{x}}{\mathfrak{y}}\right)}\,\overline{\mathfrak{y}};
-```
+$$
 
-by Theorem 258 we have
+であり、定理 258 から
 
-```math
+$$
 \overline{\mathfrak{y}} \neq \mathfrak{n},
-```
+$$
 
-hence
+であるから、
 
-```math
+$$
 \overline{\left(\frac{\mathfrak{x}}{\mathfrak{y}}\right)} = \frac{\overline{\mathfrak{x}}}{\overline{\mathfrak{y}}}.
-```
+$$
 
-## § 7. Absolute Value
+## § 7. 絶対値
 
-**Definition 66:** Let $\sqrt{\zeta}$ denote the (positive) solution $\xi$, which exists uniquely by Theorem 161, of
+**定義 66:** $\sqrt{\zeta}$ は、定理 161 により一意に存在する
 
-```math
+$$
 \xi\xi = \zeta.
-```
+$$
 
-**Definition 67:** $\sqrt{0} = 0$.
+の(正の)解 $\xi$ を表すものとする。
 
-**Definition 68:**
+**定義 67:** $\sqrt{0} = 0$.
 
-```math
+**定義 68:**
+
+$$
 |[\Xi_1, \Xi_2]| = \sqrt{\Xi_1\Xi_1 + \Xi_2\Xi_2}.
-```
+$$
 
-($|\ |$ to be read: absolute value.)
+($|\ |$ は「絶対値」と読む。)
 
-**Theorem 264:**
+**定理 264:**
 
-```math
-|\mathfrak{x}| \begin{cases} > 0 & \text{for } \mathfrak{x} \neq \mathfrak{n}, \\ = 0 & \text{for } \mathfrak{x} = \mathfrak{n}. \end{cases}
-```
+$$
+|\mathfrak{x}| \begin{cases} > 0 & (\mathfrak{x} \neq \mathfrak{n} \text{ のとき}), \\ = 0 & (\mathfrak{x} = \mathfrak{n} \text{ のとき}). \end{cases}
+$$
 
-**Proof:** Definitions 68, 66 and 67.
+**証明:** 定義 68、66 および 67。
 
-**Theorem 265:**
+**定理 265:**
 
-```math
+$$
 |[\Xi_1, \Xi_2]| \geqq |\Xi_1|,
-```
+$$
 
-```math
+$$
 |[\Xi_1, \Xi_2]| \geqq |\Xi_2|.
-```
+$$
 
-**Proof:**
+**証明:**
 
-```math
+$$
 |[\Xi_1, \Xi_2]|\,|[\Xi_1, \Xi_2]| = \Xi_1\Xi_1 + \Xi_2\Xi_2 \begin{cases} \geqq \Xi_1\Xi_1 = |\Xi_1||\Xi_1|, \\ \geqq \Xi_2\Xi_2 = |\Xi_2||\Xi_2|. \end{cases}
-```
+$$
 
-From
-
-```math
+$$
 \Xi\Xi \geqq \mathrm{H}\mathrm{H}, \quad \Xi \geqq 0, \quad \mathrm{H} \geqq 0
-```
+$$
 
-it follows that
+から
 
-```math
+$$
 \Xi \geqq \mathrm{H},
-```
+$$
 
-since otherwise we would have
+が従う。なぜなら、さもなければ
 
-```math
+$$
 0 \leqq \Xi < \mathrm{H},
-```
+$$
 
-```math
-\Xi\Xi < \mathrm{H}\mathrm{H}.
-```
+$$
+\Xi\Xi < \mathrm{H}\mathrm{H}
+$$
 
-This proves Theorem 265.
+となるからである。これで定理 265 は証明された。
 
-**Theorem 266:** From
+**定理 266:**
 
-```math
+$$
 [\Xi, 0][\Xi, 0] = [\mathrm{H}, 0][\mathrm{H}, 0], \quad \Xi \geqq 0, \quad \mathrm{H} \geqq 0
-```
+$$
 
-it follows that
+から
 
-```math
+$$
 \Xi = \mathrm{H}.
-```
+$$
 
-**Proof:** Since
+が従う。
 
-```math
+**証明:**
+
+$$
 [\mathrm{Z}, 0][\mathrm{Z}, 0] = [\mathrm{Z}\mathrm{Z} - 0 \cdot 0, \mathrm{Z} \cdot 0 + 0 \cdot \mathrm{Z}] = [\mathrm{Z}\mathrm{Z}, 0]
-```
+$$
 
-we have, by hypothesis,
+により、仮定から
 
-```math
+$$
 [\Xi\Xi, 0] = [\mathrm{H}\mathrm{H}, 0],
-```
+$$
 
-```math
+$$
 \Xi\Xi = \mathrm{H}\mathrm{H}.
-```
+$$
 
-If
+である。
 
-```math
+$$
 \Xi > 0,
-```
+$$
 
-then it follows that
+ならば
 
-```math
+$$
 \mathrm{H}\mathrm{H} = \Xi\Xi > 0,
-```
+$$
 
-hence by Theorem 161
+が従い、よって定理 161 から
 
-```math
+$$
 \mathrm{H} > 0,
-```
+$$
 
-```math
+$$
 \Xi = \mathrm{H}.
-```
+$$
 
-If
+である。
 
-```math
+$$
 \Xi = 0,
-```
+$$
 
-then it follows that
+ならば
 
-```math
+$$
 \mathrm{H}\mathrm{H} = \Xi\Xi = 0,
-```
+$$
 
-```math
+$$
 \mathrm{H} = 0 = \Xi.
-```
+$$
 
-**Theorem 267:** $[|\mathfrak{x}|, 0][|\mathfrak{x}|, 0] = \mathfrak{x}\overline{\mathfrak{x}}$.
+が従う。
 
-**Proof:** If we set
+**定理 267:** $[|\mathfrak{x}|, 0][|\mathfrak{x}|, 0] = \mathfrak{x}\overline{\mathfrak{x}}$.
 
-```math
+**証明:**
+
+$$
 \mathfrak{x} = [\Xi_1, \Xi_2]
-```
+$$
 
-then we have
+とおけば、
 
-```math
+$$
 \begin{aligned}
 [|\mathfrak{x}|, 0][|\mathfrak{x}|, 0] &= [|\mathfrak{x}||\mathfrak{x}|, 0] = [\Xi_1\Xi_1 + \Xi_2\Xi_2, 0] \\
 &= [\Xi_1\Xi_1 - \Xi_2(-\Xi_2), \Xi_1(-\Xi_2) + \Xi_2\Xi_1] = [\Xi_1, \Xi_2][\Xi_1, -\Xi_2] = \mathfrak{x}\overline{\mathfrak{x}}.
 \end{aligned}
-```
+$$
 
-**Theorem 268:** $|\mathfrak{x}\mathfrak{y}| = |\mathfrak{x}||\mathfrak{y}|$.
+である。
 
-**Proof:** By Theorem 267 and Theorem 261 we have
+**定理 268:** $|\mathfrak{x}\mathfrak{y}| = |\mathfrak{x}||\mathfrak{y}|$.
 
-```math
+**証明:** 定理 267 および定理 261 から
+
+$$
 \begin{aligned}
 [|\mathfrak{x}\mathfrak{y}|, 0][|\mathfrak{x}\mathfrak{y}|, 0] &= (\mathfrak{x}\mathfrak{y})\overline{\mathfrak{x}\mathfrak{y}} = (\mathfrak{x}\mathfrak{y})(\overline{\mathfrak{x}}\,\overline{\mathfrak{y}}) = (\mathfrak{x}\overline{\mathfrak{x}})(\mathfrak{y}\overline{\mathfrak{y}}) \\
 &= ([|\mathfrak{x}|, 0][|\mathfrak{x}|, 0])([|\mathfrak{y}|, 0][|\mathfrak{y}|, 0]) \\
@@ -1352,741 +1420,797 @@ then we have
 &= [|\mathfrak{x}||\mathfrak{y}| - 0 \cdot 0, |\mathfrak{x}| \cdot 0 + 0 \cdot |\mathfrak{y}|][|\mathfrak{x}||\mathfrak{y}| - 0 \cdot 0, |\mathfrak{x}| \cdot 0 + 0 \cdot |\mathfrak{y}|] \\
 &= [|\mathfrak{x}||\mathfrak{y}|, 0][|\mathfrak{x}||\mathfrak{y}|, 0],
 \end{aligned}
-```
+$$
 
-hence by Theorem 266
+であり、よって定理 266 から
 
-```math
+$$
 |\mathfrak{x}\mathfrak{y}| = |\mathfrak{x}||\mathfrak{y}|.
-```
+$$
 
-**Theorem 269:** If
+**定理 269:**
 
-```math
+$$
 \mathfrak{y} \neq \mathfrak{n},
-```
+$$
 
-then
+ならば
 
-```math
+$$
 \left|\frac{\mathfrak{x}}{\mathfrak{y}}\right| = \frac{|\mathfrak{x}|}{|\mathfrak{y}|}.
-```
+$$
 
-**Proof:**
+である。
 
-```math
+**証明:**
+
+$$
 |\mathfrak{y}| > 0,
-```
+$$
 
-```math
+$$
 \frac{\mathfrak{x}}{\mathfrak{y}}\,\mathfrak{y} = \mathfrak{x},
-```
+$$
 
-hence by Theorem 268
+であるから、定理 268 により
 
-```math
+$$
 \left|\frac{\mathfrak{x}}{\mathfrak{y}}\right| |\mathfrak{y}| = |\mathfrak{x}|,
-```
+$$
 
-```math
+$$
 \left|\frac{\mathfrak{x}}{\mathfrak{y}}\right| = \frac{|\mathfrak{x}|}{|\mathfrak{y}|}.
-```
+$$
 
-**Theorem 270:** From
+**定理 270:**
 
-```math
+$$
 \mathfrak{x} + \mathfrak{y} = \mathfrak{e}
-```
+$$
 
-it follows that
+から
 
-```math
+$$
 |\mathfrak{x}| + |\mathfrak{y}| \geqq 1.
-```
+$$
 
-**Proof:** If
+が従う。
 
-```math
+**証明:**
+
+$$
 \mathfrak{x} = [\Xi_1, \Xi_2], \quad \mathfrak{y} = [\mathrm{H}_1, \mathrm{H}_2],
-```
+$$
 
-then by Theorem 265 we have
+とすれば、定理 265 から
 
-```math
+$$
 |\mathfrak{x}| \geqq |\Xi_1| \geqq \Xi_1,
-```
+$$
 
-```math
+$$
 |\mathfrak{y}| \geqq |\mathrm{H}_1| \geqq \mathrm{H}_1,
-```
+$$
 
-hence
+であり、よって
 
-```math
+$$
 |\mathfrak{x}| + |\mathfrak{y}| \geqq \Xi_1 + \mathrm{H}_1 = 1.
-```
+$$
 
-**Theorem 271:** $|\mathfrak{x} + \mathfrak{y}| \leqq |\mathfrak{x}| + |\mathfrak{y}|$.
+**定理 271:** $|\mathfrak{x} + \mathfrak{y}| \leqq |\mathfrak{x}| + |\mathfrak{y}|$.
 
-**Proof:** 1) If
+**証明:** 1)
 
-```math
+$$
 \mathfrak{x} + \mathfrak{y} = \mathfrak{n},
-```
+$$
 
-then the left-hand side of the assertion is $0$, hence $\leqq$ the right-hand side.
+ならば、主張の左辺は $0$ であり、したがって右辺 $\leqq$ が成り立つ。
 
-2) If
+2)
 
-```math
+$$
 \mathfrak{x} + \mathfrak{y} \neq \mathfrak{n},
-```
+$$
 
-then, since
+ならば、
 
-```math
+$$
 \frac{\mathfrak{x}}{\mathfrak{x} + \mathfrak{y}} + \frac{\mathfrak{y}}{\mathfrak{x} + \mathfrak{y}} = \frac{\mathfrak{x} + \mathfrak{y}}{\mathfrak{x} + \mathfrak{y}} = \mathfrak{e},
-```
+$$
 
-we have by Theorem 270
+により、定理 270 から
 
-```math
+$$
 \left|\frac{\mathfrak{x}}{\mathfrak{x} + \mathfrak{y}}\right| + \left|\frac{\mathfrak{y}}{\mathfrak{x} + \mathfrak{y}}\right| \geqq 1,
-```
+$$
 
-hence by Theorem 269
+であり、よって定理 269 から
 
-```math
+$$
 \frac{|\mathfrak{x}|}{|\mathfrak{x} + \mathfrak{y}|} + \frac{|\mathfrak{y}|}{|\mathfrak{x} + \mathfrak{y}|} \geqq 1,
-```
+$$
 
-```math
+$$
 |\mathfrak{x}| + |\mathfrak{y}| = |\mathfrak{x} + \mathfrak{y}|\left(\frac{|\mathfrak{x}|}{|\mathfrak{x} + \mathfrak{y}|} + \frac{|\mathfrak{y}|}{|\mathfrak{x} + \mathfrak{y}|}\right) \geqq |\mathfrak{x} + \mathfrak{y}|.
-```
+$$
 
-**Theorem 272:** $|-\mathfrak{x}| = |\mathfrak{x}|$.
+である。
 
-**Proof:** $(-\Xi_1)(-\Xi_1) + (-\Xi_2)(-\Xi_2) = \Xi_1\Xi_1 + \Xi_2\Xi_2$.
+**定理 272:** $|-\mathfrak{x}| = |\mathfrak{x}|$.
 
-**Theorem 273:** $|\mathfrak{x} - \mathfrak{y}| \geqq ||\mathfrak{x}| - |\mathfrak{y}||$.
+**証明:** $(-\Xi_1)(-\Xi_1) + (-\Xi_2)(-\Xi_2) = \Xi_1\Xi_1 + \Xi_2\Xi_2$.
 
-**Proof:**
+**定理 273:** $|\mathfrak{x} - \mathfrak{y}| \geqq ||\mathfrak{x}| - |\mathfrak{y}||$.
 
-```math
+**証明:**
+
+$$
 \mathfrak{x} = \mathfrak{y} + (\mathfrak{x} - \mathfrak{y}),
-```
+$$
 
-hence by Theorem 271
+であるから、定理 271 により
 
-```math
+$$
 |\mathfrak{x}| \leqq |\mathfrak{y}| + |\mathfrak{x} - \mathfrak{y}|,
-```
+$$
 
-```math
+$$
 |\mathfrak{x} - \mathfrak{y}| \geqq |\mathfrak{x}| - |\mathfrak{y}|.
-```
+$$
 
-From this it follows, if $\mathfrak{x}$ and $\mathfrak{y}$ are interchanged,
+である。ここで $\mathfrak{x}$ と $\mathfrak{y}$ を入れ替えれば、
 
-```math
+$$
 |\mathfrak{y} - \mathfrak{x}| \geqq |\mathfrak{y}| - |\mathfrak{x}|,
-```
+$$
 
-hence by Theorem 272
+が従い、よって定理 272 から
 
-```math
+$$
 |\mathfrak{x} - \mathfrak{y}| = |-(\mathfrak{y} - \mathfrak{x})| = |\mathfrak{y} - \mathfrak{x}| \geqq |\mathfrak{y}| - |\mathfrak{x}| = -(|\mathfrak{x}| - |\mathfrak{y}|).
-```
+$$
 
-But from
+である。ところで、$|\mathrm{H}|$ は $\mathrm{H}$ か $-\mathrm{H}$ のいずれかであるから、
 
-```math
+$$
 \Xi \geqq \mathrm{H}, \quad \Xi \geqq -\mathrm{H}
-```
+$$
 
-it follows, since $|\mathrm{H}|$ is either $\mathrm{H}$ or $-\mathrm{H}$, that
+から
 
-```math
+$$
 \Xi \geqq |\mathrm{H}|.
-```
+$$
 
-Therefore
+が従う。したがって
 
-```math
+$$
 |\mathfrak{x} - \mathfrak{y}| \geqq ||\mathfrak{x}| - |\mathfrak{y}||.
-```
+$$
 
-## § 8. Sums and Products
+である。
 
-**Theorem 274:** If
+## § 8. 和と積
 
-```math
+**定理 274:**
+
+$$
 x < y,
-```
+$$
 
-then the $m \leqq x$ cannot be put in one-to-one correspondence with the $n \leqq y$.
+ならば、$m \leqq x$ を $n \leqq y$ に一対一に対応させることはできない。
 
-By a correspondence I always mean, in this section, a one-to-one correspondence.
+この § において、対応させるとは常に一対一に対応させることを意味する。
 
-**Proof:** Let $\mathfrak{M}$ be the set of $x$ for which the assertion is true for all $y > x$.
+**証明:** $\mathfrak{M}$ を、すべての $y > x$ に対して主張が真であるような $x$ の集合とする。
 
-I) If
+I)
 
-```math
+$$
 1 < y,
-```
+$$
 
-then $m = 1$ cannot be put in correspondence with the $n \leqq y$; for if to $m = 1$ there corresponds $n = 1$, then no $m$ is left over for $n = y$; if $m = 1$ is put in correspondence with an $n > 1$, then no $m$ is left over for $n = 1$.
+ならば、$m = 1$ を $n \leqq y$ に対応させることはできない。なぜなら、$m = 1$ に $n = 1$ が対応するならば、$n = y$ に対する $m$ が残らないし、$m = 1$ がある $n > 1$ に対応させられているならば、$n = 1$ に対する $m$ が残らないからである。
 
-Hence 1 belongs to $\mathfrak{M}$.
+したがって 1 は $\mathfrak{M}$ に属する。
 
-II) Let $x$ belong to $\mathfrak{M}$, and let
+II) $x$ が $\mathfrak{M}$ に属し、
 
-```math
+$$
 x + 1 < y.
-```
+$$
 
-If a correspondence of the $m \leqq x + 1$ to the $n \leqq y$ is given, we distinguish two cases.
+であるとする。$m \leqq x + 1$ の $n \leqq y$ への対応が存在するとき、二つの場合を区別する。
 
-α) To $m = x + 1$ there corresponds $n = y$. Then the $m \leqq x$ are put in correspondence with the $n \leqq y - 1$; this is impossible because of
+α) $m = x + 1$ に $n = y$ が対応する場合。このとき $m \leqq x$ は $n \leqq y - 1$ に対応させられていることになるが、これは
 
-```math
+$$
 x < y - 1.
-```
+$$
 
-β) To $m = x + 1$ there corresponds an $n = n_0 < y$. Then let $m = m_0$ be the number corresponding to $n = y$, so that $m_0 < x + 1$. Now consider the following modified correspondence of the $m \leqq x + 1$ to the $n \leqq y$.
+のためにあり得ない。
 
-```math
+β) $m = x + 1$ にある $n = n_0 < y$ が対応する場合。このとき、$n = y$ に対応する数を $m = m_0$ とすると、$m_0 < x + 1$ である。いま、$m \leqq x + 1$ の $n \leqq y$ への、次のように変更した対応を考える。
+
+$$
 \begin{cases}
-\text{If } m \neq m_0,\ m \neq x + 1, \text{ let the old assignment stand.} \\
-\text{to } m = m_0 \text{ let } n = n_0 \text{ correspond.} \\
-\text{to } m = x + 1 \text{ let } n = y \text{ correspond.}
+m \neq m_0,\ m \neq x + 1 \text{ のときは従来どおりとする。} \\
+m = m_0 \text{ には } n = n_0 \text{ を対応させる。} \\
+m = x + 1 \text{ には } n = y \text{ を対応させる。}
 \end{cases}
-```
+$$
 
-Then we have a correspondence of the kind just shown in α) to be impossible.
+このとき、先ほど α) で不可能であることが示された種類の対応が得られる。
 
-Hence $x + 1$ belongs to $\mathfrak{M}$, and the assertion is proved.
+したがって $x + 1$ は $\mathfrak{M}$ に属し、主張は証明された。
 
-Since the proofs of the following Theorems 275 to 278 and 280 to 286, together with the associated definitions, would be word for word the same for sums and for products, we carry this out only once, in order to avoid long repetitions, and choose a neutral symbol $\dotplus$, which is to mean throughout $+$ or throughout $\cdot$. The symbol $\mathop{\Large\dotplus}$, neutral for the time being, will later be split correspondingly into two symbols ($\Sigma$ for $+$, $\Pi$ for $\cdot$).
+以下の定理 275 から 278 まで、および 280 から 286 までの証明は、付随する定義とともに、和についても積についても文字どおり同一のものとなるので、長い繰り返しを避けるため、これを一度だけ行い、中立的な記号 $\dotplus$ を選ぶ。これは一貫して $+$ を意味するか、または一貫して $\cdot$ を意味するものとする。さしあたり中立的な記号 $\mathop{\Large\dotplus}$ は、後に対応して二つの記号($+$ のときは $\Sigma$、$\cdot$ のときは $\Pi$)に分けられる。
 
-By defined I mean, throughout this entire development: defined as a complex number.
+この展開全体を通じて、定義されているとは、複素数として定義されていることを意味する。
 
-**Theorem 275:** Let $x$ be fixed, and let $\mathfrak{f}(n)$ be defined for $n \leqq x$. Then there is exactly one
+**定理 275:** $x$ を固定し、$\mathfrak{f}(n)$ が $n \leqq x$ に対して定義されているとする。このとき、$n \leqq x$ に対して定義された
 
-```math
+$$
 \mathfrak{g}_x(n)
-```
+$$
 
-defined for $n \leqq x$ (written more fully
+(より詳しく書けば
 
-```math
+$$
 \mathfrak{g}_{x,\mathfrak{f}}(n),
-```
+$$
 
-written in abbreviated form
+略記すれば
 
-```math
+$$
 \mathfrak{g}(n))
-```
+$$
 
-with the following properties:
+で、次の性質をもつものがちょうど一つ存在する:
 
-```math
+$$
 \begin{aligned}
 \mathfrak{g}_x(1) &= \mathfrak{f}(1), \\
-\mathfrak{g}_x(n + 1) &= \mathfrak{g}_x(n) \dotplus \mathfrak{f}(n + 1) \quad \text{for } n < x.
+\mathfrak{g}_x(n + 1) &= \mathfrak{g}_x(n) \dotplus \mathfrak{f}(n + 1) \quad (n < x \text{ のとき}).
 \end{aligned}
-```
+$$
 
-**Proof:** 1) First we show that there is at most one such $\mathfrak{g}_x(n)$.
+**証明:** 1) まず、このような $\mathfrak{g}_x(n)$ が高々一つしか存在しないことを示す。
 
-Let $\mathfrak{g}(n)$ and $\mathfrak{h}(n)$ have the required properties. Let $\mathfrak{M}$ be the set consisting of the $n \leqq x$ with
+$\mathfrak{g}(n)$ と $\mathfrak{h}(n)$ が要求された性質をもつとする。$\mathfrak{M}$ を、
 
-```math
+$$
 \mathfrak{g}(n) = \mathfrak{h}(n)
-```
+$$
 
-and of the $n > x$.
+を満たす $n \leqq x$ と、$n > x$ とからなる集合とする。
 
 I) $\mathfrak{g}(1) = \mathfrak{f}(1) = \mathfrak{h}(1)$;
 
-hence 1 belongs to $\mathfrak{M}$.
+したがって 1 は $\mathfrak{M}$ に属する。
 
-II) Let $n$ belong to $\mathfrak{M}$. Then either
+II) $n$ が $\mathfrak{M}$ に属するとする。このとき、
 
-```math
+$$
 n < x, \quad \mathfrak{g}(n) = \mathfrak{h}(n),
-```
+$$
 
-hence
+であって、したがって
 
-```math
+$$
 \mathfrak{g}(n + 1) = \mathfrak{g}(n) \dotplus \mathfrak{f}(n + 1) = \mathfrak{h}(n) \dotplus \mathfrak{f}(n + 1) = \mathfrak{h}(n + 1),
-```
+$$
 
-so that $n + 1$ belongs to $\mathfrak{M}$; or
+となり、$n + 1$ が $\mathfrak{M}$ に属するか、あるいは
 
-```math
+$$
 n \geqq x,
-```
+$$
 
-hence
+であって、したがって
 
-```math
+$$
 n + 1 > x
-```
+$$
 
-and $n + 1$ likewise belongs to $\mathfrak{M}$.
+となり、$n + 1$ がやはり $\mathfrak{M}$ に属するかのいずれかである。
 
-Therefore $\mathfrak{M}$ is the set of all positive integers; hence for every $n \leqq x$ we have
+ゆえに $\mathfrak{M}$ はすべての正の整数の集合である。したがって、任意の $n \leqq x$ に対して
 
-```math
+$$
 \mathfrak{g}(n) = \mathfrak{h}(n),
-```
+$$
 
-q.e.d.
+である。これが証明すべきことであった。
 
-2) We now show that for every $x$, if $\mathfrak{f}(n)$ is defined for $n \leqq x$, there is a suitable $\mathfrak{g}_x(n)$.
+2) 次に、$\mathfrak{f}(n)$ が $n \leqq x$ に対して定義されているとき、各 $x$ に対して適合する $\mathfrak{g}_x(n)$ が存在することを示す。
 
-Let $\mathfrak{M}$ be the set of $x$ for which this is true, hence for which, if $\mathfrak{f}(n)$ is defined for $n \leqq x$, there is by 1) exactly one suitable $\mathfrak{g}_x(n)$.
+$\mathfrak{M}$ を、これが真であるような $x$ の集合、すなわち、$\mathfrak{f}(n)$ が $n \leqq x$ に対して定義されているとき、1) によりちょうど一つの適合する $\mathfrak{g}_x(n)$ が存在するような $x$ の集合とする。
 
-I) For $x = 1$, if $\mathfrak{f}(1)$ is defined,
+I) $x = 1$ に対しては、$\mathfrak{f}(1)$ が定義されているとき、
 
-```math
+$$
 \mathfrak{g}_x(1) = \mathfrak{f}(1)
-```
+$$
 
-does what is required (since the second requirement is not imposed, $n < 1$ being impossible). Hence 1 belongs to $\mathfrak{M}$.
+が求めるものとなる($n < 1$ が不可能であるため、第二の要求は課されないからである)。したがって 1 は $\mathfrak{M}$ に属する。
 
-II) Let $x$ belong to $\mathfrak{M}$. If $\mathfrak{f}(n)$ is defined for $n \leqq x + 1$, then it is defined for $n \leqq x$, so that here exactly one associated $\mathfrak{g}_x(n)$ exists. Now
+II) $x$ が $\mathfrak{M}$ に属するとする。$\mathfrak{f}(n)$ が $n \leqq x + 1$ に対して定義されているならば、それは $n \leqq x$ に対して定義されているから、ここにちょうど一つの付随する $\mathfrak{g}_x(n)$ が存在する。いま、
 
-```math
+$$
 \mathfrak{g}_{x+1}(n) = \begin{cases}
-\mathfrak{g}_x(n) & \text{for } n \leqq x, \\
-\mathfrak{g}_x(x) \dotplus \mathfrak{f}(x + 1) & \text{for } n = x + 1
+\mathfrak{g}_x(n) & (n \leqq x \text{ のとき}), \\
+\mathfrak{g}_x(x) \dotplus \mathfrak{f}(x + 1) & (n = x + 1 \text{ のとき})
 \end{cases}
-```
+$$
 
-does what is required for $x + 1$. For, first,
+が $x + 1$ において求めるものとなる。なぜなら、第一に
 
-```math
+$$
 \mathfrak{g}_{x+1}(1) = \mathfrak{g}_x(1) = \mathfrak{f}(1).
-```
+$$
 
-Secondly, for
+である。第二に、
 
-```math
+$$
 n < x
-```
+$$
 
-(since $n + 1 \leqq x$) we have
+に対しては($n + 1 \leqq x$ のため)
 
-```math
+$$
 \mathfrak{g}_{x+1}(n + 1) = \mathfrak{g}_x(n + 1) = \mathfrak{g}_x(n) \dotplus \mathfrak{f}(n + 1) = \mathfrak{g}_{x+1}(n) \dotplus \mathfrak{f}(n + 1),
-```
+$$
 
-while for
+が成り立ち、一方
 
-```math
+$$
 n = x
-```
+$$
 
-```math
+に対しては
+
+$$
 \mathfrak{g}_{x+1}(n + 1) = \mathfrak{g}_x(x) \dotplus \mathfrak{f}(x + 1) = \mathfrak{g}_{x+1}(n) \dotplus \mathfrak{f}(n + 1)
-```
+$$
 
-holds; hence from
+である。したがって
 
-```math
+$$
 n < x + 1
-```
+$$
 
-it follows in any case that
+からは、いずれにせよ
 
-```math
+$$
 \mathfrak{g}_{x+1}(n + 1) = \mathfrak{g}_{x+1}(n) \dotplus \mathfrak{f}(n + 1).
-```
+$$
 
-Therefore $x + 1$ belongs to $\mathfrak{M}$, and $\mathfrak{M}$ contains all positive integers.
+が従う。
 
-**Theorem 276:** If $\mathfrak{f}(n)$ is defined for $n \leqq x + 1$, then for the associated $\mathfrak{g}_x(n)$ and $\mathfrak{g}_{x+1}(n)$ we have
+ゆえに $x + 1$ は $\mathfrak{M}$ に属し、$\mathfrak{M}$ はすべての正の整数を含む。
 
-```math
+**定理 276:** $\mathfrak{f}(n)$ が $n \leqq x + 1$ に対して定義されているならば、付随する $\mathfrak{g}_x(n)$ と $\mathfrak{g}_{x+1}(n)$ に対して
+
+$$
 \mathfrak{g}_{x+1}(x + 1) = \mathfrak{g}_x(x) \dotplus \mathfrak{f}(x + 1).
-```
+$$
 
-**Proof:** This occurred in the construction in 2), II) of the preceding proof.
+が成り立つ。
 
-**Definition 69:** If $\mathfrak{f}(n)$ is defined for $n \leqq x$, then
+**証明:** これは前の証明の 2)、II) における構成のなかに現れた。
 
-```math
+**定義 69:** $\mathfrak{f}(n)$ が $n \leqq x$ に対して定義されているならば、
+
+$$
 \mathop{\Large\dotplus}\limits_{n=1}^{x} \mathfrak{f}(n) = \mathfrak{g}_x(x) \quad (= \mathfrak{g}_{x,\mathfrak{f}}(x)).
-```
+$$
 
-If $\dotplus$ has the meaning $+$, one writes
+とする。
 
-```math
+$\dotplus$ が $+$ の意味をもつときは
+
+$$
 \sum_{n=1}^{x} \mathfrak{f}(n);
-```
+$$
 
-if $\dotplus$ has the meaning $\cdot$, one writes
+と書き、$\dotplus$ が $\cdot$ の意味をもつときは
 
-```math
+$$
 \prod_{n=1}^{x} \mathfrak{f}(n).
-```
+$$
 
-($\Sigma$ to be read: sum; $\Pi$ to be read: product.)
+と書く。
 
-In these symbols, any other letter denoting positive integers may also stand in place of $n$.
+($\Sigma$ は「和」と読み、$\Pi$ は「積」と読む。)
 
-**Theorem 277:** If $\mathfrak{f}(1)$ is defined, then
+これらの記号においては、$n$ の代わりに、正の整数を表す他の任意の文字を用いてもよい。
 
-```math
+**定理 277:** $\mathfrak{f}(1)$ が定義されているならば、
+
+$$
 \mathop{\Large\dotplus}\limits_{n=1}^{1} \mathfrak{f}(n) = \mathfrak{f}(1).
-```
+$$
 
-**Proof:** $\mathfrak{g}_1(1) = \mathfrak{f}(1)$.
+である。
 
-**Theorem 278:** If $\mathfrak{f}(n)$ is defined for $n \leqq x + 1$, then
+**証明:** $\mathfrak{g}_1(1) = \mathfrak{f}(1)$。
 
-```math
+**定理 278:** $\mathfrak{f}(n)$ が $n \leqq x + 1$ に対して定義されているならば、
+
+$$
 \mathop{\Large\dotplus}\limits_{n=1}^{x+1} \mathfrak{f}(n) = \mathop{\Large\dotplus}\limits_{n=1}^{x} \mathfrak{f}(n) \dotplus \mathfrak{f}(x + 1).
-```
+$$
 
-**Proof:** Theorem 276.
+である。
 
-**Theorem 279:**
+**証明:** 定理 276。
 
-```math
+**定理 279:**
+
+$$
 \sum_{n=1}^{x} \mathfrak{x} = \mathfrak{x}[x, 0].
-```
+$$
 
-**Proof:** Let $\mathfrak{x}$ be fixed, and let $\mathfrak{M}$ be the set of $x$ for which this holds.
+**証明:** $\mathfrak{x}$ を固定し、$\mathfrak{M}$ をこれが成り立つ $x$ の集合とする。
 
-I) By Theorem 277 we have
+I) 定理 277 により
 
-```math
+$$
 \sum_{n=1}^{1} \mathfrak{x} = \mathfrak{x} = \mathfrak{x}\mathfrak{e} = \mathfrak{x}[1, 0].
-```
+$$
 
-Hence 1 belongs to $\mathfrak{M}$.
+である。したがって 1 は $\mathfrak{M}$ に属する。
 
-II) If $x$ belongs to $\mathfrak{M}$, then it follows from Theorem 278 that
+II) $x$ が $\mathfrak{M}$ に属するならば、定理 278 から
 
-```math
+$$
 \sum_{n=1}^{x+1} \mathfrak{x} = \sum_{n=1}^{x} \mathfrak{x} + \mathfrak{x} = \mathfrak{x}[x, 0] + \mathfrak{x}[1, 0] = \mathfrak{x}([x, 0] + [1, 0]) = \mathfrak{x}[x + 1, 0].
-```
+$$
 
-Hence $x + 1$ belongs to $\mathfrak{M}$.
+が従う。
 
-Therefore the assertion holds for all $x$.
+したがって $x + 1$ は $\mathfrak{M}$ に属する。
 
-**Theorem 280:** If $\mathfrak{f}(1)$ and $\mathfrak{f}(1 + 1)$ are defined, then
+ゆえに主張はすべての $x$ に対して成り立つ。
 
-```math
+**定理 280:** $\mathfrak{f}(1)$ と $\mathfrak{f}(1 + 1)$ が定義されているならば、
+
+$$
 \mathop{\Large\dotplus}\limits_{n=1}^{1+1} \mathfrak{f}(n) = \mathfrak{f}(1) \dotplus \mathfrak{f}(1 + 1).
-```
+$$
 
-**Proof:** By Theorem 278 and Theorem 277 we have
+である。
 
-```math
+**証明:** 定理 278 と定理 277 により
+
+$$
 \mathop{\Large\dotplus}\limits_{n=1}^{1+1} \mathfrak{f}(n) = \mathop{\Large\dotplus}\limits_{n=1}^{1} \mathfrak{f}(n) \dotplus \mathfrak{f}(1 + 1) = \mathfrak{f}(1) \dotplus \mathfrak{f}(1 + 1).
-```
+$$
 
-**Theorem 281:** If $\mathfrak{f}(n)$ is defined for $n \leqq x + y$, then
+である。
 
-```math
+**定理 281:** $\mathfrak{f}(n)$ が $n \leqq x + y$ に対して定義されているならば、
+
+$$
 \mathop{\Large\dotplus}\limits_{n=1}^{x+y} \mathfrak{f}(n) = \mathop{\Large\dotplus}\limits_{n=1}^{x} \mathfrak{f}(n) \dotplus \mathop{\Large\dotplus}\limits_{n=1}^{y} \mathfrak{f}(x + n).
-```
+$$
 
-**Proof:** For fixed $x$, let $\mathfrak{M}$ be the set of $y$ for which this holds.
+である。
 
-I) If $\mathfrak{f}(n)$ is defined for $n \leqq x + 1$, then by Theorem 278 and Theorem 277 we have
+**証明:** $x$ を固定し、$\mathfrak{M}$ をこれが成り立つ $y$ の集合とする。
 
-```math
+I) $\mathfrak{f}(n)$ が $n \leqq x + 1$ に対して定義されているならば、定理 278 と定理 277 により
+
+$$
 \mathop{\Large\dotplus}\limits_{n=1}^{x+1} \mathfrak{f}(n) = \mathop{\Large\dotplus}\limits_{n=1}^{x} \mathfrak{f}(n) \dotplus \mathfrak{f}(x + 1) = \mathop{\Large\dotplus}\limits_{n=1}^{x} \mathfrak{f}(n) \dotplus \mathop{\Large\dotplus}\limits_{n=1}^{1} \mathfrak{f}(x + n).
-```
+$$
 
-Hence 1 belongs to $\mathfrak{M}$.
+である。したがって 1 は $\mathfrak{M}$ に属する。
 
-II) Let $y$ belong to $\mathfrak{M}$. If $\mathfrak{f}(n)$ is defined for $n \leqq x + (y + 1)$, then by Theorem 278 (applied to $x + y$ in place of $x$)
+II) $y$ が $\mathfrak{M}$ に属するとする。$\mathfrak{f}(n)$ が $n \leqq x + (y + 1)$ に対して定義されているならば、定理 278($x$ の代わりに $x + y$ に適用して)により
 
-```math
+$$
 \begin{aligned}
 \mathop{\Large\dotplus}\limits_{n=1}^{x+(y+1)} \mathfrak{f}(n) &= \mathop{\Large\dotplus}\limits_{n=1}^{(x+y)+1} \mathfrak{f}(n) = \mathop{\Large\dotplus}\limits_{n=1}^{x+y} \mathfrak{f}(n) \dotplus \mathfrak{f}((x + y) + 1) \\
 &= \left(\mathop{\Large\dotplus}\limits_{n=1}^{x} \mathfrak{f}(n) \dotplus \mathop{\Large\dotplus}\limits_{n=1}^{y} \mathfrak{f}(x + n)\right) \dotplus \mathfrak{f}(x + (y + 1)) \\
 &= \mathop{\Large\dotplus}\limits_{n=1}^{x} \mathfrak{f}(n) \dotplus \left(\mathop{\Large\dotplus}\limits_{n=1}^{y} \mathfrak{f}(x + n) \dotplus \mathfrak{f}(x + (y + 1))\right),
 \end{aligned}
-```
+$$
 
-hence by Theorem 278 (applied to $y$ in place of $x$, $\mathfrak{f}(x + n)$ in place of $\mathfrak{f}(n)$)
+であり、したがって定理 278($x$ の代わりに $y$、$\mathfrak{f}(n)$ の代わりに $\mathfrak{f}(x + n)$ に適用して)により
 
-```math
+$$
 = \mathop{\Large\dotplus}\limits_{n=1}^{x} \mathfrak{f}(n) \dotplus \mathop{\Large\dotplus}\limits_{n=1}^{y+1} \mathfrak{f}(x + n).
-```
+$$
 
-Hence $y + 1$ belongs to $\mathfrak{M}$, and the theorem is proved.
+である。
 
-**Theorem 282:** If $\mathfrak{f}(n)$ and $\mathfrak{g}(n)$ are defined for $n \leqq x$, then
+したがって $y + 1$ は $\mathfrak{M}$ に属し、定理は証明された。
 
-```math
+**定理 282:** $\mathfrak{f}(n)$ と $\mathfrak{g}(n)$ が $n \leqq x$ に対して定義されているならば、
+
+$$
 \mathop{\Large\dotplus}\limits_{n=1}^{x} (\mathfrak{f}(n) \dotplus \mathfrak{g}(n)) = \mathop{\Large\dotplus}\limits_{n=1}^{x} \mathfrak{f}(n) \dotplus \mathop{\Large\dotplus}\limits_{n=1}^{x} \mathfrak{g}(n).
-```
+$$
 
-**Proof:** Let $\mathfrak{M}$ be the set of $x$ for which this holds.
+である。
 
-I) If $\mathfrak{f}(1)$ and $\mathfrak{g}(1)$ are defined, then
+**証明:** $\mathfrak{M}$ をこれが成り立つ $x$ の集合とする。
 
-```math
+I) $\mathfrak{f}(1)$ と $\mathfrak{g}(1)$ が定義されているならば、
+
+$$
 \mathop{\Large\dotplus}\limits_{n=1}^{1} (\mathfrak{f}(n) \dotplus \mathfrak{g}(n)) = \mathfrak{f}(1) \dotplus \mathfrak{g}(1) = \mathop{\Large\dotplus}\limits_{n=1}^{1} \mathfrak{f}(n) \dotplus \mathop{\Large\dotplus}\limits_{n=1}^{1} \mathfrak{g}(n).
-```
+$$
 
-Hence 1 belongs to $\mathfrak{M}$.
+である。したがって 1 は $\mathfrak{M}$ に属する。
 
-II) Let $x$ belong to $\mathfrak{M}$. If $\mathfrak{f}(n)$ and $\mathfrak{g}(n)$ are defined for $n \leqq x + 1$, then, in view of
+II) $x$ が $\mathfrak{M}$ に属するとする。$\mathfrak{f}(n)$ と $\mathfrak{g}(n)$ が $n \leqq x + 1$ に対して定義されているならば、
 
-```math
+$$
 \begin{aligned}
 (\mathfrak{x} \dotplus \mathfrak{y}) \dotplus (\mathfrak{z} \dotplus \mathfrak{u}) &= ((\mathfrak{x} \dotplus \mathfrak{y}) \dotplus \mathfrak{z}) \dotplus \mathfrak{u} = (\mathfrak{z} \dotplus (\mathfrak{x} \dotplus \mathfrak{y})) \dotplus \mathfrak{u} \\
 &= ((\mathfrak{z} \dotplus \mathfrak{x}) \dotplus \mathfrak{y}) \dotplus \mathfrak{u} = (\mathfrak{z} \dotplus \mathfrak{x}) \dotplus (\mathfrak{y} \dotplus \mathfrak{u}) = (\mathfrak{x} \dotplus \mathfrak{z}) \dotplus (\mathfrak{y} \dotplus \mathfrak{u}),
 \end{aligned}
-```
+$$
 
-we have
+を考慮して、
 
-```math
+$$
 \begin{aligned}
 \mathop{\Large\dotplus}\limits_{n=1}^{x+1} (\mathfrak{f}(n) \dotplus \mathfrak{g}(n)) &= \mathop{\Large\dotplus}\limits_{n=1}^{x} (\mathfrak{f}(n) \dotplus \mathfrak{g}(n)) \dotplus (\mathfrak{f}(x + 1) \dotplus \mathfrak{g}(x + 1)) \\
 &= \left(\mathop{\Large\dotplus}\limits_{n=1}^{x} \mathfrak{f}(n) \dotplus \mathop{\Large\dotplus}\limits_{n=1}^{x} \mathfrak{g}(n)\right) \dotplus (\mathfrak{f}(x + 1) \dotplus \mathfrak{g}(x + 1)) \\
 &= \left(\mathop{\Large\dotplus}\limits_{n=1}^{x} \mathfrak{f}(n) \dotplus \mathfrak{f}(x + 1)\right) \dotplus \left(\mathop{\Large\dotplus}\limits_{n=1}^{x} \mathfrak{g}(n) \dotplus \mathfrak{g}(x + 1)\right) \\
 &= \mathop{\Large\dotplus}\limits_{n=1}^{x+1} \mathfrak{f}(n) \dotplus \mathop{\Large\dotplus}\limits_{n=1}^{x+1} \mathfrak{g}(n).
 \end{aligned}
-```
+$$
 
-Hence $x + 1$ belongs to $\mathfrak{M}$, and the assertion always holds.
+である。
 
-**Theorem 283:** Let $s(n)$ put the $n \leqq x$ in correspondence with the $m \leqq x$. Let $\mathfrak{f}(n)$ be defined for $n \leqq x$. Then
+したがって $x + 1$ は $\mathfrak{M}$ に属し、主張は常に成り立つ。
 
-```math
+**定理 283:** $s(n)$ は $n \leqq x$ を $m \leqq x$ に対応させるものとする。$\mathfrak{f}(n)$ は $n \leqq x$ に対して定義されているとする。このとき
+
+$$
 \mathop{\Large\dotplus}\limits_{n=1}^{x} \mathfrak{f}(s(n)) = \mathop{\Large\dotplus}\limits_{n=1}^{x} \mathfrak{f}(n).
-```
+$$
 
-**Proof:** For brevity, we set
+である。
 
-```math
+**証明:** 略記のため
+
+$$
 \mathfrak{f}(s(n)) = \mathfrak{g}(n)
-```
+$$
 
-Let $\mathfrak{M}$ be the set of $x$ for which the assertion
+とおく。
 
-```math
+$\mathfrak{M}$ を、主張
+
+$$
 \mathop{\Large\dotplus}\limits_{n=1}^{x} \mathfrak{g}(n) = \mathop{\Large\dotplus}\limits_{n=1}^{x} \mathfrak{f}(n)
-```
+$$
 
-is true (for all admissible $s$ and $\mathfrak{f}$).
+が(すべての許される $s$ と $\mathfrak{f}$ に対して)真であるような $x$ の集合とする。
 
-I) For
+I)
 
-```math
+$$
 x = 1
-```
+$$
 
-we have
+に対しては
 
-```math
+$$
 s(1) = 1,
-```
+$$
 
-hence, if $\mathfrak{f}(1)$ is defined,
+であるから、$\mathfrak{f}(1)$ が定義されているとき、
 
-```math
+$$
 \mathop{\Large\dotplus}\limits_{n=1}^{x} \mathfrak{g}(n) = \mathfrak{g}(1) = \mathfrak{f}(1) = \mathop{\Large\dotplus}\limits_{n=1}^{x} \mathfrak{f}(n).
-```
+$$
 
-Hence 1 belongs to $\mathfrak{M}$.
+である。したがって 1 は $\mathfrak{M}$ に属する。
 
-II) Let $x$ belong to $\mathfrak{M}$. Let $s(n)$ put the $n \leqq x + 1$ in correspondence with the $m \leqq x + 1$, and let $\mathfrak{f}(n)$ be defined for $n \leqq x + 1$.
+II) $x$ が $\mathfrak{M}$ に属するとする。$s(n)$ は $n \leqq x + 1$ を $m \leqq x + 1$ に対応させ、$\mathfrak{f}(n)$ は $n \leqq x + 1$ に対して定義されているとする。
 
-1) If
+1)
 
-```math
+$$
 s(x + 1) = x + 1,
-```
+$$
 
-then $s(n)$ puts the $n \leqq x$ in correspondence with the $m \leqq x$. In that case
+の場合、$s(n)$ は $n \leqq x$ を $m \leqq x$ に対応させる。このとき
 
-```math
+$$
 \mathop{\Large\dotplus}\limits_{n=1}^{x} \mathfrak{g}(n) = \mathop{\Large\dotplus}\limits_{n=1}^{x} \mathfrak{f}(n),
-```
+$$
 
-```math
+$$
 \mathfrak{g}(x + 1) = \mathfrak{f}(x + 1),
-```
+$$
 
-hence
+であるから、
 
-```math
+$$
 \mathop{\Large\dotplus}\limits_{n=1}^{x+1} \mathfrak{g}(n) = \mathop{\Large\dotplus}\limits_{n=1}^{x} \mathfrak{g}(n) \dotplus \mathfrak{g}(x + 1) = \mathop{\Large\dotplus}\limits_{n=1}^{x} \mathfrak{f}(n) \dotplus \mathfrak{f}(x + 1) = \mathop{\Large\dotplus}\limits_{n=1}^{x+1} \mathfrak{f}(n).
-```
+$$
 
-2) If
+である。
 
-```math
+2)
+
+$$
 s(x + 1) < x + 1, \quad s(1) = 1,
-```
+$$
 
-then $s(n)$ puts the $n$ with $1 + 1 \leqq n \leqq x + 1$ in correspondence with the $m$ with $1 + 1 \leqq m \leqq x + 1$; hence $s(1 + n) - 1$ puts the $n \leqq x$ in correspondence with the $m \leqq x$. Therefore
+の場合、$s(n)$ は $1 + 1 \leqq n \leqq x + 1$ なる $n$ を $1 + 1 \leqq m \leqq x + 1$ なる $m$ に対応させる。したがって $s(1 + n) - 1$ は $n \leqq x$ を $m \leqq x$ に対応させる。ゆえに
 
-```math
+$$
 \mathop{\Large\dotplus}\limits_{n=1}^{x} \mathfrak{g}(1 + n) = \mathop{\Large\dotplus}\limits_{n=1}^{x} \mathfrak{f}(s(1 + n)) = \mathop{\Large\dotplus}\limits_{n=1}^{x} \mathfrak{f}(1 + (s(1 + n) - 1)) = \mathop{\Large\dotplus}\limits_{n=1}^{x} \mathfrak{f}(1 + n),
-```
+$$
 
-hence by Theorem 281
+であり、したがって定理 281 により
 
-```math
+$$
 \mathop{\Large\dotplus}\limits_{n=1}^{x+1} \mathfrak{g}(n) = \mathfrak{g}(1) \dotplus \mathop{\Large\dotplus}\limits_{n=1}^{x} \mathfrak{g}(1 + n) = \mathfrak{f}(1) \dotplus \mathop{\Large\dotplus}\limits_{n=1}^{x} \mathfrak{f}(1 + n) = \mathop{\Large\dotplus}\limits_{n=1}^{x+1} \mathfrak{f}(n).
-```
+$$
 
-3) If
+である。
 
-```math
+3)
+
+$$
 s(x + 1) < x + 1, \quad s(1) > 1,
-```
+$$
 
-we set
+の場合、
 
-```math
+$$
 s(1) = a
-```
+$$
 
-and determine $b$ from
+とおき、$b$ を
 
-```math
+$$
 1 \leqq b \leqq x + 1, \quad s(b) = 1
-```
+$$
 
-Then
+から定める。このとき
 
-```math
+$$
 a > 1, \quad b > 1.
-```
+$$
 
-α) Let
+である。
 
-```math
+α)
+
+$$
 a < x + 1.
-```
+$$
 
-Then both
+とする。このとき、
 
-```math
+$$
 s_1(n) = \begin{cases}
-1 & \text{for } n = 1, \\
-a & \text{for } n = b, \\
-s(n) & \text{for } 1 < n \leqq x + 1,\ n \neq b
+1 & (n = 1 \text{ のとき}), \\
+a & (n = b \text{ のとき}), \\
+s(n) & (1 < n \leqq x + 1,\ n \neq b \text{ のとき})
 \end{cases}
-```
+$$
 
-and
+も
 
-```math
+$$
 s_2(n) = \begin{cases}
-a & \text{for } n = 1, \\
-1 & \text{for } n = a, \\
-n & \text{for } 1 < n \leqq x + 1,\ n \neq a
+a & (n = 1 \text{ のとき}), \\
+1 & (n = a \text{ のとき}), \\
+n & (1 < n \leqq x + 1,\ n \neq a \text{ のとき})
 \end{cases}
-```
+$$
 
-put the $n \leqq x + 1$ in correspondence with the $m \leqq x + 1$.
+も、いずれも $n \leqq x + 1$ を $m \leqq x + 1$ に対応させる。
 
-Now
+さて、
 
-```math
-s(n) = s_2(s_1(n)) \quad \text{for } n \leqq x + 1.
-```
+$$
+s(n) = s_2(s_1(n)) \quad (n \leqq x + 1 \text{ のとき}).
+$$
 
-For under $s_2(s_1(n))$ there passes over
+である。なぜなら、$s_2(s_1(n))$ によって
 
-```math
+$$
 \begin{aligned}
-&1 \text{ via } 1 \text{ into } a = s(1), \\
-&b \text{ via } a \text{ into } 1 = s(b), \\
-&\text{every other } n \leqq x + 1 \text{ via } s(n) \text{ into } s(n).
+&1 \text{ は } 1 \text{ を経て } a = s(1) \text{ に移り}, \\
+&b \text{ は } a \text{ を経て } 1 = s(b) \text{ に移り}, \\
+&\text{他のすべての } n \leqq x + 1 \text{ は } s(n) \text{ を経て } s(n) \text{ に移る}.
 \end{aligned}
-```
+$$
 
-$s_1(n)$ leaves 1 unchanged, and $s_2(n)$ leaves $x + 1$ unchanged. Hence by 2) and 1) we have
+と移るからである。
 
-```math
+$s_1(n)$ は 1 を、$s_2(n)$ は $x + 1$ を不変にとどめる。したがって 2) と 1) により
+
+$$
 \sum_{n=1}^{x+1} \mathfrak{g}(n) = \sum_{n=1}^{x+1} \mathfrak{f}(s(n)) = \sum_{n=1}^{x+1} \mathfrak{f}(s_2(s_1(n))) = \sum_{n=1}^{x+1} \mathfrak{f}(s_1(n)) = \sum_{n=1}^{x+1} \mathfrak{f}(n).
-```
+$$
 
-β) Let
+である。
 
-```math
+β)
+
+$$
 a = x + 1, \quad b < x + 1.
-```
+$$
 
-Then
+とする。このとき
 
-```math
+$$
 s_3(n) = \begin{cases}
-b & \text{for } n = 1, \\
-1 & \text{for } n = b, \\
-n & \text{for } 1 < n \leqq x + 1,\ n \neq b
+b & (n = 1 \text{ のとき}), \\
+1 & (n = b \text{ のとき}), \\
+n & (1 < n \leqq x + 1,\ n \neq b \text{ のとき})
 \end{cases}
-```
+$$
 
-puts the $n \leqq x + 1$ in correspondence with the $m \leqq x + 1$. Moreover
+は $n \leqq x + 1$ を $m \leqq x + 1$ に対応させる。さらに
 
-```math
-s(n) = s_1(s_3(n)) \quad \text{for } n \leqq x + 1.
-```
+$$
+s(n) = s_1(s_3(n)) \quad (n \leqq x + 1 \text{ のとき}).
+$$
 
-For under $s_1(s_3(n))$ there passes over
+である。なぜなら、$s_1(s_3(n))$ によって
 
-```math
+$$
 \begin{aligned}
-&1 \text{ via } b \text{ into } a = s(1), \\
-&b \text{ via } 1 \text{ into } 1 = s(b), \\
-&\text{every other } n \leqq x + 1 \text{ via } n \text{ into } s(n).
+&1 \text{ は } b \text{ を経て } a = s(1) \text{ に移り}, \\
+&b \text{ は } 1 \text{ を経て } 1 = s(b) \text{ に移り}, \\
+&\text{他のすべての } n \leqq x + 1 \text{ は } n \text{ を経て } s(n) \text{ に移る}.
 \end{aligned}
-```
+$$
 
-$s_3(n)$ leaves $x + 1$ unchanged. Hence by 1) and 2) we have
+と移るからである。
 
-```math
+$s_3(n)$ は $x + 1$ を不変にとどめる。したがって 1) と 2) により
+
+$$
 \sum_{n=1}^{x+1} \mathfrak{g}(n) = \sum_{n=1}^{x+1} \mathfrak{f}(s(n)) = \sum_{n=1}^{x+1} \mathfrak{f}(s_1(s_3(n))) = \sum_{n=1}^{x+1} \mathfrak{f}(s_3(n)) = \sum_{n=1}^{x+1} \mathfrak{f}(n).
-```
+$$
 
-γ) Let
+である。
 
-```math
+γ)
+
+$$
 a = b = x + 1.
-```
+$$
 
-If $x = 1$, then
+とする。$x = 1$ ならば
 
-```math
+$$
 \sum_{n=1}^{x+1} \mathfrak{g}(n) = \sum_{n=1}^{x+1} \mathfrak{f}(n)
-```
+$$
 
-is trivial.
+は自明である。
 
-If $x > 1$, then
+$x > 1$ ならば、
 
-```math
+$$
 s_4(n) = \begin{cases}
-1 & \text{for } n = 1, \\
-x + 1 & \text{for } n = x + 1, \\
-s(n) & \text{for } 1 < n < x + 1
+1 & (n = 1 \text{ のとき}), \\
+x + 1 & (n = x + 1 \text{ のとき}), \\
+s(n) & (1 < n < x + 1 \text{ のとき})
 \end{cases}
-```
+$$
 
-puts the $n \leqq x + 1$ in correspondence with the $m \leqq x + 1$. Consequently, by 1),
+は $n \leqq x + 1$ を $m \leqq x + 1$ に対応させる。それゆえ 1) により
 
-```math
+$$
 \begin{aligned}
 \sum_{n=1}^{x+1} \mathfrak{g}(n) &= \sum_{n=1}^{x} \mathfrak{g}(n) \dotplus \mathfrak{g}(x+1) = \left(\mathfrak{g}(1) \dotplus \sum_{n=1}^{x-1} \mathfrak{g}(n+1)\right) \dotplus \mathfrak{g}(x+1) \\
 &= \mathfrak{g}(1) \dotplus \left(\sum_{n=1}^{x-1} \mathfrak{g}(n+1) \dotplus \mathfrak{g}(x+1)\right) \\
@@ -2096,309 +2220,339 @@ puts the $n \leqq x + 1$ in correspondence with the $m \leqq x + 1$. Consequentl
 &= \left(\mathfrak{f}(s_4(1)) \dotplus \sum_{n=1}^{x-1} \mathfrak{f}(s_4(n+1))\right) \dotplus \mathfrak{f}(s_4(x+1)) \\
 &= \sum_{n=1}^{x} \mathfrak{f}(s_4(n)) \dotplus \mathfrak{f}(s_4(x+1)) = \sum_{n=1}^{x+1} \mathfrak{f}(s_4(n)) = \sum_{n=1}^{x+1} \mathfrak{f}(n).
 \end{aligned}
-```
+$$
 
-Therefore $x + 1$ belongs to $\mathfrak{M}$, and the theorem is proved.
+である。
 
-In Definition 70 and Theorems 284 to 286, by way of exception, Latin letters denote integers (not necessarily positive).
+したがって $x + 1$ は $\mathfrak{M}$ に属し、定理は証明された。
 
-**Definition 70:** Let
+定義 70 および定理 284 から定理 286 までにおいては、例外として、ラテン文字は(必ずしも正とは限らない)整数を表す。
 
-```math
+**定義 70:**
+
+$$
 y \leqq x,
-```
+$$
 
-and let $\mathfrak{f}(n)$ be defined for
+とし、$\mathfrak{f}(n)$ が
 
-```math
+$$
 y \leqq n \leqq x
-```
+$$
 
-Then
+に対して定義されているとする。このとき
 
-```math
+$$
 \sum_{n=y}^{x} \mathfrak{f}(n) = \sum_{n=1}^{(x+1)-y} \mathfrak{f}((n + y) - 1).
-```
+$$
 
-Any other letter denoting integers may also stand in place of $n$.
+とする。
 
-Observe that
+$n$ の代わりに、整数を表す他の任意の文字を用いてもよい。
 
-```math
-x + 1 > y; \quad y \leqq (n + y) - 1 \leqq x \quad \text{for } 1 \leqq n \leqq (x + 1) - y;
-```
+次のことに注意せよ:
 
-furthermore, that for $y = 1$ Definition 70 is (as it must be) in agreement with Definition 69.
+$$
+x + 1 > y; \quad y \leqq (n + y) - 1 \leqq x \quad (1 \leqq n \leqq (x + 1) - y \text{ のとき});
+$$
 
-**Theorem 284:** Let
+さらに、$y = 1$ に対して定義 70 が(そうあるべきように)定義 69 と一致していることにも注意せよ。
 
-```math
+**定理 284:**
+
+$$
 y \leqq u < x;
-```
+$$
 
-let $\mathfrak{f}(n)$ be defined for
+とし、$\mathfrak{f}(n)$ は
 
-```math
+$$
 y \leqq n \leqq x
-```
+$$
 
-Then
+に対して定義されているとする。このとき
 
-```math
+$$
 \sum_{n=y}^{x} \mathfrak{f}(n) = \sum_{n=y}^{u} \mathfrak{f}(n) \dotplus \sum_{n=u+1}^{x} \mathfrak{f}(n).
-```
+$$
 
-**Proof:** By Definition 70 and Theorem 281 we have
+である。
 
-```math
+**証明:** 定義 70 と定理 281 により
+
+$$
 \sum_{n=y}^{x} \mathfrak{f}(n) = \sum_{n=1}^{(x+1)-y} \mathfrak{f}((n + y) - 1) = \sum_{n=1}^{(u+1)-y} \mathfrak{f}((n + y) - 1) \dotplus \sum_{n=1}^{x-u} \mathfrak{f}(((((u + 1) - y) + n) + y) - 1);
-```
+$$
 
-for
+である。なぜなら
 
-```math
+$$
 ((u + 1) - y) + (x - u) = (x + (-u)) + ((u + 1) + (-y)) = (x + ((-u) + (u + 1))) + (-y) = (x + 1) - y.
-```
+$$
 
-Now
+だからである。
 
-```math
+さて
+
+$$
 (((u + 1) - y) + n) + y = ((u + 1) - y) + (y + n) = (((u + 1) - y) + y) + n = n + (u + 1),
-```
+$$
 
-hence by Definition 70
+であるから、定義 70 により
 
-```math
+$$
 \sum_{n=y}^{x} \mathfrak{f}(n) = \sum_{n=y}^{u} \mathfrak{f}(n) \dotplus \sum_{n=1}^{(x+1)-(u+1)} \mathfrak{f}((n + (u + 1)) - 1) = \sum_{n=y}^{u} \mathfrak{f}(n) \dotplus \sum_{n=u+1}^{x} \mathfrak{f}(n).
-```
+$$
 
-**Theorem 285:** Let
+である。
 
-```math
+**定理 285:**
+
+$$
 y \leqq x,
-```
+$$
 
-and let $\mathfrak{f}(n)$ be defined for
+とし、$\mathfrak{f}(n)$ が
 
-```math
+$$
 y \leqq n \leqq x
-```
+$$
 
-Then
+に対して定義されているとする。このとき
 
-```math
+$$
 \sum_{n=y}^{x} \mathfrak{f}(n) = \sum_{n=y+v}^{x+v} \mathfrak{f}(n - v).
-```
+$$
 
-**Proof:** By Definition 70, the left-hand side of the assertion is
+である。
 
-```math
+**証明:** 定義 70 により、主張の左辺は
+
+$$
 = \sum_{n=1}^{(x+1)-y} \mathfrak{f}((n + y) - 1),
-```
+$$
 
-and the right-hand side (observe that $y \leqq n - v \leqq x$ for $y + v \leqq n \leqq x + v$) is
+であり、右辺は($y + v \leqq n \leqq x + v$ に対して $y \leqq n - v \leqq x$ であることに注意せよ)
 
-```math
+$$
 = \sum_{n=1}^{((x+v)+1)-(y+v)} \mathfrak{f}(((n + (y + v)) - 1) - v);
-```
+$$
 
-herein
+である。ここで
 
-```math
+$$
 ((x + v) + 1) - (y + v) = (1 + (x + v)) + ((-v) + (-y)) = (1 + ((x + v) + (-v))) + (-y) = (1 + x) - y = (x + 1) - y
-```
+$$
 
-and
+かつ
 
-```math
+$$
 \begin{aligned}
 ((n + (y + v)) - 1) - v &= (n + (y + v)) - (1 + v) = ((n + y) + v) + (-v + (-1)) \\
 &= (((n + y) + v) + (-v)) + (-1) = ((n + y) + (v + (-v))) - 1 = (n + y) - 1.
 \end{aligned}
-```
+$$
 
-**Theorem 286:** Let
+である。
 
-```math
+**定理 286:**
+
+$$
 y \leqq x,
-```
+$$
 
-and let $\mathfrak{f}(n)$ be defined for
+とし、$\mathfrak{f}(n)$ が
 
-```math
+$$
 y \leqq n \leqq x
-```
+$$
 
-Let $s(n)$ put the $n$ with $y \leqq n \leqq x$ in correspondence with the $m$ with $y \leqq m \leqq x$. Then
+に対して定義されているとする。$s(n)$ は $y \leqq n \leqq x$ なる $n$ を $y \leqq m \leqq x$ なる $m$ に対応させるものとする。このとき
 
-```math
+$$
 \sum_{n=y}^{x} \mathfrak{f}(s(n)) = \sum_{n=y}^{x} \mathfrak{f}(n).
-```
+$$
 
-**Proof:**
+である。
 
-```math
+**証明:**
+
+$$
 s_1(n) = s((n + y) - 1) - (y - 1)
-```
+$$
 
-puts the positive $n \leqq (x + 1) - y$ in correspondence with the positive $m \leqq (x + 1) - y$. Hence by Theorem 283 we have
+は、正の $n \leqq (x + 1) - y$ を正の $m \leqq (x + 1) - y$ に対応させる。ゆえに定理 283 により
 
-```math
+$$
 \begin{aligned}
 \sum_{n=y}^{x} \mathfrak{f}(s(n)) &= \sum_{n=1}^{(x+1)-y} \mathfrak{f}(s((n + y) - 1)) = \sum_{n=1}^{(x+1)-y} \mathfrak{f}(s_1(n) + (y - 1)) \\
 &= \sum_{n=1}^{(x+1)-y} \mathfrak{f}(n + (y - 1)) = \sum_{n=1}^{(x+1)-y} \mathfrak{f}((n + y) - 1) = \sum_{n=y}^{x} \mathfrak{f}(n).
 \end{aligned}
-```
+$$
 
-In place of
+である。
 
-```math
+なお、
+
+$$
 \sum_{n=y}^{x} \mathfrak{f}(n)
-```
+$$
 
-the loose notation
+の代わりに、くだけた書き方
 
-```math
+$$
 \mathfrak{f}(y) + \mathfrak{f}(y + 1) + \cdots + \mathfrak{f}(x)
-```
+$$
 
-is also customary (and correspondingly for the product); but entirely unobjectionable is, e.g.,
+もよく用いられる(積についても同様である)。しかし、例えば
 
-```math
+$$
 \mathfrak{f}(1) + \mathfrak{f}(1 + 1) + \mathfrak{f}((1 + 1) + 1) + \mathfrak{f}(((1 + 1) + 1) + 1),
-```
+$$
 
-in other words
+言い換えれば
 
-```math
+$$
 \mathfrak{a} + \mathfrak{b} + \mathfrak{c} + \mathfrak{d}
-```
+$$
 
-(which thus by definition reduces to the old addition and means
+(これは定義により古い加法に帰着し、
 
-```math
+$$
 ((\mathfrak{a} + \mathfrak{b}) + \mathfrak{c}) + \mathfrak{d}
-```
+$$
 
-), or, e.g.,
+を意味する)は完全に正当であり、また例えば
 
-```math
+$$
 \mathfrak{abcdfghiklmopqrstuvwxyz}.
-```
+$$
 
-One may also without hesitation write, e.g.,
+もそうである。
 
-```math
+また、例えば
+
+$$
 \mathfrak{a} - \mathfrak{b} + \mathfrak{c}
-```
+$$
 
-in the sense of
+を
 
-```math
+$$
 \mathfrak{a} + (-\mathfrak{b}) + \mathfrak{c}
-```
+$$
 
-since in any case
+の意味で書いてもさしつかえない。なぜなら、いずれにせよ
 
-```math
+$$
 \mathfrak{f}(1) + \mathfrak{f}(1 + 1) + \mathfrak{f}((1 + 1) + 1)
-```
+$$
 
-with
+において
 
-```math
+$$
 \mathfrak{f}(1) = \mathfrak{a}, \quad \mathfrak{f}(1 + 1) = -\mathfrak{b}, \quad \mathfrak{f}((1 + 1) + 1) = \mathfrak{c}
-```
+$$
 
-is meant.
+としたものが意味されているからである。
 
-From now on, small Latin letters again denote positive integers.
+これ以後、小文字のラテン文字は再び正の整数を表す。
 
-**Theorem 287:** If $\mathfrak{f}(n)$ is defined for $n \leqq x$, then there is a $\Xi$ such that
+**定理 287:** $\mathfrak{f}(n)$ が $n \leqq x$ に対して定義されているならば、
 
-```math
+$$
 \left| \sum_{n=1}^{x} \mathfrak{f}(n) \right| \leqq \Xi,
-```
+$$
 
-```math
+$$
 \sum_{n=1}^{x} [|\mathfrak{f}(n)|, 0] = [\Xi, 0].
-```
+$$
 
-**Proof:** Let $\mathfrak{M}$ be the set of $x$ for which (for arbitrary $\mathfrak{f}(n)$) there is such a $\Xi$.
+となる $\Xi$ が存在する。
 
-I) If $\mathfrak{f}(1)$ is defined, then
+**証明:** $\mathfrak{M}$ を、(任意の $\mathfrak{f}(n)$ に対して)このような $\Xi$ が存在する $x$ の集合とする。
 
-```math
+I) $\mathfrak{f}(1)$ が定義されているならば、
+
+$$
 \left| \sum_{n=1}^{1} \mathfrak{f}(n) \right| = |\mathfrak{f}(1)|,
-```
+$$
 
-```math
+$$
 \sum_{n=1}^{1} [|\mathfrak{f}(n)|, 0] = [|\mathfrak{f}(1)|, 0];
-```
+$$
 
-hence
+であるから、
 
-```math
+$$
 \Xi = |\mathfrak{f}(1)|
-```
+$$
 
-does what is required for $x = 1$. Hence 1 belongs to $\mathfrak{M}$.
+が $x = 1$ において求めるものとなる。したがって 1 は $\mathfrak{M}$ に属する。
 
-II) Let $x$ belong to $\mathfrak{M}$. If $\mathfrak{f}(n)$ is defined for $n \leqq x + 1$, then there is a $\Xi_1$ with
+II) $x$ が $\mathfrak{M}$ に属するとする。$\mathfrak{f}(n)$ が $n \leqq x + 1$ に対して定義されているならば、
 
-```math
+$$
 \left| \sum_{n=1}^{x} \mathfrak{f}(n) \right| \leqq \Xi_1,
-```
+$$
 
-```math
+$$
 \sum_{n=1}^{x} [|\mathfrak{f}(n)|, 0] = [\Xi_1, 0].
-```
+$$
 
-By Theorem 278 and Theorem 271 we have
+となる $\Xi_1$ が存在する。
 
-```math
+定理 278 と定理 271 により
+
+$$
 \left| \sum_{n=1}^{x+1} \mathfrak{f}(n) \right| = \left| \sum_{n=1}^{x} \mathfrak{f}(n) + \mathfrak{f}(x + 1) \right| \leqq \left| \sum_{n=1}^{x} \mathfrak{f}(n) \right| + |\mathfrak{f}(x + 1)| \leqq \Xi_1 + |\mathfrak{f}(x + 1)|,
-```
+$$
 
-hence, if we set
+であるから、
 
-```math
+$$
 \Xi = \Xi_1 + |\mathfrak{f}(x + 1)|
-```
+$$
 
-then
+とおけば、
 
-```math
+$$
 \left| \sum_{n=1}^{x+1} \mathfrak{f}(n) \right| \leqq \Xi.
-```
+$$
 
-On the other hand, by Theorem 278,
+である。
 
-```math
+他方、定理 278 により
+
+$$
 \sum_{n=1}^{x+1} [|\mathfrak{f}(n)|, 0] = \sum_{n=1}^{x} [|\mathfrak{f}(n)|, 0] + [|\mathfrak{f}(x + 1)|, 0] = [\Xi_1, 0] + [|\mathfrak{f}(x + 1)|, 0] = [\Xi_1 + |\mathfrak{f}(x + 1)|, 0 + 0] = [\Xi, 0].
-```
+$$
 
-Hence $\Xi$ does what is required for $x + 1$; therefore $x + 1$ belongs to $\mathfrak{M}$, and the theorem is proved.
+である。
 
-**Theorem 288:** If $\mathfrak{f}(n)$ is defined for $n \leqq x$, then
+したがって $\Xi$ は $x + 1$ において求めるものとなる。ゆえに $x + 1$ は $\mathfrak{M}$ に属し、定理は証明された。
 
-```math
+**定理 288:** $\mathfrak{f}(n)$ が $n \leqq x$ に対して定義されているならば、
+
+$$
 \left[ \left| \prod_{n=1}^{x} \mathfrak{f}(n) \right|, 0 \right] = \prod_{n=1}^{x} [|\mathfrak{f}(n)|, 0].
-```
+$$
 
-**Proof:** Let $\mathfrak{M}$ be the set of $x$ for which this holds.
+である。
 
-I) If $\mathfrak{f}(1)$ is defined, then
+**証明:** $\mathfrak{M}$ をこれが成り立つ $x$ の集合とする。
 
-```math
+I) $\mathfrak{f}(1)$ が定義されているならば、
+
+$$
 \left[ \left| \prod_{n=1}^{1} \mathfrak{f}(n) \right|, 0 \right] = [|\mathfrak{f}(1)|, 0] = \prod_{n=1}^{1} [|\mathfrak{f}(n)|, 0].
-```
+$$
 
-Hence 1 belongs to $\mathfrak{M}$.
+である。したがって 1 は $\mathfrak{M}$ に属する。
 
-II) Let $x$ belong to $\mathfrak{M}$. If $\mathfrak{f}(n)$ is defined for $n \leqq x + 1$, then by Theorem 278 and Theorem 268
+II) $x$ が $\mathfrak{M}$ に属するとする。$\mathfrak{f}(n)$ が $n \leqq x + 1$ に対して定義されているならば、定理 278 と定理 268 により
 
-```math
+$$
 \begin{aligned}
 \prod_{n=1}^{x+1} [|\mathfrak{f}(n)|, 0] &= \prod_{n=1}^{x} [|\mathfrak{f}(n)|, 0] \cdot [|\mathfrak{f}(x + 1)|, 0] \\
 &= \left[ \left| \prod_{n=1}^{x} \mathfrak{f}(n) \right|, 0 \right] \cdot [|\mathfrak{f}(x + 1)|, 0] \\
@@ -2406,693 +2560,731 @@ II) Let $x$ belong to $\mathfrak{M}$. If $\mathfrak{f}(n)$ is defined for $n \le
 &= \left[ \left| \prod_{n=1}^{x} \mathfrak{f}(n) \right| \cdot |\mathfrak{f}(x + 1)|, 0 \right] = \left[ \left| \prod_{n=1}^{x} \mathfrak{f}(n) \cdot \mathfrak{f}(x + 1) \right|, 0 \right] \\
 &= \left[ \left| \prod_{n=1}^{x+1} \mathfrak{f}(n) \right|, 0 \right],
 \end{aligned}
-```
+$$
 
-so that $x + 1$ belongs to $\mathfrak{M}$, and the theorem is proved.
+である。したがって $x + 1$ は $\mathfrak{M}$ に属し、定理は証明された。
 
-**Theorem 289:** If $\mathfrak{f}(n)$ is defined for $n \leqq x$, then
+**定理 289:** $\mathfrak{f}(n)$ が $n \leqq x$ に対して定義されているならば、
 
-```math
+$$
 \prod_{n=1}^{x} \mathfrak{f}(n) = \mathfrak{n}
-```
+$$
 
-if and only if there exists an $n \leqq x$ with
+となるのは、
 
-```math
+$$
 \mathfrak{f}(n) = \mathfrak{n}
-```
+$$
 
-**Proof:** Let $\mathfrak{M}$ be the set of $x$ for which this holds.
+となる $n \leqq x$ が存在するとき、またそのときに限る。
+
+**証明:** $\mathfrak{M}$ をこれが成り立つ $x$ の集合とする。
 
 I)
 
-```math
+$$
 \prod_{n=1}^{1} \mathfrak{f}(n) = \mathfrak{n}
-```
+$$
 
-is identical with
+は
 
-```math
+$$
 \mathfrak{f}(1) = \mathfrak{n}
-```
+$$
 
-Hence 1 belongs to $\mathfrak{M}$.
+と同一である。したがって 1 は $\mathfrak{M}$ に属する。
 
-II) Let $x$ belong to $\mathfrak{M}$.
+II) $x$ が $\mathfrak{M}$ に属するとする。
 
-```math
+$$
 \prod_{n=1}^{x+1} \mathfrak{f}(n) = \mathfrak{n}
-```
+$$
 
-means
+は
 
-```math
+$$
 \prod_{n=1}^{x} \mathfrak{f}(n) \cdot \mathfrak{f}(x + 1) = \mathfrak{n};
-```
+$$
 
-by Theorem 221, necessary and sufficient for this is
+を意味する。定理 221 により、このためには
 
-```math
-\prod_{n=1}^{x} \mathfrak{f}(n) = \mathfrak{n} \quad \text{or} \quad \mathfrak{f}(x + 1) = \mathfrak{n},
-```
+$$
+\prod_{n=1}^{x} \mathfrak{f}(n) = \mathfrak{n} \quad \text{または} \quad \mathfrak{f}(x + 1) = \mathfrak{n},
+$$
 
-hence (since $x$ belongs to $\mathfrak{M}$) necessary and sufficient is
+が必要かつ十分であり、したがって($x$ が $\mathfrak{M}$ に属するから)
 
-```math
-\mathfrak{f}(n) = \mathfrak{n} \quad \text{for ein } n \leqq x \text{ or for } n = x + 1.
-```
+$$
+\mathfrak{f}(n) = \mathfrak{n} \quad (\text{ある } n \leqq x \text{ または } n = x + 1 \text{ のとき}).
+$$
 
-Hence $x + 1$ belongs to $\mathfrak{M}$, and the theorem is proved.
+が必要かつ十分である。
 
-## § 9. Powers
+ゆえに $x + 1$ は $\mathfrak{M}$ に属し、定理は証明された。
 
-In this section, small Latin letters shall denote integers.
+## § 9. 冪
 
-**Definition 71:**
+この § では、小さいラテン文字は整数を表すものとする。
 
-```math
+**定義 71:**
+
+$$
 \mathfrak{x}^x = \begin{cases}
-\displaystyle\prod_{n=1}^{x} \mathfrak{x} & \text{for } x > 0, \\
-\mathfrak{e} & \text{for } \mathfrak{x} \neq \mathfrak{n},\ x = 0, \\
-\dfrac{\mathfrak{e}}{\mathfrak{x}^{|x|}} & \text{for } \mathfrak{x} \neq \mathfrak{n},\ x < 0.
+\displaystyle\prod_{n=1}^{x} \mathfrak{x} & (x > 0 \text{ のとき}), \\
+\mathfrak{e} & (\mathfrak{x} \neq \mathfrak{n},\ x = 0 \text{ のとき}), \\
+\dfrac{\mathfrak{e}}{\mathfrak{x}^{|x|}} & (\mathfrak{x} \neq \mathfrak{n},\ x < 0 \text{ のとき}).
 \end{cases}
-```
+$$
 
-(Read: $\mathfrak{x}$ to the power $x$.) Thus $\mathfrak{x}^x$ is undefined only for
+(読み方:$\mathfrak{x}$ の $x$ 乗。)したがって $\mathfrak{x}^x$ が定義されないのは、
 
-```math
-\mathfrak{x} = \mathfrak{n}, \quad x \leqq 0.
-```
+$$
+\mathfrak{x} = \mathfrak{n}, \quad x \leqq 0
+$$
 
-Observe that for
+の場合だけである。
 
-```math
+$$
 \mathfrak{x} \neq \mathfrak{n}, \quad x < 0
-```
+$$
 
-we have, by the first line of Definition 71 and Theorem 289,
+に対しては、定義 71 の第一行と定理 289 により
 
-```math
-\mathfrak{x}^{|x|} \neq \mathfrak{n},
-```
+$$
+\mathfrak{x}^{|x|} \neq \mathfrak{n}
+$$
 
-so that $\frac{\mathfrak{e}}{\mathfrak{x}^{|x|}}$ then has a meaning.
+であり、したがってそのとき $\frac{\mathfrak{e}}{\mathfrak{x}^{|x|}}$ が意味をもつことに注意せよ。
 
-**Theorem 290:** For
+**定理 290:**
 
-```math
+$$
 \mathfrak{x} \neq \mathfrak{n}
-```
+$$
 
-we have
+に対して
 
-```math
-\mathfrak{x}^x \neq \mathfrak{n}.
-```
+$$
+\mathfrak{x}^x \neq \mathfrak{n}
+$$
 
-**Proof:** For $x > 0$ this follows from Theorem 289, for $x = 0$ from the definition, and for $x < 0$ from
+である。
 
-```math
-\mathfrak{x}^x \mathfrak{x}^{|x|} \neq \mathfrak{n}.
-```
+**証明:** $x > 0$ に対してはこれは定理 289 から従い、$x = 0$ に対しては定義から、$x < 0$ に対しては
 
-**Theorem 291:** $\mathfrak{x}^1 = \mathfrak{x}$.
+$$
+\mathfrak{x}^x \mathfrak{x}^{|x|} \neq \mathfrak{n}
+$$
 
-**Proof:**
+から従う。
 
-```math
+**定理 291:** $\mathfrak{x}^1 = \mathfrak{x}$.
+
+**証明:**
+
+$$
 \mathfrak{x}^1 = \prod_{n=1}^{1} \mathfrak{x} = \mathfrak{x}.
-```
+$$
 
-**Theorem 292:** Let
+**定理 292:**
 
-```math
+$$
 x > 0
-```
+$$
 
-or
+または
 
-```math
-\mathfrak{x} \neq \mathfrak{n}, \quad \mathfrak{y} \neq \mathfrak{n}.
-```
+$$
+\mathfrak{x} \neq \mathfrak{n}, \quad \mathfrak{y} \neq \mathfrak{n}
+$$
 
-Then
+とする。このとき
 
-```math
-(\mathfrak{x}\mathfrak{y})^x = \mathfrak{x}^x \mathfrak{y}^x.
-```
+$$
+(\mathfrak{x}\mathfrak{y})^x = \mathfrak{x}^x \mathfrak{y}^x
+$$
 
-**Preliminary Remark:** Both sides have a meaning in any case; for if $x \leqq 0$ then
+である。
 
-```math
-\mathfrak{x}\mathfrak{y} \neq \mathfrak{n}.
-```
+**前注:** いずれにせよ両辺は意味をもつ。なぜなら $x \leqq 0$ のときは
 
-**Proof:** 1) For fixed $\mathfrak{x}$, $\mathfrak{y}$, let $\mathfrak{M}$ be the set of $x > 0$ with
+$$
+\mathfrak{x}\mathfrak{y} \neq \mathfrak{n}
+$$
 
-```math
-(\mathfrak{x}\mathfrak{y})^x = \mathfrak{x}^x \mathfrak{y}^x.
-```
+だからである。
 
-I) By Theorem 291,
+**証明:** 1) $\mathfrak{x}$、$\mathfrak{y}$ を固定し、
 
-```math
-(\mathfrak{x}\mathfrak{y})^1 = \mathfrak{x}\mathfrak{y} = \mathfrak{x}^1 \mathfrak{y}^1,
-```
+$$
+(\mathfrak{x}\mathfrak{y})^x = \mathfrak{x}^x \mathfrak{y}^x
+$$
 
-so that 1 belongs to $\mathfrak{M}$.
+をみたす $x > 0$ の集合を $\mathfrak{M}$ とする。
 
-II) If $x$ belongs to $\mathfrak{M}$, then
+I) 定理 291 により
 
-```math
+$$
+(\mathfrak{x}\mathfrak{y})^1 = \mathfrak{x}\mathfrak{y} = \mathfrak{x}^1 \mathfrak{y}^1
+$$
+
+であるから、1 は $\mathfrak{M}$ に属する。
+
+II) $x$ が $\mathfrak{M}$ に属するならば、
+
+$$
 \begin{aligned}
 (\mathfrak{x}\mathfrak{y})^{x+1} &= \prod_{n=1}^{x+1} (\mathfrak{x}\mathfrak{y}) = \prod_{n=1}^{x} (\mathfrak{x}\mathfrak{y}) \cdot (\mathfrak{x}\mathfrak{y}) = (\mathfrak{x}^x \mathfrak{y}^x)(\mathfrak{x}\mathfrak{y}) = (\mathfrak{x}^x \mathfrak{x})(\mathfrak{y}^x \mathfrak{y}) \\
-&= \left(\prod_{n=1}^{x} \mathfrak{x} \cdot \mathfrak{x}\right)\left(\prod_{n=1}^{x} \mathfrak{y} \cdot \mathfrak{y}\right) = \prod_{n=1}^{x+1} \mathfrak{x} \cdot \prod_{n=1}^{x+1} \mathfrak{y} = \mathfrak{x}^{x+1} \mathfrak{y}^{x+1},
+&= \left(\prod_{n=1}^{x} \mathfrak{x} \cdot \mathfrak{x}\right)\left(\prod_{n=1}^{x} \mathfrak{y} \cdot \mathfrak{y}\right) = \prod_{n=1}^{x+1} \mathfrak{x} \cdot \prod_{n=1}^{x+1} \mathfrak{y} = \mathfrak{x}^{x+1} \mathfrak{y}^{x+1}
 \end{aligned}
-```
+$$
 
-so that $x + 1$ belongs to $\mathfrak{M}$.
+であり、したがって $x + 1$ は $\mathfrak{M}$ に属する。
 
-Hence for $x > 0$ we always have
+したがって $x > 0$ に対してつねに
 
-```math
-(\mathfrak{x}\mathfrak{y})^x = \mathfrak{x}^x \mathfrak{y}^x.
-```
+$$
+(\mathfrak{x}\mathfrak{y})^x = \mathfrak{x}^x \mathfrak{y}^x
+$$
 
-2) Let
+である。
 
-```math
-x = 0, \quad \mathfrak{x} \neq \mathfrak{n}, \quad \mathfrak{y} \neq \mathfrak{n}.
-```
+2)
 
-Then
+$$
+x = 0, \quad \mathfrak{x} \neq \mathfrak{n}, \quad \mathfrak{y} \neq \mathfrak{n}
+$$
 
-```math
-(\mathfrak{x}\mathfrak{y})^x = \mathfrak{e} = \mathfrak{e}\mathfrak{e} = \mathfrak{x}^x \mathfrak{y}^x.
-```
+とする。このとき
 
-3) Let
+$$
+(\mathfrak{x}\mathfrak{y})^x = \mathfrak{e} = \mathfrak{e}\mathfrak{e} = \mathfrak{x}^x \mathfrak{y}^x
+$$
 
-```math
-x < 0, \quad \mathfrak{x} \neq \mathfrak{n}, \quad \mathfrak{y} \neq \mathfrak{n}.
-```
+である。
 
-By 1),
+3)
 
-```math
+$$
+x < 0, \quad \mathfrak{x} \neq \mathfrak{n}, \quad \mathfrak{y} \neq \mathfrak{n}
+$$
+
+とする。1) により
+
+$$
 (\mathfrak{x}\mathfrak{y})^{|x|} = \mathfrak{x}^{|x|} \mathfrak{y}^{|x|},
-```
+$$
 
-```math
+$$
 \frac{\mathfrak{e}}{(\mathfrak{x}\mathfrak{y})^{|x|}} = \frac{\mathfrak{e}}{\mathfrak{x}^{|x|} \mathfrak{y}^{|x|}} = \frac{\mathfrak{e}}{\mathfrak{x}^{|x|}} \cdot \frac{\mathfrak{e}}{\mathfrak{y}^{|x|}},
-```
+$$
 
-```math
+$$
 (\mathfrak{x}\mathfrak{y})^x = \mathfrak{x}^x \mathfrak{y}^x.
-```
+$$
 
-**Theorem 293:** $\mathfrak{e}^x = \mathfrak{e}$.
+**定理 293:** $\mathfrak{e}^x = \mathfrak{e}$.
 
-**Proof:** By Theorem 292,
+**証明:** 定理 292 により
 
-```math
+$$
 \mathfrak{e}^x \mathfrak{e} = \mathfrak{e}^x = (\mathfrak{e}\mathfrak{e})^x = \mathfrak{e}^x \mathfrak{e}^x,
-```
+$$
 
-```math
+$$
 \mathfrak{n} = \mathfrak{e}^x \mathfrak{e}^x - \mathfrak{e}^x \mathfrak{e} = \mathfrak{e}^x (\mathfrak{e}^x - \mathfrak{e}),
-```
+$$
 
-hence (by Theorem 290 and Theorem 221)
+したがって(定理 290 と定理 221 により)
 
-```math
+$$
 \mathfrak{e}^x - \mathfrak{e} = \mathfrak{n},
-```
+$$
 
-```math
+$$
 \mathfrak{e}^x = \mathfrak{e}.
-```
+$$
 
-**Theorem 294:** Let
+**定理 294:**
 
-```math
+$$
 x > 0, \quad y > 0
-```
+$$
 
-or
+または
 
-```math
-\mathfrak{x} \neq \mathfrak{n}.
-```
+$$
+\mathfrak{x} \neq \mathfrak{n}
+$$
 
-Then
+とする。このとき
 
-```math
-\mathfrak{x}^x \mathfrak{x}^y = \mathfrak{x}^{x+y}.
-```
+$$
+\mathfrak{x}^x \mathfrak{x}^y = \mathfrak{x}^{x+y}
+$$
 
-**Proof:** 1) Let
+である。
 
-```math
-x > 0, \quad y > 0.
-```
+**証明:** 1)
 
-Then by Theorem 281,
+$$
+x > 0, \quad y > 0
+$$
 
-```math
+とする。このとき定理 281 により
+
+$$
 \mathfrak{x}^x \mathfrak{x}^y = \prod_{n=1}^{x} \mathfrak{x} \cdot \prod_{n=1}^{y} \mathfrak{x} = \prod_{n=1}^{x+y} \mathfrak{x} = \mathfrak{x}^{x+y}.
-```
+$$
 
-2) Let
+2)
 
-```math
+$$
 \mathfrak{x} \neq \mathfrak{n}
-```
+$$
 
-and not both
+とし、かつ
 
-```math
-x > 0, \quad y > 0.
-```
-
-α) Let
-
-```math
-x < 0, \quad y < 0.
-```
-
-Then by 1),
-
-```math
-\mathfrak{x}^{|x|} \mathfrak{x}^{|y|} = \mathfrak{x}^{|x|+|y|} = \mathfrak{x}^{|x+y|},
-```
-
-```math
-\mathfrak{x}^x \mathfrak{x}^y = \frac{\mathfrak{e}}{\mathfrak{x}^{|x|}} \cdot \frac{\mathfrak{e}}{\mathfrak{x}^{|y|}} = \frac{\mathfrak{e}}{\mathfrak{x}^{|x|} \mathfrak{x}^{|y|}} = \frac{\mathfrak{e}}{\mathfrak{x}^{|x+y|}} = \mathfrak{x}^{x+y}.
-```
-
-β) Let
-
-```math
-x > 0, \quad y < 0.
-```
-
-Then
-
-```math
-\mathfrak{x}^x \mathfrak{x}^y = \mathfrak{x}^x \frac{\mathfrak{e}}{\mathfrak{x}^{|y|}} = \frac{\mathfrak{x}^x}{\mathfrak{x}^{|y|}}.
-```
-
-A) For
-
-```math
-x > |y|
-```
-
-we have, by 1),
-
-```math
-\frac{\mathfrak{x}^x}{\mathfrak{x}^{|y|}} = \frac{\mathfrak{x}^{|y|} \mathfrak{x}^{x-|y|}}{\mathfrak{x}^{|y|}} = \mathfrak{x}^{x-|y|} = \mathfrak{x}^{x+y}.
-```
-
-B) For
-
-```math
-x = |y|
-```
-
-we have
-
-```math
-\frac{\mathfrak{x}^x}{\mathfrak{x}^{|y|}} = \mathfrak{e} = \mathfrak{x}^0 = \mathfrak{x}^{x+y}.
-```
-
-C) For
-
-```math
-x < |y|
-```
-
-we have, by 1),
-
-```math
-\frac{\mathfrak{x}^x}{\mathfrak{x}^{|y|}} = \mathfrak{x}^x \frac{\mathfrak{e}}{\mathfrak{x}^x \mathfrak{x}^{|y|-x}} = \frac{\mathfrak{e}}{\mathfrak{x}^{|y|-x}} = \mathfrak{x}^{x-|y|} = \mathfrak{x}^{x+y}.
-```
-
-γ) Let
-
-```math
-x < 0, \quad y > 0.
-```
-
-Then by β),
-
-```math
-\mathfrak{x}^x \mathfrak{x}^y = \mathfrak{x}^y \mathfrak{x}^x = \mathfrak{x}^{y+x} = \mathfrak{x}^{x+y}.
-```
-
-δ) Let
-
-```math
-x = 0.
-```
-
-Then
-
-```math
-\mathfrak{x}^x \mathfrak{x}^y = \mathfrak{e} \mathfrak{x}^y = \mathfrak{x}^y = \mathfrak{x}^{0+y} = \mathfrak{x}^{x+y}.
-```
-
-ε) Let
-
-```math
-x \neq 0, \quad y = 0.
-```
-
-Then by δ),
-
-```math
-\mathfrak{x}^x \mathfrak{x}^y = \mathfrak{x}^y \mathfrak{x}^x = \mathfrak{x}^{y+x} = \mathfrak{x}^{x+y}.
-```
-
-**Theorem 295:** For
-
-```math
-\mathfrak{x} \neq \mathfrak{n}
-```
-
-we have
-
-```math
-\frac{\mathfrak{x}^x}{\mathfrak{x}^y} = \mathfrak{x}^{x-y}.
-```
-
-**Proof:** By Theorem 294,
-
-```math
-\mathfrak{x}^{x-y} \mathfrak{x}^y = \mathfrak{x}^{(x-y)+y} = \mathfrak{x}^x;
-```
-
-by Theorem 290,
-
-```math
-\mathfrak{x}^y \neq \mathfrak{n},
-```
-
-hence
-
-```math
-\frac{\mathfrak{x}^x}{\mathfrak{x}^y} = \mathfrak{x}^{x-y}.
-```
-
-**Theorem 296:** For
-
-```math
-\mathfrak{x} \neq \mathfrak{n}
-```
-
-we have
-
-```math
-\frac{\mathfrak{e}}{\mathfrak{x}^x} = \mathfrak{x}^{-x}.
-```
-
-**Proof:** By Theorem 295,
-
-```math
-\frac{\mathfrak{e}}{\mathfrak{x}^x} = \frac{\mathfrak{x}^0}{\mathfrak{x}^x} = \mathfrak{x}^{0-x} = \mathfrak{x}^{-x}.
-```
-
-**Theorem 297:** Let
-
-```math
+$$
 x > 0, \quad y > 0
-```
+$$
 
-or
+が同時には成り立たないとする。
 
-```math
-\mathfrak{x} \neq \mathfrak{n}.
-```
+α)
 
-Then
+$$
+x < 0, \quad y < 0
+$$
 
-```math
-(\mathfrak{x}^x)^y = \mathfrak{x}^{xy}.
-```
+とする。このとき 1) により
 
-**Proof:** 1) Let
+$$
+\mathfrak{x}^{|x|} \mathfrak{x}^{|y|} = \mathfrak{x}^{|x|+|y|} = \mathfrak{x}^{|x+y|},
+$$
 
-```math
-\mathfrak{x} = \mathfrak{n}, \quad x > 0, \quad y > 0.
-```
+$$
+\mathfrak{x}^x \mathfrak{x}^y = \frac{\mathfrak{e}}{\mathfrak{x}^{|x|}} \cdot \frac{\mathfrak{e}}{\mathfrak{x}^{|y|}} = \frac{\mathfrak{e}}{\mathfrak{x}^{|x|} \mathfrak{x}^{|y|}} = \frac{\mathfrak{e}}{\mathfrak{x}^{|x+y|}} = \mathfrak{x}^{x+y}.
+$$
 
-Then by Theorem 289,
+β)
 
-```math
+$$
+x > 0, \quad y < 0
+$$
+
+とする。このとき
+
+$$
+\mathfrak{x}^x \mathfrak{x}^y = \mathfrak{x}^x \frac{\mathfrak{e}}{\mathfrak{x}^{|y|}} = \frac{\mathfrak{x}^x}{\mathfrak{x}^{|y|}}.
+$$
+
+A)
+
+$$
+x > |y|
+$$
+
+に対しては、1) により
+
+$$
+\frac{\mathfrak{x}^x}{\mathfrak{x}^{|y|}} = \frac{\mathfrak{x}^{|y|} \mathfrak{x}^{x-|y|}}{\mathfrak{x}^{|y|}} = \mathfrak{x}^{x-|y|} = \mathfrak{x}^{x+y}.
+$$
+
+B)
+
+$$
+x = |y|
+$$
+
+に対しては、
+
+$$
+\frac{\mathfrak{x}^x}{\mathfrak{x}^{|y|}} = \mathfrak{e} = \mathfrak{x}^0 = \mathfrak{x}^{x+y}.
+$$
+
+C)
+
+$$
+x < |y|
+$$
+
+に対しては、1) により
+
+$$
+\frac{\mathfrak{x}^x}{\mathfrak{x}^{|y|}} = \mathfrak{x}^x \frac{\mathfrak{e}}{\mathfrak{x}^x \mathfrak{x}^{|y|-x}} = \frac{\mathfrak{e}}{\mathfrak{x}^{|y|-x}} = \mathfrak{x}^{x-|y|} = \mathfrak{x}^{x+y}.
+$$
+
+γ)
+
+$$
+x < 0, \quad y > 0
+$$
+
+とする。このとき β) により
+
+$$
+\mathfrak{x}^x \mathfrak{x}^y = \mathfrak{x}^y \mathfrak{x}^x = \mathfrak{x}^{y+x} = \mathfrak{x}^{x+y}.
+$$
+
+δ)
+
+$$
+x = 0
+$$
+
+とする。このとき
+
+$$
+\mathfrak{x}^x \mathfrak{x}^y = \mathfrak{e} \mathfrak{x}^y = \mathfrak{x}^y = \mathfrak{x}^{0+y} = \mathfrak{x}^{x+y}.
+$$
+
+ε)
+
+$$
+x \neq 0, \quad y = 0
+$$
+
+とする。このとき δ) により
+
+$$
+\mathfrak{x}^x \mathfrak{x}^y = \mathfrak{x}^y \mathfrak{x}^x = \mathfrak{x}^{y+x} = \mathfrak{x}^{x+y}.
+$$
+
+**定理 295:**
+
+$$
+\mathfrak{x} \neq \mathfrak{n}
+$$
+
+に対して
+
+$$
+\frac{\mathfrak{x}^x}{\mathfrak{x}^y} = \mathfrak{x}^{x-y}
+$$
+
+である。
+
+**証明:** 定理 294 により
+
+$$
+\mathfrak{x}^{x-y} \mathfrak{x}^y = \mathfrak{x}^{(x-y)+y} = \mathfrak{x}^x;
+$$
+
+定理 290 により
+
+$$
+\mathfrak{x}^y \neq \mathfrak{n}
+$$
+
+であるから、
+
+$$
+\frac{\mathfrak{x}^x}{\mathfrak{x}^y} = \mathfrak{x}^{x-y}.
+$$
+
+**定理 296:**
+
+$$
+\mathfrak{x} \neq \mathfrak{n}
+$$
+
+に対して
+
+$$
+\frac{\mathfrak{e}}{\mathfrak{x}^x} = \mathfrak{x}^{-x}
+$$
+
+である。
+
+**証明:** 定理 295 により
+
+$$
+\frac{\mathfrak{e}}{\mathfrak{x}^x} = \frac{\mathfrak{x}^0}{\mathfrak{x}^x} = \mathfrak{x}^{0-x} = \mathfrak{x}^{-x}.
+$$
+
+**定理 297:**
+
+$$
+x > 0, \quad y > 0
+$$
+
+または
+
+$$
+\mathfrak{x} \neq \mathfrak{n}
+$$
+
+とする。このとき
+
+$$
+(\mathfrak{x}^x)^y = \mathfrak{x}^{xy}
+$$
+
+である。
+
+**証明:** 1)
+
+$$
+\mathfrak{x} = \mathfrak{n}, \quad x > 0, \quad y > 0
+$$
+
+とする。このとき定理 289 により
+
+$$
 (\mathfrak{x}^x)^y = (\mathfrak{n}^x)^y = \mathfrak{n}^y = \mathfrak{n} = \mathfrak{n}^{xy} = \mathfrak{x}^{xy}.
-```
+$$
 
-2) Let
+2)
 
-```math
-\mathfrak{x} \neq \mathfrak{n}.
-```
+$$
+\mathfrak{x} \neq \mathfrak{n}
+$$
 
-a) For fixed $\mathfrak{x}$, $x$, let $\mathfrak{M}$ be the set of $y > 0$ with
+とする。
 
-```math
-(\mathfrak{x}^x)^y = \mathfrak{x}^{xy}.
-```
+a) $\mathfrak{x}$、$x$ を固定し、
+
+$$
+(\mathfrak{x}^x)^y = \mathfrak{x}^{xy}
+$$
+
+をみたす $y > 0$ の集合を $\mathfrak{M}$ とする。
 
 I) $(\mathfrak{x}^x)^1 = \mathfrak{x}^x = \mathfrak{x}^{x \cdot 1}$;
 
-hence 1 belongs to $\mathfrak{M}$.
+したがって 1 は $\mathfrak{M}$ に属する。
 
-II) Let $y$ belong to $\mathfrak{M}$. Then by Theorem 294,
+II) $y$ が $\mathfrak{M}$ に属するとする。このとき定理 294 により
 
-```math
-(\mathfrak{x}^x)^{y+1} = (\mathfrak{x}^x)^y (\mathfrak{x}^x)^1 = \mathfrak{x}^{xy} \mathfrak{x}^x = \mathfrak{x}^{xy+x} = \mathfrak{x}^{x(y+1)},
-```
+$$
+(\mathfrak{x}^x)^{y+1} = (\mathfrak{x}^x)^y (\mathfrak{x}^x)^1 = \mathfrak{x}^{xy} \mathfrak{x}^x = \mathfrak{x}^{xy+x} = \mathfrak{x}^{x(y+1)}
+$$
 
-so that $y + 1$ belongs to $\mathfrak{M}$.
+であり、したがって $y + 1$ は $\mathfrak{M}$ に属する。
 
-Hence the assertion is true for $y > 0$.
+したがって $y > 0$ に対して主張は正しい。
 
-b) Let
+b)
 
-```math
-y = 0.
-```
+$$
+y = 0
+$$
 
-Then
+とする。このとき
 
-```math
+$$
 (\mathfrak{x}^x)^y = \mathfrak{e} = \mathfrak{x}^{xy}.
-```
+$$
 
-c) Let
+c)
 
-```math
-y < 0.
-```
+$$
+y < 0
+$$
 
-Then by a),
+とする。このとき a) により
 
-```math
+$$
 (\mathfrak{x}^x)^{|y|} = \mathfrak{x}^{x|y|},
-```
+$$
 
-hence by Theorem 296 and a),
+したがって定理 296 と a) により
 
-```math
+$$
 (\mathfrak{x}^x)^y = \frac{\mathfrak{e}}{(\mathfrak{x}^x)^{-y}} = \frac{\mathfrak{e}}{(\mathfrak{x}^x)^{|y|}} = \frac{\mathfrak{e}}{\mathfrak{x}^{x|y|}} = \mathfrak{x}^{-(x|y|)} = \mathfrak{x}^{xy}.
-```
+$$
 
-## § 10. Incorporation of the Real Numbers
+## § 10. 実数の埋め込み
 
-**Theorem 298:**
+**定理 298:**
 
-```math
+$$
 \begin{aligned}
 [\Xi + H, 0] &= [\Xi, 0] + [H, 0]; \\
 [\Xi - H, 0] &= [\Xi, 0] - [H, 0]; \\
 [\Xi H, 0] &= [\Xi, 0][H, 0]; \\
-\left[\frac{\Xi}{H}, 0\right] &= \frac{[\Xi, 0]}{[H, 0]}, \quad \text{if } H \neq 0; \\
+\left[\frac{\Xi}{H}, 0\right] &= \frac{[\Xi, 0]}{[H, 0]}, \quad (H \neq 0 \text{ のとき}); \\
 [-\Xi, 0] &= -[\Xi, 0]; \\
 |[\Xi, 0]| &= |\Xi|.
 \end{aligned}
-```
+$$
 
-**Proof:** 1)
+**証明:** 1)
 
-```math
+$$
 [\Xi, 0] + [H, 0] = [\Xi + H, 0 + 0] = [\Xi + H, 0].
-```
+$$
 
 2)
 
-```math
+$$
 [\Xi, 0] - [H, 0] = [\Xi - H, 0 - 0] = [\Xi - H, 0].
-```
+$$
 
 3)
 
-```math
+$$
 [\Xi, 0][H, 0] = [\Xi H - 0 \cdot 0, \Xi \cdot 0 + 0 \cdot H] = [\Xi H, 0].
-```
+$$
 
-4) By 3), if $H \neq 0$,
+4) 3) により、$H \neq 0$ ならば
 
-```math
+$$
 [H, 0]\left[\frac{\Xi}{H}, 0\right] = \left[H \cdot \frac{\Xi}{H}, 0\right] = [\Xi, 0],
-```
+$$
 
-```math
+$$
 \frac{[\Xi, 0]}{[H, 0]} = \left[\frac{\Xi}{H}, 0\right].
-```
+$$
 
 5)
 
-```math
+$$
 -[\Xi, 0] = [-\Xi, -0] = [-\Xi, 0].
-```
+$$
 
 6)
 
-```math
+$$
 |\Xi| = \sqrt{|\Xi|\,|\Xi|} = \sqrt{\Xi\Xi} = \sqrt{\Xi\Xi + 0 \cdot 0} = |[\Xi, 0]|.
-```
+$$
 
-**Theorem 299:** The complex numbers of the form $[x, 0]$ satisfy the five axioms of the natural numbers, if $[1, 0]$ is taken in place of 1 and we set
+**定理 299:** $[x, 0]$ の形の複素数は、1 の代わりに $[1, 0]$ をとり、
 
-```math
-[x, 0]' = [x', 0].
-```
+$$
+[x, 0]' = [x', 0]
+$$
 
-**Proof:** Let $[\mathfrak{Z}]$ be the set of the $[x, 0]$.
+と置くならば、自然数の五つの公理をみたす。
 
-1) $[1, 0]$ belongs to $[\mathfrak{Z}]$.
+**証明:** $[x, 0]$ の集合を $[\mathfrak{Z}]$ とする。
 
-2) Along with $[x, 0]$, $[x, 0]'$ exists in $[\mathfrak{Z}]$.
+1) $[1, 0]$ は $[\mathfrak{Z}]$ に属する。
 
-3) We always have
+2) $[x, 0]$ とともに $[x, 0]'$ も $[\mathfrak{Z}]$ に存在する。
 
-```math
-x' \neq 1,
-```
+3) つねに
 
-hence
+$$
+x' \neq 1
+$$
 
-```math
+であるから、
+
+$$
 [x', 0] \neq [1, 0],
-```
+$$
 
-```math
+$$
 [x, 0]' \neq [1, 0].
-```
+$$
 
-4) From
+4)
 
-```math
+$$
 [x, 0]' = [y, 0]'
-```
+$$
 
-it follows that
+から
 
-```math
+$$
 [x', 0] = [y', 0],
-```
+$$
 
-```math
+$$
 x' = y',
-```
+$$
 
-```math
+$$
 x = y,
-```
+$$
 
-```math
-[x, 0] = [y, 0].
-```
+$$
+[x, 0] = [y, 0]
+$$
 
-5) Let a set $[\mathfrak{M}]$ of numbers from $[\mathfrak{Z}]$ have the properties:
+が従う。
 
-I) $[1, 0]$ belongs to $[\mathfrak{M}]$.
+5) $[\mathfrak{Z}]$ の数からなる集合 $[\mathfrak{M}]$ が次の性質をもつとする:
 
-II) If $[x, 0]$ belongs to $[\mathfrak{M}]$, then $[x, 0]'$ belongs to $[\mathfrak{M}]$.
+I) $[1, 0]$ は $[\mathfrak{M}]$ に属する。
 
-Then let $\mathfrak{M}$ denote the set of the $x$ for which $[x, 0]$ belongs to $[\mathfrak{M}]$. Then 1 belongs to $\mathfrak{M}$, and along with every $x$ of $\mathfrak{M}$, $x'$ also belongs to $\mathfrak{M}$. Hence every positive integer $x$ belongs to $\mathfrak{M}$, hence every $[x, 0]$ belongs to $[\mathfrak{M}]$.
+II) $[x, 0]$ が $[\mathfrak{M}]$ に属するならば、$[x, 0]'$ は $[\mathfrak{M}]$ に属する。
 
-Since the sum, difference, product and (provided it exists) quotient of two $[\Xi, 0]$ correspond, by Theorem 298, to the old concepts, and likewise the symbols $-[\Xi, 0]$ and $|[\Xi, 0]|$; and since one can define
+そこで、$[x, 0]$ が $[\mathfrak{M}]$ に属するような $x$ の集合を $\mathfrak{M}$ で表す。すると 1 は $\mathfrak{M}$ に属し、$\mathfrak{M}$ の各 $x$ とともに $x'$ も $\mathfrak{M}$ に属する。したがってすべての正の整数 $x$ は $\mathfrak{M}$ に属し、したがってすべての $[x, 0]$ は $[\mathfrak{M}]$ に属する。
 
-```math
-[\Xi, 0] > [H, 0] \quad \text{for } \Xi > H,
-```
+二つの $[\Xi, 0]$ の和・差・積および(存在する場合には)商は、定理 298 により旧来の概念に対応し、記号 $-[\Xi, 0]$ と $|[\Xi, 0]|$ も同様であり、また
 
-```math
-[\Xi, 0] < [H, 0] \quad \text{for } \Xi < H,
-```
+$$
+[\Xi, 0] > [H, 0] \quad (\Xi > H \text{ のとき}),
+$$
 
-the complex numbers $[\Xi, 0]$ therefore have all the properties which we proved in Chapter 4 for real numbers, and in particular the numbers $[x, 0]$ have all the proved properties of the positive integers.
+$$
+[\Xi, 0] < [H, 0] \quad (\Xi < H \text{ のとき})
+$$
 
-Therefore we throw away the real numbers, replace them by the corresponding complex numbers $[\Xi, 0]$, and need speak only of complex numbers. (The real numbers remain, however, in pairs within the concept of the complex number.)
+と定義することができるから、複素数 $[\Xi, 0]$ は、我々が第4章で実数について証明したすべての性質をもち、特に数 $[x, 0]$ は、正の整数について証明されたすべての性質をもつ。
 
-**Definition 72:** (The symbol thus set free) $\Xi$ denotes the complex number $[\Xi, 0]$, to which the term real number is also carried over. Likewise, $[\Xi, 0]$ for integral $\Xi$ is now called an integer, for rational $\Xi$ a rational number, for irrational $\Xi$ an irrational number, for positive $\Xi$ a positive number, for negative $\Xi$ a negative number.
+それゆえ我々は実数を捨て去り、それを対応する複素数 $[\Xi, 0]$ で置き換え、以後は複素数についてのみ語ればよい。(ただし実数は、複素数の概念の中に対として残っている。)
 
-Thus we write, e.g., 0 instead of $\mathfrak{n}$, 1 instead of $\mathfrak{e}$.
+**定義 72:** (自由になった記号)$\Xi$ は複素数 $[\Xi, 0]$ を表し、実数という言葉もこれに移る。同様に以後、$[\Xi, 0]$ を、$\Xi$ が整数のとき整数、$\Xi$ が有理数のとき有理数、$\Xi$ が無理数のとき無理数、$\Xi$ が正のとき正の数、$\Xi$ が負のとき負の数と呼ぶ。
 
-From now on we may denote the complex numbers by small or capital letters of arbitrary alphabets (even promiscuously). For the following special number, however, a small Latin letter is customary, on account of
+したがって例えば、$\mathfrak{n}$ の代わりに 0、$\mathfrak{e}$ の代わりに 1 と書く。
 
-**Definition 73:** $i = [0, 1]$.
+今や我々は複素数を、任意のアルファベットの小文字あるいは大文字で(混用してもよい)表すことができる。ただし次の特別な数については、小さいラテン文字を用いるのが慣例である。それは次の定義に基づく。
 
-**Theorem 300:** $i \cdot i = -1$.
+**定義 73:** $i = [0, 1]$.
 
-**Proof:**
+**定理 300:** $i \cdot i = -1$.
 
-```math
+**証明:**
+
+$$
 i \cdot i = [0, 1][0, 1] = [0 \cdot 0 - 1 \cdot 1, 0 \cdot 1 + 1 \cdot 0] = [-1, 0] = -1.
-```
+$$
 
-**Theorem 301:** For real $u_1$, $u_2$ we have
+**定理 301:** 実数 $u_1$、$u_2$ に対して
 
-```math
-u_1 + u_2 i = [u_1, u_2].
-```
+$$
+u_1 + u_2 i = [u_1, u_2]
+$$
 
-Hence to every complex number $x$ there corresponds exactly one pair of real numbers $u_1$, $u_2$ with
+である。したがって各複素数 $x$ に対して、
 
-```math
-x = u_1 + u_2 i.
-```
+$$
+x = u_1 + u_2 i
+$$
 
-**Proof:** For real $u_1$, $u_2$ we have
+をみたす実数の対 $u_1$、$u_2$ がちょうど一つ存在する。
 
-```math
+**証明:** 実数 $u_1$、$u_2$ に対して
+
+$$
 u_1 + u_2 i = [u_1, 0] + [u_2, 0][0, 1] = [u_1, 0] + [u_2 \cdot 0 - 0 \cdot 1, u_2 \cdot 1 + 0 \cdot 0] = [u_1, 0] + [0, u_2] = [u_1, u_2].
-```
+$$
 
-By Theorem 301 the symbol $[\ ]$ has become unnecessary; the complex numbers are simply the numbers $u_1 + u_2 i$, where $u_1$ and $u_2$ are real; to equal resp. distinct pairs $u_1$, $u_2$ there correspond equal resp. distinct numbers, and the sum, difference, product of two complex numbers $u_1 + u_2 i$, $v_1 + v_2 i$ (where $u_1$, $u_2$, $v_1$, $v_2$ are real) are formed according to the formulas
+定理 301 によって記号 $[\ ]$ は不要になった。複素数とはまさに、$u_1$ と $u_2$ が実数であるような数 $u_1 + u_2 i$ のことである。等しい対 $u_1$、$u_2$ には等しい数が、異なる対には異なる数が対応し、二つの複素数 $u_1 + u_2 i$、$v_1 + v_2 i$($u_1$、$u_2$、$v_1$、$v_2$ は実数)の和・差・積は次の公式によって作る。
 
-```math
+$$
 \begin{aligned}
 (u_1 + u_2 i) + (v_1 + v_2 i) &= (u_1 + v_1) + (u_2 + v_2) i, \\
 (u_1 + u_2 i) - (v_1 + v_2 i) &= (u_1 - v_1) + (u_2 - v_2) i, \\
 (u_1 + u_2 i)(v_1 + v_2 i) &= (u_1 v_1 - u_2 v_2) + (u_1 v_2 + u_2 v_1) i.
 \end{aligned}
-```
+$$
 
-One need not even remember these formulas, but only that the laws of the real numbers remain valid and that Theorem 300 holds; accordingly one simply computes as follows:
+これらの公式を覚える必要すらなく、実数の諸法則が保たれることと定理 300 が成り立つことだけを覚えておけばよい。それに従えば、単に次のように計算すればよい。
 
-```math
+$$
 (u_1 + u_2 i) + (v_1 + v_2 i) = (u_1 + v_1) + (u_2 i + v_2 i) = (u_1 + v_1) + (u_2 + v_2) i,
-```
+$$
 
-```math
+$$
 (u_1 + u_2 i) - (v_1 + v_2 i) = (u_1 - v_1) + (u_2 i - v_2 i) = (u_1 - v_1) + (u_2 - v_2) i,
-```
+$$
 
-```math
+$$
 \begin{aligned}
 (u_1 + u_2 i)(v_1 + v_2 i) &= (u_1 + u_2 i) v_1 + (u_1 + u_2 i) v_2 i \\
 &= u_1 v_1 + u_2 i v_1 + u_1 v_2 i + u_2 i v_2 i \\
@@ -3100,15 +3292,15 @@ One need not even remember these formulas, but only that the laws of the real nu
 &= u_1 v_1 + u_2 v_1 i + u_1 v_2 i + u_2 v_2 (-1) \\
 &= (u_1 v_1 - u_2 v_2) + (u_1 v_2 + u_2 v_1) i.
 \end{aligned}
-```
+$$
 
-As for division, the computation yields, if $v_1$ and $v_2$ are not both 0,
+除法については、$v_1$ と $v_2$ がともに 0 ではないとき、計算によって、定理 301 の意味での標準的な表示として
 
-```math
+$$
 \begin{aligned}
 \frac{u_1 + u_2 i}{v_1 + v_2 i} &= \frac{(u_1 + u_2 i)(v_1 - v_2 i)}{(v_1 + v_2 i)(v_1 - v_2 i)} = \frac{(u_1 v_1 + u_2 v_2) + (-(u_1 v_2) + u_2 v_1) i}{(v_1 v_1 + v_2 v_2) + (-(v_1 v_2) + v_2 v_1) i} \\
 &= \frac{(u_1 v_1 + u_2 v_2) + (-(u_1 v_2) + u_2 v_1) i}{v_1 v_1 + v_2 v_2} = \frac{u_1 v_1 + u_2 v_2}{v_1 v_1 + v_2 v_2} + \frac{-(u_1 v_2) + u_2 v_1}{v_1 v_1 + v_2 v_2}\, i
 \end{aligned}
-```
+$$
 
-as the canonical representation in the sense of Theorem 301.
+が得られる。

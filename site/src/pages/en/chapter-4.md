@@ -16,9 +16,9 @@ Capital Greek letters, unless otherwise stated, denote real numbers throughout. 
 
 For every $\Xi$ and every $\mathrm{H}$, exactly one of the cases
 
-```math
+$$
 \Xi = \mathrm{H}, \quad \Xi \neq \mathrm{H}
-```
+$$
 
 therefore holds. For the real numbers the concepts of identity and equality merge, so that the three theorems are trivial:
 
@@ -26,40 +26,40 @@ therefore holds. For the real numbers the concepts of identity and equality merg
 
 **Theorem 164:** From
 
-```math
+$$
 \Xi = \mathrm{H}
-```
+$$
 
 follows
 
-```math
+$$
 \mathrm{H} = \Xi.
-```
+$$
 
 **Theorem 165:** From
 
-```math
+$$
 \Xi = \mathrm{H}, \quad \mathrm{H} = \mathrm{Z}
-```
+$$
 
 follows
 
-```math
+$$
 \Xi = \mathrm{Z}.
-```
+$$
 
 ## § 2. Ordering
 
 **Definition 44:**
 
-```math
+$$
 |\Xi| =
 \begin{cases}
 \xi, & \text{if } \Xi = \xi, \\
 0, & \text{if } \Xi = 0, \\
 \xi, & \text{if } \Xi = -\xi.
 \end{cases}
-```
+$$
 
 The number $|\Xi|$ is called the absolute value of $\Xi$.
 
@@ -69,9 +69,9 @@ The number $|\Xi|$ is called the absolute value of $\Xi$.
 
 **Definition 45:** If $\Xi$ and $\mathrm{H}$ are not both positive, then
 
-```math
+$$
 \Xi > \mathrm{H}
-```
+$$
 
 if and only if
 
@@ -86,15 +86,15 @@ Observe that for positive $\Xi$ together with positive $\mathrm{H}$ we already h
 
 **Definition 46:**
 
-```math
+$$
 \Xi < \mathrm{H}
-```
+$$
 
 if and only if
 
-```math
+$$
 \mathrm{H} > \Xi.
-```
+$$
 
 ($<$ read: less than.)
 
@@ -102,9 +102,9 @@ Observe that for positive $\Xi$ together with positive $\mathrm{H}$, Definition 
 
 **Theorem 167:** If $\Xi$, $\mathrm{H}$ are arbitrary, then exactly one of the cases
 
-```math
+$$
 \Xi = \mathrm{H}, \quad \Xi > \mathrm{H}, \quad \Xi < \mathrm{H}
-```
+$$
 
 holds.
 
@@ -112,15 +112,15 @@ holds.
 
 2) If $\Xi$ is positive, $\mathrm{H} = 0$ or $\mathrm{H}$ negative, then
 
-```math
+$$
 \Xi \neq \mathrm{H},
-```
+$$
 
 furthermore by Definition 45
 
-```math
+$$
 \Xi > \mathrm{H}
-```
+$$
 
 and by Definition 46
 
@@ -128,9 +128,9 @@ $\Xi$ not $< \mathrm{H}$.
 
 3) If $\Xi = 0$, $\mathrm{H}$ positive, then
 
-```math
+$$
 \Xi \neq \mathrm{H},
-```
+$$
 
 furthermore by Definition 45
 
@@ -138,9 +138,9 @@ $\Xi$ not $> \mathrm{H}$
 
 and by Definition 46
 
-```math
+$$
 \Xi < \mathrm{H}.
-```
+$$
 
 4) If $\Xi = 0$, $\mathrm{H} = 0$, then
 
@@ -168,9 +168,9 @@ $\Xi \neq \mathrm{H}$, $\Xi$ not $> \mathrm{H}$, $\Xi < \mathrm{H}$ for $|\Xi| >
 
 **Definition 47:**
 
-```math
+$$
 \Xi \geqq \mathrm{H}
-```
+$$
 
 means
 
@@ -180,9 +180,9 @@ $\Xi > \mathrm{H}$ or $\Xi = \mathrm{H}$.
 
 **Definition 48:**
 
-```math
+$$
 \Xi \leqq \mathrm{H}
-```
+$$
 
 means
 
@@ -192,15 +192,15 @@ $\Xi < \mathrm{H}$ or $\Xi = \mathrm{H}$.
 
 **Theorem 168:** From
 
-```math
+$$
 \Xi > \mathrm{H}
-```
+$$
 
 follows
 
-```math
+$$
 \mathrm{H} < \Xi
-```
+$$
 
 and conversely.
 
@@ -226,39 +226,39 @@ $\Xi < 0$.
 
 **Proof:** 1) By Definition 45,
 
-```math
+$$
 \xi > 0.
-```
+$$
 
 2) From
 
-```math
+$$
 \Xi > 0
-```
+$$
 
 follows by Definition 45
 
-```math
+$$
 \Xi = \xi.
-```
+$$
 
 3) By Definition 46,
 
-```math
+$$
 -\xi < 0.
-```
+$$
 
 4) From
 
-```math
+$$
 \Xi < 0
-```
+$$
 
 follows by Definition 46
 
-```math
+$$
 \Xi = -\xi.
-```
+$$
 
 **Theorem 170:** $|\Xi| \geqq 0$.
 
@@ -266,33 +266,33 @@ follows by Definition 46
 
 **Theorem 171** (Transitivity of Ordering): From
 
-```math
+$$
 \Xi < \mathrm{H}, \quad \mathrm{H} < \mathrm{Z}
-```
+$$
 
 follows
 
-```math
+$$
 \Xi < \mathrm{Z}.
-```
+$$
 
 **Proof:** 1) Let
 
-```math
+$$
 \mathrm{Z} > 0.
-```
+$$
 
 If
 
-```math
+$$
 \Xi > 0,
-```
+$$
 
 then
 
-```math
+$$
 \mathrm{H} > 0,
-```
+$$
 
 and we have the old Theorem 126.
 
@@ -300,59 +300,59 @@ If
 
 Furthermore,
 
-```math
+$$
 |\Xi| > |\mathrm{H}|, \quad |\mathrm{H}| > |\mathrm{Z}|,
-```
+$$
 
 hence
 
-```math
+$$
 |\Xi| > |\mathrm{Z}|,
-```
+$$
 
-```math
+$$
 \Xi < \mathrm{Z}.
-```
+$$
 
 **Theorem 172:** From
 
-```math
+$$
 \Xi \leqq \mathrm{H}, \ \mathrm{H} < \mathrm{Z} \quad \text{or} \quad \Xi < \mathrm{H}, \ \mathrm{H} \leqq \mathrm{Z}
-```
+$$
 
 follows
 
-```math
+$$
 \Xi < \mathrm{Z}.
-```
+$$
 
 **Proof:** Clear with the equality sign in the hypothesis; otherwise settled by Theorem 171.
 
 **Theorem 173:** From
 
-```math
+$$
 \Xi \leqq \mathrm{H}, \quad \mathrm{H} \leqq \mathrm{Z}
-```
+$$
 
 follows
 
-```math
+$$
 \Xi \leqq \mathrm{Z}.
-```
+$$
 
 **Proof:** Clear with two equality signs in the hypothesis; otherwise settled by Theorem 172.
 
 **Definition 49:** If
 
-```math
+$$
 \Xi \leqq 0,
-```
+$$
 
 then $\Xi$ is called rational if
 
-```math
+$$
 \Xi = 0
-```
+$$
 
 or
 
@@ -362,37 +362,37 @@ We thus now have positive rational numbers, the rational number 0, and negative 
 
 **Definition 50:** If
 
-```math
+$$
 \Xi \leqq 0,
-```
+$$
 
 then $\Xi$ is called irrational if it is not rational.
 
 We thus now have positive irrational numbers and negative irrational numbers. (Numbers? Yes; we had an irrational $\xi$; hence the positive number $\xi + X$ is always irrational, since from
 
-```math
+$$
 \xi + X = Y
-```
+$$
 
 would follow
 
-```math
+$$
 \xi = Y - X;
-```
+$$
 
 and $-(\xi + X)$ is always negative irrational.)
 
 **Definition 51:** If
 
-```math
+$$
 \Xi \leqq 0,
-```
+$$
 
 then $\Xi$ is called integral if
 
-```math
+$$
 \Xi = 0
-```
+$$
 
 or
 
@@ -408,7 +408,7 @@ We thus now have positive integers, the integer 0, and negative integers.
 
 **Definition 52:**
 
-```math
+$$
 \Xi + \mathrm{H} =
 \begin{cases}
 -(|\Xi| + |\mathrm{H}|), & \text{if } \Xi < 0,\ \mathrm{H} < 0; \\
@@ -417,7 +417,7 @@ We thus now have positive integers, the integer 0, and negative integers.
 \mathrm{H}, & \text{if } \Xi = 0; \\
 \Xi, & \text{if } \mathrm{H} = 0.
 \end{cases}
-```
+$$
 
 ($+$ read: plus.) $\Xi + \mathrm{H}$ is called the sum of $\Xi$ and $\mathrm{H}$, or the number obtained by addition of $\mathrm{H}$ to $\Xi$.
 
@@ -425,9 +425,9 @@ Concerning this definition, one should note:
 
 1) For
 
-```math
+$$
 \Xi > 0, \quad \mathrm{H} > 0
-```
+$$
 
 we already have the concept $\Xi + \mathrm{H}$ from Definition 34.
 
@@ -437,87 +437,87 @@ we already have the concept $\Xi + \mathrm{H}$ from Definition 34.
 
 4) The fourth and fifth cases overlap if
 
-```math
+$$
 \Xi = \mathrm{H} = 0;
-```
+$$
 
 but then the number defined as $\Xi + \mathrm{H}$ is the same (namely 0).
 
 **Theorem 175** (commutative law of addition):
 
-```math
+$$
 \Xi + \mathrm{H} = \mathrm{H} + \Xi.
-```
+$$
 
 **Proof:** For
 
-```math
+$$
 \Xi = 0
-```
+$$
 
 both numbers are $\mathrm{H}$; for
 
-```math
+$$
 \mathrm{H} = 0
-```
+$$
 
 both are $\Xi$.
 
 For
 
-```math
+$$
 \Xi > 0, \quad \mathrm{H} > 0
-```
+$$
 
 we have the old Theorem 130.
 
 For
 
-```math
+$$
 \Xi < 0, \quad \mathrm{H} < 0
-```
+$$
 
 we have by Theorem 130
 
-```math
+$$
 \Xi + \mathrm{H} = -(|\Xi| + |\mathrm{H}|) = -(|\mathrm{H}| + |\Xi|) = \mathrm{H} + \Xi.
-```
+$$
 
 For
 
-```math
+$$
 \Xi < 0, \quad \mathrm{H} > 0
-```
+$$
 
 the assertion was the very definition.
 
 For
 
-```math
+$$
 \Xi > 0, \quad \mathrm{H} < 0
-```
+$$
 
 we have by the preceding case
 
-```math
+$$
 \mathrm{H} + \Xi = \Xi + \mathrm{H},
-```
+$$
 
 hence
 
-```math
+$$
 \Xi + \mathrm{H} = \mathrm{H} + \Xi.
-```
+$$
 
 **Definition 53:**
 
-```math
+$$
 -\Xi =
 \begin{cases}
 0 & \text{for } \Xi = 0, \\
 |\Xi| & \text{for } \Xi < 0.
 \end{cases}
-```
+$$
 
 ($-$ read: minus.)
 
@@ -525,15 +525,15 @@ Note that for $\Xi > 0$ we already have the concept $-\Xi$ from Definition 43.
 
 **Theorem 176:** If
 
-```math
+$$
 \Xi > 0 \ \text{resp.} \ \Xi = 0 \ \text{resp.} \ \Xi < 0,
-```
+$$
 
 then
 
-```math
+$$
 -\Xi < 0 \ \text{resp.} \ -\Xi = 0 \ \text{resp.} \ -\Xi > 0
-```
+$$
 
 and conversely.
 
@@ -555,157 +555,157 @@ and conversely.
 
 **Proof:** By Theorem 175 we have
 
-```math
+$$
 -(\Xi + \mathrm{H}) = -(\mathrm{H} + \Xi)
-```
+$$
 
 and
 
-```math
+$$
 -\Xi + (-\mathrm{H}) = -\mathrm{H} + (-\Xi);
-```
+$$
 
 hence without loss of generality
 
-```math
+$$
 \Xi \geqq \mathrm{H}
-```
+$$
 
 may be assumed; for at least one of the relations
 
-```math
+$$
 \Xi \geqq \mathrm{H}, \quad \mathrm{H} \geqq \Xi
-```
+$$
 
 holds, and from
 
-```math
+$$
 -(\mathrm{H} + \Xi) = -\mathrm{H} + (-\Xi)
-```
+$$
 
 there follows precisely
 
-```math
+$$
 -(\Xi + \mathrm{H}) = -\Xi + (-\mathrm{H}).
-```
+$$
 
 So let
 
-```math
+$$
 \Xi \geqq \mathrm{H}.
-```
+$$
 
 1) If
 
-```math
+$$
 \Xi > 0, \quad \mathrm{H} > 0,
-```
+$$
 
 then
 
-```math
+$$
 -\Xi + (-\mathrm{H}) = -(\Xi + \mathrm{H}).
-```
+$$
 
 2) If
 
-```math
+$$
 \Xi > 0, \quad \mathrm{H} = 0,
-```
+$$
 
 then
 
-```math
+$$
 -\Xi + (-\mathrm{H}) = -\Xi + 0 = -\Xi = -(\Xi + 0) = -(\Xi + \mathrm{H}).
-```
+$$
 
 3) If
 
-```math
+$$
 \Xi > 0, \quad \mathrm{H} < 0,
-```
+$$
 
 then
 
 either
 
-```math
+$$
 \Xi > |\mathrm{H}|,
-```
+$$
 
 hence
 
-```math
+$$
 \Xi + \mathrm{H} = \Xi - |\mathrm{H}|,
-```
+$$
 
-```math
+$$
 -\Xi + (-\mathrm{H}) = -\Xi + |\mathrm{H}| = -(\Xi - |\mathrm{H}|) = -(\Xi + \mathrm{H});
-```
+$$
 
 or
 
-```math
+$$
 \Xi = |\mathrm{H}|,
-```
+$$
 
 hence
 
-```math
+$$
 \Xi + \mathrm{H} = 0,
-```
+$$
 
-```math
+$$
 -\Xi + (-\mathrm{H}) = -\Xi + |\mathrm{H}| = 0 = -(\Xi + \mathrm{H});
-```
+$$
 
 or
 
-```math
+$$
 \Xi < |\mathrm{H}|,
-```
+$$
 
 hence
 
-```math
+$$
 \Xi + \mathrm{H} = -(|\mathrm{H}| - \Xi),
-```
+$$
 
-```math
+$$
 -\Xi + (-\mathrm{H}) = -\Xi + |\mathrm{H}| = |\mathrm{H}| - \Xi = -(\Xi + \mathrm{H}).
-```
+$$
 
 4) If
 
-```math
+$$
 \Xi = 0,
-```
+$$
 
 then
 
-```math
+$$
 -\Xi + (-\mathrm{H}) = 0 + (-\mathrm{H}) = -\mathrm{H} = -(0 + \mathrm{H}) = -(\Xi + \mathrm{H}).
-```
+$$
 
 5) If
 
-```math
+$$
 \Xi < 0,
-```
+$$
 
 then
 
-```math
+$$
 \mathrm{H} < 0,
-```
+$$
 
-```math
+$$
 \Xi + \mathrm{H} = -(|\Xi| + |\mathrm{H}|),
-```
+$$
 
-```math
+$$
 -\Xi + (-\mathrm{H}) = |\Xi| + |\mathrm{H}| = -(\Xi + \mathrm{H}).
-```
+$$
 
 **Definition 54:** $\Xi - \mathrm{H} = \Xi + (-\mathrm{H})$.
 
@@ -713,101 +713,101 @@ then
 
 Note that Definition 54 (as it must be) agrees, for
 
-```math
+$$
 \Xi > \mathrm{H} > 0
-```
+$$
 
 with the old Definition 35; for then
 
-```math
+$$
 \Xi > 0, \quad -\mathrm{H} < 0, \quad |\Xi| > |-\mathrm{H}|, \quad \Xi + (-\mathrm{H}) = |\Xi| - |-\mathrm{H}| = \Xi - \mathrm{H}.
-```
+$$
 
 **Theorem 181:** $-(\Xi - \mathrm{H}) = \mathrm{H} - \Xi$.
 
 **Proof:** By Theorem 180 and Theorem 177 we have
 
-```math
+$$
 -(\Xi - \mathrm{H}) = -(\Xi + (-\mathrm{H})) = -\Xi + (-(-\mathrm{H})) = -\Xi + \mathrm{H} = \mathrm{H} + (-\Xi) = \mathrm{H} - \Xi.
-```
+$$
 
 **Theorem 182:** From
 
-```math
+$$
 \Xi - \mathrm{H} > 0 \ \text{resp.} \ \Xi - \mathrm{H} = 0 \ \text{resp.} \ \Xi - \mathrm{H} < 0
-```
+$$
 
 follows
 
-```math
+$$
 \Xi > \mathrm{H} \ \text{resp.} \ \Xi = \mathrm{H} \ \text{resp.} \ \Xi < \mathrm{H}
-```
+$$
 
 and conversely.
 
 **Proof:** Since $-\mathrm{H}$ is also an arbitrary real number, we may write $-\mathrm{H}$ in place of $\mathrm{H}$, and accordingly the correspondence of the cases in
 
-```math
+$$
 \Xi + \mathrm{H} > 0 \ \text{resp.} \ \Xi + \mathrm{H} = 0 \ \text{resp.} \ \Xi + \mathrm{H} < 0
-```
+$$
 
 and
 
-```math
+$$
 \Xi > -\mathrm{H} \ \text{resp.} \ \Xi = -\mathrm{H} \ \text{resp.} \ \Xi < -\mathrm{H}
-```
+$$
 
 is to be shown.
 
 Indeed, for $\Xi = 0$ or $\mathrm{H} = 0$ the assertion is clear; for the rest, in the case
 
-```math
+$$
 \Xi > 0, \quad \mathrm{H} > 0
-```
+$$
 
 and in the first three cases of Definition 52, if the third is decomposed into the three subcases
 
-```math
+$$
 |\mathrm{H}| > |\Xi|, \quad |\mathrm{H}| = |\Xi|, \quad |\mathrm{H}| < |\Xi|
-```
+$$
 
 there hold both times, respectively, the signs
 
-```math
+$$
 > \ < \ > \ = \ < \ > \ = \ <.
-```
+$$
 
 **Theorem 183:** From
 
-```math
+$$
 \Xi > \mathrm{H} \ \text{resp.} \ \Xi = \mathrm{H} \ \text{resp.} \ \Xi < \mathrm{H}
-```
+$$
 
 follows
 
-```math
+$$
 -\Xi < -\mathrm{H} \ \text{resp.} \ -\Xi = -\mathrm{H} \ \text{resp.} \ -\Xi > -\mathrm{H}
-```
+$$
 
 and conversely.
 
 **Proof:** By Theorem 182 the former corresponds to the cases
 
-```math
+$$
 \Xi - \mathrm{H} > 0 \ \text{resp.} \ \Xi - \mathrm{H} = 0 \ \text{resp.} \ \Xi - \mathrm{H} < 0,
-```
+$$
 
 the latter to the cases
 
-```math
+$$
 -\mathrm{H} - (-\Xi) > 0 \ \text{resp.} \ -\mathrm{H} - (-\Xi) = 0 \ \text{resp.} \ -\mathrm{H} - (-\Xi) < 0;
-```
+$$
 
 hence
 
-```math
+$$
 -\mathrm{H} - (-\Xi) = -\mathrm{H} + (-(-\Xi)) = -\mathrm{H} + \Xi = \Xi + (-\mathrm{H}) = \Xi - \mathrm{H}
-```
+$$
 
 yields everything.
 
@@ -815,128 +815,128 @@ yields everything.
 
 **Proof:** 1) If
 
-```math
+$$
 \Xi > 0,
-```
+$$
 
 then
 
-```math
+$$
 \Xi = (\Xi + 1) - 1.
-```
+$$
 
 2) If
 
-```math
+$$
 \Xi = 0,
-```
+$$
 
 then
 
-```math
+$$
 \Xi = 1 - 1.
-```
+$$
 
 3) If
 
-```math
+$$
 \Xi < 0,
-```
+$$
 
 then
 
-```math
+$$
 -\Xi = |\Xi| = (|\Xi| + 1) - 1,
-```
+$$
 
-```math
+$$
 \Xi = -((|\Xi| + 1) - 1) = 1 - (|\Xi| + 1).
-```
+$$
 
 **Theorem 185:** From
 
-```math
+$$
 \Xi = \xi_1 - \xi_2, \quad \mathrm{H} = \eta_1 - \eta_2
-```
+$$
 
 follows
 
-```math
+$$
 \Xi + \mathrm{H} = (\xi_1 + \eta_1) - (\xi_2 + \eta_2).
-```
+$$
 
 **Proof:** 1) Let
 
-```math
+$$
 \Xi > 0, \quad \mathrm{H} > 0.
-```
+$$
 
 Then, since
 
-```math
+$$
 \begin{aligned}
 (\alpha + \beta) + (\gamma + \delta) &= (\alpha + \beta) + (\delta + \gamma) = ((\alpha + \beta) + \delta) + \gamma \\
 &= \gamma + (\alpha + (\beta + \delta)) = (\gamma + \alpha) + (\beta + \delta)
 \end{aligned}
-```
+$$
 
 we have
 
-```math
+$$
 (\Xi + \mathrm{H}) + (\xi_2 + \eta_2) = \xi_1 + \eta_1,
-```
+$$
 
 so the assertion is true.
 
 2) Let
 
-```math
+$$
 \Xi < 0, \quad \mathrm{H} < 0.
-```
+$$
 
 Then by Theorem 181
 
-```math
+$$
 \xi_2 - \xi_1 = -\Xi > 0, \quad \eta_2 - \eta_1 = -\mathrm{H} > 0,
-```
+$$
 
 hence by 1)
 
-```math
+$$
 -\Xi + (-\mathrm{H}) = (\xi_2 + \eta_2) - (\xi_1 + \eta_1),
-```
+$$
 
-```math
+$$
 \Xi + \mathrm{H} = -(-\Xi + (-\mathrm{H})) = (\xi_1 + \eta_1) - (\xi_2 + \eta_2).
-```
+$$
 
 3) Let
 
-```math
+$$
 \Xi > 0, \quad \mathrm{H} < 0,
-```
+$$
 
 hence
 
-```math
+$$
 \xi_1 - \xi_2 > 0, \quad \eta_2 - \eta_1 > 0.
-```
+$$
 
 A) If
 
-```math
+$$
 \Xi > |\mathrm{H}|,
-```
+$$
 
 then
 
-```math
+$$
 \xi_1 - \xi_2 > \eta_2 - \eta_1,
-```
+$$
 
 hence
 
-```math
+$$
 \begin{aligned}
 \xi_1 + \eta_1 &= ((\xi_1 - \xi_2) + \xi_2) + \eta_1 = (\xi_1 - \xi_2) + (\xi_2 + \eta_1) = (\xi_2 + \eta_1) + (\xi_1 - \xi_2) \\
 &= (\xi_2 + \eta_1) + ((\eta_2 - \eta_1) + ((\xi_1 - \xi_2) - (\eta_2 - \eta_1))) \\
@@ -944,275 +944,275 @@ hence
 &= (\xi_2 + (\eta_1 + (\eta_2 - \eta_1))) + ((\xi_1 - \xi_2) - (\eta_2 - \eta_1)) \\
 &= (\xi_2 + \eta_2) + ((\xi_1 - \xi_2) - (\eta_2 - \eta_1)),
 \end{aligned}
-```
+$$
 
-```math
+$$
 (\xi_1 + \eta_1) - (\xi_2 + \eta_2) = (\xi_1 - \xi_2) - (\eta_2 - \eta_1) = \Xi - |\mathrm{H}| = \Xi + \mathrm{H}.
-```
+$$
 
 B) If
 
-```math
+$$
 \Xi < |\mathrm{H}|,
-```
+$$
 
 then by A)
 
-```math
+$$
 \begin{aligned}
 \Xi + \mathrm{H} &= -(-\mathrm{H} + (-\Xi)) = -((\eta_2 - \eta_1) + (\xi_2 - \xi_1)) \\
 &= -((\eta_2 + \xi_2) - (\eta_1 + \xi_1)) = (\eta_1 + \xi_1) - (\eta_2 + \xi_2) \\
 &= (\xi_1 + \eta_1) - (\xi_2 + \eta_2).
 \end{aligned}
-```
+$$
 
 C) If
 
-```math
+$$
 \Xi = |\mathrm{H}|,
-```
+$$
 
 hence
 
-```math
+$$
 \xi_1 - \xi_2 = \eta_2 - \eta_1,
-```
+$$
 
 then
 
-```math
+$$
 \xi_1 = \xi_2 + (\eta_2 - \eta_1),
-```
+$$
 
-```math
+$$
 \xi_1 + \eta_1 = \xi_2 + \eta_2,
-```
+$$
 
-```math
+$$
 \Xi + \mathrm{H} = 0 = (\xi_1 + \eta_1) - (\xi_2 + \eta_2).
-```
+$$
 
 4) Let
 
-```math
+$$
 \Xi < 0, \quad \mathrm{H} > 0.
-```
+$$
 
 Then by 3)
 
-```math
+$$
 \Xi + \mathrm{H} = (\xi_1 + \eta_1) - (\xi_2 + \eta_2).
-```
+$$
 
 5) Let
 
-```math
+$$
 \Xi = 0.
-```
+$$
 
 Then
 
-```math
+$$
 \xi_1 = \xi_2,
-```
+$$
 
-```math
+$$
 \Xi + \mathrm{H} = \mathrm{H}.
-```
+$$
 
 a) For
 
-```math
+$$
 \eta_1 > \eta_2
-```
+$$
 
 we have
 
-```math
+$$
 (\eta_1 - \eta_2) + (\xi_1 + \eta_2) = ((\eta_1 - \eta_2) + \eta_2) + \xi_1 = \eta_1 + \xi_1 = \xi_1 + \eta_1,
-```
+$$
 
 b) For
 
-```math
+$$
 \eta_1 = \eta_2
-```
+$$
 
 we have
 
-```math
+$$
 \mathrm{H} = 0 = (\xi_1 + \eta_1) - (\xi_1 + \eta_2).
-```
+$$
 
 c) For
 
-```math
+$$
 \eta_1 < \eta_2
-```
+$$
 
 we have by a)
 
-```math
+$$
 \mathrm{H} = -(-\mathrm{H}) = -((\xi_1 + \eta_2) - (\xi_1 + \eta_1)) = (\xi_1 + \eta_1) - (\xi_1 + \eta_2).
-```
+$$
 
 6) Let
 
-```math
+$$
 \mathrm{H} = 0.
-```
+$$
 
 Then by 5)
 
-```math
+$$
 \Xi + \mathrm{H} = \mathrm{H} + \Xi = (\eta_1 + \xi_1) - (\eta_2 + \xi_2) = (\xi_1 + \eta_1) - (\xi_2 + \eta_2).
-```
+$$
 
 **Theorem 186** (associative law of addition):
 
-```math
+$$
 (\Xi + \mathrm{H}) + \mathrm{Z} = \Xi + (\mathrm{H} + \mathrm{Z}).
-```
+$$
 
 **Proof:** By Theorem 184 we have
 
-```math
+$$
 \Xi = \xi_1 - \xi_2, \quad \mathrm{H} = \eta_1 - \eta_2, \quad \mathrm{Z} = \zeta_1 - \zeta_2.
-```
+$$
 
 By Theorem 185 we have
 
-```math
+$$
 \begin{aligned}
 (\Xi + \mathrm{H}) + \mathrm{Z} &= ((\xi_1 + \eta_1) - (\xi_2 + \eta_2)) + (\zeta_1 - \zeta_2) \\
 &= ((\xi_1 + \eta_1) + \zeta_1) - ((\xi_2 + \eta_2) + \zeta_2) = (\xi_1 + (\eta_1 + \zeta_1)) - (\xi_2 + (\eta_2 + \zeta_2)) \\
 &= (\xi_1 - \xi_2) + ((\eta_1 + \zeta_1) - (\eta_2 + \zeta_2)) = \Xi + (\mathrm{H} + \mathrm{Z}).
 \end{aligned}
-```
+$$
 
 **Theorem 187:** For given $\Xi$, $\mathrm{H}$,
 
-```math
+$$
 \mathrm{H} + \Upsilon = \Xi
-```
+$$
 
 has exactly one solution $\Upsilon$, namely
 
-```math
+$$
 \Upsilon = \Xi - \mathrm{H}.
-```
+$$
 
 **Proof:** 1)
 
-```math
+$$
 \Upsilon = \Xi - \mathrm{H}
-```
+$$
 
 is a solution, since by Theorem 186
 
-```math
+$$
 \mathrm{H} + (\Xi - \mathrm{H}) = (\Xi - \mathrm{H}) + \mathrm{H} = (\Xi + (-\mathrm{H})) + \mathrm{H} = \Xi + (-\mathrm{H} + \mathrm{H}) = \Xi + 0 = \Xi.
-```
+$$
 
 2) From
 
-```math
+$$
 \mathrm{H} + \Upsilon = \Xi
-```
+$$
 
 follows
 
-```math
+$$
 \Xi - \mathrm{H} = \Xi + (-\mathrm{H}) = -\mathrm{H} + \Xi = -\mathrm{H} + (\mathrm{H} + \Upsilon) = (-\mathrm{H} + \mathrm{H}) + \Upsilon = 0 + \Upsilon = \Upsilon.
-```
+$$
 
 **Theorem 188:** We have
 
-```math
+$$
 \Xi + \mathrm{Z} > \mathrm{H} + \mathrm{Z} \ \text{resp.} \ \Xi + \mathrm{Z} = \mathrm{H} + \mathrm{Z} \ \text{resp.} \ \Xi + \mathrm{Z} < \mathrm{H} + \mathrm{Z},
-```
+$$
 
 according as
 
-```math
+$$
 \Xi > \mathrm{H} \ \text{resp.} \ \Xi = \mathrm{H} \ \text{resp.} \ \Xi < \mathrm{H}.
-```
+$$
 
 **Proof:** By Theorem 182 the former holds according as
 
-```math
+$$
 (\Xi + \mathrm{Z}) - (\mathrm{H} + \mathrm{Z}) > 0 \ \text{resp.} \ (\Xi + \mathrm{Z}) - (\mathrm{H} + \mathrm{Z}) = 0 \ \text{resp.} \ (\Xi + \mathrm{Z}) - (\mathrm{H} + \mathrm{Z}) < 0;
-```
+$$
 
 the latter, according as
 
-```math
+$$
 \Xi - \mathrm{H} > 0 \ \text{resp.} \ \Xi - \mathrm{H} = 0 \ \text{resp.} \ \Xi - \mathrm{H} < 0.
-```
+$$
 
 From
 
-```math
+$$
 (\Xi + \mathrm{Z}) - (\mathrm{H} + \mathrm{Z}) = (\Xi + \mathrm{Z}) + (-\mathrm{Z} + (-\mathrm{H})) = (\Xi + (\mathrm{Z} + (-\mathrm{Z}))) + (-\mathrm{H}) = \Xi + (-\mathrm{H}) = \Xi - \mathrm{H}
-```
+$$
 
 the assertions therefore follow.
 
 **Theorem 189:** From
 
-```math
+$$
 \Xi > \mathrm{H}, \quad \mathrm{Z} > \Upsilon
-```
+$$
 
 follows
 
-```math
+$$
 \Xi + \mathrm{Z} > \mathrm{H} + \Upsilon.
-```
+$$
 
 **Proof:** By Theorem 188 we have
 
-```math
+$$
 \Xi + \mathrm{Z} > \mathrm{H} + \mathrm{Z}
-```
+$$
 
 and
 
-```math
+$$
 \mathrm{H} + \mathrm{Z} = \mathrm{Z} + \mathrm{H} > \Upsilon + \mathrm{H} = \mathrm{H} + \Upsilon,
-```
+$$
 
 hence
 
-```math
+$$
 \Xi + \mathrm{Z} > \mathrm{H} + \Upsilon.
-```
+$$
 
 **Theorem 190:** From
 
-```math
+$$
 \Xi \geqq \mathrm{H}, \ \mathrm{Z} > \Upsilon \quad \text{or} \quad \Xi > \mathrm{H}, \ \mathrm{Z} \geqq \Upsilon
-```
+$$
 
 follows
 
-```math
+$$
 \Xi + \mathrm{Z} > \mathrm{H} + \Upsilon.
-```
+$$
 
 **Proof:** With the equality sign in the hypothesis, settled by Theorem 188; otherwise by Theorem 189.
 
 **Theorem 191:** From
 
-```math
+$$
 \Xi \geqq \mathrm{H}, \quad \mathrm{Z} \geqq \Upsilon
-```
+$$
 
 follows
 
-```math
+$$
 \Xi + \mathrm{Z} \geqq \mathrm{H} + \Upsilon.
-```
+$$
 
 **Proof:** With two equality signs in the hypothesis, obvious; otherwise settled by Theorem 190.
 
@@ -1220,14 +1220,14 @@ follows
 
 **Definition 55:**
 
-```math
+$$
 \Xi \cdot \mathrm{H} =
 \begin{cases}
 -(|\Xi| \, |\mathrm{H}|), & \text{if } \Xi > 0,\ \mathrm{H} < 0 \ \text{or} \ \Xi < 0,\ \mathrm{H} > 0; \\
 |\Xi| \, |\mathrm{H}|, & \text{if } \Xi < 0,\ \mathrm{H} < 0; \\
 0, & \text{if } \Xi = 0 \ \text{or} \ \mathrm{H} = 0.
 \end{cases}
-```
+$$
 
 ($\cdot$ read: times; but the dot is usually not written.) $\Xi \cdot \mathrm{H}$ is called the product of $\Xi$ and $\mathrm{H}$, or the number obtained by multiplication of $\Xi$ by $\mathrm{H}$.
 
@@ -1235,9 +1235,9 @@ Observe that $\Xi \cdot \mathrm{H}$ for $\Xi > 0$, $\mathrm{H} > 0$ is already k
 
 **Theorem 192:** We have
 
-```math
+$$
 \Xi \mathrm{H} = 0
-```
+$$
 
 if and only if at least one of the two numbers $\Xi$, $\mathrm{H}$ is zero.
 
@@ -1249,9 +1249,9 @@ if and only if at least one of the two numbers $\Xi$, $\mathrm{H}$ is zero.
 
 **Theorem 194** (commutative law of multiplication):
 
-```math
+$$
 \Xi \mathrm{H} = \mathrm{H} \Xi.
-```
+$$
 
 **Proof:** For $\Xi > 0$, $\mathrm{H} > 0$ this is Theorem 142, and otherwise it follows from Definition 55, since the right-hand side of that definition (by Theorem 142) and the distinction of cases are symmetric in $\Xi$, $\mathrm{H}$.
 
@@ -1259,21 +1259,21 @@ if and only if at least one of the two numbers $\Xi$, $\mathrm{H}$ is zero.
 
 **Proof:** For $\Xi > 0$ this follows from Theorem 151; for $\Xi = 0$ from Definition 55; for $\Xi < 0$ we have by Definition 55
 
-```math
+$$
 \Xi \cdot 1 = -(|\Xi| \cdot 1) = -|\Xi| = \Xi.
-```
+$$
 
 **Theorem 196:** If
 
-```math
+$$
 \Xi \neq 0, \quad \mathrm{H} \neq 0,
-```
+$$
 
 then
 
-```math
+$$
 \Xi \mathrm{H} = |\Xi| \, |\mathrm{H}| \quad \text{resp.} \quad \Xi \mathrm{H} = -(|\Xi| \, |\mathrm{H}|),
-```
+$$
 
 according as none or two, resp. exactly one, of the numbers $\Xi$, $\mathrm{H}$ are negative.
 
@@ -1285,9 +1285,9 @@ according as none or two, resp. exactly one, of the numbers $\Xi$, $\mathrm{H}$ 
 
 2) If
 
-```math
+$$
 \Xi \neq 0, \quad \mathrm{H} \neq 0,
-```
+$$
 
 then by Theorem 193 all three expressions have the same absolute value $|\Xi| \, |\mathrm{H}|$, and by Theorem 196 all three are $> 0$ resp. $< 0$, according as exactly one, resp. none or two, of the numbers $\Xi$, $\mathrm{H}$ are negative.
 
@@ -1295,29 +1295,29 @@ then by Theorem 193 all three expressions have the same absolute value $|\Xi| \,
 
 **Proof:** By Theorem 197 we have
 
-```math
+$$
 (-\Xi)(-\mathrm{H}) = \Xi(-(-\mathrm{H})) = \Xi \mathrm{H}.
-```
+$$
 
 **Theorem 199** (associative law of multiplication):
 
-```math
+$$
 (\Xi \mathrm{H}) \mathrm{Z} = \Xi (\mathrm{H} \mathrm{Z}).
-```
+$$
 
 **Proof:** 1) If one of the numbers $\Xi$, $\mathrm{H}$, $\mathrm{Z}$ is zero, then both sides of the assertion are 0.
 
 2) If
 
-```math
+$$
 \Xi \neq 0, \quad \mathrm{H} \neq 0, \quad \mathrm{Z} \neq 0,
-```
+$$
 
 then by Theorem 193 both sides have the same absolute value
 
-```math
+$$
 (|\Xi| \, |\mathrm{H}|) \, |\mathrm{Z}| = |\Xi| \, (|\mathrm{H}| \, |\mathrm{Z}|),
-```
+$$
 
 and by Theorem 196 both sides are $> 0$ resp. $< 0$, according as none or exactly two, resp. exactly one or three, of the numbers $\Xi$, $\mathrm{H}$, $\mathrm{Z}$ are negative.
 
@@ -1325,141 +1325,141 @@ and by Theorem 196 both sides are $> 0$ resp. $< 0$, according as none or exactl
 
 **Proof:** 1) For
 
-```math
+$$
 \eta > \zeta
-```
+$$
 
 we have
 
-```math
+$$
 (\eta - \zeta) + \zeta = \eta,
-```
+$$
 
 hence by Theorem 144
 
-```math
+$$
 \xi(\eta - \zeta) + \xi\zeta = \xi\eta,
-```
+$$
 
-```math
+$$
 \xi(\eta - \zeta) = \xi\eta - \xi\zeta.
-```
+$$
 
 2) For
 
-```math
+$$
 \eta = \zeta
-```
+$$
 
 we have
 
-```math
+$$
 \eta - \zeta = 0,
-```
+$$
 
-```math
+$$
 \xi(\eta - \zeta) = \xi \cdot 0 = 0 = \xi\eta - \xi\zeta.
-```
+$$
 
 3) For
 
-```math
+$$
 \eta < \zeta
-```
+$$
 
 we have by 1)
 
-```math
+$$
 \xi(\zeta - \eta) = \xi\zeta - \xi\eta,
-```
+$$
 
-```math
+$$
 \xi(\eta - \zeta) = \xi(-(\zeta - \eta)) = -(\xi(\zeta - \eta)) = -(\xi\zeta - \xi\eta) = \xi\eta - \xi\zeta.
-```
+$$
 
 **Theorem 201** (distributive law):
 
-```math
+$$
 \Xi(\mathrm{H} + \mathrm{Z}) = \Xi\mathrm{H} + \Xi\mathrm{Z}.
-```
+$$
 
 **Proof:** 1) Let
 
-```math
+$$
 \Xi > 0.
-```
+$$
 
 By Theorem 184 we have
 
-```math
+$$
 \mathrm{H} = \eta_1 - \eta_2, \quad \mathrm{Z} = \zeta_1 - \zeta_2,
-```
+$$
 
 hence by Theorem 185
 
-```math
+$$
 \mathrm{H} + \mathrm{Z} = (\eta_1 + \zeta_1) - (\eta_2 + \zeta_2),
-```
+$$
 
 hence by Theorem 200 and Theorem 144
 
-```math
+$$
 \Xi(\mathrm{H} + \mathrm{Z}) = \Xi(\eta_1 + \zeta_1) - \Xi(\eta_2 + \zeta_2) = (\Xi\eta_1 + \Xi\zeta_1) - (\Xi\eta_2 + \Xi\zeta_2),
-```
+$$
 
 hence by Theorem 185 and Theorem 200
 
-```math
+$$
 \Xi(\mathrm{H} + \mathrm{Z}) = (\Xi\eta_1 - \Xi\eta_2) + (\Xi\zeta_1 - \Xi\zeta_2) = \Xi(\eta_1 - \eta_2) + \Xi(\zeta_1 - \zeta_2) = \Xi\mathrm{H} + \Xi\mathrm{Z}.
-```
+$$
 
 2) Let
 
-```math
+$$
 \Xi = 0.
-```
+$$
 
 Then
 
-```math
+$$
 \Xi(\mathrm{H} + \mathrm{Z}) = 0 = \Xi\mathrm{H} + \Xi\mathrm{Z}.
-```
+$$
 
 3) Let
 
-```math
+$$
 \Xi < 0.
-```
+$$
 
 Then by 1)
 
-```math
+$$
 (-\Xi)(\mathrm{H} + \mathrm{Z}) = (-\Xi)\mathrm{H} + (-\Xi)\mathrm{Z},
-```
+$$
 
 hence
 
-```math
+$$
 -(\Xi(\mathrm{H} + \mathrm{Z})) = (-\Xi)\mathrm{H} + (-\Xi)\mathrm{Z},
-```
+$$
 
-```math
+$$
 \Xi(\mathrm{H} + \mathrm{Z}) = -((-\Xi)\mathrm{H} + (-\Xi)\mathrm{Z}) = -((-\Xi)\mathrm{H}) + (-((-\Xi)\mathrm{Z})) = \Xi\mathrm{H} + \Xi\mathrm{Z}.
-```
+$$
 
 **Theorem 202:** $\Xi(\mathrm{H} - \mathrm{Z}) = \Xi\mathrm{H} - \Xi\mathrm{Z}$.
 
 **Proof:** By Theorem 201 we have
 
-```math
+$$
 \Xi(\mathrm{H} - \mathrm{Z}) = \Xi(\mathrm{H} + (-\mathrm{Z})) = \Xi\mathrm{H} + \Xi(-\mathrm{Z}) = \Xi\mathrm{H} + (-(\Xi\mathrm{Z})) = \Xi\mathrm{H} - \Xi\mathrm{Z}.
-```
+$$
 
 **Theorem 203:** Let
 
-```math
+$$
 \Xi > \mathrm{H}.
-```
+$$
 
 a solution because\
 $\mathrm{H}\Upsilon = $ ,\
@@ -1468,87 +1468,87 @@ $\mathrm{H} < 0$.
 
 From
 
-```math
+$$
 \mathrm{Z} > 0 \ \text{resp.} \ \mathrm{Z} = 0 \ \text{resp.} \ \mathrm{Z} < 0
-```
+$$
 
 it then follows that
 
-```math
+$$
 \Xi\mathrm{Z} > \mathrm{H}\mathrm{Z} \ \text{resp.} \ \Xi\mathrm{Z} = \mathrm{H}\mathrm{Z} \ \text{resp.} \ \Xi\mathrm{Z} < \mathrm{H}\mathrm{Z}.
-```
+$$
 
 **Proof:**
 
-```math
+$$
 \Xi - \mathrm{H} > 0,
-```
+$$
 
 hence
 
-```math
+$$
 (\Xi - \mathrm{H})\mathrm{Z} > 0 \ \text{resp.} \ (\Xi - \mathrm{H})\mathrm{Z} = 0 \ \text{resp.} \ (\Xi - \mathrm{H})\mathrm{Z} < 0,
-```
+$$
 
 according as
 
-```math
+$$
 \mathrm{Z} > 0 \ \text{resp.} \ \mathrm{Z} = 0 \ \text{resp.} \ \mathrm{Z} < 0.
-```
+$$
 
 Since by Theorem 202
 
-```math
+$$
 (\Xi - \mathrm{H})\mathrm{Z} = \mathrm{Z}(\Xi - \mathrm{H}) = \mathrm{Z}\Xi - \mathrm{Z}\mathrm{H} = \Xi\mathrm{Z} - \mathrm{H}\mathrm{Z}
-```
+$$
 
 we have in these cases, by Theorem 182,
 
-```math
+$$
 \Xi\mathrm{Z} > \mathrm{H}\mathrm{Z} \ \text{resp.} \ \Xi\mathrm{Z} = \mathrm{H}\mathrm{Z} \ \text{resp.} \ \Xi\mathrm{Z} < \mathrm{H}\mathrm{Z}.
-```
+$$
 
 **Theorem 204:** The equation
 
-```math
+$$
 \mathrm{H}\Upsilon = \Xi,
-```
+$$
 
 where $\Xi$, $\mathrm{H}$ are given and
 
-```math
+$$
 \mathrm{H} \neq 0
-```
+$$
 
 holds, has exactly one solution $\Upsilon$.
 
 **Proof:** I) There is at most one solution; for from
 
-```math
+$$
 \mathrm{H}\Upsilon_1 = \Xi = \mathrm{H}\Upsilon_2
-```
+$$
 
 it follows that
 
-```math
+$$
 0 = \mathrm{H}\Upsilon_1 - \mathrm{H}\Upsilon_2 = \mathrm{H}(\Upsilon_1 - \Upsilon_2),
-```
+$$
 
 hence by Theorem 192
 
-```math
+$$
 0 = \Upsilon_1 - \Upsilon_2,
-```
+$$
 
-```math
+$$
 \Upsilon_1 = \Upsilon_2.
-```
+$$
 
 II) 1) Let
 
-```math
+$$
 \mathrm{H} > 0.
-```
+$$
 
 Then
 
@@ -1556,9 +1556,9 @@ Then
 
 is a solution. For by 1) we have
 
-```math
+$$
 \Xi = |\mathrm{H}|(-\Upsilon) = (-|\mathrm{H}|)\Upsilon = \mathrm{H}\Upsilon.
-```
+$$
 
 **Definition 56:** The $\Upsilon$ of Theorem 204 is denoted by $\frac{\Xi}{\mathrm{H}}$ (read: $\Xi$ over $\mathrm{H}$). $\frac{\Xi}{\mathrm{H}}$ is also called the quotient of $\Xi$ by $\mathrm{H}$, or the number obtained by division of $\Xi$ by $\mathrm{H}$.
 
@@ -1580,19 +1580,19 @@ In other words: Every number of the first class is $\leqq \Xi$, every number of 
 
 **Proof:** A) There cannot be more than one such $\Xi$; for if
 
-```math
+$$
 \Xi_1 < \Xi_2
-```
+$$
 
 and if $\Xi_1$ and $\Xi_2$ both did what is required, then $\frac{\Xi_1 + \Xi_2}{1+1}$ would, because of
 
-```math
+$$
 (1+1)\Xi_1 = \Xi_1 + \Xi_1 < \Xi_1 + \Xi_2 < \Xi_2 + \Xi_2 = (1+1)\Xi_2,
-```
+$$
 
-```math
+$$
 \Xi_1 < \frac{\Xi_1 + \Xi_2}{1+1} < \Xi_2
-```
+$$
 
 belong both to the second and to the first class.
 
@@ -1614,29 +1614,29 @@ We call the positive number defined by our cut $\Xi$, and assert that it fulfill
 
 a) Let $\mathrm{H}$ with
 
-```math
+$$
 \mathrm{H} < \Xi
-```
+$$
 
 be given. By Theorem 159 (with $\xi = \mathrm{H}$, $\eta = \Xi$ if $\mathrm{H} > 0$; with $\xi = \frac{\Xi}{1 + 1}$, $\eta = \Xi$ if $\mathrm{H} \leqq 0$) we choose a $\mathrm{Z}$ with
 
-```math
+$$
 \mathrm{H} < \mathrm{Z} < \Xi.
-```
+$$
 
 Then $\mathrm{Z}$ is a lower number for $\Xi$, hence belongs to the first class; therefore $\mathrm{H}$ belongs to the first class.
 
 b) Let $\mathrm{H}$ with
 
-```math
+$$
 \mathrm{H} > \Xi
-```
+$$
 
 be given. By Theorem 159 we choose a $\mathrm{Z}$ with
 
-```math
+$$
 \Xi < \mathrm{Z} < \mathrm{H}.
-```
+$$
 
 Then $\mathrm{Z}$ is an upper number for $\Xi$ and (by Theorem 159) not the smallest, hence belongs to the second class; therefore $\mathrm{H}$ belongs to the second class.
 
@@ -1644,9 +1644,9 @@ II) Suppose every positive number lies in the second class, and 0 lies in the fi
 
 Then every negative number lies in the first class, and
 
-```math
+$$
 \Xi = 0
-```
+$$
 
 does what is required.
 
@@ -1654,9 +1654,9 @@ III) Suppose 0 lies in the second class, and every negative number lies in the f
 
 Then every positive number lies in the second class, and
 
-```math
+$$
 \Xi = 0
-```
+$$
 
 does what is required.
 
@@ -1674,44 +1674,44 @@ This division evidently satisfies the two conditions of Theorem 205. For
 
 2) from
 
-```math
+$$
 \mathrm{H}_1 < \mathrm{H}_2
-```
+$$
 
 it follows by Theorem 183 that
 
-```math
+$$
 -\mathrm{H}_2 < -\mathrm{H}_1.
-```
+$$
 
 Moreover, the new division falls under case I), since there is a positive number in the new first class. Hence by I) there exists a number $\Xi_1$ such that every
 
-```math
+$$
 \mathrm{H} < \Xi_1
-```
+$$
 
 lies in the new first class, and every
 
-```math
+$$
 \mathrm{H} > \Xi_1
-```
+$$
 
 in the new second class. If we set
 
-```math
+$$
 -\Xi_1 = \Xi
-```
+$$
 
 then from
 
-```math
+$$
 \mathrm{H} < \Xi \quad \text{resp.} \quad \mathrm{H} > \Xi,
-```
+$$
 
 it follows that
 
-```math
+$$
 -\mathrm{H} > \Xi_1 \quad \text{resp.} \quad -\mathrm{H} < \Xi_1
-```
+$$
 
 holds. Hence $-\mathrm{H}$ lies in the new second resp. new first class, and therefore $\mathrm{H}$ in the old first resp. old second class.

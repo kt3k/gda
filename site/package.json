@@ -4,9 +4,8 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "sync": "node sync.mjs",
-    "dev": "npm run sync && vocs dev",
-    "build": "npm run sync && vocs build",
+    "dev": "vocs dev",
+    "build": "vocs build",
     "preview": "vocs preview"
   },
   "dependencies": {
